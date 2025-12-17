@@ -4,7 +4,7 @@ import { useMutation, useQuery } from '@apollo/client';
 import { ADD_STUDENT_PAYMENT_MUTATION} from '@/utils/gql/GQL_MUTATIONS';
 import Script from 'next/script';
 import { RazorpayCheckout } from '@/components/RazorpayCheckout';
-
+import emailjs from 'emailjs-com';
 
 declare global {
   interface window{
@@ -105,10 +105,29 @@ const PaymentPage = (formdata:any) => {
     }
   }
 
+  const SendPaymentRecvdMessage = () => {
+    var templateParams = {
+      from_name: 'Onati Global Institue of Fashion Technology (OGIFT)',
+      to_name: "Mickee",
+      to_email:"mickee@rakhisfashions.com",
+      message:" This is to let you know that "+formdata.formdata.studentid+" has paid "+formdata.formdata.amount+" today. "
+    }
+
+    emailjs.send('service_08elaj3', 'template_phdbp4n', templateParams,'user_QBs08JbvqdXivIagZeWFH')
+      .then(function(response) {
+         console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+         console.log('FAILED...', error);
+      });
+
+
+      return
+  }
+
   return (
     <div className = "flex items-center justify-center  bg-gray-100 pt-60">
       <Script src="https://checkout.razorpay.com/v1/checkout.js"/>
-      <div className="p-10 bg-white rounder-lg shadow-md " style={{width:300}}>
+      <div className="p-10 bg-white rounder-lg shadow-md" style={{width:300}}>
         <h1 className="text 2xl font-bold mb-4">Payments Page</h1>
         <p className="mb-4">Amount to pay :{AMOUNT} INR</p>
         {/* <button 
@@ -122,7 +141,7 @@ const PaymentPage = (formdata:any) => {
                 name={formdata.student_id}
                 description="Course Payment"
                 buttonText="Make Payment"
-                onSuccess={(res) => {console.log("Payment success:", res);handleInsert()}}
+                onSuccess={(res) => {console.log("Payment success:", res);handleInsert();SendPaymentRecvdMessage()}}
                 onFailure={(err) => console.error("Payment failed:", err)}
                 className="h-11"
               />
