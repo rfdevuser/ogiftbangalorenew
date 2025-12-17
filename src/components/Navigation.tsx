@@ -53,6 +53,7 @@ const Navigation = () => {
               <Button variant="default" asChild>
               <a href="/register">Register</a>
             </Button>
+            <a href="/newogwebsite.com/ogiftdemo.apk" download>Download Android Demo App</a>
             
           </div>
 
