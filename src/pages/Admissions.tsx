@@ -157,7 +157,8 @@ const Admissions = () =>
   };
 
   const courseTypes = ['Online', 'Offline'];
-  const courses = ['Diploma in Fashion Designing', 'Advance Diploma in Fashion Designing', 
+  const courses = ['Six Months Diploma in Fashion Designing', ' One Year Advance Diploma in Fashion Designing', 
+    'One Month Mastery Course','Three Months Capsule Course',
     // 'Vocational Course in Garment making & Tailoring', 
     // 'Vocational Embroidery & Craft Course', 
     // 'Advance Vocational Course in Garment making & Tailoring'
