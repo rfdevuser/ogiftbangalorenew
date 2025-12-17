@@ -50,9 +50,9 @@ const Navigation = () => {
              <Button variant="default" asChild>
               <a href="/payment">Make Payment</a>
             </Button>
-              {/* <Button variant="default" asChild>
-              <a href="/downloadapp">Download Demo App for Android</a>
-            </Button> */}
+              <Button variant="default" asChild>
+              <a href="/register">Register</a>
+            </Button>
             
           </div>
 
