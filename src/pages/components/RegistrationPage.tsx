@@ -5,6 +5,7 @@ import {useQuery} from "@apollo/client";
 
 import Script from 'next/script';
 import PaymentPage from './payments';
+import emailjs from 'emailjs-com';
 
 
 
@@ -29,10 +30,28 @@ const handleChange = (e) =>
  setFormData({ ...formData, [e.target.name]: e.target.value });
 }
 
+const SendRegistrationMessage = () => {
+    var templateParams = {
+      from_name: 'Onati Global Institue of Fashion Technology (OGIFT)',
+      to_name: "Mickee",
+      to_email:"mickee@rakhisfashions.com",
+      message:" This is to let you know that "+formData.studentid+" is registering today. "
+    }
 
+    emailjs.send('service_08elaj3', 'template_phdbp4n', templateParams,'user_QBs08JbvqdXivIagZeWFH')
+      .then(function(response) {
+         console.log('SUCCESS!', response.status, response.text);
+      }, function(error) {
+         console.log('FAILED...', error);
+      });
+
+
+      return
+  }
+  
 const handleSubmit = (e) => {
  SetFlag(true)
-  
+ SendRegistrationMessage()
 }
 
 if(mflag)
@@ -97,5 +116,4 @@ if(mflag)
 }
 
 export default RegistrationPage;
-
 
