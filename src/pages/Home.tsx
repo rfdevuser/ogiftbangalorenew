@@ -99,7 +99,7 @@ const Home = () => {
             <h1 className="text-5xl md:text-7xl font-bold text-primary">
               The Runway to Your Professional Future
             </h1>
-            <p className="text-xl md:text-2xl font-bold">
+            <p className="text-xl text-white md:text-2xl font-bold">
               Join Bangalore's premier fashion design institute. Expert faculty, modern facilities, and guaranteed career support.
             </p>
             <p></p>
