@@ -20,7 +20,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'Acquire a good foundation to understanding of skills required to visually communicate your designs.',
       highlights: ['Figure Drawing & Proportions', 'Garment Rendering', 'Technical Drawing', 'Media & Color'],
-      Fees: "Only Rs. 12,000 "
+      Fees: "Call Institute to get details"
     },
     {
        title: 'Express Mastery Month - Pattern Making (Basic)',
@@ -28,7 +28,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'Dive into the fascinating world of Pattern Creation and Development.',
       highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Basics of Pattern Development'],
-      Fees: "Only Rs. 12,000 "
+      Fees: "Call Institute to get details"
     },
      {
        title: 'Express Mastery Month - Pattern Making Blouses (Advanced)',
@@ -36,7 +36,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'Dive into the fascinating world of Pattern Creation and Development of Blouses.',
       highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Introduction to Pattern Development'],
-      Fees: "Only Rs. 15,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Pattern Making Western (Advanced)',
@@ -44,7 +44,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'Dive into the fascinating world of Pattern Creation and Development of Western Clothing',
       highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Introduction to Pattern Development'],
-      Fees: "Rs. 15,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Art of Garment Foundation',
@@ -52,7 +52,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'Learn the basics of essential skills and technical knowledge needed to construct, fit, and finish clothing.',
       highlights: ['Pattern Making & Grading', 'Fabric Science', 'Sewing Techniques', 'Fit & Alterations'],
-      Fees: "Rs. 12,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month -Fabric Knowledge and Textile Designing',
@@ -60,7 +60,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'This course focusses on the material science of textiles and the creative processes involved in designing and producing fabrics.',
       highlights: ['Fiber to Fabric', 'Weaving & Knitting Structures', 'CAD Textile Design', 'Printing & Finishing'],
-      Fees: "Rs. 12,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Draping Technology',
@@ -68,7 +68,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'This fabulous course will introduce you to the fundamentals of Draping Technology course that teaches the three-dimensional method of pattern creation by manipulating fabric directly on a dress form.',
       highlights: ['Block Development', 'Design Interpretation', 'Muslin Manipulation', 'Transfer To Paper'],
-      Fees: "Rs. 12,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Digital Portfolio Making',
@@ -76,7 +76,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'This course will focus on strategically curating, designing, and presenting creative work online to appeal to potential employers or clients.',
       highlights: ['Platform Selection & Structure', 'Visual Presentation & Curation', 'Content Strategy', 'Digital Tools & Interactivity'],
-      Fees: "Rs. 12,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Graphic Designing for Fashion',
@@ -84,7 +84,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'This course course focuses on applying core graphic design principles specifically within the fashion industry context, from branding to marketing materials.',
       highlights: ['Fashion Branding & Identity', 'Layout & Collateral Design', 'Digital Marketing Assets', 'Software Proficiency'],
-      Fees: "Rs. 15,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Fashion Designing and Boutique Management',
@@ -92,7 +92,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'With this course, you will get introduced to the business and retail skills needed to successfully launch, operate, and grow a small fashion retail enterprise.',
       highlights: ['Inventory & Merchandising', 'Financial Management', 'Customer Experience & Sales', 'Legal & Operations'],
-      Fees: "Rs. 15,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Fashion Styling',
@@ -100,7 +100,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'This course will introduce you to the visual and creative skills necessary to select and coordinate clothing and accessories for photoshoots, editorials, and personal clients.',
       highlights: ['Image Conception & Mood Boards', 'Wardrobe Curation & Sourcing', 'Editorial & Commercial Styling', 'Client & Body Analysis'],
-      Fees: "Rs. 10,000 "
+      Fees: "Call Institute to get details"
     },
       {
        title: 'Express Mastery Month - Pattern Making for Kids Clothing',
@@ -108,7 +108,7 @@ const Courses = () => {
       category: 'Certificate',
       description: 'Dive into the fascinating world of Pattern Creation and Development of Kids Clothing',
       highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Introduction to Pattern Development'],
-      Fees: "Rs. 10,000 "
+      Fees: "Call Institute to get details"
     },
   {
       title: 'Short Certificate Course in Pattern Making and Boutique Management (PMBM) - The 3 Months Capsule Course',
