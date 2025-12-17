@@ -106,9 +106,9 @@ const PaymentPage = (formdata:any) => {
   }
 
   return (
-    <div className = "flex items-center justify-center  bg-gray-100 ">
+    <div className = "flex items-center justify-center  bg-gray-100 pt-60">
       <Script src="https://checkout.razorpay.com/v1/checkout.js"/>
-      <div className="p-10 bg-white rounder-lg shadow-md pt-60" style={{width:300}}>
+      <div className="p-10 bg-white rounder-lg shadow-md " style={{width:300}}>
         <h1 className="text 2xl font-bold mb-4">Payments Page</h1>
         <p className="mb-4">Amount to pay :{AMOUNT} INR</p>
         {/* <button 
