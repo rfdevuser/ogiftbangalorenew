@@ -10,7 +10,7 @@ import Placements from "./pages/Placements";
 import Admissions from "./pages/Admissions"
 import NotFound from "./pages/NotFound";
 import Makeapayment from "./pages/NewPayment";
-
+import RegistrationPage from "./pages/components/RegistrationPage";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
 import StructuredData from "./components/StructuredData";
@@ -38,7 +38,8 @@ const App = () => (
           <Route path="/placements" element={<Placements />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/payment" element={<Makeapayment />} />
-         
+          <Route path="/register" element={<RegistrationPage />} />
+        
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
