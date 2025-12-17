@@ -1,0 +1,37 @@
+input AddAdmissionInput {
+  firstName: String!
+  lastName: String!
+  phoneNumber: String!
+  email: String!
+  courseInterest: String!
+  startDate: String!
+  state: String!
+  currentStatus: String!
+}
+
+type Mutation {
+  addadmissionmutation(input: AddAdmissionInput!): SubmissionResponse!
+}
+
+type SubmissionResponse {
+  success: Boolean!
+  message: String
+  # You can include additional fields here as needed
+}
+
+
+
+#students contact 
+input AddStudentContactInput {
+  name: String!
+  email: String!
+  contact: String!
+}
+
+type Mutation {
+  addStudentContact(input: AddStudentContactInput!): StudentContactResponse!
+}
+
+type StudentContactResponse {
+  testoutput: String
+}
