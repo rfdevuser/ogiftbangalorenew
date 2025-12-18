@@ -5,6 +5,7 @@ import { GraduationCap, Users, Award, BookOpen, TrendingUp, Star } from 'lucide-
 import heroImage from '@/assets/hero-home.jpg';
 import {useEffect,useState} from "react"
 import {isMobile} from "react-device-detect"
+import { CoursePromoPopup } from '@/components/CoursePromoPopup';
 
 
 
@@ -71,7 +72,7 @@ const Home = () => {
 
   return (
     <div className="min-h-screen" >
-     
+        <CoursePromoPopup />
        {/* {images?.length > 0  &&
             images?.map((image, index) => (
               <div
@@ -93,13 +94,13 @@ const Home = () => {
       {/* Hero Section */}
      
       <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[url('/OGIFTImageopaque.png')] bg-center bg-cover " >
-              
+             
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-3xl">
             <h1 className="text-5xl md:text-7xl font-bold text-primary">
               The Runway to Your Professional Future
             </h1>
-            <p className="text-xl text-white md:text-2xl font-bold">
+            <p className="text-xl md:text-2xl font-bold">
               Join Bangalore's premier fashion design institute. Expert faculty, modern facilities, and guaranteed career support.
             </p>
             <p></p>
