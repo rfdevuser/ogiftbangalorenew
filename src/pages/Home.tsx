@@ -6,7 +6,7 @@ import heroImage from '@/assets/hero-home.jpg';
 import {useEffect,useState} from "react"
 import {isMobile} from "react-device-detect"
 import { CoursePromoPopup } from '@/components/CoursePromoPopup';
-
+import StructuredData from '@/components/StructuredData';
 
 
 const Home = () => {
@@ -45,6 +45,74 @@ const Home = () => {
     return () => clearInterval(interval);
   }, [setCurrentImage]);
 
+  // SEO: Update page title and meta description for home page
+  useEffect(() => {
+    const pageTitle = 'Onati Global Institute of Fashion Technology - Top Fashion Design Institute in Bangalore';
+    const pageDescription = 'Premier fashion design institute in Bangalore offering professional courses in fashion technology, design, and styling. Industry-focused curriculum with 100% placement support. Enroll now!';
+    const pageUrl = 'https://ogiftbangalore.com';
+    const pageImage = 'https://ogiftbangalore.com/og-image.jpg';
+
+    document.title = pageTitle;
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', pageDescription);
+    }
+
+    // Add meta keywords for SEO
+    let metaKeywords = document.querySelector('meta[name="keywords"]');
+    if (!metaKeywords) {
+      metaKeywords = document.createElement('meta');
+      metaKeywords.setAttribute('name', 'keywords');
+      document.head.appendChild(metaKeywords);
+    }
+    metaKeywords.setAttribute('content', 'fashion design institute bangalore, fashion technology courses, fashion designing college, garment technology, fashion styling courses, best fashion school bangalore, fashion design diploma, apparel design, textile design, fashion career, OGIFT bangalore, onati global institute');
+
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) {
+      canonicalLink.setAttribute('href', pageUrl);
+    }
+
+    // Open Graph meta tags
+    const ogTags = [
+      { property: 'og:title', content: pageTitle },
+      { property: 'og:description', content: pageDescription },
+      { property: 'og:url', content: pageUrl },
+      { property: 'og:type', content: 'website' },
+      { property: 'og:image', content: pageImage },
+      { property: 'og:site_name', content: 'OGIFT Bangalore' },
+      { property: 'og:locale', content: 'en_IN' },
+    ];
+
+    ogTags.forEach(({ property, content }) => {
+      let meta = document.querySelector(`meta[property="${property}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('property', property);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute('content', content);
+    });
+
+    // Twitter Card meta tags
+    const twitterTags = [
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: pageTitle },
+      { name: 'twitter:description', content: pageDescription },
+      { name: 'twitter:image', content: pageImage },
+    ];
+
+    twitterTags.forEach(({ name, content }) => {
+      let meta = document.querySelector(`meta[name="${name}"]`);
+      if (!meta) {
+        meta = document.createElement('meta');
+        meta.setAttribute('name', name);
+        document.head.appendChild(meta);
+      }
+      meta.setAttribute('content', content);
+    });
+  }, []);
+
   const stats = [
     { icon: GraduationCap, value: 'TAILORED COURSES', label: '' },
     { icon: Award, value: 'HIGH PLACEMENT SUCCESS', label: '' },
@@ -73,6 +141,7 @@ const Home = () => {
   return (
     <div className="min-h-screen" >
         <CoursePromoPopup />
+        <StructuredData/>
        {/* {images?.length > 0  &&
             images?.map((image, index) => (
               <div
