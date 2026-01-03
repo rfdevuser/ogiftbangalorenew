@@ -66,7 +66,7 @@ const Home = () => {
       metaKeywords.setAttribute('name', 'keywords');
       document.head.appendChild(metaKeywords);
     }
-    metaKeywords.setAttribute('content', 'fashion design institute bangalore, fashion technology courses, fashion designing college, garment technology, fashion styling courses, best fashion school bangalore, fashion design diploma, apparel design, textile design, fashion career, OGIFT bangalore, onati global institute');
+    metaKeywords.setAttribute('content', 'fashion design institute bangalore, boutique management courses, pattern making courses, 3 months fashion designing course, 1 month fashion designing course, fashup course, no fees free course in fashion designing, fashion technology courses, fashion designing college, garment technology, fashion styling courses, best fashion school bangalore, fashion design diploma, apparel design, textile design, fashion career, OGIFT bangalore, onati global institute');
 
     const canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) {
