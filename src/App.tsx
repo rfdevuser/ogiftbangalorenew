@@ -17,6 +17,8 @@ import StructuredData from "./components/StructuredData";
 import FloatingAssistant from "./components/FloatingAssistant";
 import { ApolloProvider } from "@apollo/client/react";
 import { apolloClient } from "@/lib/apolloClient";
+import VideoGallery from "./pages/VideoGallery";
+import VideoPlayer from "./pages/VideoPlayer";
 
 
 const queryClient = new QueryClient();
@@ -38,6 +40,8 @@ const App = () => (
           <Route path="/placements" element={<Placements />} />
           <Route path="/admissions" element={<Admissions />} />
           <Route path="/payment" element={<Makeapayment />} />
+          <Route path="/videos" element={<VideoGallery />} />
+          <Route path="/video" element={<VideoPlayer />} />
           <Route path="/register" element={<RegistrationPage />} />
         
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
