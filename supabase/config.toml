@@ -1,4 +1,16 @@
-project_id = "hrkjhcnzbfoqmwwjilws"
+project_id = "azfyktcspmhcaqbhozuw"
 
-[functions.chat-assistant]
+[functions.create-razorpay-order]
+verify_jwt = false
+
+[functions.fetch-order]
+verify_jwt = false
+
+[functions.neocortex-chat]
+verify_jwt = false
+
+[functions.verify-student]
+verify_jwt = false
+
+[functions.stream-video]
 verify_jwt = false

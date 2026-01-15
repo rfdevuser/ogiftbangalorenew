@@ -19,11 +19,17 @@ import { ApolloProvider } from "@apollo/client/react";
 import { apolloClient } from "@/lib/apolloClient";
 import VideoGallery from "./pages/VideoGallery";
 import VideoPlayer from "./pages/VideoPlayer";
-
+import AIAvatar from "./pages/AIAvatar"
+import AIAvatarLogin from "./pages/AIAvatarLogin";
+import FAQAvatar from "./pages/FAQAvatar";
+import TermsAndConditions from "./pages/TermsAndConditions";
+import CreditPackages from "./pages/CreditPackages";
+import { HelmetProvider } from "react-helmet-async";
 
 const queryClient = new QueryClient();
 
 const App = () => (
+  <HelmetProvider>
   <QueryClientProvider client={queryClient}>
   <ApolloProvider client={apolloClient}>
     <TooltipProvider>
@@ -43,6 +49,12 @@ const App = () => (
           <Route path="/videos" element={<VideoGallery />} />
           <Route path="/video" element={<VideoPlayer />} />
           <Route path="/register" element={<RegistrationPage />} />
+          <Route path="/ai-avatar" element={<AIAvatarLogin />} />
+          <Route path="/ai-avatar-chat" element={<AIAvatar />} />
+          <Route path="/faqavatar" element={<FAQAvatar />} />
+          <Route path="/termsandconditions" element={<TermsAndConditions />} />
+          <Route path="/creditpackages" element={<CreditPackages />} />
+          
         
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
@@ -52,6 +64,7 @@ const App = () => (
     </TooltipProvider>
     </ApolloProvider>
   </QueryClientProvider>
+  </HelmetProvider>
 );
 
 export default App;
