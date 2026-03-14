@@ -13,18 +13,30 @@ export function useNeocortexChat(): NeocortexChatResult {
   const [conversationId, setConversationId] = useState<string | null>(null);
   const [messages, setMessages] = useState<ChatMessage[]>([]);
 
-  const sendMessage = useCallback(async (message: string, projectId?: string, studentContext?: StudentContext): Promise<ChatResponse> => {
+  const sendMessage = useCallback(async (
+    message: string, 
+    projectId?: string, 
+    studentContext?: StudentContext,
+    displayMessage?: string // Optional: what to show in chat (defaults to message)
+  ): Promise<ChatResponse> => {
     setIsLoading(true);
     setError(null);
 
     try {
-      // Add user message to history
+      // Add user message to history (use displayMessage if provided, otherwise use message)
       const userMessage: ChatMessage = { 
         role: 'user', 
-        content: message, 
+        content: displayMessage || message, 
         timestamp: Date.now() 
       };
-      setMessages(prev => [...prev, userMessage]);
+      // Prevent duplicate messages - check if last message is the same user message
+      setMessages(prev => {
+        const lastMessage = prev[prev.length - 1];
+        if (lastMessage?.role === 'user' && lastMessage?.content === userMessage.content) {
+          return prev; // Skip adding duplicate
+        }
+        return [...prev, userMessage];
+      });
 
       // Call Lovable Cloud edge function directly with full URL
       const response = await fetch(`${AVATAR_SUPABASE_URL}/functions/v1/neocortex-chat`, {

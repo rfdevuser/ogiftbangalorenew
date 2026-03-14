@@ -7,6 +7,7 @@ import { NeocortexAvatar } from "@/components/NeocortexAvatar";
 import { Button } from "@/components/ui/button";
 import { Slider } from "@/components/ui/slider";
 import { toast } from "sonner";
+import { useIsMobile } from "@/hooks/use-mobile";
 import {
   Play,
   Pause,
@@ -43,6 +44,7 @@ const STORAGE_KEY = 'avatar_student_info';
 const VideoPlayer = () => {
   const location = useLocation();
   const navigate = useNavigate();
+  const isMobile = useIsMobile();
   const state = location.state as LocationState | null;
 
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -58,6 +60,22 @@ const VideoPlayer = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [avatarState, setAvatarState] = useState<AvatarState>("idle");
   const [showControls, setShowControls] = useState(true);
+
+  // iOS Safari cannot reliably lock orientation; we simulate "fullscreen landscape" via a theater mode.
+  const isIOS = React.useMemo(() => {
+    if (typeof navigator === "undefined") return false;
+    const ua = navigator.userAgent || "";
+    const iOSDevice = /iPad|iPhone|iPod/.test(ua);
+    const iPadOS = navigator.platform === "MacIntel" && (navigator as any).maxTouchPoints > 1;
+    return iOSDevice || iPadOS;
+  }, []);
+
+  const [isTheaterMode, setIsTheaterMode] = useState(false);
+  const [isPortrait, setIsPortrait] = useState(() => {
+    if (typeof window === "undefined") return true;
+    const mql = window.matchMedia?.("(orientation: portrait)");
+    return mql ? mql.matches : window.innerHeight > window.innerWidth;
+  });
 
   // Avatar draggable/resizable state
   const [avatarSize, setAvatarSize] = useState<"small" | "medium" | "large">("medium");
@@ -80,8 +98,80 @@ const VideoPlayer = () => {
   const videoCreditsRef = useRef(videoCredits);
   videoCreditsRef.current = videoCredits;
 
+  // Progress tracking refs
+  const lastProgressSaveRef = useRef(0);
+  const PROGRESS_SAVE_INTERVAL = 30000; // Save every 30 seconds
+  const PHP_PROGRESS_ENDPOINT = 'https://www.onatiglobal.com/updatestudentprogress.php';
+  
+  // Unique session ID for each watch session (allows tracking multiple watches of same video)
+  const sessionIdRef = useRef<string>(`${Date.now()}_${Math.random().toString(36).substr(2, 9)}`);
+  const sessionStartTimeRef = useRef<number>(Date.now());
+
   // Token refresh interval: 4 minutes (before 5-minute expiry)
   const TOKEN_REFRESH_INTERVAL_MS = 4 * 60 * 1000;
+
+  // Track orientation so theater-mode can rotate video to landscape on iOS.
+  useEffect(() => {
+    if (typeof window === "undefined") return;
+
+    const mql = window.matchMedia?.("(orientation: portrait)");
+    const update = () => {
+      setIsPortrait(mql ? mql.matches : window.innerHeight > window.innerWidth);
+    };
+
+    update();
+    mql?.addEventListener?.("change", update);
+    window.addEventListener("resize", update);
+    window.addEventListener("orientationchange", update);
+
+    return () => {
+      mql?.removeEventListener?.("change", update);
+      window.removeEventListener("resize", update);
+      window.removeEventListener("orientationchange", update);
+    };
+  }, []);
+
+  // Prevent background scroll while "fullscreen" overlay is active.
+  useEffect(() => {
+    if (!isTheaterMode) return;
+
+    const prevHtmlOverflow = document.documentElement.style.overflow;
+    const prevBodyOverflow = document.body.style.overflow;
+    document.documentElement.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.documentElement.style.overflow = prevHtmlOverflow;
+      document.body.style.overflow = prevBodyOverflow;
+    };
+  }, [isTheaterMode]);
+
+  // Keep fullscreen icon/state in sync if the user exits fullscreen via native controls (iOS "Done", etc.).
+  useEffect(() => {
+    const video = videoRef.current;
+    if (!video) return;
+
+    const sync = () => {
+      const inFullscreen = !!(
+        isTheaterMode ||
+        document.fullscreenElement ||
+        (document as any).webkitFullscreenElement ||
+        (video as any).webkitDisplayingFullscreen
+      );
+      setIsFullscreen(inFullscreen);
+      if (!inFullscreen) setIsTheaterMode(false);
+    };
+
+    document.addEventListener("fullscreenchange", sync);
+    document.addEventListener("webkitfullscreenchange" as any, sync);
+    video.addEventListener("webkitendfullscreen" as any, sync);
+
+    return () => {
+      document.removeEventListener("fullscreenchange", sync);
+      document.removeEventListener("webkitfullscreenchange" as any, sync);
+      video.removeEventListener("webkitendfullscreen" as any, sync);
+    };
+  }, [isTheaterMode, videoUrl]);
 
   // Function to deduct credits when video starts playing (stable reference)
   const deductCredits = useCallback(async () => {
@@ -193,6 +283,49 @@ const VideoPlayer = () => {
       toast.error("Error processing credits. Please try again.");
     }
   }, []); // Empty deps - uses refs for stable reference
+
+  // Function to save progress to PHP backend
+  const saveProgress = useCallback(async (progressPercent: number) => {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      if (!stored) return;
+
+      const studentInfo = JSON.parse(stored);
+      const studentId = studentInfo.studentId;
+      if (!studentId) return;
+
+      // Generate a base video ID from the path
+      const baseVideoId = videoPath.replace(/[^a-zA-Z0-9]/g, '_');
+      
+      // Use session ID to create unique entry for each watch session
+      const sessionVideoId = `${baseVideoId}_${sessionIdRef.current}`;
+      
+      // Calculate actual watch duration in seconds
+      const watchDurationSeconds = Math.round((Date.now() - sessionStartTimeRef.current) / 1000);
+
+      console.log(`[VideoPlayer] Saving progress: ${progressPercent}% for session ${sessionVideoId}, duration: ${watchDurationSeconds}s`);
+
+      await fetch(PHP_PROGRESS_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          student_id: studentId,
+          video_id: sessionVideoId,
+          video_title: `${videoTitle} (${videoLanguage})`,
+          progress_percent: Math.round(progressPercent),
+          session_id: sessionIdRef.current,
+          watch_duration: watchDurationSeconds,
+          session_start: new Date(sessionStartTimeRef.current).toISOString(),
+        }),
+      });
+
+      lastProgressSaveRef.current = Date.now();
+    } catch (error) {
+      console.error("[VideoPlayer] Error saving progress:", error);
+    }
+  }, [videoPath, videoTitle, videoLanguage]);
 
   // Load initial video URL
   useEffect(() => {
@@ -330,7 +463,16 @@ const VideoPlayer = () => {
 
     const syncPlayingState = () => setIsPlaying(!video.paused && !video.ended);
 
-    const handleTimeUpdate = () => setCurrentTime(video.currentTime);
+    const handleTimeUpdate = () => {
+      setCurrentTime(video.currentTime);
+      
+      // Save progress every 30 seconds
+      const now = Date.now();
+      if (now - lastProgressSaveRef.current >= PROGRESS_SAVE_INTERVAL && video.duration > 0) {
+        const progressPercent = (video.currentTime / video.duration) * 100;
+        saveProgress(progressPercent);
+      }
+    };
     const handleLoadedMetadata = () => {
       const d = video.duration;
       setDuration(d);
@@ -350,10 +492,17 @@ const VideoPlayer = () => {
     const handlePause = () => {
       syncPlayingState();
       stopLipSync();
+      // Save progress on pause
+      if (video.duration > 0) {
+        const progressPercent = (video.currentTime / video.duration) * 100;
+        saveProgress(progressPercent);
+      }
     };
     const handleEnded = () => {
       syncPlayingState();
       stopLipSync();
+      // Save 100% progress on video end
+      saveProgress(100);
     };
     const handleSeeked = () => {
       setCurrentTime(video.currentTime);
@@ -381,7 +530,7 @@ const VideoPlayer = () => {
       video.removeEventListener("seeked", handleSeeked);
       stopLipSync();
     };
-  }, [videoUrl, startLipSyncLoop, stopLipSync]); // deductCredits has stable reference via refs
+  }, [videoUrl, startLipSyncLoop, stopLipSync, saveProgress]); // deductCredits & saveProgress have stable references
 
   const togglePlay = useCallback(() => {
     const video = videoRef.current;
@@ -431,16 +580,126 @@ const VideoPlayer = () => {
     setIsMuted(value[0] === 0);
   };
 
-  const toggleFullscreen = useCallback(() => {
+  const toggleFullscreen = useCallback(async () => {
     const container = containerRef.current;
-    if (!container) return;
+    const video = videoRef.current;
+    if (!container || !video) return;
 
-    if (document.fullscreenElement) {
-      document.exitFullscreen().then(() => setIsFullscreen(false));
-    } else {
-      container.requestFullscreen().then(() => setIsFullscreen(true)).catch(console.error);
+    // Type assertion for screen.orientation methods not in standard TS types
+    const orientation = screen.orientation as ScreenOrientation & {
+      lock?: (orientation: string) => Promise<void>;
+      unlock?: () => void;
+    };
+
+    // iPhone Safari: we can't reliably force landscape with native fullscreen.
+    // Use a CSS "theater" fullscreen overlay and rotate to landscape when in portrait.
+    const useTheaterMode = isIOS && isMobile;
+
+    const isCurrentlyFullscreen = !!(
+      isTheaterMode ||
+      document.fullscreenElement ||
+      (document as any).webkitFullscreenElement ||
+      (video as any).webkitDisplayingFullscreen
+    );
+
+    if (isCurrentlyFullscreen) {
+      // Exit theater mode first (our own fullscreen)
+      if (isTheaterMode) {
+        try {
+          orientation?.unlock?.();
+        } catch (e) {
+          console.log("[VideoPlayer] Could not unlock orientation:", e);
+        }
+        setIsTheaterMode(false);
+        setIsFullscreen(false);
+        return;
+      }
+
+      // Exit browser/native fullscreen
+      try {
+        orientation?.unlock?.();
+      } catch (e) {
+        console.log("[VideoPlayer] Could not unlock orientation:", e);
+      }
+
+      // iOS Safari video fullscreen exit
+      if ((video as any).webkitExitFullscreen) {
+        (video as any).webkitExitFullscreen();
+        setIsFullscreen(false);
+      }
+      // Use webkit exit for Safari
+      else if ((document as any).webkitExitFullscreen) {
+        (document as any).webkitExitFullscreen();
+        setIsFullscreen(false);
+      } else if (document.exitFullscreen) {
+        document.exitFullscreen().then(() => setIsFullscreen(false));
+      }
+
+      return;
     }
-  }, []);
+
+    // Enter fullscreen
+    if (useTheaterMode) {
+      setIsTheaterMode(true);
+      setIsFullscreen(true);
+
+      // Attempt orientation lock (won't work on many iOS versions, but harmless)
+      if (orientation?.lock) {
+        try {
+          await orientation.lock("landscape");
+        } catch (e) {
+          console.log("[VideoPlayer] Could not lock orientation:", e);
+        }
+      }
+      return;
+    }
+
+    try {
+      // Prefer native iOS fullscreen for iPad/desktop Safari when available
+      if (typeof (video as any).webkitEnterFullscreen === "function") {
+        console.log("[VideoPlayer] Using webkitEnterFullscreen on video element");
+
+        if (video.readyState >= 1) {
+          (video as any).webkitEnterFullscreen();
+          setIsFullscreen(true);
+        } else {
+          const handleCanPlay = () => {
+            (video as any).webkitEnterFullscreen();
+            setIsFullscreen(true);
+            video.removeEventListener("loadedmetadata", handleCanPlay);
+          };
+          video.addEventListener("loadedmetadata", handleCanPlay);
+          video.load();
+        }
+      }
+      // Standard webkit fullscreen for container (macOS Safari, older browsers)
+      else if ((container as any).webkitRequestFullscreen) {
+        (container as any).webkitRequestFullscreen();
+        setIsFullscreen(true);
+      }
+      // Standard Fullscreen API (Chrome, Firefox, Edge)
+      else if (container.requestFullscreen) {
+        await container.requestFullscreen();
+        setIsFullscreen(true);
+      } else {
+        console.log("[VideoPlayer] No fullscreen API available");
+        toast.error("Fullscreen is not supported on this device");
+        return;
+      }
+
+      // Force landscape orientation on mobile where supported (Android/Chromium)
+      if (orientation?.lock) {
+        try {
+          await orientation.lock("landscape");
+        } catch (e) {
+          console.log("[VideoPlayer] Could not lock orientation:", e);
+        }
+      }
+    } catch (error) {
+      console.error("[VideoPlayer] Fullscreen failed:", error);
+      toast.error("Fullscreen is not supported on this device");
+    }
+  }, [isIOS, isMobile, isTheaterMode]);
 
   const cycleAvatarSize = useCallback(() => {
     setAvatarSize((prev) => {
@@ -587,7 +846,9 @@ const VideoPlayer = () => {
           {/* Video Container with Avatar */}
           <div
             ref={containerRef}
-            className="relative bg-black rounded-lg overflow-hidden shadow-xl group select-none"
+            className={`bg-black overflow-hidden shadow-xl group select-none ${
+              isTheaterMode ? "fixed inset-0 z-50 rounded-none" : "relative rounded-lg"
+            }`}
             onMouseEnter={() => setShowControls(true)}
             onMouseLeave={() => setShowControls(false)}
             onContextMenu={(e) => e.preventDefault()}
@@ -595,86 +856,134 @@ const VideoPlayer = () => {
             <video
               ref={videoRef}
               src={videoUrl}
-              className="w-full aspect-video"
+              className={
+                isTheaterMode
+                  ? "absolute object-contain"
+                  : "w-full aspect-video"
+              }
+              style={
+                isTheaterMode
+                  ? isPortrait
+                    ? {
+                        // When in portrait, rotate video 90deg to simulate landscape
+                        // After rotation, visual width = original height, visual height = original width
+                        // So we set width to viewport height and height to viewport width
+                        // Then rotate and center it properly
+                        width: `${window.innerHeight}px`,
+                        height: `${window.innerWidth}px`,
+                        position: "absolute",
+                        left: "50%",
+                        top: "50%",
+                        transform: "translate(-50%, -50%) rotate(90deg)",
+                        transformOrigin: "center center",
+                        maxWidth: "none",
+                        maxHeight: "none",
+                      }
+                    : {
+                        width: "100vw",
+                        height: "100vh",
+                        position: "absolute",
+                        left: "50%",
+                        top: "50%",
+                        transform: "translate(-50%, -50%)",
+                      }
+                  : undefined
+              }
               onClick={togglePlay}
               controlsList="nodownload noplaybackrate"
               disablePictureInPicture
+              playsInline
+              webkit-playsinline="true"
               onContextMenu={(e) => e.preventDefault()}
             />
 
-            {/* Draggable & Resizable Avatar Overlay */}
-            <div
-              ref={avatarContainerRef}
-              className="absolute z-20 rounded-lg overflow-hidden shadow-2xl border border-white/30 bg-black/40 backdrop-blur-sm transition-shadow"
-              style={{
-                width: avatarWidth,
-                height: avatarHeight,
-                left: avatarPosition.x >= 0 ? avatarPosition.x : undefined,
-                top: avatarPosition.y >= 0 ? avatarPosition.y : undefined,
-                right: avatarPosition.x < 0 ? 16 : undefined,
-                bottom: avatarPosition.y < 0 ? 80 : undefined,
-                cursor: isDragging ? "grabbing" : "grab",
-                boxShadow: isDragging ? "0 0 20px rgba(255,255,255,0.3)" : undefined,
-              }}
-              onMouseDown={handleAvatarMouseDown}
-              onTouchStart={handleAvatarTouchStart}
-            >
-              {/* Avatar Header with controls */}
-              <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-1.5 py-1 bg-gradient-to-b from-black/70 to-transparent">
-                <div className="flex items-center gap-1">
-                  <GripVertical className="w-3 h-3 text-white/70" />
-                  <span className="text-[10px] font-medium text-white/90 truncate max-w-[80px]">
-                    Trainer
-                  </span>
-                </div>
-                <Button
-                  variant="ghost"
-                  size="icon"
-                  className="h-5 w-5 text-white/80 hover:bg-white/20 hover:text-white"
-                  onClick={(e) => {
-                    e.stopPropagation();
-                    cycleAvatarSize();
-                  }}
-                >
-                  {avatarSize === "large" ? (
-                    <Minimize2 className="w-3 h-3" />
-                  ) : (
-                    <Maximize2 className="w-3 h-3" />
-                  )}
-                </Button>
-              </div>
-
-              {/* Avatar Canvas */}
-              <Canvas
-                camera={{ position: [0.1, 0.2, 1.0], fov: 28 }}
-                gl={{ antialias: true, alpha: true }}
-                style={{ background: "transparent" }}
+            {/* Draggable & Resizable Avatar Overlay - Hidden on mobile */}
+            {!isMobile && (
+              <div
+                ref={avatarContainerRef}
+                className="absolute z-20 rounded-lg overflow-hidden shadow-2xl border border-white/30 bg-black/40 backdrop-blur-sm transition-shadow"
+                style={{
+                  width: avatarWidth,
+                  height: avatarHeight,
+                  left: avatarPosition.x >= 0 ? avatarPosition.x : undefined,
+                  top: avatarPosition.y >= 0 ? avatarPosition.y : undefined,
+                  right: avatarPosition.x < 0 ? 16 : undefined,
+                  bottom: avatarPosition.y < 0 ? 80 : undefined,
+                  cursor: isDragging ? "grabbing" : "grab",
+                  boxShadow: isDragging ? "0 0 20px rgba(255,255,255,0.3)" : undefined,
+                }}
+                onMouseDown={handleAvatarMouseDown}
+                onTouchStart={handleAvatarTouchStart}
               >
-                <ambientLight intensity={0.6} />
-                <directionalLight position={[2, 3, 2]} intensity={0.8} />
-                <directionalLight position={[-2, 2, -1]} intensity={0.3} />
-                <Environment preset="studio" />
-                <NeocortexAvatar
-                  ref={avatarRef}
-                  onStateChange={setAvatarState}
-                  lipSyncStyle="calm"
-                  position={[0, -1.3, 0]}
-                  scale={0.95}
-                />
-              </Canvas>
-
-              {/* Speaking indicator */}
-              {avatarState === "talking" && (
-                <div className="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 bg-primary/80 rounded text-[9px] text-white font-medium">
-                  Speaking...
+                {/* Avatar Header with controls */}
+                <div className="absolute top-0 left-0 right-0 z-10 flex items-center justify-between px-1.5 py-1 bg-gradient-to-b from-black/70 to-transparent">
+                  <div className="flex items-center gap-1">
+                    <GripVertical className="w-3 h-3 text-white/70" />
+                    <span className="text-[10px] font-medium text-white/90 truncate max-w-[80px]">
+                      Trainer
+                    </span>
+                  </div>
+                  <Button
+                    variant="ghost"
+                    size="icon"
+                    className="h-5 w-5 text-white/80 hover:bg-white/20 hover:text-white"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      cycleAvatarSize();
+                    }}
+                  >
+                    {avatarSize === "large" ? (
+                      <Minimize2 className="w-3 h-3" />
+                    ) : (
+                      <Maximize2 className="w-3 h-3" />
+                    )}
+                  </Button>
                 </div>
-              )}
-            </div>
+
+                {/* Avatar Canvas */}
+                <Canvas
+                  camera={{ position: [0.1, 0.2, 1.0], fov: 28 }}
+                  gl={{ antialias: true, alpha: true }}
+                  style={{ background: "transparent" }}
+                >
+                  <ambientLight intensity={0.6} />
+                  <directionalLight position={[2, 3, 2]} intensity={0.8} />
+                  <directionalLight position={[-2, 2, -1]} intensity={0.3} />
+                  <Environment preset="studio" />
+                  <NeocortexAvatar
+                    ref={avatarRef}
+                    onStateChange={setAvatarState}
+                    lipSyncStyle="calm"
+                    position={[0, -1.3, 0]}
+                    scale={0.95}
+                  />
+                </Canvas>
+
+                {/* Speaking indicator */}
+                {avatarState === "talking" && (
+                  <div className="absolute bottom-1.5 left-1.5 px-1.5 py-0.5 bg-primary/80 rounded text-[9px] text-white font-medium">
+                    Speaking...
+                  </div>
+                )}
+              </div>
+            )}
 
             {/* Play button overlay when paused */}
             {!isPlaying && (
               <div
                 className="absolute inset-0 flex items-center justify-center cursor-pointer z-10"
+                style={
+                  isTheaterMode && isPortrait
+                    ? {
+                        width: `${window.innerHeight}px`,
+                        height: `${window.innerWidth}px`,
+                        left: "50%",
+                        top: "50%",
+                        transform: "translate(-50%, -50%) rotate(90deg)",
+                        transformOrigin: "center center",
+                      }
+                    : undefined
+                }
                 onClick={togglePlay}
               >
                 <div className="w-20 h-20 rounded-full bg-primary/90 flex items-center justify-center shadow-lg hover:scale-105 transition-transform">
@@ -685,9 +994,22 @@ const VideoPlayer = () => {
 
             {/* Custom Controls */}
             <div
-              className={`absolute bottom-0 left-0 right-0 z-30 bg-gradient-to-t from-black/80 to-transparent p-4 transition-opacity duration-300 ${
+              className={`absolute z-30 bg-gradient-to-t from-black/80 to-transparent p-4 transition-opacity duration-300 ${
                 showControls || !isPlaying ? "opacity-100" : "opacity-0"
               }`}
+              style={
+                isTheaterMode && isPortrait
+                  ? {
+                      // Rotate controls to match the rotated video
+                      width: `${window.innerHeight}px`,
+                      left: "50%",
+                      bottom: "auto",
+                      top: "50%",
+                      transform: `translate(-50%, -50%) rotate(90deg) translateY(${(window.innerWidth / 2) - 40}px)`,
+                      transformOrigin: "center center",
+                    }
+                  : { bottom: 0, left: 0, right: 0 }
+              }
             >
               {/* Progress Slider */}
               <div className="mb-4">

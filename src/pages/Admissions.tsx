@@ -1,6 +1,7 @@
 
 "use client"
 //import { ADD_ADMISSION_MUTATION } from '@/utils/gql/GQL_MUTATIONS';
+import { Helmet } from 'react-helmet-async';
 import { useMutation,gql } from '@apollo/client';
 
 import { useState } from 'react';
@@ -172,7 +173,42 @@ const Admissions = () =>
   const currentStatusOptions = ['Student', 'Homemaker', 'Professional', 'Other'];
 
   return (
-    <section id="contact" className="overflow-hidden py-2 md:py-2 lg:py-2">
+    <>
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Admissions & Enrollment | Onati Global Institute of Fashion Technology - OGIFT Bangalore</title>
+        <meta name="title" content="Admissions & Enrollment Form | OGIFT Bangalore - Fashion Design Institute" />
+        <meta name="description" content="Apply for admission to OGIFT Bangalore's fashion design courses. Enroll in our 1-month, 3-month or diploma programs. Fill out the enrollment form and start your fashion career today." />
+        <meta name="keywords" content="fashion design admission Bangalore, OGIFT admissions, Onati Global enrollment, fashion course apply, fashion institute admission form, fashion design enroll Bangalore" />
+        <meta name="author" content="Onati Global Institute of Fashion Technology" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/admissions" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/admissions" />
+        <meta property="og:title" content="Admissions & Enrollment | OGIFT Bangalore" />
+        <meta property="og:description" content="Apply to OGIFT Bangalore's fashion design programs. Enroll in 1-month, 3-month or diploma courses. Start your fashion career today." />
+        <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.ogiftbangalore.com/admissions" />
+        <meta name="twitter:title" content="Admissions & Enrollment | OGIFT Bangalore" />
+        <meta name="twitter:description" content="Apply to OGIFT Bangalore's fashion design programs. 1-month, 3-month and diploma courses available. Enroll now." />
+
+        {/* Additional SEO Meta Tags */}
+        <meta name="geo.region" content="IN-KA" />
+        <meta name="geo.placename" content="Bangalore" />
+        <meta name="geo.position" content="12.9716;77.5946" />
+        <meta name="ICBM" content="12.9716, 77.5946" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="General" />
+      </Helmet>
+
+      <section id="contact" className="overflow-hidden py-2 md:py-2 lg:py-2">
       <div className="container">
       {loading && <LoadingSpinner />}
         <div className="-mx-4 flex flex-wrap mt-10">
@@ -354,6 +390,8 @@ const Admissions = () =>
         </div>
       </div>
     </section>
+  );
+    </>
   );
 };
 

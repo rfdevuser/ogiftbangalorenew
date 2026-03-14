@@ -2,122 +2,19 @@ import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
 import { GraduationCap, Users, Award, BookOpen, TrendingUp, Star } from 'lucide-react';
-import heroImage from '@/assets/hero-home.jpg';
-import {useEffect,useState} from "react"
-import {isMobile} from "react-device-detect"
+import { Helmet } from 'react-helmet-async';
+import { RazorpayCheckout } from '@/components/RazorpayCheckout';
 import { CoursePromoPopup } from '@/components/CoursePromoPopup';
 import StructuredData from '@/components/StructuredData';
-
+import heroImage from '@/assets/hero-home.jpg';
+import landingimage from '@/assets/landing-roi-education.jpg'
 
 const Home = () => {
- 
-  // Define your image paths
-  const images = [
-    "/images/hero/image1.jpg",
-    "/images/hero/image2.jpg",
-    "/images/hero/image3.jpg",
-    "/images/hero/image4.jpg",
-    "/images/hero/image6.jpg",
-    "/images/hero/image7.jpg",
-    "/images/hero/image9.jpg",
-  ];
-
-   const newsItems = [
-    { title: 'New fashion design course for 2025-26 batch starting next month! Enroll now!' },
-    { title: 'Internship opportunities available at top fashion houses. Apply now!' },
-    { title: 'Learn from industry experts at our upcoming workshop series.' },
-    {title: 'Exciting new collection launch next week! Stay tuned for updates.'}
-    // Add more news items as needed
-  ];
-
-  const [currentImage, setCurrentImage] = useState(0);
-
-  // Function to transition to the next image
-  const nextImage = () => {
-    setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
-  };
-
-  useEffect(() => {
-    // Transition to the next image every 5 seconds
-    const interval = setInterval(nextImage, 3000);
-
-    // Clear the interval on component unmount
-    return () => clearInterval(interval);
-  }, [setCurrentImage]);
-
-  // SEO: Update page title and meta description for home page
-  useEffect(() => {
-    const pageTitle = 'Onati Global Institute of Fashion Technology - Top Fashion Design Institute in Bangalore';
-    const pageDescription = 'Premier fashion design institute in Bangalore offering professional courses in fashion technology, design, and styling. Industry-focused curriculum with 100% placement support. Enroll now!';
-    const pageUrl = 'https://ogiftbangalore.com';
-    const pageImage = 'https://ogiftbangalore.com/og-image.jpg';
-
-    document.title = pageTitle;
-    
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', pageDescription);
-    }
-
-    // Add meta keywords for SEO
-    let metaKeywords = document.querySelector('meta[name="keywords"]');
-    if (!metaKeywords) {
-      metaKeywords = document.createElement('meta');
-      metaKeywords.setAttribute('name', 'keywords');
-      document.head.appendChild(metaKeywords);
-    }
-    metaKeywords.setAttribute('content', 'fashion design institute bangalore, boutique management courses, pattern making courses, 3 months fashion designing course, 1 month fashion designing course, fashup course, no fees free course in fashion designing, fashion technology courses, fashion designing college, garment technology, fashion styling courses, best fashion school bangalore, fashion design diploma, apparel design, textile design, fashion career, OGIFT bangalore, onati global institute');
-
-    const canonicalLink = document.querySelector('link[rel="canonical"]');
-    if (canonicalLink) {
-      canonicalLink.setAttribute('href', pageUrl);
-    }
-
-    // Open Graph meta tags
-    const ogTags = [
-      { property: 'og:title', content: pageTitle },
-      { property: 'og:description', content: pageDescription },
-      { property: 'og:url', content: pageUrl },
-      { property: 'og:type', content: 'website' },
-      { property: 'og:image', content: pageImage },
-      { property: 'og:site_name', content: 'OGIFT Bangalore' },
-      { property: 'og:locale', content: 'en_IN' },
-    ];
-
-    ogTags.forEach(({ property, content }) => {
-      let meta = document.querySelector(`meta[property="${property}"]`);
-      if (!meta) {
-        meta = document.createElement('meta');
-        meta.setAttribute('property', property);
-        document.head.appendChild(meta);
-      }
-      meta.setAttribute('content', content);
-    });
-
-    // Twitter Card meta tags
-    const twitterTags = [
-      { name: 'twitter:card', content: 'summary_large_image' },
-      { name: 'twitter:title', content: pageTitle },
-      { name: 'twitter:description', content: pageDescription },
-      { name: 'twitter:image', content: pageImage },
-    ];
-
-    twitterTags.forEach(({ name, content }) => {
-      let meta = document.querySelector(`meta[name="${name}"]`);
-      if (!meta) {
-        meta = document.createElement('meta');
-        meta.setAttribute('name', name);
-        document.head.appendChild(meta);
-      }
-      meta.setAttribute('content', content);
-    });
-  }, []);
-
   const stats = [
-    { icon: GraduationCap, value: 'TAILORED COURSES', label: '' },
-    { icon: Award, value: 'HIGH PLACEMENT SUCCESS', label: '' },
-    { icon: Users, value: 'INDUSTRY PARTNERSHIPS', label: '' },
-    { icon: Star, value: 'HIGH STUDENT RATINGS', label: '' },
+    { icon: GraduationCap, value: 'World Class Training', label: '' },
+    { icon: Award, value: 'High Placement Rate', label: '' },
+    { icon: Users, value: 'Industry Partners', label: '' },
+    { icon: Star, value: 'AI Powered & Multi-Lingual', label: '' },
   ];
 
   const highlights = [
@@ -139,134 +36,171 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen" >
-        <CoursePromoPopup />
-        <StructuredData/>
-       {/* {images?.length > 0  &&
-            images?.map((image, index) => (
-              <div
-                key={index}
-                className={`absolute top-0 left-0 w-full h-full transition-opacity -z-20 duration-1000 ${
-                  index === currentImage ? "opacity-50" : "opacity-0"
-                }`}
-              >
-                <img src={image}               
-                  alt={`Slide ${index + 1}`}
-                  // layout="fill"
-                  
-                  // objectFit="cover"
-                 loading="lazy"
-                  // quality={100}
-                />
-              </div>
-            ))} */}
+    <main className="min-h-screen" role="main">
+      <Helmet>
+        <title>Onati Global Institute of Fashion Technology - Top Fashion Design Institute in Bangalore</title>
+        <meta name="description" content="Premier fashion design institute in Bangalore offering professional courses in fashion technology, design, and styling. Industry-focused curriculum with 100% placement support. Enroll now!" />
+        <meta name="keywords" content="fashion design institute bangalore, fashion technology courses, fashion designing college, garment technology, fashion styling courses, best fashion school bangalore, fashion design diploma, apparel design, textile design, fashion career, OGIFT bangalore, onati global institute" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com" />
+        <meta property="og:title" content="Onati Global Institute of Fashion Technology - Leading Fashion Design College in Bangalore" />
+        <meta property="og:description" content="Premier fashion design institute in Bangalore offering professional courses in fashion technology, design, and styling. Industry-focused curriculum with 100% placement support." />
+        <meta property="og:url" content="https://www.ogiftbangalore.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
+        <meta property="og:site_name" content="OGIFT Bangalore" />
+        <meta property="og:locale" content="en_IN" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Onati Global Institute - Best Fashion Design Institute Bangalore" />
+        <meta name="twitter:description" content="Premier fashion technology education in Bangalore. Expert faculty, modern facilities, 100% placement assistance." />
+        <meta name="twitter:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Onati Global Institute of Fashion Technology" />
+        <meta name="geo.region" content="IN-KA" />
+        <meta name="geo.placename" content="Bangalore" />
+      </Helmet>
+      <StructuredData />
+      {/* <CoursePromoPopup />
+       */}
       {/* Hero Section */}
-     
-      <section className="relative h-screen flex items-center justify-center overflow-hidden bg-[url('/OGIFTImageopaque.png')] bg-center bg-cover " >
-             
+      <section 
+        className="relative h-screen flex items-center justify-center overflow-hidden"
+        aria-label="Welcome to Onati Global Fashion Institute"
+      >
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${landingimage})` }}
+          role="img"
+          aria-label="Fashion design students at Onati Global Institute campus"
+        >
+          <div className="absolute inset-0 " />
+        </div>
+        
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-3xl">
-            <h1 className="text-5xl md:text-7xl font-bold text-primary">
-              The Runway to Your Professional Future
+          <header className="max-w-3xl">
+            <h1 className="text-5xl text-white md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-4 duration-1000">
+              Transform Your Passion Into Fashion
             </h1>
-            <p className="text-xl md:text-2xl font-bold">
+            <p className="text-xl text-white md:text-2xl text-muted-foreground mb-8 animate-in fade-in slide-in-from-bottom-5 duration-1000 delay-200">
               Join Bangalore's premier fashion design institute. Expert faculty, modern facilities, and guaranteed career support.
             </p>
-            <p></p>
-           
-           
-          </div>
+            <nav className="flex flex-col sm:flex-row gap-4 animate-in fade-in slide-in-from-bottom-6 duration-1000 delay-300" aria-label="Primary actions">
+              <Button size="lg" asChild>
+                <Link to="/courses">Explore Courses</Link>
+              </Button>
+              {/* <Button size="lg" variant="outline" asChild>
+                <a href="#contact">Book a Campus Tour</a>
+              </Button> */}
+              {/* <RazorpayCheckout
+                amount={100}
+                name="Onati Global Institute"
+                description="Course Payment"
+                buttonText="Make Payment"
+                onSuccess={(res) => console.log("Payment success:", res)}
+                onFailure={(err) => console.error("Payment failed:", err)}
+                className="h-11"
+              /> */}
+            </nav>
+          </header>
         </div>
       </section>
 
       {/* Stats Section */}
-      <section className="py-10 bg-muted/30">
-        <div className="container mx-auto px-2">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+      <section className="py-16 bg-muted/30" aria-label="Institute achievements">
+        <div className="container mx-auto px-4">
+          <ul className="grid grid-cols-2 md:grid-cols-4 gap-8" role="list">
             {stats.map((stat, index) => (
-              <div key={index} className="text-center">
-                <stat.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
-                <div className="text-2xl font-bold text-foreground mb-2">{stat.value}</div>
-                <div className="text-sm text-muted-foreground">{stat.label}</div>
-              </div>
+              <li key={index} className="text-center">
+                <stat.icon className="h-12 w-12 mx-auto mb-4 text-primary" aria-hidden="true" />
+                <p className="text-4xl font-bold text-foreground mb-2">{stat.value}</p>
+                <p className="text-sm text-muted-foreground">{stat.label}</p>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
-    
 
       {/* Why Choose Us */}
-      <section className="py-40">
+      <section className="py-20" aria-labelledby="why-choose-heading">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Onati Global?</h2>
+          <header className="text-center mb-12">
+            <h2 id="why-choose-heading" className="text-4xl font-bold mb-4">Why Choose Onati Global?</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Leading fashion institute in Bangalore with a proven track record of excellence
             </p>
-          </div>
+          </header>
 
-          <div className="grid md:grid-cols-3 gap-8">
+          <ul className="grid md:grid-cols-3 gap-8" role="list">
             {highlights.map((item, index) => (
-              <Card key={index} className="p-8 hover:shadow-lg transition-shadow bg-muted">
-                <item.icon className="h-12 w-12 text-primary mb-4" />
-                <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
-                <p className="text-muted-foreground">{item.description}</p>
-              </Card>
+              <li key={index}>
+                <Card className="p-8 hover:shadow-lg transition-shadow h-full">
+                  <item.icon className="h-12 w-12 text-primary mb-4" aria-hidden="true" />
+                  <h3 className="text-xl font-semibold mb-3">{item.title}</h3>
+                  <p className="text-muted-foreground">{item.description}</p>
+                </Card>
+              </li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       {/* Quick Courses Preview */}
-      <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-muted/30" aria-labelledby="courses-heading">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Our Popular Courses</h2>
+          <header className="text-center mb-12">
+            <h2 id="courses-heading" className="text-4xl font-bold mb-4">Our Popular Courses</h2>
             <p className="text-xl text-muted-foreground">
               Industry-aligned programs designed for your success
             </p>
-          </div>
+          </header>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12 ">
-            {['Express Mastery Month', 'FASHUP - Experience Our Taster Sessions','3 Months Capsule Courses',"6 Months Diploma in Fashion Designing","One Year Advanced Diploma in Fashion Designing"].map((course, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-shadow bg-muted">
-                <h3 className="text-2xl font-semibold mb-3">{course}</h3>
-                <p className="text-muted-foreground mb-4">
-                  Expertly Tailored to suit your needs.
-                </p>
-                <Button variant="link" className="p-0" asChild>
-                  <Link to="/courses">Learn More →</Link>
-                </Button>
-              </Card>
+          <ul className="grid md:grid-cols-3 gap-8 mb-12" role="list">
+            {['Fashion Design', 'Garment Technology', 'Fashion Styling'].map((course, index) => (
+              <li key={index}>
+                <article>
+                  <Card className="p-6 hover:shadow-lg transition-shadow h-full">
+                    <h3 className="text-2xl font-semibold mb-3">{course}</h3>
+                    <p className="text-muted-foreground mb-4">
+                      Comprehensive program with hands-on training and industry exposure
+                    </p>
+                    <Button variant="link" className="p-0" asChild>
+                      <Link to="/courses">Learn More →</Link>
+                    </Button>
+                  </Card>
+                </article>
+              </li>
             ))}
-          </div>
+          </ul>
 
-          <div className="text-center">
-            {/* <Button size="lg" asChild>
+          <nav className="text-center" aria-label="View all courses">
+            <Button size="lg" asChild>
               <Link to="/courses">View All Courses</Link>
-            </Button> */}
-          </div>
+            </Button>
+          </nav>
         </div>
       </section>
 
       {/* CTA Section */}
-      <section id="contact" className="py-20 bg-gradient-to-br from-primary to-accent text-primary-foreground">
+      <section 
+        id="contact" 
+        className="py-20 bg-gradient-to-br from-primary to-accent text-primary-foreground"
+        aria-labelledby="cta-heading"
+      >
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl font-bold mb-6">Ready to Start Your Fashion Journey?</h2>
+          <h2 id="cta-heading" className="text-4xl font-bold mb-6">Ready to Start Your Fashion Journey?</h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto">
             Join hundreds of successful designers who started their career at Onati Global Institute
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <nav className="flex flex-col sm:flex-row gap-4 justify-center" aria-label="Contact options">
             <Button size="lg" variant="secondary" asChild>
-              <a href="tel:+919036928799">Call: +91 90369 28799</a>
+              <a href="tel:+919036928799" aria-label="Call us at +91 90369 28799">Call: +91 90369 28799</a>
             </Button>
-            {/* <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
-              <a href="mailto:admissions@ogiftbangalore.com">Email Us</a>
-            </Button> */}
-          </div>
+            <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary" asChild>
+              <a href="mailto:admissions@ogiftbangalore.com" aria-label="Email admissions at ogiftbangalore.com">Email Us</a>
+            </Button>
+          </nav>
         </div>
       </section>
-    </div>
+    </main>
   );
 };
 

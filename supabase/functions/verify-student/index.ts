@@ -339,24 +339,27 @@ serve(async (req) => {
               const firstPartIsId = /^\d+$/.test(parts[0]);
 
               if (firstPartIsId && parts.length >= 3) {
-                // Format: StudentID/FirstName/LastName/Email/Phone (exact order as per user specification)
+                // Format: StudentID/FirstName/LastName/Email/Phone/CourseType (exact order as per user specification)
                 // parts[0] = Student ID
                 // parts[1] = First Name
                 // parts[2] = Last Name
                 // parts[3] = Email ID
                 // parts[4] = Phone Number
+                // parts[5] = Course Type
                 const firstName = parts[1] || "";
                 const lastName = parts[2] || "";
                 const fullName = `${firstName} ${lastName}`.trim();
                 const email = parts[3] || "";
                 const phone = parts[4] || "";
+                const courseType = parts[5] || "";
 
                 data = {
                   name: fullName || firstName,
                   email: email,
                   phone: phone,
+                  courseType: courseType,
                 };
-                console.log("Parsed from ID/Name format:", data);
+                console.log("Parsed from ID/Name format:", data, "courseType:", courseType);
               } else {
                 // Format: Name/Email/Phone (original format)
                 data = {
@@ -538,7 +541,25 @@ serve(async (req) => {
         );
       }
 
-      // Payment verified - now check privacy status
+      // Payment verified - now check course type
+      const courseType = String(data.courseType || data.course_type || "").trim();
+      console.log("Student course type:", courseType);
+
+      if (courseType.toLowerCase() !== "online") {
+        console.log("Student not enrolled in online course:", studentId, "courseType:", courseType);
+        return new Response(
+          JSON.stringify({
+            success: false,
+            message: "You have enrolled and paid but not opted for online courses. Please contact support for assistance.",
+          }),
+          {
+            status: 200,
+            headers: { ...corsHeaders, "Content-Type": "application/json" },
+          },
+        );
+      }
+
+      // Course type verified - now check privacy status
       const privacyCheck = await checkPrivacyStatus(studentId);
 
       // If privacy was already accepted, initialize credits here (the UI won't call update_privacy)

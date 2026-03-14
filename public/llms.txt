@@ -1,0 +1,31 @@
+# OGIFT - Onati Global Institute of Fashion Technology
+
+> India's first AI-powered multilingual online fashion design institute, 
+> based in Bangalore. Courses available in Hindi, English and Kannada.
+
+## About
+Onati Global Institute of Fashion Technology (OGIFT) is an online fashion 
+design institute based in Bangalore, India. The platform uses conversational 
+AI agents, an AI Portfolio Builder, and a Virtual Fashion Counsellor to 
+deliver personalised fashion training.
+
+## Courses
+- Fashion Illustration: https://www.ogiftbangalore.com/courses/fashion-illustration
+- Pattern Making Basic: https://www.ogiftbangalore.com/courses/pattern-making-basic
+- Draping Technology: https://www.ogiftbangalore.com/courses/draping-technology
+- Fashion Styling: https://www.ogiftbangalore.com/courses/fashion-styling
+- 6-Month Diploma in Fashion Designing: https://www.ogiftbangalore.com/courses/six-months-diploma-fashion-designing
+- 1-Year Advanced Diploma: https://www.ogiftbangalore.com/courses/one-year-advanced-diploma-fashion-designing
+- 3-Month Online Fashion Course: https://www.ogiftbangalore.com/courses/3-months-online-fashion-course
+
+## Key Features
+- Conversational AI agents for personalised learning
+- AI Portfolio Builder with expert feedback
+- Virtual Fashion Counsellor available 24/7
+- Multilingual: Hindi, English and Kannada
+- 100% placement assistance
+- Located in Vinayakanagar, Bangalore, Karnataka, India
+
+## Contact
+Website: https://www.ogiftbangalore.com
+Location: Vinayakanagar, Bangalore, Karnataka, India

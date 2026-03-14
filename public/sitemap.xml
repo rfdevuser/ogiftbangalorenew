@@ -1,27 +1,133 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Main pages -->
   <url>
-    <loc>https://ogiftbangalore.com/</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>weekly</changefreq>
+    <loc>https://www.ogiftbangalore.com/</loc>
     <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://ogiftbangalore.com/courses</loc>
-    <lastmod>2025-01-01</lastmod>
     <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses</loc>
     <priority>0.9</priority>
+    <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://ogiftbangalore.com/about</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.ogiftbangalore.com/about</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
   <url>
-    <loc>https://ogiftbangalore.com/placements</loc>
-    <lastmod>2025-01-01</lastmod>
-    <changefreq>monthly</changefreq>
+    <loc>https://www.ogiftbangalore.com/placements</loc>
     <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
   </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/portfolio</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/careers/work-from-home</loc>
+    <priority>0.7</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
+  <!-- Course pages -->
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/fashup-free-taster-sessions</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/six-months-diploma-fashion-designing</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/one-year-advanced-diploma-fashion-designing</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/3-months-online-fashion-course</loc>
+    <priority>0.9</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/fashion-illustration</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/pattern-making-basic</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/pattern-making-blouses-advanced</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/pattern-making-western-advanced</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/art-of-garment-foundation</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/fabric-knowledge-textile-designing</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/draping-technology</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/digital-portfolio-making</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/graphic-designing-for-fashion</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/fashion-designing-boutique-management</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/fashion-styling</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/pattern-making-kids-clothing</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/pattern-making-boutique-management-3months</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/design-process-pattern-making-3months</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://www.ogiftbangalore.com/courses/design-pattern-making-portfolio-3months</loc>
+    <priority>0.8</priority>
+    <changefreq>monthly</changefreq>
+  </url>
+
 </urlset>

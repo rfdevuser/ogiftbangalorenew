@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Card } from '@/components/ui/card';
 import { Building2, Users, Award, Target, Eye, Heart, Zap, Globe } from 'lucide-react';
 import heroImage from '@/assets/hero-about.jpg';
@@ -16,8 +17,75 @@ const About = () => {
     { icon: Globe, title: 'Global Standards', description: 'International curriculum and industry practices' },
   ];
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Onati Global Institute of Fashion Technology",
+    "alternateName": "OGIFT Bangalore",
+    "description": "Premier fashion design institute in Bangalore offering industry-recognized courses in garment construction, pattern making, fashion illustration and design. Founded in 2024.",
+    "url": "https://www.ogiftbangalore.com",
+    "logo": "https://www.ogiftbangalore.com/logo.png",
+    "foundingDate": "2024",
+    "sameAs": [
+      "https://www.instagram.com/ogiftbangalore",
+      "https://www.facebook.com/ogiftbangalore"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-90369-28799",
+      "contactType": "admissions",
+      "availableLanguage": ["English", "Hindi", "Kannada"]
+    }
+  };
+
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>About Us | Onati Global Institute of Fashion Technology - OGIFT Bangalore</title>
+        <meta name="title" content="About Onati Global Institute of Fashion Technology | OGIFT Bangalore" />
+        <meta name="description" content="Learn about OGIFT — Bangalore's premier fashion design institute. Founded in 2024 with world-class facilities, expert faculty and industry partnerships. Shaping the future of fashion." />
+        <meta name="keywords" content="about OGIFT, Onati Global Institute of Fashion Technology, fashion institute Bangalore, fashion design college Bangalore, fashion education Karnataka, fashion faculty Bangalore" />
+        <meta name="author" content="Onati Global Institute of Fashion Technology" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/about" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/about" />
+        <meta property="og:title" content="About OGIFT | Onati Global Institute of Fashion Technology Bangalore" />
+        <meta property="og:description" content="Discover OGIFT — Bangalore's premier fashion institute with expert faculty, world-class facilities, and industry-aligned curriculum. Shaping future fashion professionals since 2024." />
+        <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.ogiftbangalore.com/about" />
+        <meta name="twitter:title" content="About OGIFT | Onati Global Institute of Fashion Technology Bangalore" />
+        <meta name="twitter:description" content="Bangalore's premier fashion design institute with expert faculty, world-class facilities, and industry partnerships. Founded 2024." />
+
+        {/* Additional SEO Meta Tags */}
+        <meta name="geo.region" content="IN-KA" />
+        <meta name="geo.placename" content="Bangalore" />
+        <meta name="geo.position" content="12.9716;77.5946" />
+        <meta name="ICBM" content="12.9716, 77.5946" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="General" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      </Helmet>
+
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div 
@@ -200,6 +268,8 @@ const About = () => {
         </div>
       </section>
     </div>
+  );
+    </>
   );
 };
 

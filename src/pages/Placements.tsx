@@ -1,8 +1,8 @@
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { TrendingUp, Users, Award, Briefcase, Building2, Star } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import heroImage from '@/assets/hero-placements.jpg';
-import { Link } from 'react-router-dom';
 
 const Placements = () => {
   const stats = [
@@ -48,6 +48,21 @@ const Placements = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Placements & Career Support | 100% Placement | Onati Global Bangalore</title>
+        <meta name="description" content="100% placement rate at Onati Global Institute Bangalore. 500+ alumni placed at Fabindia, Myntra, Raymond, Zara, H&M & 50+ fashion brands. Average package ₹4.5L. Career support from day one." />
+        <meta name="keywords" content="fashion design placements Bangalore, fashion institute placement record, fashion career Bangalore, fashion job placement, garment industry jobs Bangalore, OGIFT placements" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/placements" />
+        <meta property="og:title" content="100% Placement Success | Onati Global Institute Bangalore" />
+        <meta property="og:description" content="500+ alumni placed at top fashion brands. 100% placement rate with ₹4.5L average package. 50+ recruiting partners including Fabindia, Myntra, Raymond & more." />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/placements" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="100% Placement Rate | Onati Global Fashion Institute Bangalore" />
+        <meta name="twitter:description" content="500+ alumni placed at top fashion brands. Career support, internships & campus placements." />
+        <meta name="twitter:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div 
@@ -70,7 +85,7 @@ const Placements = () => {
       </section>
 
       {/* Placement Stats */}
-      {/* <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Our Placement Track Record</h2>
@@ -88,7 +103,7 @@ const Placements = () => {
             ))}
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Placement Process */}
       <section className="py-20">
@@ -113,7 +128,7 @@ const Placements = () => {
       </section>
 
       {/* Recruiting Companies */}
-      {/* <section className="py-20 bg-muted/30">
+      <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Our Recruiting Partners</h2>
@@ -136,7 +151,7 @@ const Placements = () => {
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Student Testimonials */}
       <section className="py-20">
@@ -207,7 +222,10 @@ const Placements = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary">
-                 <Link to="/Admissions"  >Enroll</Link>
+                Apply Now
+              </Button>
+              <Button size="lg" variant="outline" className="bg-transparent border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
+                Talk to Placement Team
               </Button>
             </div>
           </Card>

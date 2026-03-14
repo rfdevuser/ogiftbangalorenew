@@ -1,161 +1,80 @@
+import { Helmet } from 'react-helmet-async';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Clock, BookOpen, Award, Users } from 'lucide-react';
 import heroImage from '@/assets/hero-courses.jpg';
 import { Link } from 'react-router-dom';
+import { courseCategories } from '@/data/courseCategories';
 
 const Courses = () => {
-  const courses = [
-    {
-       title: 'FASHUP - Experience Our FREE Taster Sessions',
-      duration: '10 Days',
-      category: 'Certificate',
-      description: 'There is no better way to start your fashion journey than experiencing the OGIFT Way of Intrducing you to the Truely Fascination world of Fashion.',
-      highlights: ['Have Fun Learning', 'Meet Like Minded Enthusiasts', 'Seek Advice from our Trained Faculty', 'Take The Plunge'],
-      Fees: "Absolutely FREE"
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "Onati Global Institute of Fashion Technology",
+    "alternateName": "OGIFT Bangalore",
+    "description": "Industry-recognized fashion design programs designed to transform your creative vision into professional expertise. Courses in garment construction, pattern making, design process and more.",
+    "url": "https://www.ogiftbangalore.com",
+    "logo": "https://www.ogiftbangalore.com/logo.png",
+    "sameAs": [
+      "https://www.instagram.com/ogiftbangalore",
+      "https://www.facebook.com/ogiftbangalore"
+    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Bangalore",
+      "addressRegion": "Karnataka",
+      "addressCountry": "IN"
     },
-    {
-       title: 'Express Mastery Month - Fashion Illustration',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'Acquire a good foundation to understanding of skills required to visually communicate your designs.',
-      highlights: ['Figure Drawing & Proportions', 'Garment Rendering', 'Technical Drawing', 'Media & Color'],
-      Fees: "Call Institute to get details"
-    },
-    {
-       title: 'Express Mastery Month - Pattern Making (Basic)',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'Dive into the fascinating world of Pattern Creation and Development.',
-      highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Basics of Pattern Development'],
-      Fees: "Call Institute to get details"
-    },
-     {
-       title: 'Express Mastery Month - Pattern Making Blouses (Advanced)',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'Dive into the fascinating world of Pattern Creation and Development of Blouses.',
-      highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Introduction to Pattern Development'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Pattern Making Western (Advanced)',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'Dive into the fascinating world of Pattern Creation and Development of Western Clothing',
-      highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Introduction to Pattern Development'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Art of Garment Foundation',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'Learn the basics of essential skills and technical knowledge needed to construct, fit, and finish clothing.',
-      highlights: ['Pattern Making & Grading', 'Fabric Science', 'Sewing Techniques', 'Fit & Alterations'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month -Fabric Knowledge and Textile Designing',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'This course focusses on the material science of textiles and the creative processes involved in designing and producing fabrics.',
-      highlights: ['Fiber to Fabric', 'Weaving & Knitting Structures', 'CAD Textile Design', 'Printing & Finishing'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Draping Technology',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'This fabulous course will introduce you to the fundamentals of Draping Technology course that teaches the three-dimensional method of pattern creation by manipulating fabric directly on a dress form.',
-      highlights: ['Block Development', 'Design Interpretation', 'Muslin Manipulation', 'Transfer To Paper'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Digital Portfolio Making',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'This course will focus on strategically curating, designing, and presenting creative work online to appeal to potential employers or clients.',
-      highlights: ['Platform Selection & Structure', 'Visual Presentation & Curation', 'Content Strategy', 'Digital Tools & Interactivity'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Graphic Designing for Fashion',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'This course course focuses on applying core graphic design principles specifically within the fashion industry context, from branding to marketing materials.',
-      highlights: ['Fashion Branding & Identity', 'Layout & Collateral Design', 'Digital Marketing Assets', 'Software Proficiency'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Fashion Designing and Boutique Management',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'With this course, you will get introduced to the business and retail skills needed to successfully launch, operate, and grow a small fashion retail enterprise.',
-      highlights: ['Inventory & Merchandising', 'Financial Management', 'Customer Experience & Sales', 'Legal & Operations'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Fashion Styling',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'This course will introduce you to the visual and creative skills necessary to select and coordinate clothing and accessories for photoshoots, editorials, and personal clients.',
-      highlights: ['Image Conception & Mood Boards', 'Wardrobe Curation & Sourcing', 'Editorial & Commercial Styling', 'Client & Body Analysis'],
-      Fees: "Call Institute to get details"
-    },
-      {
-       title: 'Express Mastery Month - Pattern Making for Kids Clothing',
-      duration: '1 Month',
-      category: 'Certificate',
-      description: 'Dive into the fascinating world of Pattern Creation and Development of Kids Clothing',
-      highlights: ['Creative Design', 'Pattern Making', 'Pattern Visualization', 'Introduction to Pattern Development'],
-      Fees: "Call Institute to get details"
-    },
-  {
-      title: 'Short Certificate Course in Pattern Making and Boutique Management (PMBM) - The 3 Months Capsule Course',
-      duration: '3 Months',
-      category: 'Certificate',
-      description: 'Dive into the world of fashion with our 3-Months Certificate Course in Fashion Designing. Gain hands-on skills in design fundamentals, fabric knowledge, and garment construction, preparing you for roles as a fashion designer, stylist, or textile designer.',
-      highlights: ['Creative Design', 'Pattern Making', 'CAD Design', 'Portfolio Development'],
-      Fees : "Call Institute to get details"
-    },
-     {
-      title: 'Short Certificate Course in Design Process and Pattern Making (DPPM) - The 3 Months Capsule Course',
-      duration: '3 Months',
-      category: 'Certificate',
-      description: 'Dive into the world of fashion with our 3-Months Certificate Course in Fashion Designing. Gain hands-on skills in design fundamentals, fabric knowledge, and garment construction, preparing you for roles as a fashion designer, stylist, or textile designer.',
-      highlights: ['Creative Design', 'Pattern Making', 'CAD Design', 'Portfolio Development'],
-      Fees : "Call Institute to get details"
-    },
-      {
-      title: 'Short Certificate Course in Design Pattern Making, Design Process and Portfolio (DPPMP) - The 3 Months Capsule Course',
-      duration: '3 Months',
-      category: 'Certificate',
-      description: 'Dive into the world of fashion with our 3-Months Certificate Course in Fashion Designing. Gain hands-on skills in design fundamentals, fabric knowledge, and garment construction, preparing you for roles as a fashion designer, stylist, or textile designer.',
-      highlights: ['Creative Design', 'Pattern Making', 'CAD Design', 'Portfolio Development'],
-      Fees : "Call Institute to get details"
-    },
-   
-    {
-      title: 'Six Months Diploma in Fashion Designing',
-      duration: '6 Months',
-      category: 'Diploma',
-      description: 'Dive into the world of fashion with our 6-month Diploma in Fashion Designing. Gain hands-on skills in design fundamentals, fabric knowledge, and garment construction, preparing you for roles as a fashion designer, stylist, or textile designer.',
-      highlights: ['Creative Design', 'Pattern Making', 'CAD Design', 'Portfolio Development'],
-      Fees : "Call Institute to get details"
-    },
-    {
-      title: 'One Year Advanced Diploma in Fashion Designing',
-      duration: '1 Year',
-      category: 'Advanced Diploma',
-      description: 'Technical program focusing on garment construction, production planning, quality control, and textile science.',
-      highlights: ['Production Planning', 'Quality Control', 'Textile Science', 'Manufacturing'],
-      Fees : "Call Institute to get details"
-    },
-   
-  ];
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+91-90369-28799",
+      "contactType": "admissions",
+      "availableLanguage": ["English", "Hindi", "Kannada"]
+    }
+  };
 
   return (
-    <div className="min-h-screen">
+    <>
+      <Helmet>
+        {/* Primary Meta Tags */}
+        <title>Fashion Design Courses in Bangalore | OGIFT - Onati Global Institute</title>
+        <meta name="title" content="Fashion Design Courses in Bangalore | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Explore industry-recognized fashion design courses at OGIFT Bangalore. From 1-month express programs to advanced diplomas — garment construction, pattern making, design process & portfolio development." />
+        <meta name="keywords" content="fashion design courses Bangalore, fashion institute Bangalore, pattern making course, garment construction course, fashion diploma Bangalore, OGIFT, Onati Global Institute, fashion design certificate, fashion career Bangalore" />
+        <meta name="author" content="Onati Global Institute of Fashion Technology" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/courses" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/courses" />
+        <meta property="og:title" content="Fashion Design Courses in Bangalore | OGIFT" />
+        <meta property="og:description" content="Explore fashion design courses at OGIFT Bangalore — garment construction, pattern making, design process, portfolio development and advanced diplomas. Enroll today." />
+        <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:url" content="https://www.ogiftbangalore.com/courses" />
+        <meta name="twitter:title" content="Fashion Design Courses in Bangalore | OGIFT" />
+        <meta name="twitter:description" content="Industry-recognized fashion design programs at OGIFT Bangalore. From express 1-month courses to advanced diplomas. Enroll now." />
+
+        {/* Additional SEO Meta Tags */}
+        <meta name="geo.region" content="IN-KA" />
+        <meta name="geo.placename" content="Bangalore" />
+        <meta name="geo.position" content="12.9716;77.5946" />
+        <meta name="ICBM" content="12.9716, 77.5946" />
+        <meta name="language" content="English" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="rating" content="General" />
+
+        {/* Structured Data */}
+        <script type="application/ld+json">
+          {JSON.stringify(jsonLd)}
+        </script>
+      </Helmet>
+
+      <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-[80vh] flex items-center justify-center overflow-hidden">
         <div 
@@ -165,60 +84,59 @@ const Courses = () => {
           <div className="absolute inset-0 bg-gradient-to-r from-background/20 via-background/60 to-background/40" />
         </div>
         
-        <div className="container mx-auto px-4  z-10">
+        <div className="container mx-auto px-4 z-10">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent">
               Fashion Design Courses
             </h1>
          
-            <p className="text-xl ">
+            <p className="text-xl">
               Industry-recognized programs designed to transform your creative vision into professional expertise
             </p>
           </div>
         </div>
       </section>
 
-      {/* Courses Grid */}
+      {/* Category Selection */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">Our Courses</h2>
+            <h2 className="text-4xl font-bold mb-4">Choose Your Path</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Choose from our range of professional fashion courses tailored for different career paths
+              Select a category that best describes you to find the perfect courses tailored for your goals
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 lg:grid-cols-3 gap-8">
-            {courses.map((course, index) => (
-              <Card key={index} className="p-6 hover:shadow-lg transition-all duration-300 border-2 hover:border-primary bg-muted">
-                <div className="mb-4">
-                  <span className="inline-block px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full mb-3">
-                    {course.category}
-                  </span>
-                  <h3 className="text-2xl font-bold mb-2">{course.title}</h3>
-                  <div className="flex items-center text-muted-foreground text-sm">
-                    <Clock className="h-4 w-4 mr-1" />
-                    <span>{course.duration}</span>
-                  </div>
-                </div>
-
-                <p className="text-muted-foreground mb-4">{course.description}</p>
-
-                <div className="space-y-2 mb-6">
-                  <h4 className="font-semibold text-sm">Key Highlights:</h4>
-                  <ul className="grid grid-cols-2 gap-2">
-                    {course.highlights.map((highlight, idx) => (
-                      <li key={idx} className="text-sm text-muted-foreground flex items-start">
-                        <span className="text-primary mr-1">•</span>
-                        {highlight}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <p className="text-muted-foreground mb-4">Fees : {course.Fees}</p>
-               
-              </Card>
-            ))}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {courseCategories.map((category) => {
+              const IconComponent = category.icon;
+              return (
+                <Link 
+                  key={category.id} 
+                  to={`/courses/category/${category.id}`}
+                  className="group"
+                >
+                  <Card className="p-8 h-full hover:shadow-xl transition-all duration-300 border-2 hover:border-primary bg-card group-hover:scale-[1.02]">
+                    <div className={`inline-flex p-4 rounded-2xl bg-gradient-to-br ${category.color} text-white mb-6`}>
+                      <IconComponent className="h-8 w-8" />
+                    </div>
+                    
+                    <h3 className="text-2xl font-bold mb-2">{category.title}</h3>
+                    <p className="text-primary font-medium mb-4">{category.subtitle}</p>
+                    <p className="text-muted-foreground mb-6">{category.description}</p>
+                    
+                    <div className="flex items-center justify-between mt-auto pt-4 border-t border-border">
+                      <span className="text-sm text-muted-foreground">
+                        {category.courses.length} courses available
+                      </span>
+                      <span className="text-primary font-medium group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">
+                        Explore →
+                      </span>
+                    </div>
+                  </Card>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
@@ -257,16 +175,16 @@ const Courses = () => {
               Start your fashion career with India's leading fashion technology institute in Bangalore
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary">
-                <Link to="/Admissions"  >Enroll</Link>
+              <Button size="lg" variant="secondary" asChild>
+                <a href="#contact">Contact Us</a>
               </Button>
-             
-              
             </div>
           </Card>
         </div>
       </section>
     </div>
+  );
+    </>
   );
 };
 

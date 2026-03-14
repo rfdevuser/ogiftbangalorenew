@@ -1,0 +1,200 @@
+// scripts/prerender.mjs
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const distDir = path.join(__dirname, "../dist");
+
+// Read the built index.html — this already has correct hashed asset paths
+const template = fs.readFileSync(path.join(distDir, "index.html"), "utf-8");
+
+const routeContent = {
+  "/": `
+    <h1>Onati Global Institute of Fashion Technology - Bangalore</h1>
+    <p>India's leading fashion design institute offering industry-recognized courses 
+    in fashion illustration, pattern making, draping, styling, and more. 
+    Located in Vinayakanagar, Bangalore with 100% placement support.</p>
+    <h2>Our Courses</h2>
+    <ul>
+      <li><a href="/courses/fashup-free-taster-sessions">FASHUP Free Taster Sessions</a></li>
+      <li><a href="/courses/fashion-illustration">Fashion Illustration</a></li>
+      <li><a href="/courses/pattern-making-basic">Pattern Making Basic</a></li>
+      <li><a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a></li>
+      <li><a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a></li>
+    </ul>
+    <a href="/courses">View All Courses</a>
+    <a href="/about">About OGIFT</a>
+    <a href="/placements">Placements</a>
+  `,
+  "/courses": `
+    <h1>Fashion Design Courses - OGIFT Bangalore</h1>
+    <p>Explore our comprehensive range of fashion design courses from free taster 
+    sessions to advanced diplomas. Expert faculty, modern facilities, 
+    and industry-focused curriculum.</p>
+    <h2>Short Courses</h2>
+    <ul>
+      <li><a href="/courses/fashion-illustration">Fashion Illustration Course</a></li>
+      <li><a href="/courses/pattern-making-basic">Pattern Making Basic Course</a></li>
+      <li><a href="/courses/pattern-making-blouses-advanced">Pattern Making Blouses Advanced</a></li>
+      <li><a href="/courses/pattern-making-western-advanced">Pattern Making Western Advanced</a></li>
+      <li><a href="/courses/art-of-garment-foundation">Art of Garment Foundation</a></li>
+      <li><a href="/courses/fabric-knowledge-textile-designing">Fabric Knowledge and Textile Designing</a></li>
+      <li><a href="/courses/draping-technology">Draping Technology</a></li>
+      <li><a href="/courses/digital-portfolio-making">Digital Portfolio Making</a></li>
+      <li><a href="/courses/graphic-designing-for-fashion">Graphic Designing for Fashion</a></li>
+      <li><a href="/courses/fashion-designing-boutique-management">Fashion Designing and Boutique Management</a></li>
+      <li><a href="/courses/fashion-styling">Fashion Styling</a></li>
+      <li><a href="/courses/pattern-making-kids-clothing">Pattern Making Kids Clothing</a></li>
+    </ul>
+    <h2>Diploma Programs</h2>
+    <ul>
+      <li><a href="/courses/pattern-making-boutique-management-3months">3-Month Pattern Making and Boutique Management</a></li>
+      <li><a href="/courses/design-process-pattern-making-3months">3-Month Design Process and Pattern Making</a></li>
+      <li><a href="/courses/design-pattern-making-portfolio-3months">3-Month Design Pattern Making and Portfolio</a></li>
+      <li><a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a></li>
+      <li><a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a></li>
+      <li><a href="/courses/3-months-online-fashion-course">3-Month Online Fashion Course</a></li>
+    </ul>
+  `,
+  "/about": `
+    <h1>About OGIFT - Fashion Design Institute Bangalore</h1>
+    <p>Onati Global Institute of Fashion Technology (OGIFT) is Bangalore's premier 
+    fashion technology institute. We provide industry-recognized fashion design 
+    education with expert faculty, modern facilities, and a curriculum designed 
+    for real-world careers in fashion.</p>
+  `,
+  "/placements": `
+    <h1>Placements - OGIFT Bangalore</h1>
+    <p>OGIFT Bangalore provides 100% placement assistance to all graduates. 
+    Our alumni work at leading fashion brands, boutiques, and design houses 
+    across India.</p>
+  `,
+  "/portfolio": `
+    <h1>Portfolio Builder - OGIFT Bangalore</h1>
+    <p>Build your professional fashion design portfolio with AI-powered critique 
+    and feedback. Upload your designs, get expert analysis, and create a portfolio 
+    that stands out to employers.</p>
+  `,
+  "/careers/work-from-home": `
+    <h1>Work From Home Careers - OGIFT Bangalore</h1>
+    <p>Explore work-from-home career opportunities with OGIFT Bangalore. 
+    Start your freelance fashion design career from the comfort of your home.</p>
+  `,
+  "/courses/fashup-free-taster-sessions": `
+    <h1>FASHUP Free Taster Sessions - OGIFT Bangalore</h1>
+    <p>Try our free 10-day fashion design taster sessions. Experience fashion 
+    illustration, pattern making, and design fundamentals before enrolling 
+    in a full course.</p>`,
+  "/courses/fashion-illustration": `
+    <h1>Fashion Illustration Course - OGIFT Bangalore</h1>
+    <p>Master fashion illustration techniques with expert guidance. Learn to sketch 
+    fashion figures, render fabrics, and create professional fashion plates.</p>`,
+  "/courses/pattern-making-basic": `
+    <h1>Pattern Making Basic Course - OGIFT Bangalore</h1>
+    <p>Learn the fundamentals of pattern making for garments. Master body 
+    measurements, basic blocks, and pattern drafting techniques.</p>`,
+  "/courses/pattern-making-blouses-advanced": `
+    <h1>Advanced Blouse Pattern Making - OGIFT Bangalore</h1>
+    <p>Advanced pattern making course specializing in blouses. Learn complex 
+    necklines, sleeves, and fitting techniques.</p>`,
+  "/courses/pattern-making-western-advanced": `
+    <h1>Advanced Western Pattern Making - OGIFT Bangalore</h1>
+    <p>Advanced pattern making course for western garments including dresses, 
+    skirts, trousers, and jackets.</p>`,
+  "/courses/art-of-garment-foundation": `
+    <h1>Art of Garment Foundation Course - OGIFT Bangalore</h1>
+    <p>Foundation course in garment construction and design. Learn sewing 
+    techniques, fabric handling, and basic garment assembly.</p>`,
+  "/courses/fabric-knowledge-textile-designing": `
+    <h1>Fabric Knowledge and Textile Designing - OGIFT Bangalore</h1>
+    <p>Learn fabric science and textile design techniques. Understand fiber types, 
+    weaves, prints, and fabric selection for different garments.</p>`,
+  "/courses/draping-technology": `
+    <h1>Draping Technology Course - OGIFT Bangalore</h1>
+    <p>Master draping techniques for fashion design. Create garments directly 
+    on the dress form using fabric manipulation.</p>`,
+  "/courses/digital-portfolio-making": `
+    <h1>Digital Portfolio Making Course - OGIFT Bangalore</h1>
+    <p>Create professional digital portfolios for fashion careers using 
+    industry-standard design software.</p>`,
+  "/courses/graphic-designing-for-fashion": `
+    <h1>Graphic Designing for Fashion - OGIFT Bangalore</h1>
+    <p>Learn graphic design tools for fashion industry applications including 
+    Adobe Illustrator and Photoshop for fashion.</p>`,
+  "/courses/fashion-designing-boutique-management": `
+    <h1>Fashion Designing and Boutique Management - OGIFT Bangalore</h1>
+    <p>Combined fashion design and boutique management course. Learn to design, 
+    produce, and run your own fashion business.</p>`,
+  "/courses/fashion-styling": `
+    <h1>Fashion Styling Course - OGIFT Bangalore</h1>
+    <p>Professional fashion styling course for aspiring stylists. Learn personal 
+    styling, editorial styling, and wardrobe management.</p>`,
+  "/courses/pattern-making-kids-clothing": `
+    <h1>Kids Clothing Pattern Making - OGIFT Bangalore</h1>
+    <p>Specialized pattern making course for children's clothing including 
+    age-appropriate sizing and design.</p>`,
+  "/courses/pattern-making-boutique-management-3months": `
+    <h1>3-Month Pattern Making and Boutique Management - OGIFT</h1>
+    <p>Intensive 3-month course covering pattern making skills and boutique 
+    business management.</p>`,
+  "/courses/design-process-pattern-making-3months": `
+    <h1>3-Month Design Process and Pattern Making - OGIFT</h1>
+    <p>Comprehensive 3-month course in design process methodology and 
+    professional pattern making.</p>`,
+  "/courses/design-pattern-making-portfolio-3months": `
+    <h1>3-Month Design Pattern Making and Portfolio - OGIFT</h1>
+    <p>3-month course covering design, pattern making, and professional 
+    portfolio creation.</p>`,
+  "/courses/six-months-diploma-fashion-designing": `
+    <h1>6-Month Diploma in Fashion Designing - OGIFT Bangalore</h1>
+    <p>Comprehensive 6-month diploma program covering all aspects of fashion 
+    designing from illustration to garment construction.</p>`,
+  "/courses/one-year-advanced-diploma-fashion-designing": `
+    <h1>1-Year Advanced Diploma in Fashion Designing - OGIFT</h1>
+    <p>Advanced 1-year diploma program providing in-depth fashion design 
+    education with industry internship opportunities.</p>`,
+  "/courses/3-months-online-fashion-course": `
+    <h1>3-Month Online Fashion Course - OGIFT Bangalore</h1>
+    <p>Flexible 3-month online fashion design course. Learn at your own pace 
+    with expert mentorship and live sessions.</p>`,
+  "/quicktour": `
+    <h1>Quick Tour - OGIFT Bangalore</h1>
+    <p>Take a quick virtual tour of OGIFT Bangalore fashion institute. 
+    Explore our facilities, classrooms, and design studios.</p>`,
+};
+
+let successCount = 0;
+let errorCount = 0;
+
+for (const [route, content] of Object.entries(routeContent)) {
+  try {
+    // Build the output directory path
+    const routeDir =
+      route === "/"
+        ? distDir
+        : path.join(distDir, ...route.split("/").filter(Boolean));
+
+    // Create the directory if it doesn't exist
+    fs.mkdirSync(routeDir, { recursive: true });
+
+    // Inject content into the template, replacing empty root div
+    const html = template
+    .replace(
+      '<div id="root"></div>',
+      `<div id="root" suppressHydrationWarning="true">${content}</div>`
+    );
+
+    
+
+    // Write the HTML file
+    fs.writeFileSync(path.join(routeDir, "index.html"), html);
+    console.log(`✅ Prerendered: ${route}`);
+    successCount++;
+  } catch (err) {
+    console.error(`❌ Failed: ${route}`, err);
+    errorCount++;
+  }
+}
+
+console.log(`\n🎉 Prerender complete: ${successCount} succeeded, ${errorCount} failed`);

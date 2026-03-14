@@ -1,7 +1,7 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Play } from 'lucide-react';
+import { Play, MessageCircle } from 'lucide-react';
 import { useEffect } from 'react';
 
 interface VideoLanguage {
@@ -145,24 +145,39 @@ const VideoGallery = () => {
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
           Courses Library
         </h1>
-        <Button
-          variant="secondary"
-          size="sm"
-          className="rounded-full"
-        >
-          <Link to="/faqavatar" target="_blank">
-            Have a technical query
-          </Link>
-        </Button>
-        <Button
-          variant="secondary"
-          size="sm"
-          className="rounded-full"
-        >
-          <Link to="https://www.newogwebsite.com/AssetGallery" target="_blank">
-            Visit The Assets Gallery
-          </Link>
-        </Button>
+        <div className="flex flex-wrap gap-3 justify-center mb-6">
+          <Button
+            variant="secondary"
+            size="sm"
+            className="rounded-full"
+            asChild
+          >
+            <Link to="/ai-avatar-chat">
+              <MessageCircle className="w-4 h-4 mr-2" />
+              Chat with AI Advisor
+            </Link>
+          </Button>
+          <Button
+            variant="secondary"
+            size="sm"
+            className="rounded-full"
+            asChild
+          >
+            <Link to="/faqavatar">
+              Have a technical query
+            </Link>
+          </Button>
+          <Button
+            variant="secondary"
+            size="sm"
+            className="rounded-full"
+            asChild
+          >
+            <Link to="https://www.newogwebsite.com/AssetGallery" target="_blank">
+              Visit The Assets Gallery
+            </Link>
+          </Button>
+        </div>
         <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
           Select a video and choose your preferred language to start learning.
         </p>

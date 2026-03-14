@@ -1,16 +1,31 @@
-project_id = "azfyktcspmhcaqbhozuw"
+project_id = "hrkjhcnzbfoqmwwjilws"
+
+[functions.chat-assistant]
+verify_jwt = false
 
 [functions.create-razorpay-order]
 verify_jwt = false
 
-[functions.fetch-order]
+[functions.verify-razorpay-payment]
 verify_jwt = false
 
-[functions.neocortex-chat]
+[functions.ai-agent-chat]
 verify_jwt = false
 
-[functions.verify-student]
+[functions.process-document]
 verify_jwt = false
 
-[functions.stream-video]
+[functions.video-token]
+verify_jwt = false
+
+[functions.amy-counsellor]
+verify_jwt = false
+
+[functions.portfolio-critique]
+verify_jwt = false
+
+[functions.trend-forecast]
+verify_jwt = false
+
+[functions.fabric-ai-advisor]
 verify_jwt = false

@@ -15,6 +15,7 @@ export interface ChatMessage {
 
 export interface NeocortexAction {
   type: string;
+  url?: string;
   intent?: {
     [key: string]: unknown;
   };
@@ -37,15 +38,26 @@ export interface LanguageConfig {
   speechLang: string;
 }
 
+export interface StudentProgress {
+  video_id: string;
+  video_title: string;
+  progress_percent: number;
+  completed: boolean | number;
+  last_watched_at: string;
+}
+
 export interface StudentContext {
   name: string;
   email?: string;
   phone?: string;
   studentId?: string;
+  progress?: StudentProgress[];
+  totalVideos?: number;
+  completedVideos?: number;
 }
 
 export interface NeocortexChatResult {
-  sendMessage: (message: string, projectId?: string, studentContext?: StudentContext) => Promise<ChatResponse>;
+  sendMessage: (message: string, projectId?: string, studentContext?: StudentContext, displayMessage?: string) => Promise<ChatResponse>;
   clearConversation: () => void;
   isLoading: boolean;
   error: string | null;

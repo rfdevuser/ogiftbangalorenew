@@ -305,7 +305,71 @@ export default function FAQAvatar(): React.JSX.Element {
   const [student, setStudent] = useState<StudentInfo | null>(null);
   const recognitionRef = useRef<SpeechRecognitionType | null>(null);
 
+  // Audio refs for iOS volume boost
+  const replyAudioRef = useRef<HTMLAudioElement | null>(null);
+  const lastObjectUrlRef = useRef<string | null>(null);
+  const audioContextRef = useRef<AudioContext | null>(null);
+  const gainNodeRef = useRef<GainNode | null>(null);
+  const audioSourceNodeRef = useRef<MediaElementAudioSourceNode | null>(null);
+  const audioUnlockedRef = useRef<boolean>(false);
+
   const { sendMessage, isLoading, messages, clearConversation } = useNeocortexChat();
+
+  // Unlock audio context for iOS (must be called from user gesture)
+  const unlockAudio = useCallback(() => {
+    if (audioUnlockedRef.current) return;
+    
+    try {
+      // Create or resume AudioContext
+      if (!audioContextRef.current) {
+        const AudioContextClass = window.AudioContext || (window as unknown as { webkitAudioContext: typeof AudioContext }).webkitAudioContext;
+        if (AudioContextClass) {
+          audioContextRef.current = new AudioContextClass();
+        }
+      }
+      
+      if (audioContextRef.current?.state === 'suspended') {
+        audioContextRef.current.resume();
+      }
+
+      // Create persistent audio element if not exists
+      if (!replyAudioRef.current) {
+        const a = new Audio();
+        a.setAttribute('playsinline', 'true');
+        a.preload = 'auto';
+        a.volume = 1.0;
+        replyAudioRef.current = a;
+      }
+
+      // Create gain node for volume boost on iOS
+      if (audioContextRef.current && !gainNodeRef.current) {
+        gainNodeRef.current = audioContextRef.current.createGain();
+        gainNodeRef.current.gain.value = 1.5; // 1.5x volume boost for iOS
+        gainNodeRef.current.connect(audioContextRef.current.destination);
+      }
+
+      // Connect audio element to gain node (only once)
+      if (audioContextRef.current && replyAudioRef.current && !audioSourceNodeRef.current) {
+        try {
+          audioSourceNodeRef.current = audioContextRef.current.createMediaElementSource(replyAudioRef.current);
+          if (gainNodeRef.current) {
+            audioSourceNodeRef.current.connect(gainNodeRef.current);
+          }
+        } catch {
+          // Already connected or not supported
+        }
+      }
+
+      // Ensure max volume
+      if (replyAudioRef.current) {
+        replyAudioRef.current.volume = 1.0;
+      }
+
+      audioUnlockedRef.current = true;
+    } catch (err) {
+      console.warn('Audio unlock failed:', err);
+    }
+  }, []);
 
   // Check authentication on mount
   useEffect(() => {
@@ -395,13 +459,52 @@ export default function FAQAvatar(): React.JSX.Element {
           // Use Neocortex-generated audio if available, fallback to browser TTS
           if (response.audio) {
             try {
-              const audioUrl = `data:audio/mpeg;base64,${response.audio}`;
-              const audio = new Audio(audioUrl);
+              // Revoke previous object URL to prevent memory leaks
+              if (lastObjectUrlRef.current) {
+                URL.revokeObjectURL(lastObjectUrlRef.current);
+                lastObjectUrlRef.current = null;
+              }
+
+              // Detect MIME type from base64 prefix or default to mpeg
+              let mimeType = 'audio/mpeg';
+              const base64Data = response.audio;
+              if (base64Data.startsWith('UklGR')) {
+                mimeType = 'audio/wav';
+              } else if (base64Data.startsWith('T2dnUw')) {
+                mimeType = 'audio/ogg';
+              }
+
+              // Convert base64 to blob
+              const byteCharacters = atob(base64Data);
+              const byteNumbers = new Array(byteCharacters.length);
+              for (let i = 0; i < byteCharacters.length; i++) {
+                byteNumbers[i] = byteCharacters.charCodeAt(i);
+              }
+              const byteArray = new Uint8Array(byteNumbers);
+              const audioBlob = new Blob([byteArray], { type: mimeType });
+              const objectUrl = URL.createObjectURL(audioBlob);
+              lastObjectUrlRef.current = objectUrl;
+
+              // Use persistent audio element for iOS compatibility
+              const audio = replyAudioRef.current ?? new Audio();
+              audio.setAttribute('playsinline', 'true');
+              audio.preload = 'auto';
+              audio.volume = 1.0;
+              replyAudioRef.current = audio;
+
+              audio.src = objectUrl;
+
+              // Ensure AudioContext is resumed
+              if (audioContextRef.current?.state === 'suspended') {
+                await audioContextRef.current.resume();
+              }
+
               audio.onended = () => setTimeout(() => avatarRef.current?.stopTalking(), 250);
               audio.onerror = () => {
                 console.error('Audio playback error');
                 avatarRef.current?.stopTalking();
               };
+              
               await audio.play();
             } catch (audioError) {
               console.error('Failed to play Neocortex audio:', audioError);
@@ -443,6 +546,9 @@ export default function FAQAvatar(): React.JSX.Element {
   }, [handleSendMessage]);
 
   const toggleVoiceInput = useCallback((): void => {
+    // Unlock audio on user gesture (critical for iOS)
+    unlockAudio();
+    
     const SpeechRecognitionAPI = window.SpeechRecognition || window.webkitSpeechRecognition;
     
     if (!SpeechRecognitionAPI) {
