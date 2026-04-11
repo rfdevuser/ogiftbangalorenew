@@ -200,7 +200,7 @@ export default function AIAvatarLogin(): React.JSX.Element {
         <title>AI Fashion Avatar Login | OGIFT Bangalore | Student Portal 2026</title>
         <meta name="description" content="Login to OGIFT's AI Fashion Avatar — personalised AI-powered fashion learning assistant for students of Bangalore's best fashion institute. 4.9★ rated. Admissions 2026 open!" />
         <meta name="keywords" content="AI fashion avatar login, OGIFT student portal, Onati Global AI learning, fashion AI assistant bangalore, fashion institute student login, OGIFT login 2026, AI fashion tutor bangalore" />
-        <link rel="canonical" href="https://www.ogiftbangalore.com/ai-avatar-login" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/ai-avatar" />
         <meta name="robots" content="index, follow" />
       </Helmet>
       {/* Decorative elements */}
