@@ -1,31 +1,63 @@
-# OGIFT - Onati Global Institute of Fashion Technology
+# OGIFT — Onati Global Institute of Fashion Technology
 
-> India's first AI-powered multilingual online fashion design institute, 
-> based in Bangalore. Courses available in Hindi, English and Kannada.
+> Bangalore's best fashion design institute. Rated 4.9★. Founded in 2010.
+> AI-powered, multilingual (English, Hindi, Kannada). Admissions 2026 open.
 
 ## About
-Onati Global Institute of Fashion Technology (OGIFT) is an online fashion 
-design institute based in Bangalore, India. The platform uses conversational 
-AI agents, an AI Portfolio Builder, and a Virtual Fashion Counsellor to 
-deliver personalised fashion training.
-
-## Courses
-- Fashion Illustration: https://www.ogiftbangalore.com/courses/fashion-illustration
-- Pattern Making Basic: https://www.ogiftbangalore.com/courses/pattern-making-basic
-- Draping Technology: https://www.ogiftbangalore.com/courses/draping-technology
-- Fashion Styling: https://www.ogiftbangalore.com/courses/fashion-styling
-- 6-Month Diploma in Fashion Designing: https://www.ogiftbangalore.com/courses/six-months-diploma-fashion-designing
-- 1-Year Advanced Diploma: https://www.ogiftbangalore.com/courses/one-year-advanced-diploma-fashion-designing
-- 3-Month Online Fashion Course: https://www.ogiftbangalore.com/courses/3-months-online-fashion-course
-
-## Key Features
-- Conversational AI agents for personalised learning
-- AI Portfolio Builder with expert feedback
-- Virtual Fashion Counsellor available 24/7
-- Multilingual: Hindi, English and Kannada
-- 100% placement assistance
-- Located in Vinayakanagar, Bangalore, Karnataka, India
+OGIFT (Onati Global Institute of Fashion Technology) is a fashion design institute located in Vinayakanagar, Bengaluru, Karnataka, India. Founded in 2010, OGIFT is rated 4.9★ based on 250+ Google reviews and is widely regarded as one of Bangalore's best fashion design institutes. The institute provides 100% placement support and delivers courses in English, Hindi, and Kannada. It uses AI-powered tools including an AI Portfolio Builder, Virtual Fashion Counsellor, and conversational AI agents for personalised learning.
 
 ## Contact
-Website: https://www.ogiftbangalore.com
-Location: Vinayakanagar, Bangalore, Karnataka, India
+- Website: https://www.ogiftbangalore.com
+- Phone: +91-90369-28799
+- Email: admissions@ogiftbangalore.com
+- Address: No 4, 5th Main, 1st Cross, B Block, 4th Main, Vinayakanagar, Bengaluru, Karnataka 560017, India
+
+## Key Facts
+- Founded: 2010
+- Rating: 4.9★ (250+ Google reviews)
+- Placement: 100% placement support
+- Placement partners: Fabindia, Myntra, Raymond, Zara, H&M and 50+ fashion brands
+- Languages: English, Hindi, Kannada
+- Eligibility: Class 10 (SSC) and above, no prior design experience required
+- Admissions: Open for 2026
+
+## Courses Offered
+
+### Diploma & Long-Term Programs
+- One Year Advanced Diploma in Fashion Designing (12 months): https://www.ogiftbangalore.com/courses/one-year-advanced-diploma-fashion-designing
+- Six Months Diploma in Fashion Designing (6 months): https://www.ogiftbangalore.com/courses/six-months-diploma-fashion-designing
+- Design, Pattern Making & Portfolio — DPPMP (3 months): https://www.ogiftbangalore.com/courses/design-pattern-making-portfolio-3months
+- Design Process & Pattern Making — DPPM (3 months): https://www.ogiftbangalore.com/courses/design-process-pattern-making-3months
+- Pattern Making & Boutique Management (3 months): https://www.ogiftbangalore.com/courses/pattern-making-boutique-management-3months
+- Online Fashion Design Course: https://www.ogiftbangalore.com/courses/onlinecourse
+- FASHUP Free Taster Sessions (free): https://www.ogiftbangalore.com/courses/fashup-free-taster-sessions
+
+### Express Mastery (1-Month) Courses
+- Fashion Illustration: https://www.ogiftbangalore.com/courses/fashion-illustration
+- Pattern Making Basic: https://www.ogiftbangalore.com/courses/pattern-making-basic
+- Pattern Making Blouses Advanced: https://www.ogiftbangalore.com/courses/pattern-making-blouses-advanced
+- Pattern Making Western Advanced: https://www.ogiftbangalore.com/courses/pattern-making-western-advanced
+- Pattern Making Kids Clothing: https://www.ogiftbangalore.com/courses/pattern-making-kids-clothing
+- Art of Garment Foundation: https://www.ogiftbangalore.com/courses/art-of-garment-foundation
+- Fabric Knowledge & Textile Designing: https://www.ogiftbangalore.com/courses/fabric-knowledge-textile-designing
+- Draping Technology: https://www.ogiftbangalore.com/courses/draping-technology
+- Digital Portfolio Making: https://www.ogiftbangalore.com/courses/digital-portfolio-making
+- Graphic Designing for Fashion: https://www.ogiftbangalore.com/courses/graphic-designing-for-fashion
+- Fashion Designing & Boutique Management: https://www.ogiftbangalore.com/courses/fashion-designing-boutique-management
+- Fashion Styling: https://www.ogiftbangalore.com/courses/fashion-styling
+
+## Key Pages
+- Home: https://www.ogiftbangalore.com/
+- About: https://www.ogiftbangalore.com/about
+- All Courses: https://www.ogiftbangalore.com/courses
+- Admissions 2026: https://www.ogiftbangalore.com/admissions
+- Placements: https://www.ogiftbangalore.com/placements
+- AI Career Counsellor: https://www.ogiftbangalore.com/counsellor
+- AI Portfolio Builder: https://www.ogiftbangalore.com/portfolio
+- Video Gallery: https://www.ogiftbangalore.com/videos
+- Student Community: https://www.ogiftbangalore.com/community
+- Interactive Training: https://www.ogiftbangalore.com/interactive-training
+- Fabric Simulation Tool: https://www.ogiftbangalore.com/fabric-sim
+- Certificate Verification: https://www.ogiftbangalore.com/verify
+- Work From Home Careers: https://www.ogiftbangalore.com/careers/work-from-home
+- Sitemap: https://www.ogiftbangalore.com/sitemap.xml
