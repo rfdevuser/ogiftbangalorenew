@@ -17,8 +17,10 @@ interface DigitalAssetCardProps {
     block_hash: string | null;
     block_number: number | null;
     created_at: string;
+    owner_id: string;
   };
   isOwner?: boolean;
+  onShareToFeed?: (asset: DigitalAssetCardProps['asset']) => void;
 }
 
 const assetTypeConfig: Record<string, { icon: React.ComponentType<{ className?: string }>; color: string; label: string }> = {
@@ -28,7 +30,7 @@ const assetTypeConfig: Record<string, { icon: React.ComponentType<{ className?: 
   achievement: { icon: Star, color: 'bg-green-500/10 text-green-500', label: 'Achievement' },
 };
 
-export function DigitalAssetCard({ asset, isOwner }: DigitalAssetCardProps) {
+export function DigitalAssetCard({ asset, isOwner, onShareToFeed }: DigitalAssetCardProps) {
   const { toast } = useToast();
   const config = assetTypeConfig[asset.asset_type] || assetTypeConfig.design;
   const Icon = config.icon;
@@ -105,6 +107,12 @@ export function DigitalAssetCard({ asset, isOwner }: DigitalAssetCardProps) {
         )}
         
         <div className="flex items-center gap-1">
+          {isOwner && onShareToFeed && (
+            <Button variant="ghost" size="sm" onClick={() => onShareToFeed(asset)} title="Share to Feed">
+              <Share2 className="h-3 w-3 mr-1" />
+              <span className="text-xs">Post</span>
+            </Button>
+          )}
           <Button variant="ghost" size="sm" onClick={handleShareVerified} title="Copy verified link">
             <Share2 className="h-3 w-3" />
           </Button>

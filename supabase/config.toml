@@ -29,3 +29,6 @@ verify_jwt = false
 
 [functions.fabric-ai-advisor]
 verify_jwt = false
+
+[functions.check-originality]
+verify_jwt = false

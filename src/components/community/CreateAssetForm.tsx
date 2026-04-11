@@ -1,5 +1,5 @@
 import { useState, useRef } from 'react';
-import { ImagePlus, Upload, X, Loader2 } from 'lucide-react';
+import { ImagePlus, Upload, X, Loader2, ShieldAlert } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
@@ -42,6 +42,8 @@ export function CreateAssetForm({ userId, onAssetCreated }: CreateAssetFormProps
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [originalityFlag, setOriginalityFlag] = useState<string | null>(null);
+  const [isChecking, setIsChecking] = useState(false);
 
   const handleFileSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -122,8 +124,39 @@ export function CreateAssetForm({ userId, onAssetCreated }: CreateAssetFormProps
     }
 
     setIsSubmitting(true);
+    setOriginalityFlag(null);
 
     try {
+      // --- Originality check for images ---
+      if (selectedFile && selectedFile.type.startsWith('image/')) {
+        setIsChecking(true);
+        const base64 = await new Promise<string>((resolve) => {
+          const reader = new FileReader();
+          reader.onload = (e) => resolve(e.target?.result as string);
+          reader.readAsDataURL(selectedFile);
+        });
+
+        const { data: checkResult, error: checkError } = await supabase.functions.invoke('check-originality', {
+          body: { content: '', imageBase64List: [base64] },
+        });
+
+        setIsChecking(false);
+
+        if (checkError) {
+          console.warn('Originality check failed, allowing upload:', checkError);
+        } else if (checkResult?.aiImageDetected || checkResult?.stockImageDetected) {
+          const messages: string[] = [];
+          if (checkResult.aiImageDetected) messages.push('This image appears to be AI-generated.');
+          if (checkResult.stockImageDetected) messages.push('This image appears to be downloaded from the internet, not original work.');
+          setOriginalityFlag(`⚠️ This work is not original. ${messages.join(' ')}`);
+          if (checkResult.details?.length) {
+            console.warn('Originality details:', checkResult.details);
+          }
+          setIsSubmitting(false);
+          return;
+        }
+      }
+
       // Upload the file
       const assetUrl = await uploadFile(selectedFile);
 
@@ -323,12 +356,30 @@ export function CreateAssetForm({ userId, onAssetCreated }: CreateAssetFormProps
             <Switch checked={isPublic} onCheckedChange={setIsPublic} />
           </div>
 
+          {/* Originality flag */}
+          {originalityFlag && (
+            <div className="flex items-start gap-2 p-3 rounded-lg bg-destructive/10 border border-destructive/30">
+              <ShieldAlert className="h-5 w-5 text-destructive shrink-0 mt-0.5" />
+              <div>
+                <p className="text-sm font-semibold text-destructive">This work is not original</p>
+                <p className="text-xs text-destructive/80 mt-1">{originalityFlag}</p>
+                <button
+                  type="button"
+                  onClick={() => setOriginalityFlag(null)}
+                  className="text-xs text-muted-foreground underline mt-1"
+                >
+                  Dismiss and try different file
+                </button>
+              </div>
+            </div>
+          )}
+
           {/* Submit */}
           <Button type="submit" className="w-full" disabled={isSubmitting || !selectedFile || !title.trim()}>
             {isSubmitting ? (
               <>
                 <Loader2 className="h-4 w-4 mr-2 animate-spin" />
-                Minting on Blockchain...
+                {isChecking ? 'Checking originality...' : 'Minting on Blockchain...'}
               </>
             ) : (
               <>

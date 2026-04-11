@@ -51,7 +51,8 @@ export default function AIAvatarLogin(): React.JSX.Element {
         const student = JSON.parse(stored);
         if (student && student.studentId) {
           // Already logged in, redirect to avatar
-          navigate('/ai-avatar-chat');
+          // navigate('/ai-avatar-chat');
+          navigate('/videos');
         }
       }
     } catch {
@@ -63,7 +64,8 @@ export default function AIAvatarLogin(): React.JSX.Element {
   useEffect(() => {
     if (welcomeState.show) {
       const timer = setTimeout(() => {
-        navigate('/ai-avatar-chat');
+        // navigate('/ai-avatar-chat');
+        navigate('/videos');
       }, 2000);
       return () => clearTimeout(timer);
     }
@@ -178,7 +180,7 @@ export default function AIAvatarLogin(): React.JSX.Element {
               Hello, {welcomeState.name}!
             </h1>
             <p className="text-lg text-muted-foreground mb-6">
-              Welcome to the AI Avatar Assistant
+              Welcome to Your Online Training
             </p>
             
             <div className="flex items-center justify-center gap-2 text-sm text-muted-foreground">

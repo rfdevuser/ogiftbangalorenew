@@ -757,7 +757,7 @@ export default function Counsellor(): React.JSX.Element {
     "name": "Onati Global Institute of Fashion Technology",
     "alternateName": "OGIFT Bangalore",
     "description": "Premier fashion design institute in Bangalore offering AI-powered career counselling with Amy, personalized guidance for fashion courses, and comprehensive placement support.",
-    "url": "https://www.ogiftbangalore.com",
+    "url": "https://www.ogiftbangalore.com/counsellor",
     "logo": "https://ogiftbangalore.com/logo.png",
     "sameAs": [
       "https://www.instagram.com/ogiftbangalore",

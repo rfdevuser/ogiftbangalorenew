@@ -6,7 +6,7 @@ import { Badge } from '@/components/ui/badge';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
 import { Separator } from '@/components/ui/separator';
-import { Loader2, Sparkles, Blocks, LogIn, LogOut, Wallet, Palette, Link2 } from 'lucide-react';
+import { Loader2, Sparkles, Blocks, LogIn, LogOut, Wallet, Palette, Link2, Award, Shield } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { supabase } from '@/integrations/supabase/client';
 import { PostCard } from '@/components/community/PostCard';
@@ -14,6 +14,8 @@ import { CreatePostForm } from '@/components/community/CreatePostForm';
 import { DigitalAssetCard } from '@/components/community/DigitalAssetCard';
 import { CreateAssetForm } from '@/components/community/CreateAssetForm';
 import { shortenHash } from '@/lib/blockchain';
+import { TrendingSidebar } from '@/components/community/TrendingSidebar';
+import KnowYourRights from '@/components/community/KnowYourRights';
 
 interface Post {
   id: string;
@@ -63,6 +65,8 @@ const Community = () => {
   const [loadingPosts, setLoadingPosts] = useState(true);
   const [loadingAssets, setLoadingAssets] = useState(true);
   const [activeTab, setActiveTab] = useState('feed');
+  const [activeHashtag, setActiveHashtag] = useState<string | null>(null);
+  const [prefillContent, setPrefillContent] = useState('');
 
   const fetchPosts = useCallback(async () => {
     setLoadingPosts(true);
@@ -226,6 +230,12 @@ const Community = () => {
                     </div>
                   )}
 
+                  <Button variant="outline" asChild className="w-full mb-2">
+                    <Link to={`/reputation?user=${user!.id}`}>
+                      <Award className="h-4 w-4 mr-2" />
+                      My Reputation
+                    </Link>
+                  </Button>
                   <Button variant="outline" className="w-full" onClick={handleSignOut}>
                     <LogOut className="h-4 w-4 mr-2" />
                     Sign Out
@@ -278,9 +288,12 @@ const Community = () => {
             <Tabs value={activeTab} onValueChange={setActiveTab}>
               <TabsList className="w-full mb-4">
                 <TabsTrigger value="feed" className="flex-1">Feed</TabsTrigger>
-                <TabsTrigger value="portfolio" className="flex-1">My Digital Assets</TabsTrigger>
+                <TabsTrigger value="portfolio" className="flex-1">Portfolio</TabsTrigger>
+                <TabsTrigger value="rights" className="flex-1">
+                  <Shield className="h-4 w-4 mr-1" />
+                  Your Rights
+                </TabsTrigger>
                 <TabsTrigger value="blockchain" className="flex-1">Blockchain</TabsTrigger>
-               
               </TabsList>
 
               <TabsContent value="feed" className="space-y-4">
@@ -288,32 +301,59 @@ const Community = () => {
                   <CreatePostForm 
                     userId={user!.id} 
                     profile={profile} 
-                    onPostCreated={fetchPosts} 
+                    onPostCreated={fetchPosts}
+                    prefillContent={prefillContent}
+                    onPrefillConsumed={() => setPrefillContent('')}
                   />
+                )}
+
+                {activeHashtag && (
+                  <div className="flex items-center gap-2 p-3 bg-muted rounded-lg">
+                    <Badge variant="secondary">{activeHashtag}</Badge>
+                    <span className="text-sm text-muted-foreground">Filtering posts</span>
+                    <Button variant="ghost" size="sm" className="ml-auto h-7 text-xs" onClick={() => setActiveHashtag(null)}>
+                      Clear filter
+                    </Button>
+                  </div>
                 )}
 
                 {loadingPosts ? (
                   <div className="flex items-center justify-center py-12">
                     <Loader2 className="h-8 w-8 animate-spin text-primary" />
                   </div>
-                ) : posts.length === 0 ? (
-                  <Card>
-                    <CardContent className="py-12 text-center">
-                      <p className="text-muted-foreground">No posts yet. Be the first to share!</p>
-                    </CardContent>
-                  </Card>
-                ) : (
-                  posts.map((post) => (
-                    <PostCard
-                      key={post.id}
-                      post={post}
-                      currentUserId={user?.id}
-                      hasLiked={userLikes.has(post.id)}
-                      onLikeToggle={() => fetchUserLikes()}
-                      onDelete={() => fetchPosts()}
-                    />
-                  ))
-                )}
+                ) : (() => {
+                  const keyword = activeHashtag?.replace('#', '') || '';
+                  // Split camelCase hashtag into individual words for broader matching
+                  const words = keyword.split(/(?=[A-Z0-9])/).map((w) => w.toLowerCase()).filter(Boolean);
+                  const filtered = activeHashtag
+                    ? posts.filter((p) => {
+                        const text = p.content.toLowerCase();
+                        return text.includes(activeHashtag.toLowerCase()) || 
+                               text.includes(keyword.toLowerCase()) ||
+                               words.some((w) => w.length > 2 && text.includes(w));
+                      })
+                    : posts;
+                  return filtered.length === 0 ? (
+                    <Card>
+                      <CardContent className="py-12 text-center">
+                        <p className="text-muted-foreground">
+                          {activeHashtag ? `No posts found with ${activeHashtag}` : 'No posts yet. Be the first to share!'}
+                        </p>
+                      </CardContent>
+                    </Card>
+                  ) : (
+                    filtered.map((post) => (
+                      <PostCard
+                        key={post.id}
+                        post={post}
+                        currentUserId={user?.id}
+                        hasLiked={userLikes.has(post.id)}
+                        onLikeToggle={() => fetchUserLikes()}
+                        onDelete={() => fetchPosts()}
+                      />
+                    ))
+                  );
+                })()}
               </TabsContent>
 
               <TabsContent value="portfolio" className="space-y-4">
@@ -345,10 +385,19 @@ const Community = () => {
                         key={asset.id}
                         asset={asset}
                         isOwner={user?.id === asset.owner_id}
+                        onShareToFeed={(a) => {
+                          const text = `🎨 Check out my digital asset: "${a.title}"\n${a.description || ''}\n\n${a.asset_url}`;
+                          setPrefillContent(text.trim());
+                          setActiveTab('feed');
+                        }}
                       />
                     ))}
                   </div>
                 )}
+              </TabsContent>
+
+              <TabsContent value="rights">
+                <KnowYourRights />
               </TabsContent>
 
               <TabsContent value="blockchain" className="space-y-4">
@@ -401,17 +450,14 @@ const Community = () => {
             </Tabs>
           </div>
 
-          {/* Right Sidebar - Trending (placeholder) */}
-          <aside className="hidden xl:block w-64 space-y-4">
-            <Card>
-              <CardHeader className="pb-3">
-                <CardTitle className="text-lg">Trending</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">Coming soon: trending posts, popular designs, and more!</p>
-              </CardContent>
-            </Card>
-          </aside>
+          {/* Right Sidebar - Trending */}
+          <TrendingSidebar
+            activeTag={activeHashtag}
+            onHashtagClick={(tag) => {
+              setActiveHashtag((prev) => (prev === tag ? null : tag));
+              setActiveTab('feed');
+            }}
+          />
         </div>
       </div>
     </main>

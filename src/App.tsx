@@ -63,7 +63,7 @@ import WfhDashboard from "./pages/careers/WfhDashboard";
 import FabricSimulation from "./pages/FabricSimulation";
 import InteractiveTraining from "./pages/InteractiveTraining";
 import Verify from "./pages/Verify";
-
+import Reputation from "./pages/Reputation";
 
 const queryClient = new QueryClient();
 
@@ -146,6 +146,7 @@ const App = () => {
           <Route path="/community" element={<Community />} />
           <Route path="/community/auth" element={<CommunityAuth />} />
           <Route path="/verify" element={<Verify />} />
+          <Route path="/reputation" element={<Reputation />} />
           <Route path="/careers/work-from-home" element={<WorkFromHome />} />
           <Route path="/careers/work-from-home/terms" element={<WfhTerms />} />
           <Route path="/careers/work-from-home/dashboard" element={<WfhDashboard />} />

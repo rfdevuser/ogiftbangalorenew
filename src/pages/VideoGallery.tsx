@@ -54,7 +54,7 @@ const videos: VideoItem[] = [
   {
     id: '2',
     title: 'Fashion Terminologies Part 1',
-    thumbnail: '/images/courses/FashionTerminologies.png',
+    thumbnail: '/images/courses/fashion-terminologies.jpg',
     languages: [
       { language: 'English', url: 'English/FashionTerminologiesEnglishPart1Comp.mp4' },
       { language: 'Hindi', url: 'Hindi/FashionTerminologiesHindiPart1Comp.mp4' },
@@ -65,7 +65,7 @@ const videos: VideoItem[] = [
   {
     id: '2',
     title: 'Fashion Terminologies Part 2',
-    thumbnail: '/images/courses/FashionTerminologies.png',
+    thumbnail: '/images/courses/fashion-terminologies.jpg',
     languages: [
       { language: 'English', url: 'English/FashionTerminologiesPart2Comp.mp4' },
       { language: 'Hindi', url: 'Hindi/FashionTerminologiesHindiPart2Comp.mp4' },
@@ -76,7 +76,7 @@ const videos: VideoItem[] = [
   {
     id: '3',
     title: 'Fashion Fundamentals Part 1',
-    thumbnail: '/images/courses/FashionFundamentals.png',
+    thumbnail: '/images/courses/fashion-fundamentals.jpg',
     languages: [
       { language: 'English', url: 'English/FashionFundamentalsPart1Comp.mp4' },
       { language: 'Hindi', url: 'Hindi/FashionFundamentalsHindiPart1Comp.mp4' },
@@ -87,7 +87,7 @@ const videos: VideoItem[] = [
   {
     id: '3',
     title: 'Fashion Fundamentals Part 2',
-    thumbnail: '/images/courses/FashionFundamentals.png',
+    thumbnail: '/images/courses/fashion-fundamentals.jpg',
     languages: [
       { language: 'English', url: 'English/FashionFundamentalsPart2Comp.mp4' },
       { language: 'Hindi', url: 'Hindi/FashionFundamentalsHindiPart2Comp.mp4' },
@@ -98,7 +98,7 @@ const videos: VideoItem[] = [
   {
     id: '3',
     title: 'Fashion Fundamentals Part 3',
-    thumbnail: '/images/courses/FashionFundamentals.png',
+    thumbnail: '/images/courses/fashion-fundamentals.jpg',
     languages: [
       { language: 'English', url: 'English/FashionFundamentalsPart3Comp.mp4' },
       { language: 'Hindi', url: 'Hindi/FashionFundamentalsHindiPart3Comp.mp4' },
@@ -109,7 +109,7 @@ const videos: VideoItem[] = [
   {
     id: '3',
     title: 'Fashion Fundamentals Part 4',
-    thumbnail: '/images/courses/FashionFundamentals.png',
+    thumbnail: '/images/courses/fashion-fundamentals.jpg',
     languages: [
       { language: 'English', url: 'English/FashionFundamentalsPart4Comp.mp4' },
       { language: 'Hindi', url: 'Hindi/FashionFundamentalsHindiPart4Comp.mp4' },
@@ -117,6 +117,54 @@ const videos: VideoItem[] = [
     ],
     credits: 5,
   },
+  {
+    id: '4',
+    title: 'Basic Pattern Making - A Line Frock Pattern Measurement',
+    thumbnail: '/images/courses/pattern-making.jpg',
+    languages: [
+      { language: 'English', url: 'English/measurewithcaptionscompressedenglish.mp4' },
+      { language: 'Hindi', url: 'Hindi/measurewithcaptionscompressedhindi.mp4' },
+     
+      // { language: 'Kannada', url: 'Kannada/FashionFundamentalsKannadaPart4Comp.mp4' },
+    ],
+    credits: 5,
+  },
+  {
+    id: '4',
+    title: 'Basic Pattern Making - A Line Frock Pattern Making',
+    thumbnail: '/images/courses/pattern-making.jpg',
+    languages: [
+      { language: 'English', url: 'English/patternalinefrockwithcaptionsenglishcompressed.mp4' },
+      { language: 'Hindi', url: 'Hindi/patternalinefrockwithcaptionsHindicompressed.mp4' },
+      // { language: 'Kannada', url: 'Kannada/FashionFundamentalsKannadaPart4Comp.mp4' },
+    ],
+    credits: 5,
+  },
+{
+    id: '5',
+    title: 'Basic Pattern Making - A Line Frock Sleeve Measurement',
+    thumbnail: '/images/courses/pattern-making.jpg',
+    languages: [
+      { language: 'English', url: 'English/sleevemeasurementenglishwithcaptionscompressed.mp4' },
+      { language: 'Hindi', url: 'Hindi/sleevemeasurementhindiwithcaptionscompressed.mp4' },
+     
+      // { language: 'Kannada', url: 'Kannada/FashionFundamentalsKannadaPart4Comp.mp4' },
+    ],
+    credits: 5,
+  },
+  {
+    id: '5',
+    title: 'Basic Pattern Making - A Line Frock Sleeve Pattern Making',
+    thumbnail: '/images/courses/pattern-making.jpg',
+    languages: [
+      { language: 'English', url: 'English/sleevepatternenglishwithcaptionscompressed.mp4' },
+      { language: 'Hindi', url: 'Hindi/sleevepatternhindiwithcaptionscompressed.mp4' },
+      // { language: 'Kannada', url: 'Kannada/FashionFundamentalsKannadaPart4Comp.mp4' },
+    ],
+    credits: 5,
+  },
+
+  
 ];
 
 const VideoGallery = () => {
@@ -154,7 +202,7 @@ const VideoGallery = () => {
           >
             <Link to="/ai-avatar-chat">
               <MessageCircle className="w-4 h-4 mr-2" />
-              Chat with AI Advisor
+              Return to Dashboard
             </Link>
           </Button>
           <Button
@@ -177,6 +225,7 @@ const VideoGallery = () => {
               Visit The Assets Gallery
             </Link>
           </Button>
+          
         </div>
         <p className="text-muted-foreground text-center mb-12 max-w-2xl mx-auto">
           Select a video and choose your preferred language to start learning.

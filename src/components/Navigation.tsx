@@ -14,7 +14,7 @@ const Navigation = () => {
     { to: '/about', label: 'About Us' },
     { to: '/placements', label: 'Placements' },
     { to: '/counsellor', label: 'Counsellor'},
-    { to: '/community', label: 'Assets Registry'},
+    { to: '/community', label: 'Designers Community'},
     { to: '/portfolio', label: 'Portfolio Builder'},
     { to: '/careers/work-from-home', label: 'Careers At OGIFT'},
     // { to: '/fabric-sim', label: 'Fabric Lab' },
