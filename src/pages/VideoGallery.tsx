@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useNavigate, Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -189,6 +190,17 @@ const VideoGallery = () => {
 
   return (
     <main className="min-h-screen pt-24 pb-16 bg-background">
+      <Helmet>
+        <title>Fashion Design Video Lessons Bangalore | OGIFT | Free Learning 2026</title>
+        <meta name="description" content="Watch fashion design video lessons at OGIFT Bangalore — pattern making, garment construction, styling & more in English, Hindi & Kannada. 4.9★ rated best fashion institute. Admissions 2026 open!" />
+        <meta name="keywords" content="fashion design video lessons bangalore, free fashion design videos, pattern making video course, fashion tutorial hindi kannada, OGIFT videos, Onati Global video gallery, online fashion learning 2026, fashion design tutorial bangalore" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/videos" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Fashion Design Video Lessons | OGIFT Bangalore" />
+        <meta property="og:description" content="Free fashion design video tutorials at OGIFT Bangalore in English, Hindi & Kannada. Pattern making, garment construction, styling & more." />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/videos" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="container mx-auto px-4">
         <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-8 text-center">
           Courses Library

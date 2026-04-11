@@ -48,10 +48,10 @@ const About = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>About Us | Onati Global Institute of Fashion Technology - OGIFT Bangalore</title>
-        <meta name="title" content="About Onati Global Institute of Fashion Technology | OGIFT Bangalore" />
-        <meta name="description" content="Learn about OGIFT — Bangalore's premier fashion design institute. Founded in 2024 with world-class facilities, expert faculty and industry partnerships. Shaping the future of fashion." />
-        <meta name="keywords" content="about OGIFT, Onati Global Institute of Fashion Technology, fashion institute Bangalore, fashion design college Bangalore, fashion education Karnataka, fashion faculty Bangalore" />
+        <title>About OGIFT | Best Fashion Design College in Bangalore | Since 2010</title>
+        <meta name="title" content="About Onati Global Institute of Fashion Technology | Best Fashion Design College Bangalore" />
+        <meta name="description" content="OGIFT — Bangalore's best fashion design college since 2010. Rated 4.9★ on Google. Expert industry faculty, world-class design studios, 50+ brand partnerships & 100% placement support at Vinayakanagar, Bangalore." />
+        <meta name="keywords" content="about OGIFT, best fashion design college bangalore, Onati Global Institute of Fashion Technology, fashion institute bangalore since 2010, fashion design college bangalore, fashion education Karnataka, expert fashion faculty bangalore, fashion institute vinayakanagar, 4.9 rated fashion college bangalore, fashion industry partnerships bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/about" />
@@ -59,16 +59,16 @@ const About = () => {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ogiftbangalore.com/about" />
-        <meta property="og:title" content="About OGIFT | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta property="og:description" content="Discover OGIFT — Bangalore's premier fashion institute with expert faculty, world-class facilities, and industry-aligned curriculum. Shaping future fashion professionals since 2024." />
+        <meta property="og:title" content="About OGIFT | Best Fashion Design College Bangalore | Since 2010" />
+        <meta property="og:description" content="Rated 4.9★ — Discover OGIFT, Bangalore's best fashion design college since 2010. Expert faculty, world-class studios, 50+ brand partnerships & 100% placement support." />
         <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.ogiftbangalore.com/about" />
-        <meta name="twitter:title" content="About OGIFT | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="twitter:description" content="Bangalore's premier fashion design institute with expert faculty, world-class facilities, and industry partnerships. Founded 2024." />
+        <meta name="twitter:title" content="About OGIFT | Best Fashion Design College Bangalore | Since 2010" />
+        <meta name="twitter:description" content="4.9★ rated. Bangalore's best fashion design college since 2010. Expert faculty, world-class studios & 100% placement support." />
 
         {/* Additional SEO Meta Tags */}
         <meta name="geo.region" content="IN-KA" />

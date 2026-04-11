@@ -79,10 +79,10 @@ const FashionIllustrationCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fashion Illustration Course in Bangalore | OGIFT - Express Mastery Month</title>
-        <meta name="title" content="Fashion Illustration Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn fashion illustration at OGIFT Bangalore — figure drawing, color theory, croqui proportions, fabric folds and garment rendering in our 1-month Express Mastery course. Certificate included." />
-        <meta name="keywords" content="fashion illustration course Bangalore, fashion drawing course, croqui drawing, figure drawing fashion, garment rendering, OGIFT, Onati Global, fashion art course, express mastery month" />
+        <title>Best Fashion Illustration Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Fashion Illustration Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best fashion illustration course in Bangalore at OGIFT — figure drawing, color theory, croqui proportions, fabric folds & garment rendering. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion illustration course bangalore, fashion drawing course bangalore, croqui drawing course bangalore, figure drawing fashion, garment rendering course, OGIFT, Onati Global, fashion art course bangalore, express mastery course, fashion illustration 2026, admissions open bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fashion-illustration" />

@@ -176,10 +176,10 @@ const Admissions = () =>
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Admissions & Enrollment | Onati Global Institute of Fashion Technology - OGIFT Bangalore</title>
-        <meta name="title" content="Admissions & Enrollment Form | OGIFT Bangalore - Fashion Design Institute" />
-        <meta name="description" content="Apply for admission to OGIFT Bangalore's fashion design courses. Enroll in our 1-month, 3-month or diploma programs. Fill out the enrollment form and start your fashion career today." />
-        <meta name="keywords" content="fashion design admission Bangalore, OGIFT admissions, Onati Global enrollment, fashion course apply, fashion institute admission form, fashion design enroll Bangalore" />
+        <title>Fashion Design Admissions 2026 | OGIFT Bangalore | Enroll Now</title>
+        <meta name="title" content="Fashion Design Admissions 2026 | OGIFT Bangalore - Best Fashion Institute" />
+        <meta name="description" content="Fashion design admissions 2026 now open at OGIFT Bangalore. Apply for 1-month, 3-month, 6-month or 1-year diploma programs. 100% placement support. Enroll at Vinayakanagar, Bangalore — call +91-90369-28799." />
+        <meta name="keywords" content="fashion design admissions 2026, fashion institute enroll bangalore, OGIFT admissions 2026, fashion course admission bangalore, fashion design enroll bangalore, fashion diploma admission, Onati Global admissions, best fashion institute admission bangalore, fashion design registration bangalore, fashion course fees bangalore, fashion design college admission 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/admissions" />
@@ -187,16 +187,16 @@ const Admissions = () =>
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ogiftbangalore.com/admissions" />
-        <meta property="og:title" content="Admissions & Enrollment | OGIFT Bangalore" />
-        <meta property="og:description" content="Apply to OGIFT Bangalore's fashion design programs. Enroll in 1-month, 3-month or diploma courses. Start your fashion career today." />
+        <meta property="og:title" content="Fashion Design Admissions 2026 | OGIFT Bangalore | Enroll Now" />
+        <meta property="og:description" content="Admissions 2026 open at OGIFT Bangalore. Apply for 1-month, 3-month, 6-month or 1-year diploma fashion design programs. 100% placement support. Enroll today!" />
         <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.ogiftbangalore.com/admissions" />
-        <meta name="twitter:title" content="Admissions & Enrollment | OGIFT Bangalore" />
-        <meta name="twitter:description" content="Apply to OGIFT Bangalore's fashion design programs. 1-month, 3-month and diploma courses available. Enroll now." />
+        <meta name="twitter:title" content="Fashion Design Admissions 2026 | OGIFT Bangalore" />
+        <meta name="twitter:description" content="Admissions 2026 open! Apply for fashion design courses at OGIFT Bangalore. 1-month to 1-year diploma programs. 100% placement support. Enroll now!" />
 
         {/* Additional SEO Meta Tags */}
         <meta name="geo.region" content="IN-KA" />

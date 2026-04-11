@@ -38,20 +38,20 @@ const Home = () => {
   return (
     <main className="min-h-screen" role="main">
       <Helmet>
-        <title>Onati Global Institute of Fashion Technology - Top Fashion Design Institute in Bangalore</title>
-        <meta name="description" content="Premier fashion design institute in Bangalore offering professional courses in fashion technology, design, and styling. Industry-focused curriculum with 100% placement support. Enroll now!" />
-        <meta name="keywords" content="fashion design institute bangalore, fashion technology courses, fashion designing college, garment technology, fashion styling courses, best fashion school bangalore, fashion design diploma, apparel design, textile design, fashion career, OGIFT bangalore, onati global institute" />
+        <title>Best Fashion Design Institute in Bangalore | OGIFT Onati Global | Admissions 2026</title>
+        <meta name="description" content="Rated 4.9★ — OGIFT is Bangalore's best fashion design institute. 100% placement support, expert industry faculty & modern studios. Pattern making, garment construction, styling & diploma courses. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion design institute bangalore, fashion designing college bangalore, fashion technology institute bangalore, fashion design courses bangalore, pattern making course bangalore, garment construction course, fashion styling courses, fashion diploma bangalore, boutique management course, OGIFT bangalore, onati global institute, fashion design college bangalore, admissions 2026, 100% placement fashion institute, 4.9 rated fashion institute, fashion career bangalore, vinayakanagar fashion institute" />
         <link rel="canonical" href="https://www.ogiftbangalore.com" />
-        <meta property="og:title" content="Onati Global Institute of Fashion Technology - Leading Fashion Design College in Bangalore" />
-        <meta property="og:description" content="Premier fashion design institute in Bangalore offering professional courses in fashion technology, design, and styling. Industry-focused curriculum with 100% placement support." />
+        <meta property="og:title" content="Best Fashion Design Institute in Bangalore | OGIFT Onati Global | Admissions 2026" />
+        <meta property="og:description" content="Rated 4.9★ — Bangalore's best fashion design institute with 100% placement. Expert faculty, modern studios, courses in pattern making, garment construction, styling & advanced diplomas. Admissions 2026 open!" />
         <meta property="og:url" content="https://www.ogiftbangalore.com" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
         <meta property="og:site_name" content="OGIFT Bangalore" />
         <meta property="og:locale" content="en_IN" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="Onati Global Institute - Best Fashion Design Institute Bangalore" />
-        <meta name="twitter:description" content="Premier fashion technology education in Bangalore. Expert faculty, modern facilities, 100% placement assistance." />
+        <meta name="twitter:title" content="Best Fashion Design Institute Bangalore | OGIFT | Admissions 2026" />
+        <meta name="twitter:description" content="4.9★ rated. Bangalore's best fashion design institute with 100% placement, expert faculty & modern facilities. Admissions 2026 open!" />
         <meta name="twitter:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
         <meta name="robots" content="index, follow" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />

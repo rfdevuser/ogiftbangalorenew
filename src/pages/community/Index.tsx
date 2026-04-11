@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState, useEffect, useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
@@ -188,6 +189,17 @@ const Community = () => {
 
   return (
     <main className="min-h-screen pt-24 pb-12 bg-background">
+      <Helmet>
+        <title>Fashion Design Community Bangalore | OGIFT | Share & Learn 2026</title>
+        <meta name="description" content="Join OGIFT's fashion design community in Bangalore — share portfolios, get feedback, connect with peers & industry experts. 4.9★ rated best fashion institute. Admissions 2026 open!" />
+        <meta name="keywords" content="fashion design community bangalore, fashion student community, OGIFT community, Onati Global fashion network, fashion portfolio sharing, fashion design forum bangalore 2026, fashion student network india" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/community" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Fashion Design Community | OGIFT Bangalore" />
+        <meta property="og:description" content="Join OGIFT's fashion design community — share portfolios, get feedback & connect with industry experts in Bangalore." />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/community" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-6">
           {/* Left Sidebar - Profile & Stats */}

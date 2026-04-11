@@ -79,10 +79,10 @@ const GraphicDesigningForFashionCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Graphic Designing for Fashion Course | OGIFT Bangalore - Express Mastery Month</title>
-        <meta name="title" content="Graphic Designing for Fashion Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn graphic design for fashion at OGIFT Bangalore — digital illustration, pen tool, fabric effects, garment draping and fashion branding in our 1-month Express Mastery course. Certificate included." />
-        <meta name="keywords" content="graphic design fashion course Bangalore, digital fashion illustration, fashion branding course, pen tool fashion design, fabric texture digital, OGIFT, Onati Global, express mastery month, graphic design Bangalore" />
+        <title>Best Graphic Design for Fashion Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Graphic Designing for Fashion Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best graphic design for fashion course in Bangalore at OGIFT — digital illustration, pen tool, fabric effects & fashion branding. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best graphic design fashion course bangalore, digital fashion illustration course bangalore 2026, fashion branding course bangalore, pen tool fashion design, fabric texture digital, OGIFT, Onati Global, express mastery course, graphic design fashion admissions 2026, fashion technology bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/graphic-designing-for-fashion" />

@@ -408,9 +408,11 @@ const FabricSimulation = () => {
   return (
     <>
       <Helmet>
-        <title>Fabric Physics Simulation | OGIFT Bangalore</title>
-        <meta name="description" content="Interactive 3D fabric physics simulation. Test draping, weight, wind and stiffness with AI-powered analysis." />
+        <title>Interactive 3D Fabric Simulation Tool | OGIFT Bangalore | Fashion Technology</title>
+        <meta name="description" content="Explore fabric physics with OGIFT's interactive 3D simulation — test draping, weight, wind & stiffness with AI analysis. Free tool for fashion design students at Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="fabric physics simulation bangalore, 3D fabric draping tool, fashion technology tool bangalore, fabric simulation fashion design, AI fabric analysis, OGIFT fabric sim, Onati Global fashion technology, interactive fashion tool bangalore" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/fabric-sim" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen pt-16 sm:pt-24 pb-8 sm:pb-12 bg-background">

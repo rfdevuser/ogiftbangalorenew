@@ -67,9 +67,9 @@ const PortfolioBuilder = () => {
   return (
     <>
       <Helmet>
-        <title>AI Fashion Portfolio Builder Bangalore | Free Design Critique Tool</title>
-        <meta name="description" content="Build your fashion design portfolio with AI-powered critique at Bangalore's top fashion institute. Upload sketches, get expert feedback on proportion, color theory & commercial viability. Free for OGIFT students." />
-        <meta name="keywords" content="fashion portfolio bangalore, fashion design portfolio builder, AI design critique, fashion design feedback, fashion student portfolio india, fashion illustration critique bangalore, design portfolio review, fashion institute bangalore portfolio" />
+        <title>AI Fashion Portfolio Builder Bangalore 2026 | OGIFT | Free for Students</title>
+        <meta name="description" content="Build a winning fashion portfolio with AI critique at OGIFT — Bangalore's best fashion institute (4.9★). Upload sketches, get expert feedback on proportion, color theory & commercial viability. Free for enrolled students." />
+        <meta name="keywords" content="best fashion portfolio builder bangalore, AI fashion portfolio critique, fashion design portfolio bangalore 2026, fashion design feedback tool, fashion student portfolio india, fashion illustration critique bangalore, design portfolio review tool, OGIFT portfolio builder, Onati Global fashion tools" />
         <link rel="canonical" href="https://ogiftbangalore.com/portfolio" />
         <meta property="og:title" content="AI Fashion Portfolio Builder | Onati Global Institute Bangalore" />
         <meta property="og:description" content="Upload your fashion designs and get instant AI-powered professional critique. Build a portfolio that impresses recruiters — free for OGIFT students in Bangalore." />

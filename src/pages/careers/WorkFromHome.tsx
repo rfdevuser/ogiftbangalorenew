@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
@@ -138,6 +139,17 @@ const WorkFromHome = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Work From Home Fashion Jobs Bangalore | OGIFT Careers 2026</title>
+        <meta name="description" content="Explore work-from-home fashion career opportunities with OGIFT Bangalore. Earn from home using your fashion design skills — pattern making, styling & boutique management. 4.9★ rated best fashion institute." />
+        <meta name="keywords" content="work from home fashion jobs bangalore, fashion career work from home, fashion design freelance bangalore, OGIFT work from home, Onati Global careers, fashion jobs from home india 2026, fashion styling work from home, pattern making work from home" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/careers/work-from-home" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Work From Home Fashion Careers | OGIFT Bangalore 2026" />
+        <meta property="og:description" content="Earn from home with your fashion skills at OGIFT Bangalore. Pattern making, styling & boutique management work-from-home opportunities." />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/careers/work-from-home" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10" />

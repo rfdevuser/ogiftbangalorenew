@@ -63,10 +63,10 @@ const OneYearAdvancedDiplomaFashionDesigning = () => {
   return (
     <>
       <Helmet>
-        <title>One Year Advanced Diploma in Fashion Designing | OGIFT Bangalore</title>
-        <meta name="title" content="One Year Advanced Diploma in Fashion Designing | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Enroll in OGIFT Bangalore's One Year Advanced Diploma in Fashion Designing. Comprehensive curriculum covering design, pattern making, garment construction, styling, portfolio and placement support. Certificate included." />
-        <meta name="keywords" content="one year fashion diploma Bangalore, advanced diploma fashion designing, fashion design diploma Bangalore, OGIFT, Onati Global, fashion degree Bangalore, advanced fashion course, fashion designing certificate Bangalore, placement support fashion" />
+        <title>Best 1 Year Advanced Fashion Designing Diploma Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best One Year Advanced Diploma in Fashion Designing Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best 1-year advanced fashion designing diploma in Bangalore at OGIFT — design, pattern making, garment construction, styling, portfolio & 100% placement support. 4.9★ rated. Admissions 2026 open!" />
+        <meta name="keywords" content="best one year fashion diploma bangalore, advanced fashion designing diploma bangalore 2026, 1 year fashion design diploma, fashion degree bangalore, advanced fashion course bangalore, fashion designing certificate bangalore, 100% placement fashion diploma, OGIFT, Onati Global, fashion admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/one-year-advanced-diploma-fashion-designing" />

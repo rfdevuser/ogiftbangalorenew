@@ -73,10 +73,10 @@ const DrapingTechnologyCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Draping Technology Course | OGIFT Bangalore - Express Mastery Month</title>
-        <meta name="title" content="Draping Technology Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn draping technology — 3D pattern creation by manipulating fabric on a dress form. Master bodice, skirt, sleeve draping and Western gown design in 1 month at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="draping technology course Bangalore, fabric draping course, 3D pattern making, dress form draping, muslin draping, OGIFT, Onati Global, express mastery month, fashion draping Bangalore, gown draping course" />
+        <title>Best Draping Technology Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Draping Technology Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best draping technology course in Bangalore at OGIFT — 3D pattern making on dress forms, bodice, skirt, sleeve & gown draping. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best draping technology course bangalore, fabric draping course bangalore 2026, 3D pattern making bangalore, dress form draping course, muslin draping technique, OGIFT, Onati Global, express mastery course, gown draping bangalore, fashion draping admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/draping-technology" />

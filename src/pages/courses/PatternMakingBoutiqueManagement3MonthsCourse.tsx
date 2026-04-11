@@ -85,10 +85,10 @@ const PatternMakingBoutiqueManagement3MonthsCourse = () => {
   return (
     <>
       <Helmet>
-        <title>Pattern Making & Boutique Management 3 Months Course | OGIFT Bangalore</title>
-        <meta name="title" content="Pattern Making & Boutique Management 3 Months Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Master pattern making and boutique management in our 3-month course at OGIFT Bangalore. Learn garment patterns, business skills, inventory and boutique operations. Certificate included." />
-        <meta name="keywords" content="pattern making boutique management course Bangalore, fashion business course, boutique management Bangalore, 3 months fashion course, garment pattern making, OGIFT, Onati Global, fashion diploma Bangalore" />
+        <title>Best Pattern Making & Boutique Management Course Bangalore 2026 | OGIFT</title>
+        <meta name="title" content="Best Pattern Making & Boutique Management 3 Months Course Bangalore 2026 | Onati Global" />
+        <meta name="description" content="Best 3-month pattern making & boutique management course in Bangalore at OGIFT. Garment patterns, business skills, inventory & boutique operations. 4.9★ rated. 100% placement. Admissions 2026 open!" />
+        <meta name="keywords" content="best pattern making boutique management course bangalore, fashion business course bangalore 2026, boutique management course bangalore, 3 month fashion diploma bangalore, garment pattern making course, OGIFT, Onati Global, fashion diploma 2026, boutique course admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-boutique-management-3months" />

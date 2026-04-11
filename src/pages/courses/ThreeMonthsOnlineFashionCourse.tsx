@@ -160,9 +160,9 @@ const ThreeMonthsOnlineFashionCourse = () => {
   return (
     <>
       <Helmet>
-        <title>3 Months Online Fashion Designing Course | AI-Powered Learning | Onati Global Bangalore</title>
-        <meta name="description" content="Master fashion design in 3 months with our AI-powered online course. Multi-lingual support in English, Hindi & Kannada. Learn pattern making, garment construction, fashion illustration & boutique management from home." />
-        <meta name="keywords" content="online fashion course Bangalore, 3 month fashion designing course, AI powered fashion learning, multilingual fashion course, fashion design online India, pattern making online course" />
+        <title>Best Online Fashion Design Course India 2026 | OGIFT | 3 Months AI-Powered</title>
+        <meta name="description" content="Best online fashion design course in India at OGIFT — 3-month AI-powered, multi-lingual (English, Hindi, Kannada). Pattern making, garment construction, illustration & boutique management. 4.9★ rated. Admissions 2026 open!" />
+        <meta name="keywords" content="best online fashion design course india 2026, online fashion course bangalore, 3 month online fashion designing, AI powered fashion course, multilingual fashion course hindi kannada, fashion design online india, pattern making online course, OGIFT online course, Onati Global online, fashion admissions 2026" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/onlinecourse" />
         <meta property="og:title" content="3 Months Online Fashion Designing Course | AI-Powered | Onati Global" />
         <meta property="og:description" content="Transform your fashion dreams into reality with our comprehensive 3-month online course. AI-powered learning, multi-lingual support, and industry-recognized certification." />

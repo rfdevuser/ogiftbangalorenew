@@ -69,10 +69,10 @@ const FabricKnowledgeTextileDesigningCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fabric Knowledge & Textile Designing Course | OGIFT Bangalore</title>
-        <meta name="title" content="Fabric Knowledge & Textile Designing Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Learn textile science, fiber types, yarn construction, fabric finishing and textile designing in our 1-month Express Mastery course at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="fabric knowledge course Bangalore, textile designing course, textile science Bangalore, fabric finishing course, fiber yarn fabric, OGIFT, Onati Global, textile course Bangalore, express mastery month" />
+        <title>Best Fabric & Textile Designing Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Fabric Knowledge & Textile Designing Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best textile designing course in Bangalore at OGIFT — textile science, fiber types, yarn construction & fabric finishing. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best textile designing course bangalore, fabric knowledge course bangalore 2026, textile science course bangalore, fabric finishing course, fiber yarn fabric course, OGIFT, Onati Global, textile course bangalore, express mastery course, textile design admissions 2026, fashion technology bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fabric-knowledge-textile-designing" />

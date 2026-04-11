@@ -83,10 +83,10 @@ const FashionDesigningBoutiqueManagementCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fashion Designing & Boutique Management Course | OGIFT Bangalore</title>
-        <meta name="title" content="Fashion Designing & Boutique Management Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Learn to launch and run a fashion boutique in our 1-month Express Mastery course at OGIFT Bangalore. Covers brand identity, inventory, visual merchandising, pricing and digital promotion. Certificate included." />
-        <meta name="keywords" content="boutique management course Bangalore, fashion boutique course, fashion business course Bangalore, visual merchandising course, fashion retail course, OGIFT, Onati Global, express mastery month, boutique startup Bangalore" />
+        <title>Best Boutique Management Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Fashion Designing & Boutique Management Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best boutique management course in Bangalore at OGIFT — brand identity, inventory, visual merchandising, pricing & digital promotion. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best boutique management course bangalore, fashion boutique course bangalore 2026, fashion business course bangalore, visual merchandising course bangalore, fashion retail course, boutique startup course, OGIFT, Onati Global, express mastery course, fashion designing boutique admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fashion-designing-boutique-management" />

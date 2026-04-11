@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -155,6 +156,13 @@ const Reputation = () => {
 
   return (
     <main className="min-h-screen pt-24 pb-12 bg-background">
+      <Helmet>
+        <title>Student Reputation & Achievements | OGIFT Bangalore Fashion Community</title>
+        <meta name="description" content="View your fashion design reputation, achievements & community standing at OGIFT Bangalore — Bangalore's best fashion institute (4.9★). Track likes, posts & creative contributions." />
+        <meta name="keywords" content="OGIFT student reputation, fashion design achievements bangalore, Onati Global community rank, fashion student profile, fashion design community bangalore, OGIFT student portfolio" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/reputation" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 max-w-lg space-y-4">
         {/* Main Reputation Card */}
         <Card className="overflow-hidden">

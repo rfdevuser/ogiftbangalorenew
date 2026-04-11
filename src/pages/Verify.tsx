@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -208,6 +209,13 @@ const Verify = () => {
 
   return (
     <main className="min-h-screen pt-24 pb-12 bg-background">
+      <Helmet>
+        <title>Verify Fashion Design Certificate | OGIFT Bangalore | Blockchain Verified</title>
+        <meta name="description" content="Verify OGIFT Bangalore fashion design certificates & digital assets on blockchain. Authenticate student credentials from Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="verify fashion certificate bangalore, OGIFT certificate verification, fashion design certificate verify, blockchain certificate fashion, Onati Global credentials" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/verify" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 max-w-3xl">
         {/* Header */}
         <div className="text-center mb-8">

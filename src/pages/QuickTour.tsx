@@ -267,14 +267,14 @@ export default function QuickTour() {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Quick Tour | 3-Month Online Fashion Design Course - AI Powered | OGIFT Bangalore</title>
+        <title>Best Online Fashion Design Course India 2026 | OGIFT | AI-Powered 3 Month Tour</title>
         <meta
           name="description"
-          content="Discover India's first multi-lingual, AI-powered online fashion design course. 3-month certificate program with 40+ video modules, personalized AI guidance in Hindi, Kannada, Telugu & English. Enroll now!"
+          content="India's best AI-powered online fashion design course at OGIFT — 3-month certificate, 40+ video modules, multi-lingual (Hindi, Kannada, Telugu, English). 4.9★ rated. Admissions 2026 open. Enroll now!"
         />
         <meta
           name="keywords"
-          content="online fashion course, fashion design certificate, AI fashion training, multi-lingual fashion course, fashion designing online India, OGIFT online course, 3 month fashion course, fashion design Bangalore, learn fashion design online, AI powered fashion education"
+          content="best online fashion design course india 2026, AI powered fashion course india, multi-lingual fashion course hindi kannada, online fashion certificate course, 3 month fashion design course, OGIFT online course bangalore, Onati Global fashion online, fashion design online india, learn fashion design online, fashion admissions 2026"
         />
         
         {/* Canonical URL */}

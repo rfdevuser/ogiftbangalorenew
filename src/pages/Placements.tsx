@@ -49,18 +49,20 @@ const Placements = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Placements & Career Support | 100% Placement | Onati Global Bangalore</title>
-        <meta name="description" content="100% placement rate at Onati Global Institute Bangalore. 500+ alumni placed at Fabindia, Myntra, Raymond, Zara, H&M & 50+ fashion brands. Average package ₹4.5L. Career support from day one." />
-        <meta name="keywords" content="fashion design placements Bangalore, fashion institute placement record, fashion career Bangalore, fashion job placement, garment industry jobs Bangalore, OGIFT placements" />
+        <title>100% Placement | Fashion Design Jobs Bangalore | OGIFT 2026</title>
+        <meta name="description" content="OGIFT delivers 100% placement for fashion design graduates in Bangalore. 500+ alumni at Fabindia, Myntra, Raymond, Zara, H&M & 50+ top brands. Avg package ₹4.5L. Best fashion institute for careers — since 2010." />
+        <meta name="keywords" content="fashion design placement bangalore, 100% placement fashion institute bangalore, fashion job bangalore, fashion design career bangalore, fashion brand jobs bangalore, Fabindia Myntra Raymond fashion jobs, garment industry jobs bangalore, fashion design package bangalore, OGIFT placements, Onati Global placement record, fashion career support bangalore 2026, fashion internship bangalore" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/placements" />
-        <meta property="og:title" content="100% Placement Success | Onati Global Institute Bangalore" />
-        <meta property="og:description" content="500+ alumni placed at top fashion brands. 100% placement rate with ₹4.5L average package. 50+ recruiting partners including Fabindia, Myntra, Raymond & more." />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Onati Global Institute of Fashion Technology" />
+        <meta property="og:title" content="100% Placement | Fashion Design Jobs Bangalore | OGIFT 2026" />
+        <meta property="og:description" content="OGIFT Bangalore — 100% placement, 500+ alumni at top brands. Avg package ₹4.5L. Recruiting partners: Fabindia, Myntra, Raymond, Zara, H&M & 50+ fashion brands. Best placement record since 2010." />
         <meta property="og:url" content="https://www.ogiftbangalore.com/placements" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="100% Placement Rate | Onati Global Fashion Institute Bangalore" />
-        <meta name="twitter:description" content="500+ alumni placed at top fashion brands. Career support, internships & campus placements." />
+        <meta name="twitter:title" content="100% Placement | OGIFT Bangalore | Fashion Design Careers 2026" />
+        <meta name="twitter:description" content="100% placement. 500+ alumni at Fabindia, Myntra, Raymond & 50+ brands. Avg ₹4.5L package. Best fashion placement record in Bangalore." />
         <meta name="twitter:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
       </Helmet>
       {/* Hero Section */}

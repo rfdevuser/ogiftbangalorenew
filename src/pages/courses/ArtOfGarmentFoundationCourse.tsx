@@ -79,10 +79,10 @@ const ArtOfGarmentFoundationCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Art of Garment Foundation Course | OGIFT Bangalore</title>
-        <meta name="title" content="Art of Garment Foundation Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Learn garment construction, sewing techniques, pattern making and professional finishing in our 1-month Express Mastery course at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="art of garment foundation, garment construction course Bangalore, sewing course Bangalore, pattern making, fashion design course, OGIFT, Onati Global, garment finishing, express mastery month" />
+        <title>Best Garment Construction Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Art of Garment Foundation Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best garment construction course in Bangalore at OGIFT — sewing techniques, pattern making & professional finishing in 1-month Express Mastery. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best garment construction course bangalore, art of garment foundation bangalore, sewing course bangalore, pattern making course bangalore, garment finishing course, fashion design course bangalore 2026, OGIFT, Onati Global, express mastery course, garment technology bangalore, admissions 2026 fashion" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/art-of-garment-foundation" />

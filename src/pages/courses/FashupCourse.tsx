@@ -105,10 +105,10 @@ const FashupCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>FASHUP - Free Fashion Design Taster Course | OGIFT Bangalore</title>
-        <meta name="title" content="FASHUP Free Fashion Taster Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Try fashion design for FREE at OGIFT Bangalore! FASHUP is a 10-day taster course covering fashion basics, body measurements, bodice block pattern making and stitching. Certificate included. Absolutely free." />
-        <meta name="keywords" content="free fashion course Bangalore, fashion taster course, FASHUP OGIFT, free fashion design class Bangalore, fashion introduction course, OGIFT, Onati Global, free certificate course Bangalore, fashion for beginners" />
+        <title>FASHUP Free Fashion Design Course Bangalore 2026 | OGIFT | Enroll Now</title>
+        <meta name="title" content="FASHUP Free Fashion Design Taster Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Try fashion design FREE at OGIFT Bangalore! FASHUP — 10-day taster course covering fashion basics, body measurements, bodice block & stitching. Free certificate. Best fashion institute, 4.9★ rated. Enroll 2026!" />
+        <meta name="keywords" content="free fashion design course bangalore, FASHUP OGIFT free course, free fashion taster class bangalore 2026, fashion introduction course bangalore, free fashion certificate bangalore, OGIFT, Onati Global, fashion for beginners bangalore, free fashion class 2026, best fashion institute bangalore free course" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fashup-free-taster-sessions" />

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Canvas, useThree } from '@react-three/fiber';
@@ -857,6 +858,13 @@ export default function AIAvatar(): React.JSX.Element {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+      <Helmet>
+        <title>AI Fashion Avatar | OGIFT Bangalore | Interactive Fashion Tutor 2026</title>
+        <meta name="description" content="Chat with OGIFT's AI Fashion Avatar — your personalised 3D fashion tutor. Get course guidance, fashion tips & career advice at Bangalore's 4.9★ best fashion institute. Admissions 2026 open!" />
+        <meta name="keywords" content="AI fashion avatar bangalore, fashion AI tutor, OGIFT AI avatar, interactive fashion learning, fashion design AI assistant, Onati Global AI, fashion institute AI 2026" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/ai-avatar-chat" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Mobile iOS safe-area padding so the welcome + buttons never hide behind the notch/dynamic island */}
       <div className="container mx-auto px-4 pb-8 pt-[max(6rem,calc(env(safe-area-inset-top)+3rem))] lg:pt-24">
         <div className="text-center mb-8">

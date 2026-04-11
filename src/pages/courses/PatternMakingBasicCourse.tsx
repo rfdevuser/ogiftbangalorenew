@@ -89,10 +89,10 @@ const PatternMakingBasicCourse = () => {
   return (
     <>
       <Helmet>
-        <title>Pattern Making Basic Course | OGIFT Bangalore</title>
-        <meta name="title" content="Pattern Making Basic Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn basic pattern making at OGIFT Bangalore — bodice block, kurta, skirts, trousers and blouse patterns in our 1-month Express Mastery course. 9 pattern types covered. Certificate included." />
-        <meta name="keywords" content="pattern making basic course Bangalore, bodice block pattern, kurta pattern making, skirt pattern, trouser pattern making, OGIFT, Onati Global, express mastery month, fashion pattern making Bangalore" />
+        <title>Best Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Pattern Making Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best pattern making course in Bangalore at OGIFT — bodice block, kurta, skirts, trousers & blouse. 1-month, 9 patterns covered. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best pattern making course bangalore, pattern making course bangalore 2026, bodice block pattern course, kurta pattern making bangalore, skirt pattern course bangalore, trouser pattern making, OGIFT, Onati Global, express mastery course bangalore, pattern drafting course, fashion course admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-basic" />

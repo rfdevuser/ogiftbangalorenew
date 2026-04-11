@@ -1,5 +1,6 @@
 'use client'
 import React,{useState} from 'react'
+import { Helmet } from 'react-helmet-async'
 import { GET_STUDENT } from '@/utils/gql/GQL_QUERIES'
 import {useQuery} from "@apollo/client";
 
@@ -63,7 +64,13 @@ if(mflag)
  
   return (
     <div>
-    
+      <Helmet>
+        <title>Course Registration | OGIFT Bangalore | Fashion Design Admissions 2026</title>
+        <meta name="description" content="Register for fashion design courses at OGIFT Bangalore. Enroll in pattern making, garment construction, styling & diploma programs. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="fashion course registration bangalore, OGIFT enrollment, fashion design register 2026, Onati Global registration, fashion institute enrollment bangalore" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
  
         
         <div>

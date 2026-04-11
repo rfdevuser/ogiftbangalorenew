@@ -23,9 +23,9 @@ const SixMonthsDiplomaFashionDesigning = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>6 Months Diploma in Fashion Designing | Onati Global Institute Bangalore</title>
-        <meta name="description" content="Comprehensive 6-month diploma in fashion designing at Onati Global Bangalore. Master design fundamentals, pattern making, garment construction, textile science, surface ornamentation & portfolio development." />
-        <meta name="keywords" content="fashion designing diploma Bangalore, 6 month fashion course, fashion design diploma, pattern making course, garment construction course, textile design Bangalore" />
+        <title>Best 6 Month Fashion Designing Diploma Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="description" content="Best 6-month fashion designing diploma in Bangalore at OGIFT — design fundamentals, pattern making, garment construction, textile science & portfolio. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best 6 month fashion designing diploma bangalore, fashion diploma bangalore 2026, 6 month fashion course bangalore, fashion design diploma bangalore, pattern making diploma, garment construction diploma, OGIFT, Onati Global, textile design bangalore, fashion admissions 2026, 100% placement fashion diploma" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/six-months-diploma-fashion-designing" />
         <meta property="og:title" content="6 Months Diploma in Fashion Designing | Onati Global Bangalore" />
         <meta property="og:description" content="Comprehensive 6-month diploma covering design fundamentals, pattern making, garment construction, textile science & portfolio development." />

@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import * as React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Canvas, useThree } from '@react-three/fiber';
@@ -649,6 +650,13 @@ export default function FAQAvatar(): React.JSX.Element {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+      <Helmet>
+        <title>Fashion Design FAQ Avatar | OGIFT Bangalore | Get Answers 2026</title>
+        <meta name="description" content="Get instant answers to fashion design questions with OGIFT's FAQ Avatar. Course info, admissions 2026, fees & career guidance at Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="fashion design FAQ bangalore, OGIFT FAQ avatar, fashion course questions, fashion institute FAQ 2026, Onati Global FAQ, fashion admissions FAQ bangalore" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/faqavatar" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
           {/* User greeting and logout */}

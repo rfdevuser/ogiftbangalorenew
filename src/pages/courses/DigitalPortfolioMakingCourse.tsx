@@ -83,10 +83,10 @@ const DigitalPortfolioMakingCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Digital Portfolio Making Course | OGIFT Bangalore - Express Mastery Month</title>
-        <meta name="title" content="Digital Portfolio Making Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Build a professional fashion portfolio in 1 month at OGIFT Bangalore. Learn mood boards, story boards, logo design, spec sheets and garment development. Certificate included." />
-        <meta name="keywords" content="digital portfolio making course Bangalore, fashion portfolio course, mood board design, fashion storyboard, spec sheet course, OGIFT, Onati Global, express mastery month, fashion portfolio Bangalore" />
+        <title>Best Fashion Portfolio Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Digital Portfolio Making Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best fashion portfolio course in Bangalore at OGIFT — mood boards, storyboards, logo design, spec sheets & garment development. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion portfolio course bangalore, digital portfolio making course bangalore 2026, fashion portfolio design bangalore, mood board course, fashion storyboard course, spec sheet course, OGIFT, Onati Global, express mastery course, fashion design portfolio admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/digital-portfolio-making" />

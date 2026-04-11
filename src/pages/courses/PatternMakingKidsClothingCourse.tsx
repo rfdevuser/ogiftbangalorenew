@@ -77,10 +77,10 @@ const PatternMakingKidsClothingCourse = () => {
   return (
     <>
       <Helmet>
-        <title>Pattern Making for Kids Clothing Course | OGIFT Bangalore</title>
-        <meta name="title" content="Pattern Making for Kids Clothing Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn kids clothing pattern making at OGIFT Bangalore — A-line frock, gathered frock, umbrella frock, layered skirt and jabla in our 1-month Express Mastery course. Certificate included." />
-        <meta name="keywords" content="kids clothing pattern making Bangalore, children wear pattern making, frock pattern making, jabla pattern, kids fashion course Bangalore, OGIFT, Onati Global, express mastery month, kids garment patterns" />
+        <title>Best Kids Clothing Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Kids Clothing Pattern Making Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best kids clothing pattern making course in Bangalore at OGIFT — A-line frock, gathered frock, umbrella frock, layered skirt & jabla. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best kids clothing pattern making bangalore, children wear pattern making course bangalore 2026, frock pattern making course, jabla pattern course, kids fashion design course bangalore, OGIFT, Onati Global, express mastery course, kids garment patterns, children clothing course 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-kids-clothing" />

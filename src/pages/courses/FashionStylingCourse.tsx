@@ -73,10 +73,10 @@ const FashionStylingCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fashion Styling Course in Bangalore | OGIFT - Express Mastery Month</title>
-        <meta name="title" content="Fashion Styling Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn fashion styling at OGIFT Bangalore — body type analysis, image makeover, trend forecasting, editorial and personal styling in our 1-month Express Mastery course. Certificate included." />
-        <meta name="keywords" content="fashion styling course Bangalore, personal styling course, image makeover course, fashion forecasting, editorial styling, OGIFT, Onati Global, express mastery month, stylist course Bangalore" />
+        <title>Best Fashion Styling Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Fashion Styling Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best fashion styling course in Bangalore at OGIFT — body type analysis, image makeover, trend forecasting & editorial styling. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion styling course bangalore, fashion stylist course bangalore 2026, personal styling course bangalore, image makeover course, fashion trend forecasting, editorial styling course, OGIFT, Onati Global, express mastery course, fashion styling admissions 2026, stylist training bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fashion-styling" />

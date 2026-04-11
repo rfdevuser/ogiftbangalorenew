@@ -85,10 +85,10 @@ const PatternMakingBlousesAdvancedCourse = () => {
   return (
     <>
       <Helmet>
-        <title>Pattern Making Blouses Advanced Course | OGIFT Bangalore</title>
-        <meta name="title" content="Pattern Making Blouses Advanced Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Master advanced blouse pattern making at OGIFT Bangalore — 8 styles including princess cut, boat neck, cape sleeve, puff sleeve and peplum in our 1-month course. Certificate included." />
-        <meta name="keywords" content="blouse pattern making course Bangalore, advanced blouse patterns, princess cut blouse pattern, puff sleeve blouse, peplum blouse pattern, OGIFT, Onati Global, express mastery month, advanced fashion course Bangalore" />
+        <title>Best Blouse Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Advanced Blouse Pattern Making Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best blouse pattern making course in Bangalore at OGIFT — 8 advanced styles: princess cut, boat neck, cape sleeve, puff sleeve & peplum. 1-month, 4.9★ rated. 100% placement. Admissions 2026 open!" />
+        <meta name="keywords" content="best blouse pattern making course bangalore, advanced blouse pattern bangalore 2026, princess cut blouse pattern course, puff sleeve blouse pattern, peplum blouse pattern, OGIFT, Onati Global, express mastery course, blouse design course bangalore, admissions 2026 fashion" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-blouses-advanced" />

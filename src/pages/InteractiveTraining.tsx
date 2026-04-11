@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import * as React from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
@@ -311,7 +312,13 @@ export default function InteractiveTraining(): React.JSX.Element {
 
   return (
     <div className="min-h-screen bg-background">
-     
+      <Helmet>
+        <title>Interactive Fashion Training | OGIFT Bangalore | AI-Powered 2026</title>
+        <meta name="description" content="Experience interactive AI-powered fashion design training at OGIFT Bangalore. Learn pattern making, garment construction & styling with immersive 3D training at Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="interactive fashion training bangalore, AI fashion learning, 3D fashion training, OGIFT interactive training, Onati Global training, fashion design AI bangalore 2026" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/interactive-training" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <main className="container mx-auto px-4 pt-20 pb-8">
         {/* Title bar */}
         <div className="flex items-center justify-between mb-4">

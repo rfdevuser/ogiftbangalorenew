@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import * as React from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -195,6 +196,13 @@ export default function AIAvatarLogin(): React.JSX.Element {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-secondary/30 to-primary/10 flex items-center justify-center p-4">
+      <Helmet>
+        <title>AI Fashion Avatar Login | OGIFT Bangalore | Student Portal 2026</title>
+        <meta name="description" content="Login to OGIFT's AI Fashion Avatar — personalised AI-powered fashion learning assistant for students of Bangalore's best fashion institute. 4.9★ rated. Admissions 2026 open!" />
+        <meta name="keywords" content="AI fashion avatar login, OGIFT student portal, Onati Global AI learning, fashion AI assistant bangalore, fashion institute student login, OGIFT login 2026, AI fashion tutor bangalore" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/ai-avatar-login" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Decorative elements */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-20 left-10 w-72 h-72 bg-primary/5 rounded-full blur-3xl" />

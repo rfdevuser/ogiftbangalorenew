@@ -102,10 +102,10 @@ const DesignPatternMakingPortfolio3MonthsCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Design Pattern Making & Portfolio 3 Months Course (DPPMP) | OGIFT Bangalore</title>
-        <meta name="title" content="Design Pattern Making, Design Process & Portfolio Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Master fashion design, pattern making, garment construction and build a professional portfolio in our 3-month DPPMP course at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="fashion design course Bangalore, pattern making course, design process course, portfolio development, DPPMP course, OGIFT, Onati Global, garment construction, fashion illustration, 3 months fashion course" />
+        <title>Best Fashion Design Portfolio Course Bangalore 2026 | OGIFT | DPPMP Admissions</title>
+        <meta name="title" content="Best Design Pattern Making & Portfolio 3 Months Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best 3-month fashion design, pattern making & portfolio course (DPPMP) in Bangalore at OGIFT — design, construction & professional portfolio. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion design portfolio course bangalore, DPPMP course bangalore 2026, pattern making portfolio course bangalore, design process portfolio course, fashion design diploma bangalore, OGIFT, Onati Global, garment construction portfolio course, fashion design admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/design-pattern-making-portfolio-3months" />

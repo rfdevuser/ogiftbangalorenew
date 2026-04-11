@@ -37,10 +37,10 @@ const Courses = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fashion Design Courses in Bangalore | OGIFT - Onati Global Institute</title>
-        <meta name="title" content="Fashion Design Courses in Bangalore | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Explore industry-recognized fashion design courses at OGIFT Bangalore. From 1-month express programs to advanced diplomas — garment construction, pattern making, design process & portfolio development." />
-        <meta name="keywords" content="fashion design courses Bangalore, fashion institute Bangalore, pattern making course, garment construction course, fashion diploma Bangalore, OGIFT, Onati Global Institute, fashion design certificate, fashion career Bangalore" />
+        <title>Fashion Design Courses in Bangalore 2026 | OGIFT | Best Fashion Institute</title>
+        <meta name="title" content="Fashion Design Courses in Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Explore Bangalore's best fashion design courses at OGIFT. Admissions 2026 open — pattern making, garment construction, fashion illustration, boutique management, styling & advanced diplomas. 100% placement assistance." />
+        <meta name="keywords" content="fashion design courses bangalore 2026, best fashion design courses bangalore, fashion designing courses bangalore, pattern making course bangalore, garment construction course bangalore, fashion illustration course, boutique management course, fashion diploma bangalore, fashion styling course, OGIFT courses, Onati Global Institute, fashion design certificate bangalore, fashion career bangalore, admissions 2026 fashion, 100% placement fashion institute" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses" />
@@ -48,16 +48,16 @@ const Courses = () => {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ogiftbangalore.com/courses" />
-        <meta property="og:title" content="Fashion Design Courses in Bangalore | OGIFT" />
-        <meta property="og:description" content="Explore fashion design courses at OGIFT Bangalore — garment construction, pattern making, design process, portfolio development and advanced diplomas. Enroll today." />
+        <meta property="og:title" content="Fashion Design Courses in Bangalore 2026 | OGIFT | Best Fashion Institute" />
+        <meta property="og:description" content="Explore Bangalore's best fashion design courses at OGIFT — pattern making, garment construction, fashion illustration, boutique management, styling & advanced diplomas. 100% placement. Admissions 2026 open!" />
         <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.ogiftbangalore.com/courses" />
-        <meta name="twitter:title" content="Fashion Design Courses in Bangalore | OGIFT" />
-        <meta name="twitter:description" content="Industry-recognized fashion design programs at OGIFT Bangalore. From express 1-month courses to advanced diplomas. Enroll now." />
+        <meta name="twitter:title" content="Fashion Design Courses Bangalore 2026 | OGIFT | 100% Placement" />
+        <meta name="twitter:description" content="Bangalore's best fashion design courses — pattern making, garment construction, styling & advanced diplomas. 100% placement. Admissions 2026 open!" />
 
         {/* Additional SEO Meta Tags */}
         <meta name="geo.region" content="IN-KA" />

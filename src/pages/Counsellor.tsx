@@ -819,10 +819,10 @@ export default function Counsellor(): React.JSX.Element {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>AI Career Counsellor Amy | Onati Global Institute of Fashion Technology</title>
-        <meta name="title" content="AI Career Counsellor Amy | OGIFT Bangalore - Fashion Design Institute" />
-        <meta name="description" content="Get personalized career guidance from Amy, your AI counsellor at Onati Global Institute of Fashion Technology. Explore fashion design courses, get admission help, and plan your career in Bangalore's premier fashion institute." />
-        <meta name="keywords" content="fashion design course Bangalore, fashion institute Bangalore, OGIFT, Onati Global, AI counsellor, career guidance, fashion design diploma, fashion course admission, fashion career, Amy counsellor" />
+        <title>Free AI Fashion Career Counsellor | OGIFT Bangalore | Admissions 2026</title>
+        <meta name="title" content="Free AI Fashion Career Counsellor Amy | OGIFT Bangalore | Best Fashion Institute" />
+        <meta name="description" content="Get free personalized fashion career guidance from Amy, OGIFT's AI counsellor. Explore courses, check admissions 2026 eligibility & plan your fashion design career at Bangalore's 4.9★ rated best fashion institute." />
+        <meta name="keywords" content="fashion design career guidance bangalore, AI fashion counsellor, free fashion career counselling bangalore, fashion course admission 2026, OGIFT counsellor, Onati Global career guidance, best fashion institute bangalore admissions, fashion design course recommendation bangalore, fashion career planning, fashion institute counselling bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/counsellor" />
@@ -830,16 +830,16 @@ export default function Counsellor(): React.JSX.Element {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ogiftbangalore.com/counsellor" />
-        <meta property="og:title" content="Talk to Amy - AI Career Counsellor | OGIFT Bangalore" />
-        <meta property="og:description" content="Get instant career guidance from Amy, your AI-powered counsellor. Explore fashion design courses, admission process, and career opportunities at Bangalore's premier fashion institute." />
+        <meta property="og:title" content="Free AI Fashion Career Counsellor | OGIFT Bangalore | Admissions 2026" />
+        <meta property="og:description" content="Free career guidance from Amy, OGIFT's AI counsellor. Explore fashion design courses, check admissions 2026 eligibility & plan your career at Bangalore's 4.9★ best fashion institute." />
         <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.ogiftbangalore.com/counsellor" />
-        <meta name="twitter:title" content="AI Career Counsellor Amy | OGIFT Bangalore" />
-        <meta name="twitter:description" content="Get personalized fashion career guidance from Amy. Explore courses, admissions & placement support at Onati Global Institute." />
+        <meta name="twitter:title" content="Free AI Fashion Career Counsellor | OGIFT Bangalore 2026" />
+        <meta name="twitter:description" content="Free fashion career guidance from Amy. Explore courses, admissions 2026 & placement support at Bangalore's 4.9★ rated OGIFT." />
 
         {/* Additional SEO Meta Tags */}
         <meta name="geo.region" content="IN-KA" />

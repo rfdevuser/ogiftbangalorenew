@@ -51,9 +51,9 @@ const PatternMakingWesternAdvancedCourse = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Advanced Western Pattern Making Course | 1 Month | Onati Global Bangalore</title>
-        <meta name="description" content="Master advanced Western pattern making in 1 month at Onati Global Bangalore. Learn skirt blocks, trousers, cascade & ruffle skirts, empire waist, and reversible jacket patterns. Certificate included." />
-        <meta name="keywords" content="western pattern making course Bangalore, advanced pattern making, skirt block pattern, trouser pattern making, cascade skirt pattern, fashion design course Bangalore" />
+        <title>Best Western Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="description" content="Best advanced Western pattern making course in Bangalore at OGIFT — skirt blocks, trousers, cascade skirts, empire waist & reversible jacket. 1-month, 4.9★ rated. 100% placement. Admissions 2026 open!" />
+        <meta name="keywords" content="best western pattern making course bangalore, advanced western pattern making bangalore 2026, skirt block pattern course, trouser pattern making bangalore, cascade skirt pattern, fashion design course bangalore, OGIFT, Onati Global, western garment course, admissions 2026" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-western-advanced" />
         <meta property="og:title" content="Advanced Western Pattern Making Course | Onati Global Bangalore" />
         <meta property="og:description" content="Master 8 essential Western garment patterns in 1 month. Skirt blocks, trousers, cascade skirts, empire waist & more. Certificate included." />

@@ -96,10 +96,10 @@ const DesignProcessPatternMaking3MonthsCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Design Process & Pattern Making 3 Months Course (DPPM) | OGIFT Bangalore</title>
-        <meta name="title" content="Design Process & Pattern Making Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Master fashion design fundamentals, illustration, textile science and pattern making in our 3-month DPPM course (107 hours) at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="design process pattern making course Bangalore, DPPM course, fashion illustration course, textile science, pattern making Bangalore, OGIFT, Onati Global, 3 months fashion course, fashion design certificate" />
+        <title>Best Fashion Design & Pattern Making Course Bangalore 2026 | OGIFT | DPPM</title>
+        <meta name="title" content="Best Design Process & Pattern Making 3 Months Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best fashion design & pattern making 3-month course (DPPM) in Bangalore at OGIFT — design fundamentals, illustration, textile science. 107 hours. 4.9★ rated. 100% placement. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion design pattern making course bangalore, DPPM course bangalore 2026, design process pattern making bangalore, fashion illustration course bangalore, textile science course, OGIFT, Onati Global, 3 month fashion diploma bangalore, fashion certificate 2026, admissions open" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/design-process-pattern-making-3months" />

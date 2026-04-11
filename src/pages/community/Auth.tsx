@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -107,6 +108,11 @@ const CommunityAuth = () => {
 
   return (
     <main className="min-h-screen pt-24 pb-12 px-4 bg-gradient-to-b from-background to-muted/30">
+      <Helmet>
+        <title>Fashion Community Login | OGIFT Bangalore | Join Our Community</title>
+        <meta name="description" content="Join OGIFT Bangalore's fashion design community. Sign in to share work, get feedback & connect with fashion peers and experts. 4.9★ rated best fashion institute." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="max-w-md mx-auto">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">
