@@ -57,6 +57,52 @@ const Home = () => {
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="geo.region" content="IN-KA" />
         <meta name="geo.placename" content="Bangalore" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the best fashion design institute in Bangalore?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "OGIFT (Onati Global Institute of Fashion Technology) is rated 4.9★ and is widely considered Bangalore's best fashion design institute. Located in Vinayakanagar, OGIFT offers diploma and short-term courses with 100% placement support."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What fashion design courses does OGIFT Bangalore offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "OGIFT offers a range of fashion design courses including One Year Advanced Diploma, Six Month Diploma, Pattern Making, Fashion Illustration, Garment Construction, Fashion Styling, Boutique Management, Draping Technology, and online courses. Admissions are open for 2026."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does OGIFT Bangalore provide placement support?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, OGIFT provides 100% placement support to its graduates. Students are placed with leading fashion brands and design houses including Fabindia, Myntra, Raymond, Zara, and H&M."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Where is OGIFT fashion institute located in Bangalore?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "OGIFT (Onati Global Institute of Fashion Technology) is located at No 4, 5th Main, 1st Cross, B Block, 4th Main, Vinayakanagar, Bengaluru, Karnataka 560017."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are fashion design admissions open at OGIFT Bangalore for 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, OGIFT Bangalore admissions for 2026 are open. You can enroll for diploma courses and short-term express mastery courses. Contact +91-90369-28799 or visit ogiftbangalore.com/admissions."
+              }
+            }
+          ]
+        })}</script>
       </Helmet>
       <StructuredData />
       {/* <CoursePromoPopup />
