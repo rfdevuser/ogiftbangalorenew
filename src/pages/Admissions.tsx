@@ -206,6 +206,60 @@ const Admissions = () =>
         <meta name="language" content="English" />
         <meta name="revisit-after" content="7 days" />
         <meta name="rating" content="General" />
+        <script type="application/ld+json">{JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How do I apply for fashion design admissions at OGIFT Bangalore 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can apply online at ogiftbangalore.com/admissions or call +91-90369-28799. Fill the admission form with your details and course preference. Admissions for 2026 are open now."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the fashion design courses available at OGIFT Bangalore?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "OGIFT offers 1-month Express Mastery courses, 3-month combo courses, 6-month diploma, and 1-year Advanced Diploma in Fashion Designing. Courses include Pattern Making, Fashion Illustration, Garment Construction, Styling, Boutique Management, and Draping Technology."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What are the eligibility criteria for fashion design courses at OGIFT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "OGIFT welcomes students who have completed Class 10 (SSC) or above. No prior design experience is required. Both freshers and working professionals can enroll. Courses are available in English, Hindi, and Kannada."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the fee for fashion design courses at OGIFT Bangalore?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Course fees at OGIFT Bangalore vary by program — from short-term 1-month courses to the 1-year Advanced Diploma. Contact the admissions team at +91-90369-28799 or admissions@ogiftbangalore.com for current fee details and scholarship options."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Does OGIFT Bangalore provide placement assistance after completing fashion design courses?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, OGIFT provides 100% placement support. Graduates are placed with leading fashion brands including Fabindia, Myntra, Raymond, Zara, and H&M. The institute has a dedicated placement cell that connects students with industry opportunities."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is there an online fashion design course available at OGIFT?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, OGIFT offers an online fashion design course accessible from anywhere in India. Visit ogiftbangalore.com/courses/onlinecourse for details on the curriculum and enrollment."
+              }
+            }
+          ]
+        })}</script>
       </Helmet>
 
       <section id="contact" className="overflow-hidden py-2 md:py-2 lg:py-2">
