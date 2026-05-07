@@ -444,6 +444,19 @@ const DesignProcessPatternMaking3MonthsCourse = () => {
         </div>
       </section>
 
+      {/* Related Courses */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Pattern Making Courses at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Link to="/courses/pattern-making-basic" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Pattern Making Basic</span></Link>
+            <Link to="/courses/pattern-making-blouses-advanced" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Blouses Pattern Making</span></Link>
+            <Link to="/courses/pattern-making-western-advanced" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Western Pattern Making</span></Link>
+            <Link to="/courses/pattern-making-kids-clothing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Kids Clothing Patterns</span></Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">

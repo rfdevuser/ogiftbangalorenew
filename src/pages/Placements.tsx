@@ -214,6 +214,19 @@ const Placements = () => {
         </div>
       </section>
 
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Explore More at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Link to="/portfolio" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">AI Portfolio Builder</span></Link>
+            <Link to="/courses/digital-portfolio-making" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Digital Portfolio Course</span></Link>
+            <Link to="/courses/design-pattern-making-portfolio-3months" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Portfolio Diploma (3 Months)</span></Link>
+            <Link to="/careers/work-from-home" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Work From Home Careers</span></Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
