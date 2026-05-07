@@ -279,6 +279,23 @@ const GraphicDesigningForFashionCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Graphic Designing for Fashion course at OGIFT Bangalore is a 1-month Express Mastery programme that teaches fashion professionals how to use digital design tools to create garment graphics, print designs, mood boards, fashion presentations, and brand identity materials. In today's fashion industry, digital design skills are essential at every level — from freelance illustrators creating print patterns for garment exporters to designers building brand identities for their own labels. This course gives you the digital tools and creative vocabulary to produce professional-quality fashion graphics.</p>
+              <p>The course covers core graphic design principles applied specifically to fashion contexts: layout, typography, colour theory for print and screen, digital illustration techniques, print design and repeat pattern creation, and presentation design for fashion portfolios and collections. Students work with industry-standard design software and learn to produce deliverables that meet the technical requirements of garment printing, digital publishing, and brand communication. OGIFT faculty with professional design and fashion industry experience guide students through both the technical and creative dimensions of the subject.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion designers who want to add digital design skills to their practice, textile designers creating print patterns, boutique and fashion brand owners who need to create their own marketing materials, and anyone interested in fashion communication and visual branding. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as fashion graphic designers, print designers, fashion illustrators, brand identity designers, and social media content creators for fashion brands. The skills are also valuable for fashion designers who produce their own lookbooks and digital portfolios. OGIFT's 100% placement support connects graduates with design studios, garment exporters, and fashion brands across Bangalore.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

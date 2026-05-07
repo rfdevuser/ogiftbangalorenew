@@ -444,6 +444,23 @@ const DesignProcessPatternMaking3MonthsCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Design Process & Pattern Making 3-Month course at OGIFT Bangalore is a comprehensive vocational programme that takes you through the complete journey from design concept to finished pattern — the two skills that sit at the heart of professional fashion design. Unlike shorter Express Mastery courses that focus on a single discipline, this 3-month programme gives you the depth of training needed to work as a full design-and-pattern professional in the Indian fashion industry. It is one of OGIFT's most sought-after qualifications among employers at design studios and garment manufacturers.</p>
+              <p>The course integrates design fundamentals with advanced pattern making practice. You begin with design elements and principles, colour theory, fashion illustration, and trend research — learning how designers move from inspiration to concept to garment specification. You then move into comprehensive pattern making: flat pattern drafting for womenswear and menswear, dart manipulation, design interpretation into pattern, grading, and pattern lay planning. The programme includes real-world design briefs that require you to develop a concept, illustrate it, draft the pattern, and specify the construction — exactly as professional designers work. Classes are in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for students who have completed basic pattern making or fashion illustration and want a single, comprehensive programme that ties design and technical skills together. It is also well-suited for working designers who want to add technical pattern skills, or technical pattern makers who want to add design thinking to their work. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as pattern makers, design assistants, technical designers, production coordinators, and sample room leads at fashion brands, garment exporters, and design studios. The combination of design and pattern skills makes graduates particularly versatile and valuable to employers. OGIFT's 100% placement support connects graduates with relevant opportunities across Bangalore and Karnataka.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

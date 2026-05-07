@@ -376,6 +376,23 @@ const PatternMakingBoutiqueManagement3MonthsCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Pattern Making & Boutique Management 3-Month course at OGIFT Bangalore is a unique vocational programme that combines two of the most practical fashion skill sets — technical pattern making and business boutique management — in a single comprehensive qualification. This combination is specifically designed for students who want to run their own boutique or tailoring business: the ability to draft patterns in-house gives a boutique owner complete creative and production independence, while the boutique management skills ensure the business operates profitably and sustainably. This is one of OGIFT's most entrepreneurship-oriented programmes.</p>
+              <p>The course covers the full spectrum of both disciplines. In pattern making, students learn to draft patterns for blouses, salwar kameez, skirts, trousers, and basic Western garments, with an emphasis on made-to-measure fitting and alteration. In boutique management, students learn brand identity development, inventory control and sourcing, visual merchandising, pricing and cost sheet preparation, customer handling, and digital promotion strategies for fashion retail. The integration of the two subjects means students learn to see the pattern making and the business decisions as part of the same process — developing the mindset of a professional boutique owner, not just a tailor or a manager.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for aspiring boutique owners, home-based tailors who want to formalise and grow their business, fashion graduates who want to add business management skills, and anyone who wants the ability to run a complete, independent fashion retail and production business. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates launch their own boutiques, manage established boutiques, work as pattern consultants, or operate home-based made-to-measure businesses. The dual qualification makes graduates uniquely adaptable — they can handle both the craft and the commerce of a fashion business. OGIFT's 100% placement support helps graduates who prefer employment connect with boutique management and pattern making roles across Bangalore.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">

@@ -278,6 +278,23 @@ const PatternMakingBlousesAdvancedCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Advanced Blouse Pattern Making course at OGIFT Bangalore is a focused 1-month Express Mastery programme covering the full range of blouse constructions — one of the most technically demanding and commercially valuable specialisations in Indian fashion. The blouse is the garment that most directly expresses the craft of the Indian fashion designer: a well-fitted, beautifully constructed blouse requires precise pattern drafting, an understanding of the body, and mastery of construction details that no machine can replicate. This course teaches you to draft patterns for every blouse style professionally.</p>
+              <p>The course covers sleeveless, short-sleeve, and full-sleeve blouse constructions; princess line and dart manipulation; neckline and back-neck variations; keyhole, hook-and-eye, and zip closures; high-neck, collar, and designer yoke constructions; and the fitting adjustments required for different body types. Students draft patterns from scratch on paper and construct toiles for fitting, learning to correct issues of fit, balance, and proportion before cutting in final fabric. Faculty at OGIFT draw on active experience in bridal and occasion wear to ensure the patterns you learn reflect current industry demand.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for tailors and fashion designers who want to formalise and expand their blouse drafting skills, students who have completed the basic pattern making course and want to advance, and bridal wear specialists who need precise, customisable blouse patterns. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as specialist blouse makers, bridal wear designers, made-to-measure tailors, pattern makers for kurta and saree blouse manufacturers, and freelance pattern consultants. Advanced blouse pattern skills are in high demand across Bangalore's boutique sector. OGIFT's placement network connects graduates with leading bridal studios and garment businesses.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

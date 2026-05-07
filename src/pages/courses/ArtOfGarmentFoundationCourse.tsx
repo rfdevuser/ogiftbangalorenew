@@ -279,6 +279,23 @@ const ArtOfGarmentFoundationCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Art of Garment Foundation course at OGIFT Bangalore is a 1-month Express Mastery programme that teaches the essential skills of garment construction — the practical, hands-on craft of sewing fabric into finished, wearable garments. Understanding garment construction is the foundation of any fashion career: whether you become a designer, a pattern maker, a boutique owner, or a production specialist, the ability to construct a garment accurately and efficiently is a skill that underpins everything else. This course gives you that foundation in an intensive, industry-focused format.</p>
+              <p>The course covers the essential garment construction disciplines: seam types and stitching techniques, construction of bodices, skirts, sleeves, and closures, finishing methods including hemming, overlocking, and lining, and quality control at each stage of the garment-making process. Students work on professional-grade machines in OGIFT's sewing atelier, with faculty who have real garment industry experience guiding every session. The course is taught in English, Hindi, and Kannada, and is structured to give students immediately transferable skills they can apply to any garment type.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is suitable for beginners with no prior sewing experience as well as home stitchers and hobbyists who want to bring their skills up to professional standard. It is also an excellent foundation for students planning to progress to OGIFT's pattern making courses, diploma programmes, or boutique management course. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as garment construction specialists, sample room assistants, production line supervisors, tailoring unit managers, alterations specialists, and costume makers. The skills are also directly applicable to launching a home-based tailoring or bespoke garment business. OGIFT's 100% placement support helps graduates connect with employment opportunities across Bangalore and Karnataka.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

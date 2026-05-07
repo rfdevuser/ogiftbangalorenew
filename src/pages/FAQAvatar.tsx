@@ -705,6 +705,23 @@ export default function FAQAvatar(): React.JSX.Element {
           </div>
         </div>
 
+        {/* About Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">Fashion Design FAQ — Ask OGIFT's AI Avatar</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>OGIFT's Fashion Design FAQ Avatar is an AI-powered interactive tool that answers questions about fashion design careers, OGIFT's courses, the admissions process, fees, eligibility, and life as a fashion professional in India. The FAQ Avatar is available 24/7 and can answer hundreds of common questions instantly — so you can get the information you need at any time, without waiting for the admissions office to open. It draws on OGIFT's full course catalogue, placement records, and faculty expertise to give you accurate, relevant answers.</p>
+                <p>The FAQ Avatar is particularly useful for prospective students who are in the early stages of researching fashion education and want to understand what different courses lead to, how much they cost, who they are suitable for, and what the fashion industry looks like for graduates in Bangalore. It is also useful for parents and guardians who want factual information about career outcomes before supporting a student's enrolment decision, and for working professionals who want to understand how OGIFT's programmes can fit around their existing schedule.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">What Can the FAQ Avatar Answer?</h3>
+                <p>The FAQ Avatar can answer questions across all areas of OGIFT's programmes and the fashion industry, including: which course is right for my background and goals; what are the fees and payment options; what do graduates earn in their first year; is there placement support and which companies hire OGIFT graduates; how long do courses take and what are the batch timings; is there an online option; what is the eligibility requirement; and many more. If the Avatar cannot answer a specific question, it will direct you to the OGIFT admissions team for a personal response.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">Speak to a Human Counsellor</h3>
+                <p>For questions that require a more personalised response — such as which course is right for your specific situation, or how to plan your education around work or family commitments — OGIFT's human admissions counsellors are available at the campus in Vinayakanagar, Bengaluru. You can also use OGIFT's Free AI Career Counsellor at ogiftbangalore.com/counsellor for a structured, personalised programme recommendation. To book a counselling session or campus visit, call +91 90369 28799.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <div className="max-w-6xl mx-auto">
           {/* Mobile: message box sits on the bottom half of the avatar box */}
           <div className="bg-card rounded-2xl shadow-xl overflow-hidden border lg:hidden">

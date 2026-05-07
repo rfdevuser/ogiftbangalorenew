@@ -466,6 +466,23 @@ const ThreeMonthsOnlineFashionCourse = () => {
           </div>
         </section>
 
+        {/* About This Course */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>OGIFT's 3-Month Online Fashion Course is an AI-powered fashion education programme accessible from anywhere in India — designed for students who want a structured, faculty-guided fashion education without relocating to Bangalore. The course covers the foundational disciplines of fashion design: design elements and principles, colour theory, fashion illustration, fabric and textile knowledge, pattern making basics, garment construction concepts, fashion history and market awareness, and an introduction to fashion business and retail. All content is delivered through OGIFT's interactive online platform with video lessons, downloadable resources, live faculty sessions, and regular assessments.</p>
+                <p>The course is built around OGIFT's proven in-person curriculum, adapted for the online format with practical exercises that students can complete with basic materials at home. Live faculty Q&A sessions ensure that students get real-time guidance and feedback, not just recorded content. The programme is structured as a 3-month intensive — approximately 10–15 hours per week — with a clear week-by-week curriculum that keeps students on track without the need for self-direction. On completion, students receive an OGIFT certificate recognised across the Indian fashion industry. Classes are available in English, Hindi, and Kannada.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+                <p>This course is ideal for students in cities and towns outside Bangalore who cannot attend in person, working professionals who want to develop fashion skills alongside their current career, homemakers who want structured education they can fit around family responsibilities, and anyone who has tried to self-learn fashion design and wants a more structured, guided approach. Eligibility is Class 10 (SSC) and above.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+                <p>Online course graduates pursue careers in fashion design, styling, boutique management, and garment retail — the same paths as in-person graduates. Many use the 3-month online course as a stepping stone to OGIFT's in-person diploma programmes. OGIFT's 100% placement support is available to online course graduates. The AI-powered platform also continues to be available after graduation for portfolio building and continued learning.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Related Pages */}
         <section className="py-12 bg-muted/30">
           <div className="container mx-auto px-4">

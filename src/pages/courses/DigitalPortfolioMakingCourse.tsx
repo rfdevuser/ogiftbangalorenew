@@ -290,6 +290,23 @@ const DigitalPortfolioMakingCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Digital Portfolio Making course at OGIFT Bangalore is a focused 1-month Express Mastery programme that teaches fashion students and graduates how to create a professional digital portfolio — the essential tool for securing employment, freelance clients, and admission to advanced design programmes. In today's fashion industry, a digital portfolio is your most important professional asset. Employers review portfolios before résumés; clients assess your work before making contact; and the quality of your portfolio presentation directly influences the opportunities available to you. This course teaches you to create a portfolio that opens doors.</p>
+              <p>The course covers portfolio strategy and structure, digital layout and presentation tools, photography and image editing for garment and illustration work, writing design rationales and project descriptions, tailoring portfolio content for different employer types (fashion brands, garment exporters, boutiques, design studios), and building a professional online presence. Students work on their own actual design and project work throughout the course, so that by the end they have a completed, personalised portfolio ready for immediate use. Faculty with industry hiring experience provide direct feedback on portfolio quality and presentation.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion design graduates preparing for job applications, students completing diploma programmes who need to present their work professionally, freelance designers and stylists who want to attract clients, and anyone who has developed fashion skills informally and now wants to formalise their presentation. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates emerge with a completed, professional digital portfolio that they can use for job applications, freelance client acquisition, and further study applications. The course accelerates the job search significantly — graduates report more interview invitations and stronger employer responses after completing the programme. OGIFT's 100% placement support further amplifies these outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

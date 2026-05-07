@@ -251,6 +251,23 @@ const FabricKnowledgeTextileDesigningCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Fabric Knowledge &amp; Textile Designing course at OGIFT Bangalore is a 1-month Express Mastery programme that gives students a deep, practical understanding of fabric — the primary material of every fashion design. Knowing how fabric behaves is essential for every fashion professional: designers choose fabrics that will realise their vision, pattern makers account for fabric properties in their drafts, and buyers and merchandisers evaluate fabric quality when sourcing for collections. This course teaches you to identify, evaluate, and select fabric with the confidence of an industry professional.</p>
+              <p>The course covers the full spectrum of textile knowledge: natural, synthetic, and blended fibre types; weave structures, knit constructions, and non-woven fabrics; dyeing, printing, and finishing processes that affect fabric performance and hand feel; and the fundamentals of textile design including print creation, surface pattern development, and colour application. Students work with real fabric samples from OGIFT's textile library, learning to evaluate fabric through both visual examination and physical testing. Faculty with textile industry experience guide students through the practical application of each topic.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion design students who want to deepen their material knowledge, buyers and merchandisers who need to evaluate fabric quality, entrepreneurs sourcing fabrics for their collections, and anyone interested in textile design as a creative career. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as fabric buyers, textile designers, print designers, production merchandisers, quality controllers, and sourcing executives. The course also provides valuable foundational knowledge for students progressing to diploma programmes or specialising in surface ornamentation and embellishment. OGIFT's placement network connects graduates with textile companies, garment exporters, and fashion brands across India.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

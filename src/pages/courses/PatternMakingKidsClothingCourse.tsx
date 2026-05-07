@@ -271,6 +271,23 @@ const PatternMakingKidsClothingCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Kids Clothing Pattern Making course at OGIFT Bangalore is a 1-month Express Mastery programme specialising in pattern drafting for children's garments — a growing and commercially significant segment of the Indian fashion and garment manufacturing industry. Children's pattern making requires a distinct set of skills: children's proportions change rapidly across age groups, fit requirements differ substantially from adult garments, and the construction must prioritise comfort, durability, and ease of movement. This course teaches you to draft precise, scalable patterns for children across a full range of age groups.</p>
+              <p>The course covers proportion and measurement systems for infant, toddler, and child age groups; drafting methods for shirts, frocks, trousers, shorts, and school uniforms; age-grading and size scaling techniques used in garment manufacturing; construction details specific to children's wear including reinforced seams, elastic waistbands, and snap fastenings; and the safety and compliance considerations relevant to children's garment production in India. Students produce a portfolio of patterns across multiple age groups, giving them immediately usable templates for commercial production.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for pattern makers and tailors expanding into children's wear, garment manufacturers adding a kids' range, boutique owners who want to offer children's made-to-measure, and fashion designers developing children's collections. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as children's wear pattern makers, kids' garment production specialists, school uniform manufacturers, and children's fashion designers. The Indian children's wear market is growing rapidly, creating consistent demand for skilled kids' pattern makers in garment export, retail, and bespoke production. OGIFT's placement support connects graduates with relevant employers across Bangalore and Karnataka.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

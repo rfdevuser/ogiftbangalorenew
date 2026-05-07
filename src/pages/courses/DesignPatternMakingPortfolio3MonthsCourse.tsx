@@ -483,6 +483,23 @@ const DesignPatternMakingPortfolio3MonthsCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Design, Pattern Making & Portfolio 3-Month course (DPPMP) at OGIFT Bangalore is a comprehensive vocational programme that combines the creative skills of fashion design, the technical skills of pattern making, and the professional presentation skills of portfolio development — giving graduates a complete, employer-ready package of qualifications in a single 3-month intensive. The DPPMP is designed specifically for students who want to enter the fashion industry at a professional level, not just as practitioners but as candidates who can immediately demonstrate their value to employers through a polished, industry-standard portfolio.</p>
+              <p>The programme covers fashion illustration and design fundamentals, flat pattern making for a range of garment types, design-to-pattern interpretation, garment construction fundamentals, and dedicated portfolio development sessions in which students curate, present, and refine their best work into a professional portfolio document. Students receive guidance on both physical and digital portfolio formats, and the programme includes mock portfolio reviews with faculty providing industry-standard feedback. On completion, every student graduates with a completed portfolio they can present immediately to potential employers, clients, or design schools.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion design graduates who want a qualification that immediately differentiates them in the job market, students who have completed individual OGIFT courses and want to consolidate their skills into a portfolio, and professionals transitioning into fashion who need both a skill set and a credential. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates pursue careers as fashion designers, pattern makers, design assistants, and freelance fashion consultants. The portfolio qualification is specifically valued by employers who want evidence of practical ability, not just certification. OGIFT's placement network connects graduates with fashion brands, design houses, and garment manufacturers across Bangalore.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">

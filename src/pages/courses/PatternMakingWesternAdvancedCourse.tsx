@@ -228,6 +228,23 @@ const PatternMakingWesternAdvancedCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Advanced Western Pattern Making course at OGIFT Bangalore is a 1-month Express Mastery programme covering pattern drafting for Western-style garments — the category that drives the largest share of India's domestic fashion retail and garment export markets. Skilled Western pattern makers are in consistent demand at fashion brands, garment exporters, production houses, and designer studios across Bangalore and Karnataka. This course gives you the advanced technical proficiency to draft precise, production-ready patterns for a full range of Western garment types.</p>
+              <p>The course covers advanced bodice constructions including princess seam and yoke variations; trouser and shorts pattern drafting with fly-front, waistband, and pocket constructions; dress patterns including shirt dress, wrap dress, and A-line constructions; jacket and blazer drafting fundamentals; and grading techniques for scaling patterns across multiple sizes. Students draft full sets of production-ready patterns for each garment type, with faculty checking fit and construction logic at each stage. All patterns are drafted from body measurements and adapted for standard sizing, preparing students for work in both bespoke and ready-to-wear production.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for students who have completed the basic pattern making course and want to advance into Western garments, tailors expanding from ethnic to Western wear, production pattern makers at garment export companies, and designers who want to execute their own Western collection patterns. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as Western garment pattern makers, production pattern technicians, freelance pattern consultants, sample room assistants, and graders at ready-to-wear brands. Western pattern making is among the highest-demand technical skills in Bangalore's garment export sector. OGIFT's 100% placement support connects graduates with leading garment manufacturers and fashion brands.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Courses */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">
