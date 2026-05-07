@@ -230,8 +230,23 @@ const Home = () => {
         </div>
       </section>
 
+      {/* About OGIFT */}
+      <section className="py-20" aria-labelledby="about-ogift-heading">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 id="about-ogift-heading" className="text-3xl font-bold mb-6">About OGIFT — Onati Global Institute of Fashion Technology</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Onati Global Institute of Fashion Technology (OGIFT) is Bangalore's highest-rated fashion design institute, located in Vinayakanagar, Bengaluru, Karnataka. Founded in 2010, OGIFT has trained thousands of fashion designers, garment technologists, stylists, and boutique entrepreneurs across Karnataka and beyond. The institute holds a 4.9-star rating based on over 250 verified Google reviews, making it consistently the top-reviewed fashion institute in Bangalore.</p>
+              <p>OGIFT offers a complete range of fashion education programmes — from the free FASHUP 10-day taster to one-month Express Mastery courses, three-month vocational programmes, six-month diplomas, and a comprehensive one-year advanced diploma in fashion designing. Courses cover fashion illustration, pattern making (basic and advanced), draping technology, garment construction, fabric and textile science, fashion styling, graphic design for fashion, boutique management, digital portfolio development, and a three-month online fashion course. Every programme leads to a certificate or diploma recognised by the Indian fashion industry.</p>
+              <p>The curriculum at OGIFT is taught by faculty with active industry experience in design studios, export houses, and garment manufacturing companies across India. The institute's facilities include professional pattern making labs, sewing ateliers, design studios, and dedicated workspaces for draping and textile study. All programmes are taught in English, Hindi, and Kannada, making OGIFT genuinely accessible to students from across Bangalore and Karnataka. The institute's location in Vinayakanagar is well connected by public transport and is easily accessible from South, Central, and West Bangalore.</p>
+              <p>OGIFT's placement record is one of its most valued outcomes. The institute provides 100% placement support to all graduates, with an active network of industry partners that includes Fabindia, Raymond, Myntra, Lifestyle, Zara, H&M, and leading boutique design studios across Bangalore. Whether you are a school leaver exploring creative careers, a homemaker building a new income stream, or a working professional transitioning into fashion, OGIFT is equipped to take you from your first stitch to your first fashion industry placement. Admissions for 2026 are open now.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
-      <section 
+      <section
         id="contact" 
         className="py-20 bg-gradient-to-br from-primary to-accent text-primary-foreground"
         aria-labelledby="cta-heading"

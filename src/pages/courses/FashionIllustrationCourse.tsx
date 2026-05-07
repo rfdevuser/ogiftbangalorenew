@@ -179,6 +179,23 @@ const FashionIllustrationCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Fashion illustration is the foundational language of fashion design. Before a single pattern is drafted or a garment is stitched, every design begins as a visual concept — and it is the fashion illustrator who brings those ideas to life on paper. This 1-month Express Mastery course at OGIFT Bangalore teaches you the complete craft of fashion illustration, from understanding human proportions and figure drawing to rendering fabric textures, hairstyles, and garment details with professional confidence.</p>
+              <p>At OGIFT, fashion illustration is taught by faculty with real industry experience in design studios and fashion houses across India. You will begin with foundational principles of art and design, then progressively build the ability to draw fashion figures using the industry-standard 10-head and 12-head croqui proportions. The curriculum covers straight and dynamic poses, hairstyle illustration, fabric fold techniques, color theory application, and garment rendering. By the end of the course, you will be capable of creating detailed, expressive fashion illustrations that communicate your design ideas clearly and professionally. Classes are available in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for students aspiring to enter fashion design, professionals building a portfolio, artists who want to apply their skills to fashion, and anyone who wishes to visually express design ideas. No prior drawing experience is required — OGIFT faculty guide complete beginners through every step. The course suits students from Class 10 upwards and working professionals looking to add fashion illustration to their skill set.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as fashion illustrators, design assistants, portfolio creators, and visual communication specialists. A strong fashion illustration portfolio is essential when applying to advanced fashion design programs, internships at garment manufacturers, and positions at fashion magazines, retail brands, and design studios. OGIFT's 100% placement support helps connect your illustration skills with real career opportunities at brands including Fabindia, Myntra, and Raymond.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Topics */}
       <section className="py-20">
         <div className="container mx-auto px-4">

@@ -183,6 +183,23 @@ const FashionDesigningBoutiqueManagementCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Running a successful fashion boutique requires far more than a good eye for design. It demands a clear understanding of business operations, customer psychology, financial management, brand building, and digital marketing — all applied within the competitive reality of the Indian fashion retail market. OGIFT's 1-month Fashion Designing and Boutique Management course in Bangalore equips aspiring boutique owners and fashion entrepreneurs with the complete skill set to launch, operate, and grow a profitable fashion business.</p>
+              <p>The course is structured to be immediately practical. From the very first session, you will learn how to define a boutique concept, build a brand identity, plan inventory, set pricing, manage costs, and design a store layout that maximises customer experience. You will also learn digital marketing and social media promotion strategies specific to fashion retail, and how to use free tools to manage customer relationships and drive repeat business. Faculty draw on real-world experience running and consulting for fashion boutiques in Bangalore, making every lesson directly applicable to the current market. Classes are available in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for aspiring boutique owners, home-based tailors who want to formalise their business, fashion designers who want to retail their own work, and anyone interested in the business side of fashion. It is also suitable for existing boutique owners who want to improve their operations, pricing strategy, or digital presence. No prior business education is required. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates launch their own boutiques, work as boutique managers, fashion retail consultants, visual merchandisers, and brand managers. The skills taught in this course are also directly applicable to positions in fashion retail chains, multi-brand outlets, and e-commerce fashion businesses. OGIFT's 100% placement support connects graduates with relevant opportunities in the fashion industry across Bangalore and Karnataka.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Topics */}
       <section className="py-20">
         <div className="container mx-auto px-4">

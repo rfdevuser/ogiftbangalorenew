@@ -179,6 +179,23 @@ const PatternMakingBasicCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Pattern making is the technical backbone of garment construction. A well-drafted pattern is the difference between a garment that fits beautifully and one that does not — and this skill is in demand across boutiques, fashion houses, and garment manufacturing units throughout India. OGIFT's 1-month Pattern Making Basic course in Bangalore introduces you to the science and art of pattern drafting, covering 9 essential garment types that form the foundation of any fashion designer's skill set.</p>
+              <p>The course follows a hands-on, practical approach under experienced faculty. You will learn to take accurate body measurements, calculate ease allowances, and draft patterns on paper from scratch — without relying on pre-existing templates. Topics range from the fundamental bodice block to kurta, skirts (straight, circular, and A-line), frocks, trousers, blouses, and yoke patterns. Each pattern type is taught with attention to fit, proportion, and the practical considerations of garment construction. Classes are available in English, Hindi, and Kannada both online and offline.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course suits beginners with no prior pattern making experience, home tailors looking to formalise their skills, fashion students who need a strong technical foundation, and working professionals seeking to add garment construction capability. It is the ideal starting point before progressing to the blouses advanced, western advanced, or kids clothing pattern making courses at OGIFT. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Pattern makers are sought after in garment export units, fashion design studios, boutiques, and costume production companies. With a strong foundation in pattern drafting, graduates pursue careers as production pattern makers, boutique owners, tailoring instructors, and garment quality supervisors. OGIFT's 100% placement support connects graduates with opportunities at fashion brands and garment manufacturers across Bangalore and beyond.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Topics */}
       <section className="py-20">
         <div className="container mx-auto px-4">

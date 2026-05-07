@@ -173,6 +173,23 @@ const FashionStylingCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Fashion styling is one of the fastest-growing career paths in the Indian fashion industry. As the media, entertainment, and e-commerce sectors continue to expand, the demand for skilled stylists — who can pull together compelling looks for photoshoots, films, brand campaigns, and personal clients — has never been higher. This 1-month Fashion Styling course at OGIFT Bangalore gives you the practical skills and industry knowledge to begin a career as a professional stylist.</p>
+              <p>The course covers the full scope of styling practice: body type analysis and fit consultation, wardrobe curation and sourcing, mood board and image concept development, editorial and commercial styling, and fashion trend forecasting. You will study how cultural influences shape contemporary fashion, how to read and anticipate market trends, and how to build a cohesive look that suits a client's personality and purpose. OGIFT faculty bring real industry experience to the classroom, sharing practical insights from shoots, brand campaigns, and editorial work. Classes are available in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for aspiring fashion stylists, image consultants, personal shoppers, social media content creators, and fashion enthusiasts who want to turn their eye for aesthetics into a professional skill. It is also valuable for fashion designers who want to understand how their work is styled and presented, and for photographers who collaborate closely with styling teams. No prior styling experience is required. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates pursue careers as personal stylists, editorial stylists, celebrity stylists, brand stylists, fashion content creators, wardrobe consultants, and image consultants. Fashion styling skills are in demand at e-commerce companies, film and television production houses, advertising agencies, and fashion magazines. OGIFT's 100% placement support helps graduates connect with industry opportunities across Bangalore and beyond.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Topics */}
       <section className="py-20">
         <div className="container mx-auto px-4">

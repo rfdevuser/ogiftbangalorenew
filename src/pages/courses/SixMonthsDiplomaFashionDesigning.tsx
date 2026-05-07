@@ -85,6 +85,23 @@ const SixMonthsDiplomaFashionDesigning = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Six Months Diploma in Fashion Designing at OGIFT Bangalore is the most comprehensive fashion education programme available for students who want to master the full range of fashion design disciplines in a structured, professionally guided environment. Over six months, students progress through seven integrated units covering fashion fundamentals and illustration, pattern making, garment construction, textile science, surface ornamentation, fashion management, and portfolio development — giving you both the creative and technical skills needed to work across the fashion industry.</p>
+              <p>This diploma is designed to mirror the learning journey of a professional fashion designer. You begin with the foundations — learning to sketch, understand design elements and principles, and read the industry. You then develop technical proficiency in flat pattern making and draping, move into garment construction across womenswear and menswear, study fabric science and surface embellishment techniques, and conclude with portfolio work that showcases your skills to potential employers. OGIFT faculty bring active industry experience to every session, ensuring the curriculum reflects what Bangalore's fashion employers and design houses actually need from graduates. Classes are conducted in-person at the OGIFT campus in Vinayakanagar, Bengaluru, in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This diploma is ideal for students who have completed Class 10 or Class 12 and want to build a complete, professional skill set in fashion design. It is also well-suited for working professionals from non-fashion backgrounds who want to transition into a design or garment technology career, and for tailors, hobbyists, and home-based designers who want to formalise and significantly expand their skills. Students who have completed OGIFT's FASHUP taster programme or Express Mastery courses and want to progress to a full diploma qualification will find this a natural next step.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates of the Six Months Diploma pursue careers as fashion designers, assistant designers, garment technicians, pattern makers, visual merchandisers, boutique managers, costume designers, and fashion educators. The breadth of the curriculum — spanning design, construction, textiles, and business — makes graduates adaptable to roles in fashion brands, export houses, garment manufacturing, retail, and e-commerce. OGIFT's 100% placement support connects graduates with leading fashion employers across Bangalore and Karnataka, including Fabindia, Raymond, Myntra, Lifestyle, and boutique design studios.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Unit 1: Fundamentals of Fashion Design */}
       <section className="py-16">
         <div className="container mx-auto px-4">

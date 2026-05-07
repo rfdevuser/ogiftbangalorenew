@@ -173,6 +173,23 @@ const DrapingTechnologyCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Draping is one of the oldest and most creative methods of pattern creation in fashion. Unlike flat pattern drafting on paper, draping involves manipulating fabric directly on a three-dimensional dress form to create shapes, silhouettes, and garment structures that are difficult to achieve through traditional methods. This 1-month Draping Technology course at OGIFT Bangalore introduces you to this highly valued skill used by couture designers, bridal wear specialists, and theatrical costume makers worldwide.</p>
+              <p>At OGIFT, students work with professional dress forms and a range of fabrics to learn how to manipulate material into garment shapes, transfer those shapes to flat paper patterns, and interpret design concepts spatially. The course covers basic bodice draping, skirt draping, sleeve development, and culminates in the creation of a Western-style gown — one of the most complex draping challenges. Faculty guide students through the entire process from understanding tools and equipment to achieving clean seams and proper fit. The course is taught in-person at the OGIFT campus in Vinayakanagar, Bengaluru.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is suitable for students who have completed a basic pattern making or garment construction course and are ready to explore advanced, three-dimensional design techniques. It is also ideal for fashion design graduates who want to add couture draping skills to their portfolio, bridal and eveningwear designers who work with complex silhouettes, and professionals in the costume or theatrical design sectors. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Draping skills are highly sought after in bridal wear, couture fashion, theatrical costume design, and fashion design education. Graduates work as pattern technicians, costume designers, bridal wear specialists, and fashion design assistants at studios that produce bespoke garments. OGIFT provides 100% placement support and has placed graduates with leading fashion brands and design houses across India.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Topics */}
       <section className="py-20">
         <div className="container mx-auto px-4">
