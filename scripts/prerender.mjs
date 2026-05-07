@@ -167,8 +167,8 @@ const routeContent = {
     <p>OGIFT offers a complete spectrum of fashion education — from the free FASHUP 10-day taster to 1-month Express Mastery courses, 3-month vocational programmes, a 6-month diploma, and a 1-year advanced diploma in fashion designing. Subjects covered include fashion illustration, flat pattern making (basic and advanced), draping technology, garment construction, fabric and textile science, surface ornamentation, fashion styling, graphic design for fashion, boutique and retail management, digital portfolio development, and an AI-powered online course accessible from across India.</p>
     <h2>Placement Support</h2>
     <p>OGIFT's 100% placement support is one of the institute's most valued outcomes. An active network of industry partners — including Fabindia, Raymond, Myntra, Lifestyle, Zara, H&amp;M, and boutique design studios across Bangalore — provides graduates with access to real employment opportunities. The OGIFT careers team works with every graduate individually to match their skills, interests, and location preferences to relevant job openings. Admissions for 2026 are open; contact the institute at +91 90369 28799.</p>
+    <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
     <a href="/courses">Explore Our Courses</a>
-    <a href="/placements">View Placements</a>
     <a href="/admissions">Admissions 2026</a>
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
@@ -219,11 +219,8 @@ const routeContent = {
     <p>OGIFT's 3-month online course is ideal for students in cities and towns outside Bangalore who cannot attend in person, working professionals who want to learn fashion design at their own pace, homemakers who want to develop fashion skills from home, and anyone who wants to assess online learning with OGIFT before applying for an in-person course at the Bangalore campus. No prior fashion experience is required. Eligibility is Class 10 (SSC) and above. Contact the OGIFT admissions team at +91 90369 28799 or admissions@ogiftbangalore.com.</p>
     <a href="/courses/onlinecourse">Enroll in the 3-Month Online Course</a>
     <a href="/courses">Explore Our Courses</a>
-    <a href="/about">Learn More About OGIFT</a>
     <a href="/videos">Fashion Design Video Lessons</a>
     <a href="/interactive-training">Interactive Fashion Training</a>
-    <a href="/community">Fashion Design Community</a>
-    <a href="/placements">100% Placement Support</a>
   `,
   "/courses/fashup-free-taster-sessions": `
     <h1>FASHUP Free Fashion Design Course Bangalore 2026 — OGIFT | Enroll Now</h1>
@@ -232,6 +229,7 @@ const routeContent = {
     <h2>Who Is This For?</h2>
     <p>FASHUP is ideal for school and college students exploring career options in fashion, homemakers who want to experience structured fashion education before enrolling in a longer programme, working professionals considering a career change into fashion design, and parents who want their child to try fashion education before committing to a diploma. No prior experience or qualifications are required. Many FASHUP graduates go on to enrol in OGIFT's full programmes — the 3-month vocational course, the 6-month diploma, or the 1-year advanced diploma. Contact OGIFT at +91 90369 28799 to register.</p>
     <a href="/admissions">Enroll Now — It's FREE</a>
+    <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
     <a href="/courses">View All Courses</a>
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/about">About OGIFT</a>
@@ -247,8 +245,8 @@ const routeContent = {
     <h2>Who Is This Course For?</h2>
     <p>This course is ideal for students who want to develop a specific, marketable skill quickly — aspiring fashion designers, textile design students, art and craft enthusiasts moving into fashion, or working professionals who want to add fashion illustration to their creative toolkit. No prior experience in fashion or art is required — only a genuine interest in design and drawing. Eligibility is Class 10 (SSC) and above. Contact the OGIFT admissions team at +91 90369 28799 or admissions@ogiftbangalore.com to enrol.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
+    <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
     <a href="/courses">View All Courses</a>
-    <a href="/courses/digital-portfolio-making">Digital Portfolio Making Course</a>
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/about">About OGIFT</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
@@ -349,13 +347,11 @@ const routeContent = {
     <h2>Career Opportunities in Fashion Graphic Design</h2>
     <p>Fashion graphic design skills open up a range of career paths that are often overlooked by fashion students — technical designer, graphic designer at a fashion brand, in-house designer at a boutique or retail chain, fashion content creator, print and pattern designer for textile companies, and freelance fashion brand designer. These roles combine creative and technical skills and are consistently well-compensated in Bangalore's fashion industry. OGIFT graduates with graphic design skills are placed across design studios, fashion brands, and digital agencies. OGIFT provides 100% placement support. Contact the admissions team at +91 90369 28799 to enrol for 2026.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
-    <a href="/courses/digital-portfolio-making">Digital Portfolio Making Course</a>
     <a href="/courses">View All Courses</a>
+    <a href="/placements">100% Placement Support</a>
     <a href="/careers/work-from-home">Work From Home Fashion Jobs</a>
     <a href="/courses/fashion-styling">Fashion Styling Course</a>
-    <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>
-    <a href="/interactive-training">Interactive Fashion Training</a>
-    <a href="/placements">100% Placement Support</a>`,
+    <a href="/community">Fashion Design Community</a>`,
   "/courses/fashion-designing-boutique-management": `
     <h1>Best Boutique Management Course Bangalore 2026 — OGIFT | Fashion Designing &amp; Boutique Management</h1>
     <p>Running a successful fashion boutique requires two distinct sets of skills: the creative ability to design and curate a compelling product range, and the business acumen to manage a profitable retail operation. OGIFT's Fashion Designing and Boutique Management course is a 1-month Express Mastery programme that develops both skill sets simultaneously — giving aspiring boutique owners and fashion entrepreneurs in Bangalore the complete toolkit to launch and operate a successful fashion business.</p>
@@ -373,12 +369,10 @@ const routeContent = {
     <p>OGIFT styling graduates work as personal stylists, wardrobe consultants, editorial stylists for magazines and social media brands, e-commerce stylists for fashion apps and retail brands, and fashion content creators. Some graduates launch independent styling consultancy businesses, while others join fashion brands or retail companies in styling and visual merchandising roles. OGIFT provides 100% placement support to all graduates. Contact the admissions team at +91 90369 28799 to enrol for 2026.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
     <a href="/courses">View All Courses</a>
-    <a href="/courses/digital-portfolio-making">Build Your Styling Portfolio</a>
-    <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion Course</a>
     <a href="/placements">100% Placement Support</a>
     <a href="/careers/work-from-home">Work From Home Fashion Jobs</a>
-    <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>
-    <a href="/videos">Fashion Design Video Lessons</a>`,
+    <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion Course</a>
+    <a href="/community">Fashion Design Community</a>`,
   "/courses/pattern-making-kids-clothing": `
     <h1>Best Kids Clothing Pattern Making Course Bangalore 2026 — OGIFT | 1-Month Express Mastery</h1>
     <p>Children's wear is a distinct and specialised segment of the Indian fashion industry — with its own sizing systems, construction considerations, safety requirements, and design sensibility. OGIFT's Kids Clothing Pattern Making course is a 1-month Express Mastery programme that teaches the complete skill set for drafting and constructing patterns for children's garments, covering the key garment types that are most in demand in India's children's wear market. The course is taught by OGIFT faculty with direct experience in children's garment design and production at the campus in Vinayakanagar, Bengaluru.</p>
@@ -408,7 +402,6 @@ const routeContent = {
     <h2>Career Outcomes and Admissions</h2>
     <p>DPPM graduates at OGIFT pursue careers as junior fashion designers, design assistants, pattern room assistants, production executives, and technical designers across Bangalore's fashion industry. The combination of design and technical skills makes DPPM graduates particularly attractive to employers who need staff who can work across the full design-to-production process. OGIFT provides 100% placement support to all DPPM graduates. Admissions for 2026 are open. Contact the admissions team at +91 90369 28799 or admissions@ogiftbangalore.com to enrol.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
-    <a href="/courses/design-pattern-making-portfolio-3months">3-Month DPPMP Course (with Portfolio)</a>
     <a href="/courses">View All Courses</a>
     <h2>Pattern Making Courses at OGIFT Bangalore</h2>
     <p>The DPPM 3-month course includes the full OGIFT pattern making curriculum, which is also taught as standalone 1-month programmes for students who want to develop a specific skill. The <a href="/courses/pattern-making-basic">Pattern Making Basic course</a> covers foundational block drafting for bodice, skirt, and sleeve. The <a href="/courses/pattern-making-blouses-advanced">Advanced Blouse Pattern Making course</a> develops specialist skills in complex blouse and kameez patterns. The <a href="/courses/pattern-making-western-advanced">Advanced Western Pattern Making course</a> covers trousers, denims, and western silhouettes. The <a href="/courses/art-of-garment-foundation">Art of Garment Foundation course</a> builds garment construction knowledge alongside pattern drafting. The <a href="/courses/pattern-making-kids-clothing">Kids Clothing Pattern Making course</a> teaches children's wear patterns from infant to 12-year sizes.</p>`,
@@ -419,7 +412,6 @@ const routeContent = {
     <h2>Why Choose DPPMP</h2>
     <p>DPPMP graduates are among the most placement-ready students OGIFT produces. The combination of design skills, pattern making skills, and a professional portfolio means that DPPMP graduates can apply for a wider range of roles, demonstrate their abilities at interview, and command better starting positions than students with only one area of competence. OGIFT provides 100% placement support to all DPPMP graduates. Admissions for 2026 are open. Contact the admissions team at +91 90369 28799 or admissions@ogiftbangalore.com to enrol. The OGIFT campus is located in Vinayakanagar, Bengaluru, Karnataka 560017.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
-    <a href="/courses/design-process-pattern-making-3months">3-Month DPPM Course (without Portfolio)</a>
     <a href="/portfolio">AI Portfolio Builder Tool</a>
     <a href="/courses/digital-portfolio-making">Digital Portfolio Making Course</a>
     <a href="/courses">View All Courses</a>`,
@@ -461,9 +453,8 @@ const routeContent = {
     <p>All content is available in English, Hindi, and Kannada — making OGIFT's online course genuinely accessible to students across India who are more comfortable learning in their native language. The AI-powered learning platform adapts to each student's pace, tracks progress, and provides personalised recommendations for additional practice in areas where students need reinforcement. Live faculty Q&amp;A sessions are available weekly, so online students always have access to real expert guidance. To enrol in the 2026 online course intake, contact the OGIFT admissions team at +91 90369 28799 or admissions@ogiftbangalore.com. The online course is also available to students outside India.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
     <a href="/courses">View All Courses</a>
-    <a href="/placements">100% Placement Support</a>
     <h2>Online Fashion Learning Tools at OGIFT</h2>
-    <p>Before committing to the full online course, explore OGIFT's free online resources. The <a href="/quicktour">Online Fashion Course Quick Tour</a> is a 20-minute AI-guided preview of the 3-month curriculum — free, no registration required. The <a href="/videos">Fashion Design Video Lessons library</a> offers on-demand lessons in pattern making, garment construction, and styling, available in English, Hindi, and Kannada. The <a href="/interactive-training">Interactive Fashion Training platform</a> provides AI-powered immersive exercises that supplement live instruction. Online students are also encouraged to join the <a href="/community">OGIFT fashion design community</a>, where students from across India share work, ask questions, and support each other's learning journey.</p>`,
+    <p>Before committing to the full online course, explore OGIFT's free online resources. The <a href="/quicktour">Online Fashion Course Quick Tour</a> is a 20-minute AI-guided preview of the 3-month curriculum — free, no registration required. The <a href="/videos">Fashion Design Video Lessons library</a> offers on-demand lessons in pattern making, garment construction, and styling, available in English, Hindi, and Kannada. The <a href="/interactive-training">Interactive Fashion Training platform</a> provides AI-powered immersive exercises that reinforce what is learned in the 3-month structured curriculum.</p>`,
   "/admissions": `
     <h1>Fashion Design Admissions 2026 — OGIFT Bangalore | Enroll Now</h1>
     <p>Admissions to OGIFT's 2026 fashion design programmes are now open. Onati Global Institute of Fashion Technology (OGIFT) is Bangalore's highest-rated fashion institute, with a 4.9-star rating based on 250+ verified Google reviews and a track record of 100% graduate placement. The admissions process is simple and straightforward — there are no entrance exams and no prior experience required. Eligibility is Class 10 (SSC) and above for all programmes.</p>
@@ -476,10 +467,8 @@ const routeContent = {
     <ul>
       <li><a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster Course</a></li>
       <li><a href="/courses/fashion-illustration">1-Month Express Mastery Courses</a></li>
-      <li><a href="/courses/design-process-pattern-making-3months">3-Month Diploma Programs</a></li>
       <li><a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a></li>
       <li><a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a></li>
-      <li><a href="/courses/onlinecourse">3-Month Online Course</a></li>
     </ul>
     <a href="/courses">View All Courses</a>
     <h2>About OGIFT Bangalore and Programme Options</h2>
@@ -502,8 +491,6 @@ const routeContent = {
     <a href="/courses">View All Courses</a>
     <a href="/quicktour">Online Fashion Course Quick Tour</a>
     <a href="/interactive-training">Interactive Fashion Training</a>
-    <a href="/community">Fashion Design Community</a>
-    <a href="/placements">100% Placement Support</a>
     <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>`,
   "/community": `
     <h1>Fashion Design Community Bangalore — OGIFT | Share &amp; Learn 2026</h1>
@@ -516,11 +503,7 @@ const routeContent = {
     <a href="/placements">100% Placement Support</a>
     <a href="/careers/work-from-home">Work From Home Fashion Jobs</a>
     <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion Course</a>
-    <a href="/courses/fashion-styling">Fashion Styling Course</a>
-    <a href="/videos">Fashion Design Video Lessons</a>
-    <a href="/quicktour">Online Fashion Course Quick Tour</a>
-    <a href="/interactive-training">Interactive Fashion Training</a>
-    <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>`,
+    <a href="/courses/fashion-styling">Fashion Styling Course</a>`,
   "/interactive-training": `
     <h1>Interactive Fashion Training — OGIFT Bangalore | AI-Powered 2026</h1>
     <p>OGIFT's Interactive Fashion Training platform is an AI-powered learning environment that brings fashion education to life through dynamic, personalised instruction. Unlike traditional video-based e-learning, OGIFT's interactive training adapts to your responses, pace, and learning style — presenting content in the sequence and format that works best for you. The platform covers key fashion design topics including design fundamentals, colour theory, fabric identification, pattern making principles, and fashion styling, with interactive exercises and instant feedback at every step.</p>
@@ -531,9 +514,7 @@ const routeContent = {
     <a href="/courses">View All Courses</a>
     <a href="/quicktour">Online Fashion Course Quick Tour</a>
     <a href="/videos">Fashion Design Video Lessons</a>
-    <a href="/community">Fashion Design Community</a>
-    <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>
-    <a href="/placements">100% Placement Support</a>`,
+    <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>`,
   "/faqavatar": `
     <h1>Fashion Design FAQ Avatar — OGIFT Bangalore | Get Answers 2026</h1>
     <p>OGIFT's Fashion Design FAQ Avatar is an AI-powered interactive tool that answers questions about fashion design careers, OGIFT's courses, the admissions process, fees, eligibility, and life as a fashion professional in India. The FAQ Avatar is available 24/7 and can answer hundreds of common questions instantly — so you can get the information you need at any time, without waiting for the admissions office to open.</p>
