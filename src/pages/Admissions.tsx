@@ -436,7 +436,7 @@ const Admissions = () =>
           <div className="w-full lg:w-1/2 md:w-1/2  xl:w-1/3 lg:mt-0 justify-center items-center">
             <div className="rounded-sm bg-[#f5d0fe] p-6 shadow-three dark:bg-gray-dark">
               <h3 className="mb-4 text-xl font-bold text-black dark:text-white"></h3>
-             
+
               {/* <div className='mt-6'>
                 <Image src="/images/placement/placement_poster.png" alt="Admission Poster" width={400} height={500} />
               </div>
@@ -445,10 +445,27 @@ const Admissions = () =>
               </div> */}
             </div>
           </div>
-          
+
         </div>
       </div>
     </section>
+
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Fashion Design Admissions 2026 — OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Admissions to OGIFT's 2026 fashion design programmes are now open. Onati Global Institute of Fashion Technology (OGIFT) is Bangalore's highest-rated fashion institute, with a 4.9-star rating based on 250+ verified Google reviews and a track record of 100% graduate placement. The admissions process is simple and straightforward — there are no entrance exams and no prior experience required. Eligibility is Class 10 (SSC) and above for all programmes. Students may join from any educational background; what matters most is an interest in fashion and a commitment to learning.</p>
+              <p>OGIFT offers programmes at every level and duration. New students often begin with the free FASHUP 10-day taster course, which gives you hands-on experience of OGIFT's teaching before you commit to a full programme. From there, students typically progress to a 1-month Express Mastery course, a 3-month vocational programme, or directly to the 6-month or 1-year diploma. All programmes are taught in-person at the OGIFT campus in Vinayakanagar, Bengaluru. Classes are available in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">What Happens After You Enrol</h3>
+              <p>Once you enrol, you will be assigned to a batch with a confirmed schedule that fits around your availability. You will receive access to OGIFT's professionally equipped labs, design studios, and pattern making facilities. Faculty with active industry experience will guide you through both the creative and technical aspects of your programme. Regular assessments throughout the course ensure that you are progressing and building the skills that employers and clients actually need. On completion, you will receive a certificate or diploma and be enrolled in OGIFT's 100% placement support programme.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Contact the Admissions Team</h3>
+              <p>To begin the admissions process, visit the OGIFT campus in Vinayakanagar, Bengaluru, call the admissions team at +91 90369 28799, or email admissions@ogiftbangalore.com. You can also book a free campus visit to see the facilities, meet faculty, and discuss which programme is right for you. Admissions for the 2026 intake are currently open — early registration is recommended as batch sizes are limited.</p>
+            </div>
+          </div>
+        </div>
+      </section>
   );
     </>
   );
