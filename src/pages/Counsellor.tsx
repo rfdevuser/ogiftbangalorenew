@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import { Canvas, useThree } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import { Helmet } from 'react-helmet-async';
@@ -819,10 +820,10 @@ export default function Counsellor(): React.JSX.Element {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>AI Career Counsellor Amy | Onati Global Institute of Fashion Technology</title>
-        <meta name="title" content="AI Career Counsellor Amy | OGIFT Bangalore - Fashion Design Institute" />
-        <meta name="description" content="Get personalized career guidance from Amy, your AI counsellor at Onati Global Institute of Fashion Technology. Explore fashion design courses, get admission help, and plan your career in Bangalore's premier fashion institute." />
-        <meta name="keywords" content="fashion design course Bangalore, fashion institute Bangalore, OGIFT, Onati Global, AI counsellor, career guidance, fashion design diploma, fashion course admission, fashion career, Amy counsellor" />
+        <title>Free AI Fashion Career Counsellor | OGIFT Bangalore | Admissions 2026</title>
+        <meta name="title" content="Free AI Fashion Career Counsellor Amy | OGIFT Bangalore | Best Fashion Institute" />
+        <meta name="description" content="Get free personalized fashion career guidance from Amy, OGIFT's AI counsellor. Explore courses, check admissions 2026 eligibility & plan your fashion design career at Bangalore's 4.9★ rated best fashion institute." />
+        <meta name="keywords" content="fashion design career guidance bangalore, AI fashion counsellor, free fashion career counselling bangalore, fashion course admission 2026, OGIFT counsellor, Onati Global career guidance, best fashion institute bangalore admissions, fashion design course recommendation bangalore, fashion career planning, fashion institute counselling bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/counsellor" />
@@ -830,16 +831,16 @@ export default function Counsellor(): React.JSX.Element {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ogiftbangalore.com/counsellor" />
-        <meta property="og:title" content="Talk to Amy - AI Career Counsellor | OGIFT Bangalore" />
-        <meta property="og:description" content="Get instant career guidance from Amy, your AI-powered counsellor. Explore fashion design courses, admission process, and career opportunities at Bangalore's premier fashion institute." />
+        <meta property="og:title" content="Free AI Fashion Career Counsellor | OGIFT Bangalore | Admissions 2026" />
+        <meta property="og:description" content="Free career guidance from Amy, OGIFT's AI counsellor. Explore fashion design courses, check admissions 2026 eligibility & plan your career at Bangalore's 4.9★ best fashion institute." />
         <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.ogiftbangalore.com/counsellor" />
-        <meta name="twitter:title" content="AI Career Counsellor Amy | OGIFT Bangalore" />
-        <meta name="twitter:description" content="Get personalized fashion career guidance from Amy. Explore courses, admissions & placement support at Onati Global Institute." />
+        <meta name="twitter:title" content="Free AI Fashion Career Counsellor | OGIFT Bangalore 2026" />
+        <meta name="twitter:description" content="Free fashion career guidance from Amy. Explore courses, admissions 2026 & placement support at Bangalore's 4.9★ rated OGIFT." />
 
         {/* Additional SEO Meta Tags */}
         <meta name="geo.region" content="IN-KA" />
@@ -1063,6 +1064,38 @@ export default function Counsellor(): React.JSX.Element {
         )}
       </div>
       </div>
+
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Free AI Fashion Career Counsellor — OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT's Free AI Fashion Career Counsellor is an interactive tool designed to help prospective students understand which fashion course or career path is right for them. Choosing the right programme is one of the most important decisions a fashion student makes — the wrong choice can mean wasted time and money, while the right choice can unlock a fulfilling creative and professional career. The OGIFT AI Counsellor asks about your background, interests, goals, and availability, then recommends the most suitable programme from OGIFT's range of short courses, vocational programmes, and diplomas.</p>
+              <p>The AI Counsellor is completely free to use and requires no registration or personal details. It is available at any time, so you can explore your options at your own pace, revisit questions, and compare different career paths without any pressure. The counsellor covers all major areas of fashion education — design, pattern making, garment technology, styling, boutique management, portfolio development, and online learning. It also provides information about eligibility, course duration, fees structure, and placement outcomes for each programme, so you can make a fully informed decision before contacting the admissions team.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Should Use the AI Counsellor?</h3>
+              <p>The OGIFT AI Counsellor is ideal for school and college students exploring fashion as a career option, working professionals considering a career change into fashion design or garment technology, homemakers who want to build a skill and an income stream from their creativity, and parents researching educational options for their children. It is also a useful starting point for anyone who is already interested in a specific course but wants to understand how it fits into a broader career pathway before enrolling.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Next Steps After Counselling</h3>
+              <p>After using the AI Counsellor, prospective students are encouraged to book a free campus visit at the OGIFT institute in Vinayakanagar, Bengaluru, where they can meet the faculty, see the facilities, and ask any remaining questions in person. To book a visit or speak directly with the admissions team, call +91 90369 28799 or email admissions@ogiftbangalore.com. Admissions for 2026 are currently open.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
+            <Link to="/admissions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Admissions 2026</span></Link>
+            <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Videos</span></Link>
+            <Link to="/community" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Community</span></Link>
+            <Link to="/faqavatar" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FAQ Avatar</span></Link>
+            <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
+            <Link to="/courses/fashup-free-taster-sessions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FASHUP Free Course</span></Link>
+          </div>
+        </div>
+      </section>
     </>
   );
 }

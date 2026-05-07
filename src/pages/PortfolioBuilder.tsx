@@ -67,15 +67,15 @@ const PortfolioBuilder = () => {
   return (
     <>
       <Helmet>
-        <title>AI Fashion Portfolio Builder Bangalore | Free Design Critique Tool</title>
-        <meta name="description" content="Build your fashion design portfolio with AI-powered critique at Bangalore's top fashion institute. Upload sketches, get expert feedback on proportion, color theory & commercial viability. Free for OGIFT students." />
-        <meta name="keywords" content="fashion portfolio bangalore, fashion design portfolio builder, AI design critique, fashion design feedback, fashion student portfolio india, fashion illustration critique bangalore, design portfolio review, fashion institute bangalore portfolio" />
-        <link rel="canonical" href="https://ogiftbangalore.com/portfolio" />
+        <title>AI Fashion Portfolio Builder Bangalore 2026 | OGIFT | Free for Students</title>
+        <meta name="description" content="Build a winning fashion portfolio with AI critique at OGIFT — Bangalore's best fashion institute (4.9★). Upload sketches, get expert feedback on proportion, color theory & commercial viability. Free for enrolled students." />
+        <meta name="keywords" content="best fashion portfolio builder bangalore, AI fashion portfolio critique, fashion design portfolio bangalore 2026, fashion design feedback tool, fashion student portfolio india, fashion illustration critique bangalore, design portfolio review tool, OGIFT portfolio builder, Onati Global fashion tools" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/portfolio" />
         <meta property="og:title" content="AI Fashion Portfolio Builder | Onati Global Institute Bangalore" />
         <meta property="og:description" content="Upload your fashion designs and get instant AI-powered professional critique. Build a portfolio that impresses recruiters — free for OGIFT students in Bangalore." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://ogiftbangalore.com/portfolio" />
-        <meta property="og:image" content="https://ogiftbangalore.com/og-image.jpg" />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/portfolio" />
+        <meta property="og:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="AI Fashion Portfolio Builder | OGIFT Bangalore" />
         <meta name="twitter:description" content="Get instant AI critique on your fashion designs — proportion, color theory, trend alignment & more. Bangalore's best fashion design tool." />
@@ -188,6 +188,32 @@ const PortfolioBuilder = () => {
             </TabsContent>
           </Tabs>
         </div>
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">AI Fashion Portfolio Builder — OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT's AI Fashion Portfolio Builder is a free digital tool that helps fashion design students and graduates create a professional portfolio to showcase their work to employers, clients, and design schools. A strong portfolio is essential for any fashion career — it is the primary way that designers, illustrators, stylists, and pattern makers demonstrate their skills and creative sensibility to potential employers. The OGIFT Portfolio Builder uses AI to guide you through the process of selecting, organising, and presenting your best work in a format that meets current industry expectations.</p>
+              <p>The Portfolio Builder is available free to all OGIFT students and graduates as part of the institute's 100% placement support programme. It is also accessible to any aspiring fashion professional who wants to build or improve their portfolio. The tool supports multiple types of portfolio content — fashion illustrations, technical flat drawings, garment photographs, mood boards, fabric swatches, and written design rationales. Each section includes guidance on what employers in specific roles (designer, pattern maker, stylist, etc.) are looking for, so you can tailor your portfolio to the opportunities you are targeting.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Can Use the Portfolio Builder?</h3>
+              <p>The OGIFT Portfolio Builder is designed for students currently enrolled in OGIFT programmes, graduates preparing for job applications, and self-taught fashion creatives who want to formalise and present their work professionally. It is particularly valuable for students completing the Design Process &amp; Pattern Making 3-Month course, the Digital Portfolio Making course, and the DPPMP 3-Month course — all of which include portfolio development as a core component. The Portfolio Builder integrates directly with these courses, so your coursework can flow directly into your professional portfolio.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Portfolio Courses at OGIFT</h3>
+              <p>If you want structured, faculty-guided support for building your portfolio, OGIFT offers dedicated portfolio courses — the Digital Portfolio Making course (1 month) and the Design Pattern Making Portfolio 3-Month course. These programmes combine technical skill development with professional presentation training, and every student graduates with a completed, employer-ready portfolio. To learn more about portfolio courses or to start using the AI Portfolio Builder, visit the OGIFT campus in Vinayakanagar or call +91 90369 28799.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Fashion Portfolio Courses at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            OGIFT offers two dedicated portfolio programmes for students who want structured, faculty-guided portfolio development. The <Link to="/courses/digital-portfolio-making" className="text-primary underline hover:no-underline font-medium">Digital Portfolio Making course</Link> is a 1-month Express Mastery programme covering portfolio strategy, layout design, digital tools, and online presentation — ideal for students who have work to showcase and want a polished, professional portfolio quickly. The <Link to="/courses/design-pattern-making-portfolio-3months" className="text-primary underline hover:no-underline font-medium">Design, Pattern Making and Portfolio 3-month course (DPPMP)</Link> is a more comprehensive programme that builds design skills, pattern making skills, and a complete portfolio in one integrated qualification. Both programmes include access to this AI Portfolio Builder.
+          </p>
+        </div>
+      </section>
       </main>
     </>
   );

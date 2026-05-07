@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useParams, Link, Navigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -17,6 +18,12 @@ const CourseCategory = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>{category ? `${category.name} Courses Bangalore 2026 | OGIFT` : 'Fashion Courses Bangalore 2026 | OGIFT'}</title>
+        <meta name="description" content={category ? `Explore ${category.name} courses at OGIFT Bangalore — Bangalore's best fashion institute (4.9★). 100% placement support. Admissions 2026 open!` : 'Explore fashion design courses at OGIFT Bangalore — best fashion institute (4.9★). 100% placement. Admissions 2026 open!'} />
+        <meta name="keywords" content={`${category ? category.name + ' course bangalore, ' : ''}fashion design courses bangalore 2026, best fashion institute bangalore, OGIFT, Onati Global, fashion admissions 2026`} />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div 

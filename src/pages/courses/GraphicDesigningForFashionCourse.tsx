@@ -79,10 +79,10 @@ const GraphicDesigningForFashionCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Graphic Designing for Fashion Course | OGIFT Bangalore - Express Mastery Month</title>
-        <meta name="title" content="Graphic Designing for Fashion Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn graphic design for fashion at OGIFT Bangalore — digital illustration, pen tool, fabric effects, garment draping and fashion branding in our 1-month Express Mastery course. Certificate included." />
-        <meta name="keywords" content="graphic design fashion course Bangalore, digital fashion illustration, fashion branding course, pen tool fashion design, fabric texture digital, OGIFT, Onati Global, express mastery month, graphic design Bangalore" />
+        <title>Best Graphic Design for Fashion Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Graphic Designing for Fashion Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best graphic design for fashion course in Bangalore at OGIFT — digital illustration, pen tool, fabric effects & fashion branding. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best graphic design fashion course bangalore, digital fashion illustration course bangalore 2026, fashion branding course bangalore, pen tool fashion design, fabric texture digital, OGIFT, Onati Global, express mastery course, graphic design fashion admissions 2026, fashion technology bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/graphic-designing-for-fashion" />
@@ -276,6 +276,48 @@ const GraphicDesigningForFashionCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Graphic Designing for Fashion course at OGIFT Bangalore is a 1-month Express Mastery programme that teaches fashion professionals how to use digital design tools to create garment graphics, print designs, mood boards, fashion presentations, and brand identity materials. In today's fashion industry, digital design skills are essential at every level — from freelance illustrators creating print patterns for garment exporters to designers building brand identities for their own labels. This course gives you the digital tools and creative vocabulary to produce professional-quality fashion graphics.</p>
+              <p>The course covers core graphic design principles applied specifically to fashion contexts: layout, typography, colour theory for print and screen, digital illustration techniques, print design and repeat pattern creation, and presentation design for fashion portfolios and collections. Students work with industry-standard design software and learn to produce deliverables that meet the technical requirements of garment printing, digital publishing, and brand communication. OGIFT faculty with professional design and fashion industry experience guide students through both the technical and creative dimensions of the subject.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion designers who want to add digital design skills to their practice, textile designers creating print patterns, boutique and fashion brand owners who need to create their own marketing materials, and anyone interested in fashion communication and visual branding. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as fashion graphic designers, print designers, fashion illustrators, brand identity designers, and social media content creators for fashion brands. The skills are also valuable for fashion designers who produce their own lookbooks and digital portfolios. OGIFT's 100% placement support connects graduates with design studios, garment exporters, and fashion brands across Bangalore.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Courses */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Courses at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
+            <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">1-Year Advanced Diploma</span></Link>
+            <Link to="/courses/six-months-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">6-Month Diploma</span></Link>
+            <Link to="/courses/fashion-illustration" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Illustration</span></Link>
+            <Link to="/courses/art-of-garment-foundation" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Garment Foundation</span></Link>
+            <Link to="/courses/fabric-knowledge-textile-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric &amp; Textile</span></Link>
+            <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling</span></Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Career and Creative Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Graphic design for fashion is a highly versatile skill that supports careers across several domains covered by OGIFT. Graduates with graphic design skills frequently pursue opportunities through <Link to="/placements" className="text-primary underline hover:no-underline font-medium">OGIFT's placement programme</Link> or take on assignments through the <Link to="/careers/work-from-home" className="text-primary underline hover:no-underline font-medium">Work From Home programme</Link>. The <Link to="/courses/fashion-styling" className="text-primary underline hover:no-underline font-medium">Fashion Styling course</Link> is a natural companion — many graduates combine graphic design and styling skills to work as creative directors, brand designers, or fashion content creators. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Community</Link> is a useful space to connect with other creatives and potential clients.
+          </p>
         </div>
       </section>
 

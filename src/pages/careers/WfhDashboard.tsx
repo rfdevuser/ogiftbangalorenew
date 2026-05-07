@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useLocation, Navigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -31,6 +32,11 @@ const WfhDashboard = () => {
 
   return (
     <div className="min-h-screen pt-24 pb-16">
+      <Helmet>
+        <title>Work From Home Dashboard | OGIFT Bangalore Fashion Careers</title>
+        <meta name="description" content="Your OGIFT Bangalore work-from-home fashion career dashboard. Track your fashion design assignments, earnings & progress." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 max-w-2xl">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-primary/10 mb-4">

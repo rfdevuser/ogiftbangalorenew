@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
@@ -138,6 +139,17 @@ const WorkFromHome = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Work From Home Fashion Jobs Bangalore | OGIFT Careers 2026</title>
+        <meta name="description" content="Explore work-from-home fashion career opportunities with OGIFT Bangalore. Earn from home using your fashion design skills — pattern making, styling & boutique management. 4.9★ rated best fashion institute." />
+        <meta name="keywords" content="work from home fashion jobs bangalore, fashion career work from home, fashion design freelance bangalore, OGIFT work from home, Onati Global careers, fashion jobs from home india 2026, fashion styling work from home, pattern making work from home" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/careers/work-from-home" />
+        <meta name="robots" content="index, follow" />
+        <meta property="og:title" content="Work From Home Fashion Careers | OGIFT Bangalore 2026" />
+        <meta property="og:description" content="Earn from home with your fashion skills at OGIFT Bangalore. Pattern making, styling & boutique management work-from-home opportunities." />
+        <meta property="og:url" content="https://www.ogiftbangalore.com/careers/work-from-home" />
+        <meta property="og:type" content="website" />
+      </Helmet>
       {/* Hero */}
       <section className="relative pt-20 pb-16 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-accent/5 to-secondary/10" />
@@ -188,6 +200,33 @@ const WorkFromHome = () => {
                 <p className="text-sm text-muted-foreground">{b.description}</p>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Career Resources at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Work-from-home fashion opportunities connect naturally with OGIFT's broader career support. <Link to="/placements" className="text-primary underline hover:no-underline font-medium">OGIFT's 100% placement programme</Link> helps graduates find full-time fashion industry roles. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Fashion Community</Link> is a network where freelancers can find collaborators, share work, and build a professional reputation. Skills that are particularly in demand for remote work include <Link to="/courses/fashion-styling" className="text-primary underline hover:no-underline font-medium">fashion styling</Link> and <Link to="/courses/graphic-designing-for-fashion" className="text-primary underline hover:no-underline font-medium">graphic design for fashion</Link> — both available as 1-month Express Mastery courses at OGIFT.
+          </p>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Work From Home Fashion Design Opportunities — OGIFT</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT's Work From Home programme offers qualified fashion design graduates and skilled fashion professionals the opportunity to earn an income from home by taking on fashion design and garment-related work assignments through OGIFT's employer network. The programme is designed for graduates who have the skills to deliver professional-quality fashion work but prefer the flexibility of home-based freelance work — whether due to family commitments, location constraints, or a preference for independent working. OGIFT connects registered work-from-home professionals with verified employers who need skilled fashion talent on a project or contract basis.</p>
+              <p>Work-from-home assignments available through the OGIFT network include fashion illustration, digital pattern making, trend research and reporting, graphic design for fashion brands, social media content creation for boutiques and fashion labels, online fashion tutoring, garment specification writing, and quality review of design documents. The type and volume of work available to each registered professional depends on their skill set, qualifications, and the current needs of OGIFT's employer network. OGIFT does not guarantee a specific volume of work but actively matches registered professionals with suitable assignments as they arise.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Can Register?</h3>
+              <p>The Work From Home programme is open to OGIFT graduates and to qualified fashion professionals who can demonstrate relevant skills through a portfolio review. Registered professionals must be willing to complete assignments to the quality and timeline specified by the employer, and to maintain professional communication with both OGIFT and the client. Professionals who consistently deliver high-quality work are given priority for new assignments and are eligible for higher-value projects over time. Registration is free for OGIFT graduates.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">How to Get Started</h3>
+              <p>To register for the Work From Home programme, complete the registration form on this page and upload your portfolio and OGIFT qualification details. The OGIFT careers team will review your application and contact you when assignments matching your skills become available. For questions about the programme, eligibility requirements, or the types of assignments available, contact the OGIFT careers team at +91 90369 28799 or email admissions@ogiftbangalore.com. To qualify for the programme, OGIFT recommends completing at least one OGIFT diploma or advanced course first — visit ogiftbangalore.com/courses to explore the options.</p>
+            </div>
           </div>
         </div>
       </section>

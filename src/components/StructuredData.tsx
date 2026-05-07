@@ -6,12 +6,15 @@ const StructuredData = () => {
     script.type = 'application/ld+json';
     script.innerHTML = JSON.stringify({
       "@context": "https://schema.org",
-      "@type": "EducationalOrganization",
+      "@type": ["EducationalOrganization", "LocalBusiness"],
       "name": "Onati Global Institute of Fashion Technology",
-      "alternateName": "Onati Global",
-      "url": "https://onatiglobal.com",
-      "logo": "https://onatiglobal.com/logo.png",
-      "description": "Premier fashion design institute in Bangalore offering professional courses in fashion technology, design, and styling with 100% placement support.",
+      "alternateName": ["OGIFT", "Onati Global", "OGIFT Bangalore"],
+      "url": "https://www.ogiftbangalore.com",
+      "logo": "https://www.ogiftbangalore.com/og-image.jpg",
+      "image": "https://www.ogiftbangalore.com/og-image.jpg",
+      "description": "Rated 4.9★ — Bangalore's best fashion design institute offering professional courses in fashion technology, design, pattern making, and styling with 100% placement support. Admissions 2026 open.",
+      "priceRange": "₹₹",
+      "openingHours": "Mo-Sa 09:00-18:00",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "No 4 5th Main 1st Cross B Block, 4th Main Vinayakanagar",

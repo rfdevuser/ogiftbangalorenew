@@ -1,4 +1,5 @@
 import { useState, useRef, useCallback, useEffect, useMemo } from 'react';
+import { Link } from 'react-router-dom';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import * as THREE from 'three';
@@ -408,9 +409,11 @@ const FabricSimulation = () => {
   return (
     <>
       <Helmet>
-        <title>Fabric Physics Simulation | OGIFT Bangalore</title>
-        <meta name="description" content="Interactive 3D fabric physics simulation. Test draping, weight, wind and stiffness with AI-powered analysis." />
+        <title>Interactive 3D Fabric Simulation Tool | OGIFT Bangalore | Fashion Technology</title>
+        <meta name="description" content="Explore fabric physics with OGIFT's interactive 3D simulation — test draping, weight, wind & stiffness with AI analysis. Free tool for fashion design students at Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="fabric physics simulation bangalore, 3D fabric draping tool, fashion technology tool bangalore, fabric simulation fashion design, AI fabric analysis, OGIFT fabric sim, Onati Global fashion technology, interactive fashion tool bangalore" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/fabric-sim" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen pt-16 sm:pt-24 pb-8 sm:pb-12 bg-background">
@@ -650,6 +653,16 @@ const FabricSimulation = () => {
         .fabric-delay-100 { animation-delay: 0.1s; }
         .fabric-delay-200 { animation-delay: 0.2s; }
       `}</style>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Fabric and Textile Courses at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            To build practical fabric knowledge alongside this simulation tool, OGIFT offers the <Link to="/courses/fabric-knowledge-textile-designing" className="text-primary underline hover:no-underline font-medium">Fabric Knowledge and Textile Designing course</Link> — a 1-month programme covering fiber science, weave structures, dyeing, printing, and textile design. Students who want to apply fabric knowledge in three-dimensional garment construction can progress to the <Link to="/courses/draping-technology" className="text-primary underline hover:no-underline font-medium">Draping Technology course</Link>, which teaches draping directly on professional dress forms.
+          </p>
+        </div>
+      </section>
     </>
   );
 };

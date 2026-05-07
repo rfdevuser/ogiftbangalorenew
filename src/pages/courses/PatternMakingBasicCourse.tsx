@@ -89,10 +89,10 @@ const PatternMakingBasicCourse = () => {
   return (
     <>
       <Helmet>
-        <title>Pattern Making Basic Course | OGIFT Bangalore</title>
-        <meta name="title" content="Pattern Making Basic Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn basic pattern making at OGIFT Bangalore — bodice block, kurta, skirts, trousers and blouse patterns in our 1-month Express Mastery course. 9 pattern types covered. Certificate included." />
-        <meta name="keywords" content="pattern making basic course Bangalore, bodice block pattern, kurta pattern making, skirt pattern, trouser pattern making, OGIFT, Onati Global, express mastery month, fashion pattern making Bangalore" />
+        <title>Best Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Pattern Making Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best pattern making course in Bangalore at OGIFT — bodice block, kurta, skirts, trousers & blouse. 1-month, 9 patterns covered. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best pattern making course bangalore, pattern making course bangalore 2026, bodice block pattern course, kurta pattern making bangalore, skirt pattern course bangalore, trouser pattern making, OGIFT, Onati Global, express mastery course bangalore, pattern drafting course, fashion course admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-basic" />
@@ -175,6 +175,23 @@ const PatternMakingBasicCourse = () => {
                 <h3 className="font-semibold">{highlight}</h3>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Pattern making is the technical backbone of garment construction. A well-drafted pattern is the difference between a garment that fits beautifully and one that does not — and this skill is in demand across boutiques, fashion houses, and garment manufacturing units throughout India. OGIFT's 1-month Pattern Making Basic course in Bangalore introduces you to the science and art of pattern drafting, covering 9 essential garment types that form the foundation of any fashion designer's skill set.</p>
+              <p>The course follows a hands-on, practical approach under experienced faculty. You will learn to take accurate body measurements, calculate ease allowances, and draft patterns on paper from scratch — without relying on pre-existing templates. Topics range from the fundamental bodice block to kurta, skirts (straight, circular, and A-line), frocks, trousers, blouses, and yoke patterns. Each pattern type is taught with attention to fit, proportion, and the practical considerations of garment construction. Classes are available in English, Hindi, and Kannada both online and offline.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course suits beginners with no prior pattern making experience, home tailors looking to formalise their skills, fashion students who need a strong technical foundation, and working professionals seeking to add garment construction capability. It is the ideal starting point before progressing to the blouses advanced, western advanced, or kids clothing pattern making courses at OGIFT. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Pattern makers are sought after in garment export units, fashion design studios, boutiques, and costume production companies. With a strong foundation in pattern drafting, graduates pursue careers as production pattern makers, boutique owners, tailoring instructors, and garment quality supervisors. OGIFT's 100% placement support connects graduates with opportunities at fashion brands and garment manufacturers across Bangalore and beyond.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -280,6 +297,16 @@ const PatternMakingBasicCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Other Pattern Making Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Once you have completed the basic pattern making course, OGIFT offers several advanced specialisations: the <Link to="/courses/pattern-making-blouses-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Blouse Pattern Making course</Link> covering eight complex blouse styles, the <Link to="/courses/pattern-making-western-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Western Pattern Making course</Link> covering skirts, trousers, dresses, and jackets, and the <Link to="/courses/pattern-making-kids-clothing" className="text-primary underline hover:no-underline font-medium">Kids Clothing Pattern Making course</Link> covering children's garment sizing and construction. The <Link to="/courses/art-of-garment-foundation" className="text-primary underline hover:no-underline font-medium">Art of Garment Foundation course</Link> is an ideal complement for students who want to both draft patterns and construct garments. For a comprehensive 3-month qualification, see the <Link to="/courses/design-process-pattern-making-3months" className="text-primary underline hover:no-underline font-medium">Design Process and Pattern Making 3-month course</Link>.
+          </p>
         </div>
       </section>
 

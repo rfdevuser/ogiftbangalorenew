@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { ArrowLeft, FileText, Shield, Users, BookOpen, AlertCircle } from 'lucide-react';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -6,6 +7,12 @@ import { Button } from '@/components/ui/button';
 
 export default function TermsAndConditions(): React.JSX.Element {
   return (
+    <>
+      <Helmet>
+        <title>Terms & Conditions | OGIFT Bangalore | Fashion Institute Policies</title>
+        <meta name="description" content="Read the terms and conditions for OGIFT Bangalore — Bangalore's best fashion design institute. Policies for AI avatar, course enrollment & student services." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
     <div className="min-h-screen bg-gradient-to-br from-background via-secondary/30 to-primary/10 py-8 px-4">
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
@@ -176,5 +183,6 @@ export default function TermsAndConditions(): React.JSX.Element {
         </Card>
       </div>
     </div>
+    </>
   );
 }

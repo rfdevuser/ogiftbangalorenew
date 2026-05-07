@@ -85,10 +85,10 @@ const PatternMakingBlousesAdvancedCourse = () => {
   return (
     <>
       <Helmet>
-        <title>Pattern Making Blouses Advanced Course | OGIFT Bangalore</title>
-        <meta name="title" content="Pattern Making Blouses Advanced Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Master advanced blouse pattern making at OGIFT Bangalore — 8 styles including princess cut, boat neck, cape sleeve, puff sleeve and peplum in our 1-month course. Certificate included." />
-        <meta name="keywords" content="blouse pattern making course Bangalore, advanced blouse patterns, princess cut blouse pattern, puff sleeve blouse, peplum blouse pattern, OGIFT, Onati Global, express mastery month, advanced fashion course Bangalore" />
+        <title>Best Blouse Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Advanced Blouse Pattern Making Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best blouse pattern making course in Bangalore at OGIFT — 8 advanced styles: princess cut, boat neck, cape sleeve, puff sleeve & peplum. 1-month, 4.9★ rated. 100% placement. Admissions 2026 open!" />
+        <meta name="keywords" content="best blouse pattern making course bangalore, advanced blouse pattern bangalore 2026, princess cut blouse pattern course, puff sleeve blouse pattern, peplum blouse pattern, OGIFT, Onati Global, express mastery course, blouse design course bangalore, admissions 2026 fashion" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-blouses-advanced" />
@@ -275,6 +275,33 @@ const PatternMakingBlousesAdvancedCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Advanced Blouse Pattern Making course at OGIFT Bangalore is a focused 1-month Express Mastery programme covering the full range of blouse constructions — one of the most technically demanding and commercially valuable specialisations in Indian fashion. The blouse is the garment that most directly expresses the craft of the Indian fashion designer: a well-fitted, beautifully constructed blouse requires precise pattern drafting, an understanding of the body, and mastery of construction details that no machine can replicate. This course teaches you to draft patterns for every blouse style professionally.</p>
+              <p>The course covers sleeveless, short-sleeve, and full-sleeve blouse constructions; princess line and dart manipulation; neckline and back-neck variations; keyhole, hook-and-eye, and zip closures; high-neck, collar, and designer yoke constructions; and the fitting adjustments required for different body types. Students draft patterns from scratch on paper and construct toiles for fitting, learning to correct issues of fit, balance, and proportion before cutting in final fabric. Faculty at OGIFT draw on active experience in bridal and occasion wear to ensure the patterns you learn reflect current industry demand.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for tailors and fashion designers who want to formalise and expand their blouse drafting skills, students who have completed the basic pattern making course and want to advance, and bridal wear specialists who need precise, customisable blouse patterns. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as specialist blouse makers, bridal wear designers, made-to-measure tailors, pattern makers for kurta and saree blouse manufacturers, and freelance pattern consultants. Advanced blouse pattern skills are in high demand across Bangalore's boutique sector. OGIFT's placement network connects graduates with leading bridal studios and garment businesses.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Pattern Making Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The Advanced Blouse Pattern Making course builds on the skills taught in OGIFT's <Link to="/courses/pattern-making-basic" className="text-primary underline hover:no-underline font-medium">Pattern Making Basic course</Link>. Related advanced courses include the <Link to="/courses/pattern-making-western-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Western Pattern Making course</Link> covering dresses, trousers, and jackets, and the <Link to="/courses/pattern-making-kids-clothing" className="text-primary underline hover:no-underline font-medium">Kids Clothing Pattern Making course</Link>. The <Link to="/courses/art-of-garment-foundation" className="text-primary underline hover:no-underline font-medium">Art of Garment Foundation course</Link> covers garment construction skills that complement pattern drafting. For a comprehensive qualification, the <Link to="/courses/design-process-pattern-making-3months" className="text-primary underline hover:no-underline font-medium">3-month Design Process and Pattern Making course</Link> covers all these areas in an integrated programme.
+          </p>
         </div>
       </section>
 

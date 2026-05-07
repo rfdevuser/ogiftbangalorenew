@@ -1,3 +1,5 @@
+import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import * as React from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
@@ -311,7 +313,13 @@ export default function InteractiveTraining(): React.JSX.Element {
 
   return (
     <div className="min-h-screen bg-background">
-     
+      <Helmet>
+        <title>Interactive Fashion Training | OGIFT Bangalore | AI-Powered 2026</title>
+        <meta name="description" content="Experience interactive AI-powered fashion design training at OGIFT Bangalore. Learn pattern making, garment construction & styling with immersive 3D training at Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="interactive fashion training bangalore, AI fashion learning, 3D fashion training, OGIFT interactive training, Onati Global training, fashion design AI bangalore 2026" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/interactive-training" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <main className="container mx-auto px-4 pt-20 pb-8">
         {/* Title bar */}
         <div className="flex items-center justify-between mb-4">
@@ -529,6 +537,33 @@ export default function InteractiveTraining(): React.JSX.Element {
             )}
           </div>
         </div>
+
+        {/* About Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">AI-Powered Interactive Fashion Training — OGIFT Bangalore</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>OGIFT's Interactive Fashion Training platform is an AI-powered learning environment that brings fashion education to life through dynamic, personalised instruction. Unlike traditional video-based e-learning, OGIFT's interactive training adapts to your responses, pace, and learning style — presenting content in the sequence and format that works best for you. The platform covers key fashion design topics including design fundamentals, colour theory, fabric identification, pattern making principles, and fashion styling, with interactive exercises and instant feedback at every step.</p>
+                <p>The Interactive Training platform is available to OGIFT students as a supplement to their in-person or online courses, giving them a tool to review and practise content between classes. It is also available as a standalone resource for anyone who wants to explore fashion design concepts at their own pace before committing to a full course. The platform includes modules designed for complete beginners — starting with the very basics of what fashion design is and how the industry works — and progressively more advanced content for students who already have foundational knowledge.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">What Makes It Interactive?</h3>
+                <p>Each session on the Interactive Training platform involves more than watching videos or reading text. Students answer questions, make design decisions, evaluate garments and fabrics, and receive immediate feedback from the AI — creating the kind of active engagement that research consistently shows leads to better knowledge retention. The AI tutor also tracks your progress across sessions, remembers which topics you have covered, and picks up exactly where you left off when you return. This makes the platform useful for both dedicated study sessions and quick 10-minute review sessions between classes.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This For?</h3>
+                <p>The Interactive Training platform is ideal for current OGIFT students who want to practise and reinforce what they are learning in class, prospective students who want a guided introduction to fashion education before enrolling, and anyone across India who wants to develop fashion design knowledge at their own pace. The platform is available in English, Hindi, and Kannada. For students who want the full structured curriculum with faculty support, OGIFT's in-person and online courses are available at Vinayakanagar, Bengaluru — contact the admissions team at +91 90369 28799.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold mb-4">Related Digital Fashion Learning at OGIFT</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              OGIFT's Interactive Training platform is part of a broader digital learning ecosystem. Students who want a structured online course with full curriculum and faculty support should explore the <Link to="/courses/onlinecourse" className="text-primary underline hover:no-underline font-medium">3-Month Online Fashion Design course</Link>. The free <Link to="/quicktour" className="text-primary underline hover:no-underline font-medium">Quick Tour</Link> provides a 20-minute AI-powered preview of the online course before enrolment. The <Link to="/videos" className="text-primary underline hover:no-underline font-medium">Fashion Design Video Gallery</Link> offers free tutorial videos in English, Hindi, and Kannada on pattern making, illustration, garment construction, and styling.
+            </p>
+          </div>
+        </section>
       </main>
     </div>
   );

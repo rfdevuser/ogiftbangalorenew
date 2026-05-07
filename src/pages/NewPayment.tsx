@@ -1,4 +1,5 @@
 
+import { Helmet } from 'react-helmet-async';
 import { Metadata } from "next";
 
 import GetStudentDetails from "./components/GetStudentDetails";
@@ -19,6 +20,11 @@ const Makeapayment = () => {
   // ];
   return (
     <>
+      <Helmet>
+        <title>Fashion Course Payment | OGIFT Bangalore | Secure Enrollment 2026</title>
+        <meta name="description" content="Secure payment for OGIFT Bangalore fashion design courses. Pay safely via Razorpay for pattern making, diploma & other courses at Bangalore's 4.9★ best fashion institute." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <section className="dark:bg-bg-color-dark bg-gray-light relative z-10 py-8 md:py-20 lg:py-28  bg-[#fdf4ff]">
        
         <div className="absolute inset-0 z-0 opacity-20"  ></div>

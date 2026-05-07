@@ -73,10 +73,10 @@ const DrapingTechnologyCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Draping Technology Course | OGIFT Bangalore - Express Mastery Month</title>
-        <meta name="title" content="Draping Technology Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn draping technology — 3D pattern creation by manipulating fabric on a dress form. Master bodice, skirt, sleeve draping and Western gown design in 1 month at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="draping technology course Bangalore, fabric draping course, 3D pattern making, dress form draping, muslin draping, OGIFT, Onati Global, express mastery month, fashion draping Bangalore, gown draping course" />
+        <title>Best Draping Technology Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Draping Technology Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best draping technology course in Bangalore at OGIFT — 3D pattern making on dress forms, bodice, skirt, sleeve & gown draping. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best draping technology course bangalore, fabric draping course bangalore 2026, 3D pattern making bangalore, dress form draping course, muslin draping technique, OGIFT, Onati Global, express mastery course, gown draping bangalore, fashion draping admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/draping-technology" />
@@ -173,6 +173,23 @@ const DrapingTechnologyCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Draping is one of the oldest and most creative methods of pattern creation in fashion. Unlike flat pattern drafting on paper, draping involves manipulating fabric directly on a three-dimensional dress form to create shapes, silhouettes, and garment structures that are difficult to achieve through traditional methods. This 1-month Draping Technology course at OGIFT Bangalore introduces you to this highly valued skill used by couture designers, bridal wear specialists, and theatrical costume makers worldwide.</p>
+              <p>At OGIFT, students work with professional dress forms and a range of fabrics to learn how to manipulate material into garment shapes, transfer those shapes to flat paper patterns, and interpret design concepts spatially. The course covers basic bodice draping, skirt draping, sleeve development, and culminates in the creation of a Western-style gown — one of the most complex draping challenges. Faculty guide students through the entire process from understanding tools and equipment to achieving clean seams and proper fit. The course is taught in-person at the OGIFT campus in Vinayakanagar, Bengaluru.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is suitable for students who have completed a basic pattern making or garment construction course and are ready to explore advanced, three-dimensional design techniques. It is also ideal for fashion design graduates who want to add couture draping skills to their portfolio, bridal and eveningwear designers who work with complex silhouettes, and professionals in the costume or theatrical design sectors. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Draping skills are highly sought after in bridal wear, couture fashion, theatrical costume design, and fashion design education. Graduates work as pattern technicians, costume designers, bridal wear specialists, and fashion design assistants at studios that produce bespoke garments. OGIFT provides 100% placement support and has placed graduates with leading fashion brands and design houses across India.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Topics */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -252,6 +269,16 @@ const DrapingTechnologyCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Fabric and Textile Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Draping students benefit from OGIFT's <Link to="/courses/fabric-knowledge-textile-designing" className="text-primary underline hover:no-underline font-medium">Fabric Knowledge and Textile Designing course</Link>, which provides the foundation in fiber science and fabric behaviour that informs every draping decision — understanding how a fabric's weight, weave, and stretch affect its drape is essential for professional-quality results. OGIFT also offers a free <Link to="/fabric-sim" className="text-primary underline hover:no-underline font-medium">Interactive 3D Fabric Simulation tool</Link> that allows students to visualise fabric behaviour digitally before working with physical fabric in the studio.
+          </p>
         </div>
       </section>
 

@@ -51,9 +51,9 @@ const PatternMakingWesternAdvancedCourse = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Advanced Western Pattern Making Course | 1 Month | Onati Global Bangalore</title>
-        <meta name="description" content="Master advanced Western pattern making in 1 month at Onati Global Bangalore. Learn skirt blocks, trousers, cascade & ruffle skirts, empire waist, and reversible jacket patterns. Certificate included." />
-        <meta name="keywords" content="western pattern making course Bangalore, advanced pattern making, skirt block pattern, trouser pattern making, cascade skirt pattern, fashion design course Bangalore" />
+        <title>Best Western Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="description" content="Best advanced Western pattern making course in Bangalore at OGIFT — skirt blocks, trousers, cascade skirts, empire waist & reversible jacket. 1-month, 4.9★ rated. 100% placement. Admissions 2026 open!" />
+        <meta name="keywords" content="best western pattern making course bangalore, advanced western pattern making bangalore 2026, skirt block pattern course, trouser pattern making bangalore, cascade skirt pattern, fashion design course bangalore, OGIFT, Onati Global, western garment course, admissions 2026" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-western-advanced" />
         <meta property="og:title" content="Advanced Western Pattern Making Course | Onati Global Bangalore" />
         <meta property="og:description" content="Master 8 essential Western garment patterns in 1 month. Skirt blocks, trousers, cascade skirts, empire waist & more. Certificate included." />
@@ -225,6 +225,33 @@ const PatternMakingWesternAdvancedCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Advanced Western Pattern Making course at OGIFT Bangalore is a 1-month Express Mastery programme covering pattern drafting for Western-style garments — the category that drives the largest share of India's domestic fashion retail and garment export markets. Skilled Western pattern makers are in consistent demand at fashion brands, garment exporters, production houses, and designer studios across Bangalore and Karnataka. This course gives you the advanced technical proficiency to draft precise, production-ready patterns for a full range of Western garment types.</p>
+              <p>The course covers advanced bodice constructions including princess seam and yoke variations; trouser and shorts pattern drafting with fly-front, waistband, and pocket constructions; dress patterns including shirt dress, wrap dress, and A-line constructions; jacket and blazer drafting fundamentals; and grading techniques for scaling patterns across multiple sizes. Students draft full sets of production-ready patterns for each garment type, with faculty checking fit and construction logic at each stage. All patterns are drafted from body measurements and adapted for standard sizing, preparing students for work in both bespoke and ready-to-wear production.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for students who have completed the basic pattern making course and want to advance into Western garments, tailors expanding from ethnic to Western wear, production pattern makers at garment export companies, and designers who want to execute their own Western collection patterns. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as Western garment pattern makers, production pattern technicians, freelance pattern consultants, sample room assistants, and graders at ready-to-wear brands. Western pattern making is among the highest-demand technical skills in Bangalore's garment export sector. OGIFT's 100% placement support connects graduates with leading garment manufacturers and fashion brands.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Pattern Making Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The Advanced Western Pattern Making course builds on OGIFT's <Link to="/courses/pattern-making-basic" className="text-primary underline hover:no-underline font-medium">Pattern Making Basic course</Link>. Related specialisations include <Link to="/courses/pattern-making-blouses-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Blouse Pattern Making</Link> and <Link to="/courses/pattern-making-kids-clothing" className="text-primary underline hover:no-underline font-medium">Kids Clothing Pattern Making</Link>. The <Link to="/courses/art-of-garment-foundation" className="text-primary underline hover:no-underline font-medium">Art of Garment Foundation course</Link> develops the construction skills needed to stitch finished western garments from your patterns. The <Link to="/courses/design-process-pattern-making-3months" className="text-primary underline hover:no-underline font-medium">3-month DPPM course</Link> combines design, pattern making, and professional practice in a comprehensive qualification.
+          </p>
         </div>
       </section>
     </div>

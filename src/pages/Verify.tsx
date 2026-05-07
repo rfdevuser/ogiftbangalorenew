@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { useState, useEffect } from 'react';
 import { useSearchParams, Link } from 'react-router-dom';
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
@@ -208,6 +209,13 @@ const Verify = () => {
 
   return (
     <main className="min-h-screen pt-24 pb-12 bg-background">
+      <Helmet>
+        <title>Verify Fashion Design Certificate | OGIFT Bangalore | Blockchain Verified</title>
+        <meta name="description" content="Verify OGIFT Bangalore fashion design certificates & digital assets on blockchain. Authenticate student credentials from Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="verify fashion certificate bangalore, OGIFT certificate verification, fashion design certificate verify, blockchain certificate fashion, Onati Global credentials" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/verify" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 max-w-3xl">
         {/* Header */}
         <div className="text-center mb-8">
@@ -430,6 +438,39 @@ const Verify = () => {
           </Button>
         </div>
       </div>
+
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Verify Your OGIFT Fashion Design Certificate</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT's Certificate Verification tool allows employers, educational institutions, and anyone else to verify the authenticity of a fashion design certificate or diploma issued by Onati Global Institute of Fashion Technology (OGIFT) in Bangalore. Certificate verification is an important step in confirming that a candidate's qualification is genuine and was awarded by OGIFT for the completion of a recognised programme. OGIFT is committed to the integrity of its qualifications and provides this verification service to support the hiring decisions of employers across the Indian fashion industry.</p>
+              <p>To verify a certificate, enter the certificate number printed on the OGIFT certificate or diploma document. The system will confirm whether the certificate is authentic, which programme it was awarded for, and the date of completion. Employers are encouraged to verify certificates as part of their standard recruitment process. OGIFT certificates are awarded only on successful completion of the full programme, passing required assessments, and meeting attendance requirements — so a verified certificate is a reliable indicator of the skills and knowledge claimed.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">For Employers and Hiring Managers</h3>
+              <p>OGIFT provides verification as a free service to all employers considering candidates who hold OGIFT qualifications. If you are reviewing a candidate who holds an OGIFT certificate or diploma and need confirmation of its authenticity, simply enter the certificate number in the verification tool above. Results are provided instantly. For certificates issued before 2020, or if you have any concerns about the result, contact the OGIFT registrar directly at admissions@ogiftbangalore.com or call +91 90369 28799.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">About OGIFT Qualifications</h3>
+              <p>OGIFT (Onati Global Institute of Fashion Technology) is Bangalore's highest-rated fashion institute, founded in 2010, with a 4.9-star rating based on 250+ Google reviews. The institute awards certificates and diplomas across a comprehensive range of fashion programmes — from 1-month Express Mastery courses to 6-month and 1-year diploma programmes. All OGIFT qualifications are recognised across the Indian fashion industry and are accepted by employers including Fabindia, Raymond, Myntra, Lifestyle, Zara, H&M, and leading boutique design studios across Bangalore and Karnataka.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+            <Link to="/" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">OGIFT Home</span></Link>
+            <Link to="/about" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">About OGIFT</span></Link>
+            <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">1-Year Advanced Diploma</span></Link>
+            <Link to="/courses/fashup-free-taster-sessions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FASHUP Free Course</span></Link>
+            <Link to="/courses/fashion-illustration" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Illustration Course</span></Link>
+            <Link to="/admissions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Admissions 2026</span></Link>
+            <Link to="/courses/six-months-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">6-Month Diploma</span></Link>
+          </div>
+        </div>
+      </section>
     </main>
   );
 };

@@ -96,10 +96,10 @@ const DesignProcessPatternMaking3MonthsCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Design Process & Pattern Making 3 Months Course (DPPM) | OGIFT Bangalore</title>
-        <meta name="title" content="Design Process & Pattern Making Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Master fashion design fundamentals, illustration, textile science and pattern making in our 3-month DPPM course (107 hours) at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="design process pattern making course Bangalore, DPPM course, fashion illustration course, textile science, pattern making Bangalore, OGIFT, Onati Global, 3 months fashion course, fashion design certificate" />
+        <title>Best Fashion Design & Pattern Making Course Bangalore 2026 | OGIFT | DPPM</title>
+        <meta name="title" content="Best Design Process & Pattern Making 3 Months Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best fashion design & pattern making 3-month course (DPPM) in Bangalore at OGIFT — design fundamentals, illustration, textile science. 107 hours. 4.9★ rated. 100% placement. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion design pattern making course bangalore, DPPM course bangalore 2026, design process pattern making bangalore, fashion illustration course bangalore, textile science course, OGIFT, Onati Global, 3 month fashion diploma bangalore, fashion certificate 2026, admissions open" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/design-process-pattern-making-3months" />
@@ -441,6 +441,33 @@ const DesignProcessPatternMaking3MonthsCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Design Process & Pattern Making 3-Month course at OGIFT Bangalore is a comprehensive vocational programme that takes you through the complete journey from design concept to finished pattern — the two skills that sit at the heart of professional fashion design. Unlike shorter Express Mastery courses that focus on a single discipline, this 3-month programme gives you the depth of training needed to work as a full design-and-pattern professional in the Indian fashion industry. It is one of OGIFT's most sought-after qualifications among employers at design studios and garment manufacturers.</p>
+              <p>The course integrates design fundamentals with advanced pattern making practice. You begin with design elements and principles, colour theory, fashion illustration, and trend research — learning how designers move from inspiration to concept to garment specification. You then move into comprehensive pattern making: flat pattern drafting for womenswear and menswear, dart manipulation, design interpretation into pattern, grading, and pattern lay planning. The programme includes real-world design briefs that require you to develop a concept, illustrate it, draft the pattern, and specify the construction — exactly as professional designers work. Classes are in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for students who have completed basic pattern making or fashion illustration and want a single, comprehensive programme that ties design and technical skills together. It is also well-suited for working designers who want to add technical pattern skills, or technical pattern makers who want to add design thinking to their work. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as pattern makers, design assistants, technical designers, production coordinators, and sample room leads at fashion brands, garment exporters, and design studios. The combination of design and pattern skills makes graduates particularly versatile and valuable to employers. OGIFT's 100% placement support connects graduates with relevant opportunities across Bangalore and Karnataka.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Pattern Making Courses at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            OGIFT's pattern making curriculum spans multiple levels. The <Link to="/courses/pattern-making-basic" className="text-primary underline hover:no-underline font-medium">Pattern Making Basic course</Link> covers body measurement, basic blocks, and nine fundamental garment patterns — the essential starting point. Advanced specialisations include <Link to="/courses/pattern-making-blouses-advanced" className="text-primary underline hover:no-underline font-medium">advanced blouse pattern making</Link> covering eight complex blouse styles, <Link to="/courses/pattern-making-western-advanced" className="text-primary underline hover:no-underline font-medium">advanced western garment pattern making</Link> covering skirts, trousers, and jackets, and <Link to="/courses/pattern-making-kids-clothing" className="text-primary underline hover:no-underline font-medium">children's clothing pattern making</Link>. The <Link to="/courses/art-of-garment-foundation" className="text-primary underline hover:no-underline font-medium">Art of Garment Foundation course</Link> covers the construction skills needed to bring any pattern to life in a finished garment.
+          </p>
         </div>
       </section>
 

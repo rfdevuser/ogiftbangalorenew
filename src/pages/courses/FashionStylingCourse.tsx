@@ -73,10 +73,10 @@ const FashionStylingCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fashion Styling Course in Bangalore | OGIFT - Express Mastery Month</title>
-        <meta name="title" content="Fashion Styling Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn fashion styling at OGIFT Bangalore — body type analysis, image makeover, trend forecasting, editorial and personal styling in our 1-month Express Mastery course. Certificate included." />
-        <meta name="keywords" content="fashion styling course Bangalore, personal styling course, image makeover course, fashion forecasting, editorial styling, OGIFT, Onati Global, express mastery month, stylist course Bangalore" />
+        <title>Best Fashion Styling Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Fashion Styling Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best fashion styling course in Bangalore at OGIFT — body type analysis, image makeover, trend forecasting & editorial styling. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion styling course bangalore, fashion stylist course bangalore 2026, personal styling course bangalore, image makeover course, fashion trend forecasting, editorial styling course, OGIFT, Onati Global, express mastery course, fashion styling admissions 2026, stylist training bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fashion-styling" />
@@ -173,6 +173,23 @@ const FashionStylingCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Fashion styling is one of the fastest-growing career paths in the Indian fashion industry. As the media, entertainment, and e-commerce sectors continue to expand, the demand for skilled stylists — who can pull together compelling looks for photoshoots, films, brand campaigns, and personal clients — has never been higher. This 1-month Fashion Styling course at OGIFT Bangalore gives you the practical skills and industry knowledge to begin a career as a professional stylist.</p>
+              <p>The course covers the full scope of styling practice: body type analysis and fit consultation, wardrobe curation and sourcing, mood board and image concept development, editorial and commercial styling, and fashion trend forecasting. You will study how cultural influences shape contemporary fashion, how to read and anticipate market trends, and how to build a cohesive look that suits a client's personality and purpose. OGIFT faculty bring real industry experience to the classroom, sharing practical insights from shoots, brand campaigns, and editorial work. Classes are available in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for aspiring fashion stylists, image consultants, personal shoppers, social media content creators, and fashion enthusiasts who want to turn their eye for aesthetics into a professional skill. It is also valuable for fashion designers who want to understand how their work is styled and presented, and for photographers who collaborate closely with styling teams. No prior styling experience is required. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates pursue careers as personal stylists, editorial stylists, celebrity stylists, brand stylists, fashion content creators, wardrobe consultants, and image consultants. Fashion styling skills are in demand at e-commerce companies, film and television production houses, advertising agencies, and fashion magazines. OGIFT's 100% placement support helps graduates connect with industry opportunities across Bangalore and beyond.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Course Topics */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -252,6 +269,31 @@ const FashionStylingCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Related Courses */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Courses at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
+            <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">1-Year Advanced Diploma</span></Link>
+            <Link to="/courses/six-months-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">6-Month Diploma</span></Link>
+            <Link to="/courses/fashion-illustration" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Illustration</span></Link>
+            <Link to="/courses/art-of-garment-foundation" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Garment Foundation</span></Link>
+            <Link to="/courses/fabric-knowledge-textile-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric &amp; Textile</span></Link>
+            <Link to="/courses/graphic-designing-for-fashion" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Graphic Design for Fashion</span></Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Career and Creative Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Fashion styling skills open doors across multiple career paths. <Link to="/placements" className="text-primary underline hover:no-underline font-medium">OGIFT's placement programme</Link> regularly places styling graduates with fashion brands, boutiques, and e-commerce companies in Bangalore. The <Link to="/careers/work-from-home" className="text-primary underline hover:no-underline font-medium">Work From Home programme</Link> connects stylists with remote styling assignments — lookbook production, social media styling, and wardrobe consulting can all be done from home. The <Link to="/courses/graphic-designing-for-fashion" className="text-primary underline hover:no-underline font-medium">Graphic Design for Fashion course</Link> is a popular complement to styling, enabling graduates to create their own promotional content and brand materials. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Community</Link> is a useful network for finding editorial and collaboration opportunities.
+          </p>
         </div>
       </section>
 

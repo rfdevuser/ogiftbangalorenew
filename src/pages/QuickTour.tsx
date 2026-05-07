@@ -267,14 +267,14 @@ export default function QuickTour() {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Quick Tour | 3-Month Online Fashion Design Course - AI Powered | OGIFT Bangalore</title>
+        <title>Best Online Fashion Design Course India 2026 | OGIFT | AI-Powered 3 Month Tour</title>
         <meta
           name="description"
-          content="Discover India's first multi-lingual, AI-powered online fashion design course. 3-month certificate program with 40+ video modules, personalized AI guidance in Hindi, Kannada, Telugu & English. Enroll now!"
+          content="India's best AI-powered online fashion design course at OGIFT — 3-month certificate, 40+ video modules, multi-lingual (Hindi, Kannada, Telugu, English). 4.9★ rated. Admissions 2026 open. Enroll now!"
         />
         <meta
           name="keywords"
-          content="online fashion course, fashion design certificate, AI fashion training, multi-lingual fashion course, fashion designing online India, OGIFT online course, 3 month fashion course, fashion design Bangalore, learn fashion design online, AI powered fashion education"
+          content="best online fashion design course india 2026, AI powered fashion course india, multi-lingual fashion course hindi kannada, online fashion certificate course, 3 month fashion design course, OGIFT online course bangalore, Onati Global fashion online, fashion design online india, learn fashion design online, fashion admissions 2026"
         />
         
         {/* Canonical URL */}
@@ -530,6 +530,32 @@ export default function QuickTour() {
                   Browse Videos
                 </Link>
               </div>
+            </div>
+          </section>
+          {/* About Section */}
+          <section className="py-16">
+            <div className="container mx-auto px-4">
+              <div className="max-w-4xl mx-auto">
+                <h2 className="text-3xl font-bold mb-6">Online 3-Month Fashion Design Quick Tour — OGIFT</h2>
+                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                  <p>OGIFT's Quick Tour is an AI-powered interactive introduction to the institute's 3-month online fashion design course — designed for anyone across India who wants to experience online fashion education at OGIFT before committing to a full enrolment. The Quick Tour gives you a structured preview of the course content, teaching style, and learning outcomes so you can make a fully informed decision about whether OGIFT's online programme is right for you. It is completely free and takes approximately 20–30 minutes to complete at your own pace.</p>
+                  <p>The 3-month online course at OGIFT covers fashion fundamentals, design elements and principles, colour theory, fabric knowledge, pattern making basics, garment construction concepts, fashion illustration, and introduction to fashion business and retail. All content is delivered through OGIFT's AI-powered interactive platform, which includes video lessons, quizzes, downloadable resources, and access to live faculty sessions. The course is designed for students across India who cannot attend the Bangalore campus in person, and is taught in English, Hindi, and Kannada. On completion, students receive an OGIFT certificate recognised by the Indian fashion industry.</p>
+                  <h3 className="text-xl font-semibold text-foreground mt-2">Who Is the Online Course For?</h3>
+                  <p>OGIFT's 3-month online course is ideal for students in cities and towns outside Bangalore who want a structured fashion education without relocating, working professionals who want to learn fashion design at their own pace alongside their existing career, homemakers and creative individuals who want to develop fashion skills from home, and anyone who wants to assess online learning with OGIFT before applying for an in-person course at the Bangalore campus. No prior fashion experience is required. Eligibility is Class 10 (SSC) and above.</p>
+                  <h3 className="text-xl font-semibold text-foreground mt-2">Start the Quick Tour</h3>
+                  <p>The Quick Tour is completely free — start it now to explore the 3-month online course curriculum, get a preview of the teaching style, and understand how the programme will benefit your fashion career. If you have questions after completing the tour, contact the OGIFT admissions team at +91 90369 28799 or email admissions@ogiftbangalore.com. The 2026 online course intake is open now.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Related Pages */}
+          <section className="py-12 bg-muted/30">
+            <div className="container mx-auto px-4 max-w-4xl">
+              <h2 className="text-2xl font-bold mb-4">Online Fashion Learning at OGIFT</h2>
+              <p className="text-muted-foreground leading-relaxed">
+                After completing the Quick Tour, students are encouraged to enrol in OGIFT's full <Link to="/courses/onlinecourse" className="text-primary underline hover:no-underline font-medium">3-Month Online Fashion Design course</Link>, which covers the complete fashion curriculum across eight structured modules. OGIFT also offers the <Link to="/interactive-training" className="text-primary underline hover:no-underline font-medium">Interactive Fashion Training platform</Link> with AI-powered adaptive instruction on specific fashion topics, and a free <Link to="/videos" className="text-primary underline hover:no-underline font-medium">Fashion Design Video Gallery</Link> with tutorial content in English, Hindi, and Kannada covering pattern making, illustration, garment construction, and styling.
+              </p>
             </div>
           </section>
         </main>

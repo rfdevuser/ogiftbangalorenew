@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import * as React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
 import { getSignedVideoUrl, clearUrlCache } from "@/lib/video-token";
@@ -822,6 +823,12 @@ const VideoPlayer = () => {
 
   return (
     <main className="min-h-screen bg-background pt-20 pb-12">
+      <Helmet>
+        <title>Fashion Design Video Player | OGIFT Bangalore | Learn Fashion Online</title>
+        <meta name="description" content="Watch fashion design video lessons at OGIFT Bangalore in English, Hindi & Kannada. Pattern making, garment construction & styling tutorials. 4.9★ rated best fashion institute." />
+        <meta name="keywords" content="fashion design video player, fashion tutorial video bangalore, OGIFT video lessons, online fashion learning, pattern making video, garment construction tutorial, fashion course video" />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Back Button */}

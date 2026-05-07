@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import { Card } from '@/components/ui/card';
 
 const terms = [
@@ -41,6 +42,11 @@ const terms = [
 const WfhTerms = () => {
   return (
     <div className="min-h-screen pt-24 pb-16">
+      <Helmet>
+        <title>Work From Home Terms | OGIFT Bangalore Fashion Careers</title>
+        <meta name="description" content="Terms and conditions for OGIFT Bangalore's work-from-home fashion career program. Read guidelines for fashion design freelance opportunities." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 max-w-3xl">
         <h1 className="text-3xl md:text-4xl font-bold mb-2 text-center">Terms & Conditions</h1>
         <p className="text-muted-foreground text-center mb-8">Work From Home Programme — OGIFT Bangalore</p>

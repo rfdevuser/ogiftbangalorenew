@@ -2,6 +2,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { TrendingUp, Users, Award, Briefcase, Building2, Star } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-placements.jpg';
 
 const Placements = () => {
@@ -49,18 +50,20 @@ const Placements = () => {
   return (
     <div className="min-h-screen">
       <Helmet>
-        <title>Placements & Career Support | 100% Placement | Onati Global Bangalore</title>
-        <meta name="description" content="100% placement rate at Onati Global Institute Bangalore. 500+ alumni placed at Fabindia, Myntra, Raymond, Zara, H&M & 50+ fashion brands. Average package ₹4.5L. Career support from day one." />
-        <meta name="keywords" content="fashion design placements Bangalore, fashion institute placement record, fashion career Bangalore, fashion job placement, garment industry jobs Bangalore, OGIFT placements" />
+        <title>100% Placement | Fashion Design Jobs Bangalore | OGIFT 2026</title>
+        <meta name="description" content="OGIFT delivers 100% placement for fashion design graduates in Bangalore. 500+ alumni at Fabindia, Myntra, Raymond, Zara, H&M & 50+ top brands. Avg package ₹4.5L. Best fashion institute for careers — since 2010." />
+        <meta name="keywords" content="fashion design placement bangalore, 100% placement fashion institute bangalore, fashion job bangalore, fashion design career bangalore, fashion brand jobs bangalore, Fabindia Myntra Raymond fashion jobs, garment industry jobs bangalore, fashion design package bangalore, OGIFT placements, Onati Global placement record, fashion career support bangalore 2026, fashion internship bangalore" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/placements" />
-        <meta property="og:title" content="100% Placement Success | Onati Global Institute Bangalore" />
-        <meta property="og:description" content="500+ alumni placed at top fashion brands. 100% placement rate with ₹4.5L average package. 50+ recruiting partners including Fabindia, Myntra, Raymond & more." />
+        <meta name="robots" content="index, follow" />
+        <meta name="author" content="Onati Global Institute of Fashion Technology" />
+        <meta property="og:title" content="100% Placement | Fashion Design Jobs Bangalore | OGIFT 2026" />
+        <meta property="og:description" content="OGIFT Bangalore — 100% placement, 500+ alumni at top brands. Avg package ₹4.5L. Recruiting partners: Fabindia, Myntra, Raymond, Zara, H&M & 50+ fashion brands. Best placement record since 2010." />
         <meta property="og:url" content="https://www.ogiftbangalore.com/placements" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:title" content="100% Placement Rate | Onati Global Fashion Institute Bangalore" />
-        <meta name="twitter:description" content="500+ alumni placed at top fashion brands. Career support, internships & campus placements." />
+        <meta name="twitter:title" content="100% Placement | OGIFT Bangalore | Fashion Design Careers 2026" />
+        <meta name="twitter:description" content="100% placement. 500+ alumni at Fabindia, Myntra, Raymond & 50+ brands. Avg ₹4.5L package. Best fashion placement record in Bangalore." />
         <meta name="twitter:image" content="https://www.ogiftbangalore.com/og-image.jpg" />
       </Helmet>
       {/* Hero Section */}
@@ -208,6 +211,33 @@ const Placements = () => {
                 <p className="text-sm text-muted-foreground">{service.description}</p>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Career and Creative Development at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            OGIFT supports graduates beyond placement with a range of career and creative resources. The <Link to="/careers/work-from-home" className="text-primary underline hover:no-underline font-medium">Work From Home programme</Link> connects graduates with remote fashion assignments — illustration, graphic design, trend research, and styling — across India. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Fashion Community</Link> is a space to network with peers and alumni, share portfolio work, and find collaborators. For graduates seeking additional creative skills, the <Link to="/courses/fashion-styling" className="text-primary underline hover:no-underline font-medium">Fashion Styling course</Link> and the <Link to="/courses/graphic-designing-for-fashion" className="text-primary underline hover:no-underline font-medium">Graphic Design for Fashion course</Link> are among the most popular post-diploma short courses.
+          </p>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">100% Placement Support — OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT's 100% placement support programme is available to every graduate of the institute's courses and diploma programmes. The fashion industry in India is growing rapidly — driven by e-commerce, domestic retail expansion, export garment manufacturing, and the increasing global demand for Indian design talent — and OGIFT's placement network is built to connect graduates directly with the opportunities created by this growth. Industry partners include Fabindia, Raymond, Myntra, Lifestyle, Zara, H&amp;M, and boutique design studios across Bangalore and Karnataka.</p>
+              <p>Placement support at OGIFT begins before graduation. As students complete their programmes, the OGIFT careers team reviews their portfolio, discusses their career goals, and begins matching them to suitable openings. Mock interviews, résumé preparation, and professional presentation sessions are part of the placement preparation process. Graduates who are interested in freelancing, entrepreneurship, or boutique ownership also receive guidance on how to establish themselves independently — including how to price their services, find clients, and build a professional reputation.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Paths for OGIFT Graduates</h3>
+              <p>OGIFT graduates pursue careers across the full breadth of the Indian fashion industry. Common career paths include fashion designer, assistant designer, pattern maker, garment technician, production executive, fashion stylist, visual merchandiser, boutique manager, fashion illustrator, costume designer, fashion educator, and e-commerce product photographer. Graduates with entrepreneurial ambitions launch their own boutiques, tailoring units, or freelance styling and design consultancies. OGIFT's curriculum is specifically designed to equip students with skills that are immediately employable — so that graduates can contribute productively from their very first week in a new role.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Getting Started</h3>
+              <p>To learn more about OGIFT's placement outcomes and to speak with former graduates about their career journeys, contact the institute at +91 90369 28799 or email admissions@ogiftbangalore.com. Campus visits are welcome — the OGIFT team will walk you through recent placement case studies and give you a realistic picture of what a career in fashion looks like from the starting point of an OGIFT qualification.</p>
+            </div>
           </div>
         </div>
       </section>

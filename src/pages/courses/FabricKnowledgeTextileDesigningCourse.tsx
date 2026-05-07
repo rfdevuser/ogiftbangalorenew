@@ -69,10 +69,10 @@ const FabricKnowledgeTextileDesigningCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fabric Knowledge & Textile Designing Course | OGIFT Bangalore</title>
-        <meta name="title" content="Fabric Knowledge & Textile Designing Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Learn textile science, fiber types, yarn construction, fabric finishing and textile designing in our 1-month Express Mastery course at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="fabric knowledge course Bangalore, textile designing course, textile science Bangalore, fabric finishing course, fiber yarn fabric, OGIFT, Onati Global, textile course Bangalore, express mastery month" />
+        <title>Best Fabric & Textile Designing Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Fabric Knowledge & Textile Designing Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best textile designing course in Bangalore at OGIFT — textile science, fiber types, yarn construction & fabric finishing. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best textile designing course bangalore, fabric knowledge course bangalore 2026, textile science course bangalore, fabric finishing course, fiber yarn fabric course, OGIFT, Onati Global, textile course bangalore, express mastery course, textile design admissions 2026, fashion technology bangalore" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fabric-knowledge-textile-designing" />
@@ -248,6 +248,33 @@ const FabricKnowledgeTextileDesigningCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Fabric Knowledge &amp; Textile Designing course at OGIFT Bangalore is a 1-month Express Mastery programme that gives students a deep, practical understanding of fabric — the primary material of every fashion design. Knowing how fabric behaves is essential for every fashion professional: designers choose fabrics that will realise their vision, pattern makers account for fabric properties in their drafts, and buyers and merchandisers evaluate fabric quality when sourcing for collections. This course teaches you to identify, evaluate, and select fabric with the confidence of an industry professional.</p>
+              <p>The course covers the full spectrum of textile knowledge: natural, synthetic, and blended fibre types; weave structures, knit constructions, and non-woven fabrics; dyeing, printing, and finishing processes that affect fabric performance and hand feel; and the fundamentals of textile design including print creation, surface pattern development, and colour application. Students work with real fabric samples from OGIFT's textile library, learning to evaluate fabric through both visual examination and physical testing. Faculty with textile industry experience guide students through the practical application of each topic.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion design students who want to deepen their material knowledge, buyers and merchandisers who need to evaluate fabric quality, entrepreneurs sourcing fabrics for their collections, and anyone interested in textile design as a creative career. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as fabric buyers, textile designers, print designers, production merchandisers, quality controllers, and sourcing executives. The course also provides valuable foundational knowledge for students progressing to diploma programmes or specialising in surface ornamentation and embellishment. OGIFT's placement network connects graduates with textile companies, garment exporters, and fashion brands across India.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Fabric Technology Tools and Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Students of the Fabric Knowledge course often continue with the <Link to="/courses/draping-technology" className="text-primary underline hover:no-underline font-medium">Draping Technology course</Link>, which applies fabric knowledge in 3D pattern making and garment construction directly on dress forms. OGIFT also offers a free <Link to="/fabric-sim" className="text-primary underline hover:no-underline font-medium">Interactive 3D Fabric Simulation tool</Link> that lets students visualise how different fabrics drape, stretch, and respond to gravity before working with them in the studio — ideal for reinforcing what is learned in the fabric science curriculum.
+          </p>
         </div>
       </section>
 

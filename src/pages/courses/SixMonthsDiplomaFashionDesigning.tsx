@@ -23,9 +23,9 @@ const SixMonthsDiplomaFashionDesigning = () => {
   return (
     <div className="min-h-screen bg-background">
       <Helmet>
-        <title>6 Months Diploma in Fashion Designing | Onati Global Institute Bangalore</title>
-        <meta name="description" content="Comprehensive 6-month diploma in fashion designing at Onati Global Bangalore. Master design fundamentals, pattern making, garment construction, textile science, surface ornamentation & portfolio development." />
-        <meta name="keywords" content="fashion designing diploma Bangalore, 6 month fashion course, fashion design diploma, pattern making course, garment construction course, textile design Bangalore" />
+        <title>Best 6 Month Fashion Designing Diploma Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="description" content="Best 6-month fashion designing diploma in Bangalore at OGIFT — design fundamentals, pattern making, garment construction, textile science & portfolio. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best 6 month fashion designing diploma bangalore, fashion diploma bangalore 2026, 6 month fashion course bangalore, fashion design diploma bangalore, pattern making diploma, garment construction diploma, OGIFT, Onati Global, textile design bangalore, fashion admissions 2026, 100% placement fashion diploma" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/six-months-diploma-fashion-designing" />
         <meta property="og:title" content="6 Months Diploma in Fashion Designing | Onati Global Bangalore" />
         <meta property="og:description" content="Comprehensive 6-month diploma covering design fundamentals, pattern making, garment construction, textile science & portfolio development." />
@@ -81,6 +81,23 @@ const SixMonthsDiplomaFashionDesigning = () => {
                 </CardContent>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Six Months Diploma in Fashion Designing at OGIFT Bangalore is the most comprehensive fashion education programme available for students who want to master the full range of fashion design disciplines in a structured, professionally guided environment. Over six months, students progress through seven integrated units covering fashion fundamentals and illustration, pattern making, garment construction, textile science, surface ornamentation, fashion management, and portfolio development — giving you both the creative and technical skills needed to work across the fashion industry.</p>
+              <p>This diploma is designed to mirror the learning journey of a professional fashion designer. You begin with the foundations — learning to sketch, understand design elements and principles, and read the industry. You then develop technical proficiency in flat pattern making and draping, move into garment construction across womenswear and menswear, study fabric science and surface embellishment techniques, and conclude with portfolio work that showcases your skills to potential employers. OGIFT faculty bring active industry experience to every session, ensuring the curriculum reflects what Bangalore's fashion employers and design houses actually need from graduates. Classes are conducted in-person at the OGIFT campus in Vinayakanagar, Bengaluru, in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This diploma is ideal for students who have completed Class 10 or Class 12 and want to build a complete, professional skill set in fashion design. It is also well-suited for working professionals from non-fashion backgrounds who want to transition into a design or garment technology career, and for tailors, hobbyists, and home-based designers who want to formalise and significantly expand their skills. Students who have completed OGIFT's FASHUP taster programme or Express Mastery courses and want to progress to a full diploma qualification will find this a natural next step.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates of the Six Months Diploma pursue careers as fashion designers, assistant designers, garment technicians, pattern makers, visual merchandisers, boutique managers, costume designers, and fashion educators. The breadth of the curriculum — spanning design, construction, textiles, and business — makes graduates adaptable to roles in fashion brands, export houses, garment manufacturing, retail, and e-commerce. OGIFT's 100% placement support connects graduates with leading fashion employers across Bangalore and Karnataka, including Fabindia, Raymond, Myntra, Lifestyle, and boutique design studios.</p>
+            </div>
           </div>
         </div>
       </section>
@@ -673,6 +690,16 @@ const SixMonthsDiplomaFashionDesigning = () => {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Programmes and Institute Information</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The 6-month diploma sits between OGIFT's introductory and advanced programmes. Students new to fashion often begin with the free <Link to="/courses/fashup-free-taster-sessions" className="text-primary underline hover:no-underline font-medium">FASHUP 10-day taster</Link> before enrolling. For the most comprehensive qualification, the <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="text-primary underline hover:no-underline font-medium">1-Year Advanced Diploma</Link> covers additional advanced topics and includes an industry project. Short-term alternatives include the <Link to="/courses/fashion-illustration" className="text-primary underline hover:no-underline font-medium">Fashion Illustration course</Link> and other 1-month Express Mastery programmes. Apply through the <Link to="/admissions" className="text-primary underline hover:no-underline font-medium">Admissions page</Link>, learn about OGIFT on the <Link to="/about" className="text-primary underline hover:no-underline font-medium">About page</Link>, or <Link to="/verify" className="text-primary underline hover:no-underline font-medium">verify an OGIFT certificate</Link>.
+          </p>
         </div>
       </section>
 

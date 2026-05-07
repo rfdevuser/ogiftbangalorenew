@@ -83,10 +83,10 @@ const DigitalPortfolioMakingCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Digital Portfolio Making Course | OGIFT Bangalore - Express Mastery Month</title>
-        <meta name="title" content="Digital Portfolio Making Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Build a professional fashion portfolio in 1 month at OGIFT Bangalore. Learn mood boards, story boards, logo design, spec sheets and garment development. Certificate included." />
-        <meta name="keywords" content="digital portfolio making course Bangalore, fashion portfolio course, mood board design, fashion storyboard, spec sheet course, OGIFT, Onati Global, express mastery month, fashion portfolio Bangalore" />
+        <title>Best Fashion Portfolio Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Digital Portfolio Making Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best fashion portfolio course in Bangalore at OGIFT — mood boards, storyboards, logo design, spec sheets & garment development. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion portfolio course bangalore, digital portfolio making course bangalore 2026, fashion portfolio design bangalore, mood board course, fashion storyboard course, spec sheet course, OGIFT, Onati Global, express mastery course, fashion design portfolio admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/digital-portfolio-making" />
@@ -287,6 +287,33 @@ const DigitalPortfolioMakingCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Digital Portfolio Making course at OGIFT Bangalore is a focused 1-month Express Mastery programme that teaches fashion students and graduates how to create a professional digital portfolio — the essential tool for securing employment, freelance clients, and admission to advanced design programmes. In today's fashion industry, a digital portfolio is your most important professional asset. Employers review portfolios before résumés; clients assess your work before making contact; and the quality of your portfolio presentation directly influences the opportunities available to you. This course teaches you to create a portfolio that opens doors.</p>
+              <p>The course covers portfolio strategy and structure, digital layout and presentation tools, photography and image editing for garment and illustration work, writing design rationales and project descriptions, tailoring portfolio content for different employer types (fashion brands, garment exporters, boutiques, design studios), and building a professional online presence. Students work on their own actual design and project work throughout the course, so that by the end they have a completed, personalised portfolio ready for immediate use. Faculty with industry hiring experience provide direct feedback on portfolio quality and presentation.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion design graduates preparing for job applications, students completing diploma programmes who need to present their work professionally, freelance designers and stylists who want to attract clients, and anyone who has developed fashion skills informally and now wants to formalise their presentation. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates emerge with a completed, professional digital portfolio that they can use for job applications, freelance client acquisition, and further study applications. The course accelerates the job search significantly — graduates report more interview invitations and stronger employer responses after completing the programme. OGIFT's 100% placement support further amplifies these outcomes.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Portfolio Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The Digital Portfolio Making course works alongside OGIFT's <Link to="/portfolio" className="text-primary underline hover:no-underline font-medium">AI Fashion Portfolio Builder</Link> — a free tool that provides AI-powered critique and recommendations for improving your portfolio's commercial effectiveness. Students who want a more comprehensive qualification combining design skills, pattern making, and portfolio development should consider the <Link to="/courses/design-pattern-making-portfolio-3months" className="text-primary underline hover:no-underline font-medium">Design, Pattern Making and Portfolio 3-month course (DPPMP)</Link>, which produces a complete employer-ready portfolio across three months of integrated study.
+          </p>
         </div>
       </section>
 

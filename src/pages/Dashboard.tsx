@@ -1,3 +1,4 @@
+import { Helmet } from 'react-helmet-async';
 import * as React from "react";
 import { useNavigate, Link } from "react-router-dom";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -160,6 +161,11 @@ const Dashboard = () => {
 
   return (
     <main className="min-h-screen pt-24 pb-16 bg-background">
+      <Helmet>
+        <title>Student Progress Dashboard | OGIFT Bangalore | Track Your Fashion Journey</title>
+        <meta name="description" content="Track your fashion design learning progress at OGIFT Bangalore — view completed modules, credits & achievements at Bangalore's 4.9★ best fashion institute." />
+        <meta name="robots" content="noindex, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Header */}
         <div className="flex items-center justify-between mb-8">

@@ -105,10 +105,10 @@ const FashupCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>FASHUP - Free Fashion Design Taster Course | OGIFT Bangalore</title>
-        <meta name="title" content="FASHUP Free Fashion Taster Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Try fashion design for FREE at OGIFT Bangalore! FASHUP is a 10-day taster course covering fashion basics, body measurements, bodice block pattern making and stitching. Certificate included. Absolutely free." />
-        <meta name="keywords" content="free fashion course Bangalore, fashion taster course, FASHUP OGIFT, free fashion design class Bangalore, fashion introduction course, OGIFT, Onati Global, free certificate course Bangalore, fashion for beginners" />
+        <title>FASHUP Free Fashion Design Course Bangalore 2026 | OGIFT | Enroll Now</title>
+        <meta name="title" content="FASHUP Free Fashion Design Taster Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Try fashion design FREE at OGIFT Bangalore! FASHUP — 10-day taster course covering fashion basics, body measurements, bodice block & stitching. Free certificate. Best fashion institute, 4.9★ rated. Enroll 2026!" />
+        <meta name="keywords" content="free fashion design course bangalore, FASHUP OGIFT free course, free fashion taster class bangalore 2026, fashion introduction course bangalore, free fashion certificate bangalore, OGIFT, Onati Global, fashion for beginners bangalore, free fashion class 2026, best fashion institute bangalore free course" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/fashup-free-taster-sessions" />
@@ -209,6 +209,23 @@ const FashupCourse = () => {
         </div>
       </section>
 
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About FASHUP</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>FASHUP is OGIFT's signature free introductory programme — a 10-day taster experience designed for anyone curious about fashion design but not yet ready to commit to a full course. Across ten hands-on sessions at the OGIFT campus in Vinayakanagar, Bengaluru, students explore the fundamentals of fashion education, get introduced to industry opportunities, and actually create their first garment piece: a fully stitched basic bodice block. Every FASHUP student receives a certificate at the end of the programme, entirely free of charge.</p>
+              <p>The programme moves quickly through the entire design-to-stitch process. In the first few days, students discover how fashion designers build collections, what different course pathways look like (vocational, diploma, advanced diploma), and how the fashion industry is structured in India. From Day 4 onwards, sessions become practical: students learn to take body measurements, draft a basic bodice block pattern, and then stitch and finish the block themselves. The OGIFT faculty guide every step, making this a genuinely educational taster rather than a promotional event. Classes are available in English, Hindi, and Kannada.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>FASHUP is ideal for school and college students exploring career options in fashion, homemakers who want to experience structured fashion education before enrolling in a longer programme, working professionals considering a career change into fashion design or garment technology, and parents who want their child to try fashion education before committing to a diploma. No prior experience or qualifications are required — the only requirement is curiosity about fashion. Eligibility is open to all.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">What Comes Next</h3>
+              <p>Many FASHUP graduates go on to enrol in OGIFT's full programmes — the 3-month vocational course, the 6-month diploma in fashion designing, or the 1-year advanced diploma. Faculty take time during the programme to explain each pathway and what it leads to, so you leave FASHUP with a clear picture of your options. OGIFT offers 100% placement support across all its programmes, and the relationships you build during FASHUP with faculty and fellow students are your first step into the OGIFT community.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* 10-Day Curriculum */}
       <section className="py-20">
         <div className="container mx-auto px-4">
@@ -287,6 +304,21 @@ const FashupCourse = () => {
                 </div>
               </div>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+            <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
+            <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">1-Year Advanced Diploma</span></Link>
+            <Link to="/courses/fashion-illustration" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Illustration Course</span></Link>
+            <Link to="/admissions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Admissions 2026</span></Link>
+            <Link to="/counsellor" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Free AI Counsellor</span></Link>
+            <Link to="/courses/six-months-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">6-Month Diploma</span></Link>
           </div>
         </div>
       </section>

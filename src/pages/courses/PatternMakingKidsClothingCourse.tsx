@@ -77,10 +77,10 @@ const PatternMakingKidsClothingCourse = () => {
   return (
     <>
       <Helmet>
-        <title>Pattern Making for Kids Clothing Course | OGIFT Bangalore</title>
-        <meta name="title" content="Pattern Making for Kids Clothing Course | Onati Global Institute of Fashion Technology Bangalore" />
-        <meta name="description" content="Learn kids clothing pattern making at OGIFT Bangalore — A-line frock, gathered frock, umbrella frock, layered skirt and jabla in our 1-month Express Mastery course. Certificate included." />
-        <meta name="keywords" content="kids clothing pattern making Bangalore, children wear pattern making, frock pattern making, jabla pattern, kids fashion course Bangalore, OGIFT, Onati Global, express mastery month, kids garment patterns" />
+        <title>Best Kids Clothing Pattern Making Course Bangalore 2026 | OGIFT | Admissions Open</title>
+        <meta name="title" content="Best Kids Clothing Pattern Making Course Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Best kids clothing pattern making course in Bangalore at OGIFT — A-line frock, gathered frock, umbrella frock, layered skirt & jabla. 1-month, 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best kids clothing pattern making bangalore, children wear pattern making course bangalore 2026, frock pattern making course, jabla pattern course, kids fashion design course bangalore, OGIFT, Onati Global, express mastery course, kids garment patterns, children clothing course 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/pattern-making-kids-clothing" />
@@ -268,6 +268,33 @@ const PatternMakingKidsClothingCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Kids Clothing Pattern Making course at OGIFT Bangalore is a 1-month Express Mastery programme specialising in pattern drafting for children's garments — a growing and commercially significant segment of the Indian fashion and garment manufacturing industry. Children's pattern making requires a distinct set of skills: children's proportions change rapidly across age groups, fit requirements differ substantially from adult garments, and the construction must prioritise comfort, durability, and ease of movement. This course teaches you to draft precise, scalable patterns for children across a full range of age groups.</p>
+              <p>The course covers proportion and measurement systems for infant, toddler, and child age groups; drafting methods for shirts, frocks, trousers, shorts, and school uniforms; age-grading and size scaling techniques used in garment manufacturing; construction details specific to children's wear including reinforced seams, elastic waistbands, and snap fastenings; and the safety and compliance considerations relevant to children's garment production in India. Students produce a portfolio of patterns across multiple age groups, giving them immediately usable templates for commercial production.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for pattern makers and tailors expanding into children's wear, garment manufacturers adding a kids' range, boutique owners who want to offer children's made-to-measure, and fashion designers developing children's collections. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates work as children's wear pattern makers, kids' garment production specialists, school uniform manufacturers, and children's fashion designers. The Indian children's wear market is growing rapidly, creating consistent demand for skilled kids' pattern makers in garment export, retail, and bespoke production. OGIFT's placement support connects graduates with relevant employers across Bangalore and Karnataka.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Pattern Making Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The Kids Clothing Pattern Making course works alongside OGIFT's <Link to="/courses/pattern-making-basic" className="text-primary underline hover:no-underline font-medium">Pattern Making Basic course</Link>, which provides the adult garment pattern foundation. Related advanced courses include <Link to="/courses/pattern-making-blouses-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Blouse Pattern Making</Link> and <Link to="/courses/pattern-making-western-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Western Pattern Making</Link>. The <Link to="/courses/art-of-garment-foundation" className="text-primary underline hover:no-underline font-medium">Art of Garment Foundation course</Link> provides the garment construction skills needed to stitch finished children's garments. For a full qualification, the <Link to="/courses/design-process-pattern-making-3months" className="text-primary underline hover:no-underline font-medium">3-month Design Process and Pattern Making course</Link> covers pattern making at all levels.
+          </p>
         </div>
       </section>
 

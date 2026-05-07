@@ -1,5 +1,6 @@
+import { Helmet } from 'react-helmet-async';
 import * as React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { Canvas, useThree } from '@react-three/fiber';
 import { Environment } from '@react-three/drei';
 import { NeocortexAvatar } from '@/components/NeocortexAvatar';
@@ -649,6 +650,13 @@ export default function FAQAvatar(): React.JSX.Element {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-background to-muted">
+      <Helmet>
+        <title>Fashion Design FAQ Avatar | OGIFT Bangalore | Get Answers 2026</title>
+        <meta name="description" content="Get instant answers to fashion design questions with OGIFT's FAQ Avatar. Course info, admissions 2026, fees & career guidance at Bangalore's 4.9★ best fashion institute." />
+        <meta name="keywords" content="fashion design FAQ bangalore, OGIFT FAQ avatar, fashion course questions, fashion institute FAQ 2026, Onati Global FAQ, fashion admissions FAQ bangalore" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/faqavatar" />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="container mx-auto px-4 py-8">
         <div className="text-center mb-8">
           {/* User greeting and logout */}
@@ -696,6 +704,23 @@ export default function FAQAvatar(): React.JSX.Element {
             </div>
           </div>
         </div>
+
+        {/* About Section */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">Fashion Design FAQ — Ask OGIFT's AI Avatar</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>OGIFT's Fashion Design FAQ Avatar is an AI-powered interactive tool that answers questions about fashion design careers, OGIFT's courses, the admissions process, fees, eligibility, and life as a fashion professional in India. The FAQ Avatar is available 24/7 and can answer hundreds of common questions instantly — so you can get the information you need at any time, without waiting for the admissions office to open. It draws on OGIFT's full course catalogue, placement records, and faculty expertise to give you accurate, relevant answers.</p>
+                <p>The FAQ Avatar is particularly useful for prospective students who are in the early stages of researching fashion education and want to understand what different courses lead to, how much they cost, who they are suitable for, and what the fashion industry looks like for graduates in Bangalore. It is also useful for parents and guardians who want factual information about career outcomes before supporting a student's enrolment decision, and for working professionals who want to understand how OGIFT's programmes can fit around their existing schedule.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">What Can the FAQ Avatar Answer?</h3>
+                <p>The FAQ Avatar can answer questions across all areas of OGIFT's programmes and the fashion industry, including: which course is right for my background and goals; what are the fees and payment options; what do graduates earn in their first year; is there placement support and which companies hire OGIFT graduates; how long do courses take and what are the batch timings; is there an online option; what is the eligibility requirement; and many more. If the Avatar cannot answer a specific question, it will direct you to the OGIFT admissions team for a personal response.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">Speak to a Human Counsellor</h3>
+                <p>For questions that require a more personalised response — such as which course is right for your specific situation, or how to plan your education around work or family commitments — OGIFT's human admissions counsellors are available at the campus in Vinayakanagar, Bengaluru. You can also use OGIFT's Free AI Career Counsellor at ogiftbangalore.com/counsellor for a structured, personalised programme recommendation. To book a counselling session or campus visit, call +91 90369 28799.</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         <div className="max-w-6xl mx-auto">
           {/* Mobile: message box sits on the bottom half of the avatar box */}
@@ -761,6 +786,21 @@ export default function FAQAvatar(): React.JSX.Element {
           </div>
         </div>
       </div>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
+            <Link to="/admissions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Admissions 2026</span></Link>
+            <Link to="/counsellor" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Free AI Counsellor</span></Link>
+            <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Videos</span></Link>
+            <Link to="/community" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Community</span></Link>
+            <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
+            <Link to="/courses/fashup-free-taster-sessions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FASHUP Free Course</span></Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

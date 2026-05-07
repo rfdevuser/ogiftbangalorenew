@@ -296,8 +296,11 @@ const CreditPackages = () => {
   return (
     <>
       <Helmet>
-        <title>Credit Packages | OGIFT Bangalore</title>
-        <meta name="description" content="Purchase credit packages for OGIFT Bangalore students. Choose from Basic, Advanced, or Premium packages." />
+        <title>Credit Packages | OGIFT Bangalore | Fashion Course Credits</title>
+        <meta name="description" content="Purchase credit packages for OGIFT Bangalore fashion courses. Choose from Basic, Advanced, or Premium packages for AI tools, portfolio builder & online video access. Best fashion institute, 4.9★ rated." />
+        <meta name="keywords" content="OGIFT credit packages, fashion course credits bangalore, Onati Global credits, fashion institute credits, AI fashion tools credits, online fashion course credits" />
+        <link rel="canonical" href="https://www.ogiftbangalore.com/creditpackages" />
+        <meta name="robots" content="index, follow" />
       </Helmet>
 
       <div className="min-h-screen bg-background">

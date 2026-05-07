@@ -37,10 +37,10 @@ const Courses = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Fashion Design Courses in Bangalore | OGIFT - Onati Global Institute</title>
-        <meta name="title" content="Fashion Design Courses in Bangalore | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Explore industry-recognized fashion design courses at OGIFT Bangalore. From 1-month express programs to advanced diplomas — garment construction, pattern making, design process & portfolio development." />
-        <meta name="keywords" content="fashion design courses Bangalore, fashion institute Bangalore, pattern making course, garment construction course, fashion diploma Bangalore, OGIFT, Onati Global Institute, fashion design certificate, fashion career Bangalore" />
+        <title>Fashion Design Courses in Bangalore 2026 | OGIFT | Best Fashion Institute</title>
+        <meta name="title" content="Fashion Design Courses in Bangalore 2026 | Onati Global Institute of Fashion Technology" />
+        <meta name="description" content="Explore Bangalore's best fashion design courses at OGIFT. Admissions 2026 open — pattern making, garment construction, fashion illustration, boutique management, styling & advanced diplomas. 100% placement assistance." />
+        <meta name="keywords" content="fashion design courses bangalore 2026, best fashion design courses bangalore, fashion designing courses bangalore, pattern making course bangalore, garment construction course bangalore, fashion illustration course, boutique management course, fashion diploma bangalore, fashion styling course, OGIFT courses, Onati Global Institute, fashion design certificate bangalore, fashion career bangalore, admissions 2026 fashion, 100% placement fashion institute" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses" />
@@ -48,16 +48,16 @@ const Courses = () => {
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://www.ogiftbangalore.com/courses" />
-        <meta property="og:title" content="Fashion Design Courses in Bangalore | OGIFT" />
-        <meta property="og:description" content="Explore fashion design courses at OGIFT Bangalore — garment construction, pattern making, design process, portfolio development and advanced diplomas. Enroll today." />
+        <meta property="og:title" content="Fashion Design Courses in Bangalore 2026 | OGIFT | Best Fashion Institute" />
+        <meta property="og:description" content="Explore Bangalore's best fashion design courses at OGIFT — pattern making, garment construction, fashion illustration, boutique management, styling & advanced diplomas. 100% placement. Admissions 2026 open!" />
         <meta property="og:site_name" content="Onati Global Institute of Fashion Technology" />
         <meta property="og:locale" content="en_IN" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:url" content="https://www.ogiftbangalore.com/courses" />
-        <meta name="twitter:title" content="Fashion Design Courses in Bangalore | OGIFT" />
-        <meta name="twitter:description" content="Industry-recognized fashion design programs at OGIFT Bangalore. From express 1-month courses to advanced diplomas. Enroll now." />
+        <meta name="twitter:title" content="Fashion Design Courses Bangalore 2026 | OGIFT | 100% Placement" />
+        <meta name="twitter:description" content="Bangalore's best fashion design courses — pattern making, garment construction, styling & advanced diplomas. 100% placement. Admissions 2026 open!" />
 
         {/* Additional SEO Meta Tags */}
         <meta name="geo.region" content="IN-KA" />
@@ -162,6 +162,39 @@ const Courses = () => {
                 <p className="text-sm text-muted-foreground">{feature.description}</p>
               </Card>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Fashion Design Courses at OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT offers a complete range of fashion education programmes at its campus in Vinayakanagar, Bengaluru. From the free FASHUP 10-day taster to the 1-year advanced diploma, every course is designed by industry practitioners with active experience in fashion design, garment technology, and retail. All programmes are taught in English, Hindi, and Kannada, making OGIFT accessible to students from across Karnataka. The institute is rated 4.9★ based on 250+ Google reviews — the highest rating of any fashion institute in Bangalore.</p>
+              <p>Short courses (1 month, "Express Mastery" series) cover Fashion Illustration, Draping Technology, Fashion Styling, Pattern Making, Fabric &amp; Textile Science, Graphic Design for Fashion, and Boutique Management. Three-month vocational programmes cover the Design Process &amp; Pattern Making and an AI-powered Online Fashion Course. Six-month and one-year diplomas provide comprehensive coverage of all fashion disciplines from fundamentals to portfolio development. All courses include a certificate or diploma on completion, and OGIFT provides 100% placement support to help graduates find employment in the Indian fashion industry.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">How to Choose the Right Course</h3>
+              <p>If you are completely new to fashion, the free FASHUP 10-day programme is the ideal starting point — you will learn the basics and get a feel for OGIFT's teaching style before committing to any paid programme. If you have a specific skill you want to develop quickly, the Express Mastery 1-month courses are designed to be immediately practical. If you want a full qualification that opens the door to professional design roles, the 6-month or 1-year diploma is the best investment.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Eligibility and Admissions</h3>
+              <p>Eligibility for all OGIFT courses is Class 10 (SSC) and above. No prior fashion experience is required for most programmes. Admissions for 2026 are open — contact the OGIFT admissions team at +91 90369 28799 or admissions@ogiftbangalore.com to register your interest, schedule a campus visit, or ask about batch start dates. The OGIFT campus is located at Vinayakanagar, Bengaluru 560017.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 max-w-4xl mx-auto">
+            <Link to="/fabric-sim" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric Simulation</span></Link>
+            <Link to="/" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">OGIFT Home</span></Link>
+            <Link to="/faqavatar" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FAQ Avatar</span></Link>
+            <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Video Lessons</span></Link>
+            <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
+            <Link to="/about" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">About OGIFT</span></Link>
+            <Link to="/admissions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Admissions 2026</span></Link>
           </div>
         </div>
       </section>

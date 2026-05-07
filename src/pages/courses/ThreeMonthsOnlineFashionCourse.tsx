@@ -160,9 +160,9 @@ const ThreeMonthsOnlineFashionCourse = () => {
   return (
     <>
       <Helmet>
-        <title>3 Months Online Fashion Designing Course | AI-Powered Learning | Onati Global Bangalore</title>
-        <meta name="description" content="Master fashion design in 3 months with our AI-powered online course. Multi-lingual support in English, Hindi & Kannada. Learn pattern making, garment construction, fashion illustration & boutique management from home." />
-        <meta name="keywords" content="online fashion course Bangalore, 3 month fashion designing course, AI powered fashion learning, multilingual fashion course, fashion design online India, pattern making online course" />
+        <title>Best Online Fashion Design Course India 2026 | OGIFT | 3 Months AI-Powered</title>
+        <meta name="description" content="Best online fashion design course in India at OGIFT — 3-month AI-powered, multi-lingual (English, Hindi, Kannada). Pattern making, garment construction, illustration & boutique management. 4.9★ rated. Admissions 2026 open!" />
+        <meta name="keywords" content="best online fashion design course india 2026, online fashion course bangalore, 3 month online fashion designing, AI powered fashion course, multilingual fashion course hindi kannada, fashion design online india, pattern making online course, OGIFT online course, Onati Global online, fashion admissions 2026" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/onlinecourse" />
         <meta property="og:title" content="3 Months Online Fashion Designing Course | AI-Powered | Onati Global" />
         <meta property="og:description" content="Transform your fashion dreams into reality with our comprehensive 3-month online course. AI-powered learning, multi-lingual support, and industry-recognized certification." />
@@ -463,6 +463,33 @@ const ThreeMonthsOnlineFashionCourse = () => {
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </section>
+
+        {/* About This Course */}
+        <section className="py-16">
+          <div className="container mx-auto px-4">
+            <div className="max-w-4xl mx-auto">
+              <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+              <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <p>OGIFT's 3-Month Online Fashion Course is an AI-powered fashion education programme accessible from anywhere in India — designed for students who want a structured, faculty-guided fashion education without relocating to Bangalore. The course covers the foundational disciplines of fashion design: design elements and principles, colour theory, fashion illustration, fabric and textile knowledge, pattern making basics, garment construction concepts, fashion history and market awareness, and an introduction to fashion business and retail. All content is delivered through OGIFT's interactive online platform with video lessons, downloadable resources, live faculty sessions, and regular assessments.</p>
+                <p>The course is built around OGIFT's proven in-person curriculum, adapted for the online format with practical exercises that students can complete with basic materials at home. Live faculty Q&A sessions ensure that students get real-time guidance and feedback, not just recorded content. The programme is structured as a 3-month intensive — approximately 10–15 hours per week — with a clear week-by-week curriculum that keeps students on track without the need for self-direction. On completion, students receive an OGIFT certificate recognised across the Indian fashion industry. Classes are available in English, Hindi, and Kannada.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+                <p>This course is ideal for students in cities and towns outside Bangalore who cannot attend in person, working professionals who want to develop fashion skills alongside their current career, homemakers who want structured education they can fit around family responsibilities, and anyone who has tried to self-learn fashion design and wants a more structured, guided approach. Eligibility is Class 10 (SSC) and above.</p>
+                <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+                <p>Online course graduates pursue careers in fashion design, styling, boutique management, and garment retail — the same paths as in-person graduates. Many use the 3-month online course as a stepping stone to OGIFT's in-person diploma programmes. OGIFT's 100% placement support is available to online course graduates. The AI-powered platform also continues to be available after graduation for portfolio building and continued learning.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Related Pages */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold mb-4">Online and Digital Fashion Learning at OGIFT</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              OGIFT's digital learning ecosystem includes several connected resources. The <Link to="/quicktour" className="text-primary underline hover:no-underline font-medium">Quick Tour</Link> is a free 20-minute AI-powered preview of this online course — ideal for students who want to experience the learning format before enrolling. The <Link to="/interactive-training" className="text-primary underline hover:no-underline font-medium">Interactive Fashion Training platform</Link> provides AI-powered adaptive instruction on fashion design topics, available any time. The <Link to="/videos" className="text-primary underline hover:no-underline font-medium">Fashion Design Video Gallery</Link> offers free tutorial videos in English, Hindi, and Kannada covering pattern making, illustration, garment construction, and styling. Together, these resources form OGIFT's complete digital fashion education offering.
+            </p>
           </div>
         </section>
 

@@ -102,10 +102,10 @@ const DesignPatternMakingPortfolio3MonthsCourse = () => {
     <>
       <Helmet>
         {/* Primary Meta Tags */}
-        <title>Design Pattern Making & Portfolio 3 Months Course (DPPMP) | OGIFT Bangalore</title>
-        <meta name="title" content="Design Pattern Making, Design Process & Portfolio Course | Onati Global Institute of Fashion Technology" />
-        <meta name="description" content="Master fashion design, pattern making, garment construction and build a professional portfolio in our 3-month DPPMP course at OGIFT Bangalore. Certificate included." />
-        <meta name="keywords" content="fashion design course Bangalore, pattern making course, design process course, portfolio development, DPPMP course, OGIFT, Onati Global, garment construction, fashion illustration, 3 months fashion course" />
+        <title>Best Fashion Design Portfolio Course Bangalore 2026 | OGIFT | DPPMP Admissions</title>
+        <meta name="title" content="Best Design Pattern Making & Portfolio 3 Months Course Bangalore 2026 | Onati Global Institute" />
+        <meta name="description" content="Best 3-month fashion design, pattern making & portfolio course (DPPMP) in Bangalore at OGIFT — design, construction & professional portfolio. 4.9★ rated. 100% placement support. Admissions 2026 open!" />
+        <meta name="keywords" content="best fashion design portfolio course bangalore, DPPMP course bangalore 2026, pattern making portfolio course bangalore, design process portfolio course, fashion design diploma bangalore, OGIFT, Onati Global, garment construction portfolio course, fashion design admissions 2026" />
         <meta name="author" content="Onati Global Institute of Fashion Technology" />
         <meta name="robots" content="index, follow" />
         <link rel="canonical" href="https://www.ogiftbangalore.com/courses/design-pattern-making-portfolio-3months" />
@@ -480,6 +480,33 @@ const DesignPatternMakingPortfolio3MonthsCourse = () => {
               </div>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* About This Course */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About This Course</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The Design, Pattern Making & Portfolio 3-Month course (DPPMP) at OGIFT Bangalore is a comprehensive vocational programme that combines the creative skills of fashion design, the technical skills of pattern making, and the professional presentation skills of portfolio development — giving graduates a complete, employer-ready package of qualifications in a single 3-month intensive. The DPPMP is designed specifically for students who want to enter the fashion industry at a professional level, not just as practitioners but as candidates who can immediately demonstrate their value to employers through a polished, industry-standard portfolio.</p>
+              <p>The programme covers fashion illustration and design fundamentals, flat pattern making for a range of garment types, design-to-pattern interpretation, garment construction fundamentals, and dedicated portfolio development sessions in which students curate, present, and refine their best work into a professional portfolio document. Students receive guidance on both physical and digital portfolio formats, and the programme includes mock portfolio reviews with faculty providing industry-standard feedback. On completion, every student graduates with a completed portfolio they can present immediately to potential employers, clients, or design schools.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Is This Course For?</h3>
+              <p>This course is ideal for fashion design graduates who want a qualification that immediately differentiates them in the job market, students who have completed individual OGIFT courses and want to consolidate their skills into a portfolio, and professionals transitioning into fashion who need both a skill set and a credential. Eligibility is Class 10 (SSC) and above.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Outcomes</h3>
+              <p>Graduates pursue careers as fashion designers, pattern makers, design assistants, and freelance fashion consultants. The portfolio qualification is specifically valued by employers who want evidence of practical ability, not just certification. OGIFT's placement network connects graduates with fashion brands, design houses, and garment manufacturers across Bangalore.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Portfolio Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The DPPMP course includes access to OGIFT's <Link to="/portfolio" className="text-primary underline hover:no-underline font-medium">AI Fashion Portfolio Builder</Link>, which provides AI-powered critique and recommendations on the portfolio work students create during the programme. Students who want a focused 1-month portfolio course rather than a 3-month programme should look at the <Link to="/courses/digital-portfolio-making" className="text-primary underline hover:no-underline font-medium">Digital Portfolio Making course</Link>, which covers portfolio strategy, layout design, and digital presentation tools in an intensive one-month format.
+          </p>
         </div>
       </section>
 
