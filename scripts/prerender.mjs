@@ -385,7 +385,6 @@ const routeContent = {
     <p>OGIFT's 6-month diploma graduates are consistently among the most sought-after candidates in Bangalore's fashion industry. Employer partners regularly hiring OGIFT 6-month diploma graduates include Fabindia, Raymond, Myntra, Lifestyle, and leading boutique design studios across Bangalore. The OGIFT admissions process is straightforward — no entrance exam, eligibility of Class 10 (SSC) and above. Batch sizes are limited and fill quickly. Contact the OGIFT admissions team at +91 90369 28799 or admissions@ogiftbangalore.com to check availability and enrol for 2026.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a>
-    <a href="/placements">View Placement Record</a>
     <a href="/courses">View All Courses</a>
     <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
     <a href="/about">About OGIFT</a>
@@ -400,7 +399,6 @@ const routeContent = {
     <p>1-year diploma graduates from OGIFT are the most comprehensively qualified students the institute produces, and they attract consistently strong interest from employer partners across Bangalore's fashion industry. Graduates pursue roles as fashion designers, assistant designers, pattern makers, garment technicians, fashion stylists, visual merchandisers, boutique managers, and production executives. Some graduates launch their own fashion labels, boutiques, or design studios. OGIFT provides 100% placement support throughout the programme, including portfolio reviews, mock interviews, and direct introductions to employer partners. Admissions for 2026 are open — contact the admissions team at +91 90369 28799 or admissions@ogiftbangalore.com. The OGIFT campus is at Vinayakanagar, Bengaluru, Karnataka 560017.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
     <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma Option</a>
-    <a href="/placements">View Placement Record</a>
     <a href="/courses">View All Courses</a>
     <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
     <a href="/verify">Verify OGIFT Certificate</a>
