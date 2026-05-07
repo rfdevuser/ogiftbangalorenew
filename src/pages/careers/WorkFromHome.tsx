@@ -217,6 +217,23 @@ const WorkFromHome = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Work From Home Fashion Design Opportunities — OGIFT</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT's Work From Home programme offers qualified fashion design graduates and skilled fashion professionals the opportunity to earn an income from home by taking on fashion design and garment-related work assignments through OGIFT's employer network. The programme is designed for graduates who have the skills to deliver professional-quality fashion work but prefer the flexibility of home-based freelance work — whether due to family commitments, location constraints, or a preference for independent working. OGIFT connects registered work-from-home professionals with verified employers who need skilled fashion talent on a project or contract basis.</p>
+              <p>Work-from-home assignments available through the OGIFT network include fashion illustration, digital pattern making, trend research and reporting, graphic design for fashion brands, social media content creation for boutiques and fashion labels, online fashion tutoring, garment specification writing, and quality review of design documents. The type and volume of work available to each registered professional depends on their skill set, qualifications, and the current needs of OGIFT's employer network. OGIFT does not guarantee a specific volume of work but actively matches registered professionals with suitable assignments as they arise.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Can Register?</h3>
+              <p>The Work From Home programme is open to OGIFT graduates and to qualified fashion professionals who can demonstrate relevant skills through a portfolio review. Registered professionals must be willing to complete assignments to the quality and timeline specified by the employer, and to maintain professional communication with both OGIFT and the client. Professionals who consistently deliver high-quality work are given priority for new assignments and are eligible for higher-value projects over time. Registration is free for OGIFT graduates.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">How to Get Started</h3>
+              <p>To register for the Work From Home programme, complete the registration form on this page and upload your portfolio and OGIFT qualification details. The OGIFT careers team will review your application and contact you when assignments matching your skills become available. For questions about the programme, eligibility requirements, or the types of assignments available, contact the OGIFT careers team at +91 90369 28799 or email admissions@ogiftbangalore.com. To qualify for the programme, OGIFT recommends completing at least one OGIFT diploma or advanced course first — visit ogiftbangalore.com/courses to explore the options.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-16">
         <div className="container mx-auto px-4">

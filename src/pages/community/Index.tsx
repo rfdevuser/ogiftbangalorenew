@@ -473,6 +473,23 @@ const Community = () => {
         </div>
       </div>
 
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Fashion Design Community — OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>The OGIFT Fashion Design Community is a dedicated space for fashion students, graduates, and fashion enthusiasts to connect, share their work, ask questions, and build professional relationships in the Indian fashion industry. Fashion is a collaborative, visual, and social discipline — and community plays a central role in how fashion professionals learn, grow, and find opportunities. The OGIFT Community brings together thousands of current students, alumni, and industry professionals across Bangalore and Karnataka, creating a rich network of connections that extends far beyond the classroom.</p>
+              <p>In the Community, members share fashion illustrations, garment photographs, mood boards, and design projects; ask questions about techniques, tools, and career decisions; offer feedback on each other's work; and post about industry events, job openings, and styling inspiration. OGIFT faculty and alumni are active members of the community, providing professional guidance and mentorship to newer students. The Community is moderated to maintain a respectful, constructive, and inclusive environment for learners at all levels.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Who Can Join?</h3>
+              <p>The OGIFT Community is open to all current OGIFT students and graduates, as well as fashion enthusiasts across India who want to connect with a like-minded creative community. Members do not need to be enrolled in a course to join — if you are passionate about fashion and want to be part of a community of fashion learners and professionals, you are welcome. New members are encouraged to introduce themselves, share what they are working on, and ask any questions they have about fashion education or the industry.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Build Your Network</h3>
+              <p>One of the most valuable outcomes of the OGIFT Community is the professional network it creates. OGIFT graduates who are now working at fashion brands, running their own boutiques, or working as freelance designers are active in the Community — and are often the first to know about job openings, freelance opportunities, and industry events. Being active in the Community is one of the most effective things a fashion student or early-career professional can do to accelerate their career in Bangalore's fashion industry. To enrol at OGIFT and join the full community experience, contact admissions at +91 90369 28799.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
         <div className="container mx-auto px-4">
