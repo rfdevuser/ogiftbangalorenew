@@ -255,6 +255,8 @@ const Home = () => {
             <Link to="/interactive-training" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Interactive Training</span></Link>
             <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Course</span></Link>
             <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
+            <Link to="/courses/six-months-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">6-Month Diploma</span></Link>
+            <Link to="/admissions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Admissions 2026</span></Link>
           </div>
         </div>
       </section>

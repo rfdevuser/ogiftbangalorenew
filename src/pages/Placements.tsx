@@ -225,6 +225,8 @@ const Placements = () => {
             <Link to="/quicktour" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Quick Tour</span></Link>
             <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Fashion Course</span></Link>
             <Link to="/careers/work-from-home" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Work From Home</span></Link>
+            <Link to="/courses/graphic-designing-for-fashion" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Graphic Design for Fashion</span></Link>
+            <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling Course</span></Link>
           </div>
         </div>
       </section>
