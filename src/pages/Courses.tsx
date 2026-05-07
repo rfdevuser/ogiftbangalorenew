@@ -166,6 +166,23 @@ const Courses = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">Fashion Design Courses at OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT offers a complete range of fashion education programmes at its campus in Vinayakanagar, Bengaluru. From the free FASHUP 10-day taster to the 1-year advanced diploma, every course is designed by industry practitioners with active experience in fashion design, garment technology, and retail. All programmes are taught in English, Hindi, and Kannada, making OGIFT accessible to students from across Karnataka. The institute is rated 4.9★ based on 250+ Google reviews — the highest rating of any fashion institute in Bangalore.</p>
+              <p>Short courses (1 month, "Express Mastery" series) cover Fashion Illustration, Draping Technology, Fashion Styling, Pattern Making, Fabric &amp; Textile Science, Graphic Design for Fashion, and Boutique Management. Three-month vocational programmes cover the Design Process &amp; Pattern Making and an AI-powered Online Fashion Course. Six-month and one-year diplomas provide comprehensive coverage of all fashion disciplines from fundamentals to portfolio development. All courses include a certificate or diploma on completion, and OGIFT provides 100% placement support to help graduates find employment in the Indian fashion industry.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">How to Choose the Right Course</h3>
+              <p>If you are completely new to fashion, the free FASHUP 10-day programme is the ideal starting point — you will learn the basics and get a feel for OGIFT's teaching style before committing to any paid programme. If you have a specific skill you want to develop quickly, the Express Mastery 1-month courses are designed to be immediately practical. If you want a full qualification that opens the door to professional design roles, the 6-month or 1-year diploma is the best investment.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Eligibility and Admissions</h3>
+              <p>Eligibility for all OGIFT courses is Class 10 (SSC) and above. No prior fashion experience is required for most programmes. Admissions for 2026 are open — contact the OGIFT admissions team at +91 90369 28799 or admissions@ogiftbangalore.com to register your interest, schedule a campus visit, or ask about batch start dates. The OGIFT campus is located at Vinayakanagar, Bengaluru 560017.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">

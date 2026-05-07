@@ -227,6 +227,23 @@ const Placements = () => {
         </div>
       </section>
 
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">100% Placement Support — OGIFT Bangalore</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>OGIFT's 100% placement support programme is available to every graduate of the institute's courses and diploma programmes. The fashion industry in India is growing rapidly — driven by e-commerce, domestic retail expansion, export garment manufacturing, and the increasing global demand for Indian design talent — and OGIFT's placement network is built to connect graduates directly with the opportunities created by this growth. Industry partners include Fabindia, Raymond, Myntra, Lifestyle, Zara, H&amp;M, and boutique design studios across Bangalore and Karnataka.</p>
+              <p>Placement support at OGIFT begins before graduation. As students complete their programmes, the OGIFT careers team reviews their portfolio, discusses their career goals, and begins matching them to suitable openings. Mock interviews, résumé preparation, and professional presentation sessions are part of the placement preparation process. Graduates who are interested in freelancing, entrepreneurship, or boutique ownership also receive guidance on how to establish themselves independently — including how to price their services, find clients, and build a professional reputation.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Career Paths for OGIFT Graduates</h3>
+              <p>OGIFT graduates pursue careers across the full breadth of the Indian fashion industry. Common career paths include fashion designer, assistant designer, pattern maker, garment technician, production executive, fashion stylist, visual merchandiser, boutique manager, fashion illustrator, costume designer, fashion educator, and e-commerce product photographer. Graduates with entrepreneurial ambitions launch their own boutiques, tailoring units, or freelance styling and design consultancies. OGIFT's curriculum is specifically designed to equip students with skills that are immediately employable — so that graduates can contribute productively from their very first week in a new role.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Getting Started</h3>
+              <p>To learn more about OGIFT's placement outcomes and to speak with former graduates about their career journeys, contact the institute at +91 90369 28799 or email admissions@ogiftbangalore.com. Campus visits are welcome — the OGIFT team will walk you through recent placement case studies and give you a realistic picture of what a career in fashion looks like from the starting point of an OGIFT qualification.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">

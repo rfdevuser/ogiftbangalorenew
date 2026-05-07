@@ -273,6 +273,23 @@ const About = () => {
           </div>
         </div>
       </section>
+
+      {/* About Section */}
+      <section className="py-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-3xl font-bold mb-6">About Onati Global Institute of Fashion Technology</h2>
+            <div className="space-y-4 text-muted-foreground leading-relaxed">
+              <p>Onati Global Institute of Fashion Technology (OGIFT) was founded in 2010 with a single purpose: to provide Bangalore's aspiring fashion designers and garment technologists with the practical, industry-ready skills needed to build lasting careers. Over 15 years, OGIFT has trained thousands of students from across Karnataka and beyond, establishing itself as Bangalore's most trusted and highest-rated fashion institute. The institute holds a 4.9-star rating based on over 250 verified Google reviews — a reflection of the quality of its faculty, facilities, and graduate outcomes.</p>
+              <p>The OGIFT campus is located in Vinayakanagar, Bengaluru — a well-connected neighbourhood easily accessible from South, Central, and West Bangalore by public transport. The campus includes professional pattern making labs, sewing ateliers, draping studios, a fabric and textile library, and dedicated design workspaces. All programmes are taught by faculty with active industry experience in fashion design houses, garment export companies, and retail brands across India. Classes are conducted in English, Hindi, and Kannada, making OGIFT genuinely accessible to students from diverse educational and linguistic backgrounds.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Our Programmes</h3>
+              <p>OGIFT offers a complete spectrum of fashion education — from the free FASHUP 10-day taster to 1-month Express Mastery courses, 3-month vocational programmes, a 6-month diploma, and a 1-year advanced diploma in fashion designing. Subjects covered include fashion illustration, flat pattern making (basic and advanced), draping technology, garment construction, fabric and textile science, surface ornamentation, fashion styling, graphic design for fashion, boutique and retail management, digital portfolio development, and an AI-powered online course accessible from across India. Every programme concludes with a certificate or diploma recognised across the Indian fashion industry.</p>
+              <h3 className="text-xl font-semibold text-foreground mt-2">Placement Support</h3>
+              <p>OGIFT's 100% placement support is one of the institute's most valued outcomes. An active network of industry partners — including Fabindia, Raymond, Myntra, Lifestyle, Zara, H&amp;M, and boutique design studios across Bangalore — provides graduates with access to real employment opportunities. The OGIFT careers team works with every graduate individually to match their skills, interests, and location preferences to relevant job openings. Admissions for 2026 are open; contact the institute at +91 90369 28799.</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   );
     </>
