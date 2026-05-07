@@ -695,20 +695,11 @@ const SixMonthsDiplomaFashionDesigning = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
-            <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">1-Year Advanced Diploma</span></Link>
-            <Link to="/courses/fashion-illustration" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Illustration</span></Link>
-            <Link to="/courses/art-of-garment-foundation" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Garment Foundation</span></Link>
-            <Link to="/courses/fabric-knowledge-textile-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric &amp; Textile</span></Link>
-            <Link to="/courses/graphic-designing-for-fashion" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Graphic Design for Fashion</span></Link>
-            <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling</span></Link>
-            <Link to="/about" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">About OGIFT</span></Link>
-            <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
-            <Link to="/courses/fashup-free-taster-sessions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FASHUP Free Course</span></Link>
-            <Link to="/" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">OGIFT Home</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Programmes and Institute Information</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The 6-month diploma sits between OGIFT's introductory and advanced programmes. Students new to fashion often begin with the free <Link to="/courses/fashup-free-taster-sessions" className="text-primary underline hover:no-underline font-medium">FASHUP 10-day taster</Link> before enrolling. For the most comprehensive qualification, the <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="text-primary underline hover:no-underline font-medium">1-Year Advanced Diploma</Link> covers additional advanced topics and includes an industry project. Short-term alternatives include the <Link to="/courses/fashion-illustration" className="text-primary underline hover:no-underline font-medium">Fashion Illustration course</Link> and other 1-month Express Mastery programmes. Apply through the <Link to="/admissions" className="text-primary underline hover:no-underline font-medium">Admissions page</Link>, learn about OGIFT on the <Link to="/about" className="text-primary underline hover:no-underline font-medium">About page</Link>, or <Link to="/verify" className="text-primary underline hover:no-underline font-medium">verify an OGIFT certificate</Link>.
+          </p>
         </div>
       </section>
 

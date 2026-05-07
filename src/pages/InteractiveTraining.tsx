@@ -557,15 +557,11 @@ export default function InteractiveTraining(): React.JSX.Element {
 
         {/* Related Pages */}
         <section className="py-12 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-              <Link to="/quicktour" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Quick Tour</span></Link>
-              <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Video Lessons</span></Link>
-              <Link to="/community" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Community</span></Link>
-              <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Fashion Course</span></Link>
-              <Link to="/placements" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">100% Placements</span></Link>
-            </div>
+          <div className="container mx-auto px-4 max-w-4xl">
+            <h2 className="text-2xl font-bold mb-4">Related Digital Fashion Learning at OGIFT</h2>
+            <p className="text-muted-foreground leading-relaxed">
+              OGIFT's Interactive Training platform is part of a broader digital learning ecosystem. Students who want a structured online course with full curriculum and faculty support should explore the <Link to="/courses/onlinecourse" className="text-primary underline hover:no-underline font-medium">3-Month Online Fashion Design course</Link>. The free <Link to="/quicktour" className="text-primary underline hover:no-underline font-medium">Quick Tour</Link> provides a 20-minute AI-powered preview of the online course before enrolment. The <Link to="/videos" className="text-primary underline hover:no-underline font-medium">Fashion Design Video Gallery</Link> offers free tutorial videos in English, Hindi, and Kannada on pattern making, illustration, garment construction, and styling.
+            </p>
           </div>
         </section>
       </main>

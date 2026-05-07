@@ -270,14 +270,11 @@ const FabricKnowledgeTextileDesigningCourse = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/fabric-sim" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric Simulation Tool</span></Link>
-            <Link to="/courses/draping-technology" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Draping Technology Course</span></Link>
-            <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">1-Year Advanced Diploma</span></Link>
-            <Link to="/courses/fashion-illustration" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Illustration</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Fabric Technology Tools and Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Students of the Fabric Knowledge course often continue with the <Link to="/courses/draping-technology" className="text-primary underline hover:no-underline font-medium">Draping Technology course</Link>, which applies fabric knowledge in 3D pattern making and garment construction directly on dress forms. OGIFT also offers a free <Link to="/fabric-sim" className="text-primary underline hover:no-underline font-medium">Interactive 3D Fabric Simulation tool</Link> that lets students visualise how different fabrics drape, stretch, and respond to gravity before working with them in the studio — ideal for reinforcing what is learned in the fabric science curriculum.
+          </p>
         </div>
       </section>
 

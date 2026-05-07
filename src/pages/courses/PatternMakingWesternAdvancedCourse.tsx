@@ -247,15 +247,11 @@ const PatternMakingWesternAdvancedCourse = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/courses/pattern-making-blouses-advanced" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Advanced Blouse Patterns</span></Link>
-            <Link to="/courses/pattern-making-kids-clothing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Kids Clothing Patterns</span></Link>
-            <Link to="/courses/art-of-garment-foundation" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Art of Garment Foundation</span></Link>
-            <Link to="/courses/design-process-pattern-making-3months" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">3-Month DPPM Course</span></Link>
-            <Link to="/courses/pattern-making-basic" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Pattern Making Basic</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Pattern Making Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The Advanced Western Pattern Making course builds on OGIFT's <Link to="/courses/pattern-making-basic" className="text-primary underline hover:no-underline font-medium">Pattern Making Basic course</Link>. Related specialisations include <Link to="/courses/pattern-making-blouses-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Blouse Pattern Making</Link> and <Link to="/courses/pattern-making-kids-clothing" className="text-primary underline hover:no-underline font-medium">Kids Clothing Pattern Making</Link>. The <Link to="/courses/art-of-garment-foundation" className="text-primary underline hover:no-underline font-medium">Art of Garment Foundation course</Link> develops the construction skills needed to stitch finished western garments from your patterns. The <Link to="/courses/design-process-pattern-making-3months" className="text-primary underline hover:no-underline font-medium">3-month DPPM course</Link> combines design, pattern making, and professional practice in a comprehensive qualification.
+          </p>
         </div>
       </section>
     </div>

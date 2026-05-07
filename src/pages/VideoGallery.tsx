@@ -298,15 +298,11 @@ const VideoGallery = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/quicktour" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Quick Tour</span></Link>
-            <Link to="/interactive-training" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Interactive Training</span></Link>
-            <Link to="/community" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Community</span></Link>
-            <Link to="/placements" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">100% Placements</span></Link>
-            <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Fashion Course</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Digital Learning Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            OGIFT's video library complements several other digital learning resources. Students who want a structured preview of OGIFT's online curriculum can take the free <Link to="/quicktour" className="text-primary underline hover:no-underline font-medium">Quick Tour</Link> — a 20-minute AI-powered introduction to the 3-month online course. The full <Link to="/courses/onlinecourse" className="text-primary underline hover:no-underline font-medium">3-Month Online Fashion Design course</Link> provides a complete structured curriculum with live faculty sessions. The <Link to="/interactive-training" className="text-primary underline hover:no-underline font-medium">Interactive Fashion Training platform</Link> offers AI-driven adaptive lessons on specific fashion design topics, available any time.
+          </p>
         </div>
       </section>
     </main>

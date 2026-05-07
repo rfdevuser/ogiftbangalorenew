@@ -656,12 +656,11 @@ const FabricSimulation = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/courses/fabric-knowledge-textile-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric &amp; Textile Course</span></Link>
-            <Link to="/courses/draping-technology" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Draping Technology Course</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Fabric and Textile Courses at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            To build practical fabric knowledge alongside this simulation tool, OGIFT offers the <Link to="/courses/fabric-knowledge-textile-designing" className="text-primary underline hover:no-underline font-medium">Fabric Knowledge and Textile Designing course</Link> — a 1-month programme covering fiber science, weave structures, dyeing, printing, and textile design. Students who want to apply fabric knowledge in three-dimensional garment construction can progress to the <Link to="/courses/draping-technology" className="text-primary underline hover:no-underline font-medium">Draping Technology course</Link>, which teaches draping directly on professional dress forms.
+          </p>
         </div>
       </section>
     </>

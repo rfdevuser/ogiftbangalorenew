@@ -217,17 +217,11 @@ const Placements = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/community" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Community</span></Link>
-            <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Video Lessons</span></Link>
-            <Link to="/quicktour" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Quick Tour</span></Link>
-            <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Fashion Course</span></Link>
-            <Link to="/careers/work-from-home" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Work From Home</span></Link>
-            <Link to="/courses/graphic-designing-for-fashion" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Graphic Design for Fashion</span></Link>
-            <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling Course</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Career and Creative Development at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            OGIFT supports graduates beyond placement with a range of career and creative resources. The <Link to="/careers/work-from-home" className="text-primary underline hover:no-underline font-medium">Work From Home programme</Link> connects graduates with remote fashion assignments — illustration, graphic design, trend research, and styling — across India. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Fashion Community</Link> is a space to network with peers and alumni, share portfolio work, and find collaborators. For graduates seeking additional creative skills, the <Link to="/courses/fashion-styling" className="text-primary underline hover:no-underline font-medium">Fashion Styling course</Link> and the <Link to="/courses/graphic-designing-for-fashion" className="text-primary underline hover:no-underline font-medium">Graphic Design for Fashion course</Link> are among the most popular post-diploma short courses.
+          </p>
         </div>
       </section>
 

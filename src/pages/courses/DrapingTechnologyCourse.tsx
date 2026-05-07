@@ -274,14 +274,11 @@ const DrapingTechnologyCourse = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/fabric-sim" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric Simulation Tool</span></Link>
-            <Link to="/courses/fabric-knowledge-textile-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric &amp; Textile Course</span></Link>
-            <Link to="/courses/fashion-illustration" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Illustration</span></Link>
-            <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Fabric and Textile Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Draping students benefit from OGIFT's <Link to="/courses/fabric-knowledge-textile-designing" className="text-primary underline hover:no-underline font-medium">Fabric Knowledge and Textile Designing course</Link>, which provides the foundation in fiber science and fabric behaviour that informs every draping decision — understanding how a fabric's weight, weave, and stretch affect its drape is essential for professional-quality results. OGIFT also offers a free <Link to="/fabric-sim" className="text-primary underline hover:no-underline font-medium">Interactive 3D Fabric Simulation tool</Link> that allows students to visualise fabric behaviour digitally before working with physical fabric in the studio.
+          </p>
         </div>
       </section>
 

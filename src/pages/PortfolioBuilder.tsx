@@ -207,12 +207,11 @@ const PortfolioBuilder = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-            <Link to="/courses/design-pattern-making-portfolio-3months" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">DPPMP 3-Month Course</span></Link>
-            <Link to="/courses/digital-portfolio-making" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Digital Portfolio Making</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Fashion Portfolio Courses at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            OGIFT offers two dedicated portfolio programmes for students who want structured, faculty-guided portfolio development. The <Link to="/courses/digital-portfolio-making" className="text-primary underline hover:no-underline font-medium">Digital Portfolio Making course</Link> is a 1-month Express Mastery programme covering portfolio strategy, layout design, digital tools, and online presentation — ideal for students who have work to showcase and want a polished, professional portfolio quickly. The <Link to="/courses/design-pattern-making-portfolio-3months" className="text-primary underline hover:no-underline font-medium">Design, Pattern Making and Portfolio 3-month course (DPPMP)</Link> is a more comprehensive programme that builds design skills, pattern making skills, and a complete portfolio in one integrated qualification. Both programmes include access to this AI Portfolio Builder.
+          </p>
         </div>
       </section>
       </main>

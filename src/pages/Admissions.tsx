@@ -470,17 +470,11 @@ const Admissions = () =>
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-4 max-w-4xl mx-auto">
-            <Link to="/counsellor" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Free AI Counsellor</span></Link>
-            <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Videos</span></Link>
-            <Link to="/community" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Community</span></Link>
-            <Link to="/faqavatar" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FAQ Avatar</span></Link>
-            <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
-            <Link to="/courses/fashup-free-taster-sessions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FASHUP Free Course</span></Link>
-            <Link to="/about" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">About OGIFT</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">OGIFT Courses and Institute Information</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            OGIFT's admissions are open for all programmes at the <Link to="/courses" className="text-primary underline hover:no-underline font-medium">Courses page</Link>. New students are encouraged to begin with the free <Link to="/courses/fashup-free-taster-sessions" className="text-primary underline hover:no-underline font-medium">FASHUP 10-day taster</Link> before committing to a full programme. The most popular full qualifications are the <Link to="/courses/six-months-diploma-fashion-designing" className="text-primary underline hover:no-underline font-medium">6-Month Diploma in Fashion Designing</Link> and the <Link to="/courses/one-year-advanced-diploma-fashion-designing" className="text-primary underline hover:no-underline font-medium">1-Year Advanced Diploma</Link>. Short 1-month courses such as the <Link to="/courses/fashion-illustration" className="text-primary underline hover:no-underline font-medium">Fashion Illustration course</Link> are also available. Learn more on the <Link to="/about" className="text-primary underline hover:no-underline font-medium">About OGIFT page</Link>. Employer verification of qualifications is available at <Link to="/verify" className="text-primary underline hover:no-underline font-medium">OGIFT Certificate Verification</Link>.
+          </p>
         </div>
       </section>
   );

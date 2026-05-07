@@ -289,15 +289,11 @@ const FashionStylingCourse = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/courses/graphic-designing-for-fashion" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Graphic Design for Fashion</span></Link>
-            <Link to="/placements" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">100% Placements</span></Link>
-            <Link to="/careers/work-from-home" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Work From Home</span></Link>
-            <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Fashion Course</span></Link>
-            <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Video Lessons</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Career and Creative Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Fashion styling skills open doors across multiple career paths. <Link to="/placements" className="text-primary underline hover:no-underline font-medium">OGIFT's placement programme</Link> regularly places styling graduates with fashion brands, boutiques, and e-commerce companies in Bangalore. The <Link to="/careers/work-from-home" className="text-primary underline hover:no-underline font-medium">Work From Home programme</Link> connects stylists with remote styling assignments — lookbook production, social media styling, and wardrobe consulting can all be done from home. The <Link to="/courses/graphic-designing-for-fashion" className="text-primary underline hover:no-underline font-medium">Graphic Design for Fashion course</Link> is a popular complement to styling, enabling graduates to create their own promotional content and brand materials. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Community</Link> is a useful network for finding editorial and collaboration opportunities.
+          </p>
         </div>
       </section>
 

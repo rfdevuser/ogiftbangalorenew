@@ -313,15 +313,11 @@ const GraphicDesigningForFashionCourse = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/careers/work-from-home" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Work From Home</span></Link>
-            <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling Course</span></Link>
-            <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Fashion Course</span></Link>
-            <Link to="/interactive-training" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Interactive Training</span></Link>
-            <Link to="/placements" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">100% Placements</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Career and Creative Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Graphic design for fashion is a highly versatile skill that supports careers across several domains covered by OGIFT. Graduates with graphic design skills frequently pursue opportunities through <Link to="/placements" className="text-primary underline hover:no-underline font-medium">OGIFT's placement programme</Link> or take on assignments through the <Link to="/careers/work-from-home" className="text-primary underline hover:no-underline font-medium">Work From Home programme</Link>. The <Link to="/courses/fashion-styling" className="text-primary underline hover:no-underline font-medium">Fashion Styling course</Link> is a natural companion — many graduates combine graphic design and styling skills to work as creative directors, brand designers, or fashion content creators. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Community</Link> is a useful space to connect with other creatives and potential clients.
+          </p>
         </div>
       </section>
 

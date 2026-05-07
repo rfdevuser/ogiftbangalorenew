@@ -302,15 +302,11 @@ const PatternMakingBasicCourse = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/courses/pattern-making-western-advanced" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Advanced Western Patterns</span></Link>
-            <Link to="/courses/pattern-making-kids-clothing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Kids Clothing Patterns</span></Link>
-            <Link to="/courses/art-of-garment-foundation" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Art of Garment Foundation</span></Link>
-            <Link to="/courses/design-process-pattern-making-3months" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">3-Month DPPM Course</span></Link>
-            <Link to="/courses/pattern-making-blouses-advanced" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Advanced Blouse Patterns</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Other Pattern Making Courses at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Once you have completed the basic pattern making course, OGIFT offers several advanced specialisations: the <Link to="/courses/pattern-making-blouses-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Blouse Pattern Making course</Link> covering eight complex blouse styles, the <Link to="/courses/pattern-making-western-advanced" className="text-primary underline hover:no-underline font-medium">Advanced Western Pattern Making course</Link> covering skirts, trousers, dresses, and jackets, and the <Link to="/courses/pattern-making-kids-clothing" className="text-primary underline hover:no-underline font-medium">Kids Clothing Pattern Making course</Link> covering children's garment sizing and construction. The <Link to="/courses/art-of-garment-foundation" className="text-primary underline hover:no-underline font-medium">Art of Garment Foundation course</Link> is an ideal complement for students who want to both draft patterns and construct garments. For a comprehensive 3-month qualification, see the <Link to="/courses/design-process-pattern-making-3months" className="text-primary underline hover:no-underline font-medium">Design Process and Pattern Making 3-month course</Link>.
+          </p>
         </div>
       </section>
 

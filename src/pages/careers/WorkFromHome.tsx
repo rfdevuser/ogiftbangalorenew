@@ -206,15 +206,11 @@ const WorkFromHome = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
-            <Link to="/placements" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">100% Placements</span></Link>
-            <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling Course</span></Link>
-            <Link to="/courses/graphic-designing-for-fashion" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Graphic Design for Fashion</span></Link>
-            <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Fashion Course</span></Link>
-            <Link to="/videos" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Video Lessons</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Career Resources at OGIFT Bangalore</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            Work-from-home fashion opportunities connect naturally with OGIFT's broader career support. <Link to="/placements" className="text-primary underline hover:no-underline font-medium">OGIFT's 100% placement programme</Link> helps graduates find full-time fashion industry roles. The <Link to="/community" className="text-primary underline hover:no-underline font-medium">OGIFT Fashion Community</Link> is a network where freelancers can find collaborators, share work, and build a professional reputation. Skills that are particularly in demand for remote work include <Link to="/courses/fashion-styling" className="text-primary underline hover:no-underline font-medium">fashion styling</Link> and <Link to="/courses/graphic-designing-for-fashion" className="text-primary underline hover:no-underline font-medium">graphic design for fashion</Link> — both available as 1-month Express Mastery courses at OGIFT.
+          </p>
         </div>
       </section>
 

@@ -309,12 +309,11 @@ const DigitalPortfolioMakingCourse = () => {
 
       {/* Related Pages */}
       <section className="py-12 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <h2 className="text-2xl font-bold mb-6 text-center">Related at OGIFT Bangalore</h2>
-          <div className="grid grid-cols-2 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-            <Link to="/portfolio" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Portfolio Builder</span></Link>
-            <Link to="/courses/design-pattern-making-portfolio-3months" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">DPPMP 3-Month Course</span></Link>
-          </div>
+        <div className="container mx-auto px-4 max-w-4xl">
+          <h2 className="text-2xl font-bold mb-4">Related Portfolio Resources at OGIFT</h2>
+          <p className="text-muted-foreground leading-relaxed">
+            The Digital Portfolio Making course works alongside OGIFT's <Link to="/portfolio" className="text-primary underline hover:no-underline font-medium">AI Fashion Portfolio Builder</Link> — a free tool that provides AI-powered critique and recommendations for improving your portfolio's commercial effectiveness. Students who want a more comprehensive qualification combining design skills, pattern making, and portfolio development should consider the <Link to="/courses/design-pattern-making-portfolio-3months" className="text-primary underline hover:no-underline font-medium">Design, Pattern Making and Portfolio 3-month course (DPPMP)</Link>, which produces a complete employer-ready portfolio across three months of integrated study.
+          </p>
         </div>
       </section>
 
