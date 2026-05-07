@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import { Card } from '@/components/ui/card';
 import { Building2, Users, Award, Target, Eye, Heart, Zap, Globe } from 'lucide-react';
 import heroImage from '@/assets/hero-about.jpg';
@@ -287,6 +288,19 @@ const About = () => {
               <h3 className="text-xl font-semibold text-foreground mt-2">Placement Support</h3>
               <p>OGIFT's 100% placement support is one of the institute's most valued outcomes. An active network of industry partners — including Fabindia, Raymond, Myntra, Lifestyle, Zara, H&amp;M, and boutique design studios across Bangalore — provides graduates with access to real employment opportunities. The OGIFT careers team works with every graduate individually to match their skills, interests, and location preferences to relevant job openings. Admissions for 2026 are open; contact the institute at +91 90369 28799.</p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-12 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+            <Link to="/" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Home</span></Link>
+            <Link to="/quicktour" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Quick Tour</span></Link>
+            <Link to="/interactive-training" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Interactive Training</span></Link>
+            <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Course</span></Link>
           </div>
         </div>
       </section>

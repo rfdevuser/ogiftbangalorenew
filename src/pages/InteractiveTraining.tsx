@@ -1,4 +1,5 @@
 import { Helmet } from 'react-helmet-async';
+import { Link } from 'react-router-dom';
 import * as React from "react";
 import { Canvas, useThree } from "@react-three/fiber";
 import { Environment } from "@react-three/drei";
@@ -536,6 +537,19 @@ export default function InteractiveTraining(): React.JSX.Element {
             )}
           </div>
         </div>
+
+        {/* Related Pages */}
+        <section className="py-12 bg-muted/30">
+          <div className="container mx-auto px-4">
+            <h2 className="text-2xl font-bold mb-6 text-center">Related Pages at OGIFT Bangalore</h2>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <Link to="/" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Home</span></Link>
+              <Link to="/about" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">About OGIFT</span></Link>
+              <Link to="/quicktour" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Quick Tour</span></Link>
+              <Link to="/courses/onlinecourse" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Online Course</span></Link>
+            </div>
+          </div>
+        </section>
       </main>
     </div>
   );
