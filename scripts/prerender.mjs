@@ -183,15 +183,9 @@ const routeContent = {
     <h2>Career Paths for OGIFT Graduates</h2>
     <p>OGIFT graduates pursue careers across the full breadth of the Indian fashion industry. Common career paths include fashion designer, assistant designer, pattern maker, garment technician, production executive, fashion stylist, visual merchandiser, boutique manager, fashion illustrator, costume designer, fashion educator, and e-commerce product photographer. Graduates with entrepreneurial ambitions launch their own boutiques, tailoring units, or freelance styling and design consultancies.</p>
     <a href="/courses">View Our Courses</a>
-    <a href="/careers/work-from-home">Work From Home Opportunities</a>
     <a href="/admissions">Apply Now</a>
-    <a href="/community">Fashion Design Community</a>
-    <a href="/videos">Fashion Design Video Lessons</a>
-    <a href="/quicktour">Online Fashion Course Quick Tour</a>
-    <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>
-    <a href="/interactive-training">Interactive Fashion Training</a>
-    <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion Course</a>
-    <a href="/courses/fashion-styling">Fashion Styling Course</a>
+    <h2>Fashion Careers and Community at OGIFT</h2>
+    <p>Beyond in-studio placement, OGIFT supports graduates who prefer flexible working arrangements through its <a href="/careers/work-from-home">Work From Home fashion jobs programme</a> — connecting qualified graduates with remote assignments in illustration, digital pattern making, and fashion content creation. The <a href="/community">OGIFT fashion design community</a> is a hub for peer learning, portfolio sharing, and staying connected with OGIFT's growing network of 500+ alumni. Graduates who want to develop commercially valuable digital skills benefit from the <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion course</a> and the <a href="/courses/fashion-styling">Fashion Styling course</a>, both of which are directly linked to the highest-demand job roles in OGIFT's placement network.</p>
   `,
   "/portfolio": `
     <h1>AI Fashion Portfolio Builder Bangalore 2026 — OGIFT Free for Students</h1>
@@ -199,8 +193,8 @@ const routeContent = {
     <p>The Portfolio Builder is available free to all OGIFT students and graduates as part of the institute's 100% placement support programme. It supports multiple types of portfolio content — fashion illustrations, technical flat drawings, garment photographs, mood boards, fabric swatches, and written design rationales. Each section includes guidance on what employers in specific roles are looking for, so you can tailor your portfolio to the opportunities you are targeting.</p>
     <h2>Portfolio Courses at OGIFT</h2>
     <p>If you want structured, faculty-guided support for building your portfolio, OGIFT offers dedicated portfolio courses — the Digital Portfolio Making course (1 month) and the Design Pattern Making Portfolio 3-Month course. These programmes combine technical skill development with professional presentation training, and every student graduates with a completed, employer-ready portfolio. To learn more, visit the OGIFT campus in Vinayakanagar or call +91 90369 28799.</p>
-    <a href="/courses/digital-portfolio-making">Digital Portfolio Making Course</a>
-    <a href="/courses/design-pattern-making-portfolio-3months">DPPMP 3-Month Course</a>
+    <h2>Fashion Portfolio Courses at OGIFT Bangalore</h2>
+    <p>OGIFT offers two dedicated portfolio programmes for students who want structured, faculty-guided support for building their portfolio. The <a href="/courses/digital-portfolio-making">Digital Portfolio Making course</a> is a 1-month Express Mastery programme covering portfolio strategy, layout design, digital tools, and online presentation — ideal for students who already have fashion skills and want to present them professionally. The <a href="/courses/design-pattern-making-portfolio-3months">Design, Pattern Making and Portfolio 3-month course (DPPMP)</a> combines creative design, pattern making skills, and complete portfolio development in an integrated three-month qualification — for students who want to build both their skills and their portfolio at the same time.</p>
     <a href="/courses">Start a Course to Build Your Portfolio</a>
   `,
   "/careers/work-from-home": `
@@ -325,8 +319,8 @@ const routeContent = {
     <h2>How This Course Supports Your Fashion Career</h2>
     <p>Fabric and textile knowledge is a foundation skill for every fashion professional. For designers, it informs every design decision — which fabrics will drape, which will hold structure, which will work with specific construction methods. For pattern makers, it determines ease allowances and construction approaches. For stylists and merchandisers, it governs garment care, presentation, and commercial positioning. Graduates of this course go on to work in design studios, buying offices, fabric retail, garment export, and fashion education. OGIFT provides 100% placement support to all graduates. Admissions 2026 are open — contact the team at +91 90369 28799.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
-    <a href="/courses/draping-technology">Draping Technology Course</a>
-    <a href="/fabric-sim">Interactive 3D Fabric Simulation Tool</a>
+    <h2>Related Fabric Technology Courses and Tools at OGIFT</h2>
+    <p>Students of the Fabric Knowledge course often continue with the <a href="/courses/draping-technology">Draping Technology course</a>, which applies fabric understanding directly to 3D garment construction on professional dress forms — combining knowledge of how different fabrics behave with the practical skill of shaping them into finished garments. OGIFT also provides a free <a href="/fabric-sim">Interactive 3D Fabric Simulation Tool</a> that lets you visualise drape, weight, stiffness, and wind response before handling real materials in the studio.</p>
     <a href="/courses">View All Courses</a>`,
   "/courses/draping-technology": `
     <h1>Best Draping Technology Course Bangalore 2026 — OGIFT | 1-Month Express Mastery</h1>
@@ -416,11 +410,8 @@ const routeContent = {
     <a href="/admissions">Enroll Now — Admissions 2026</a>
     <a href="/courses/design-pattern-making-portfolio-3months">3-Month DPPMP Course (with Portfolio)</a>
     <a href="/courses">View All Courses</a>
-    <a href="/courses/pattern-making-basic">Pattern Making Basic Course</a>
-    <a href="/courses/pattern-making-blouses-advanced">Advanced Blouse Pattern Making</a>
-    <a href="/courses/pattern-making-western-advanced">Advanced Western Pattern Making</a>
-    <a href="/courses/art-of-garment-foundation">Art of Garment Foundation</a>
-    <a href="/courses/pattern-making-kids-clothing">Kids Clothing Pattern Making</a>`,
+    <h2>Pattern Making Courses at OGIFT Bangalore</h2>
+    <p>The DPPM 3-month course includes the full OGIFT pattern making curriculum, which is also taught as standalone 1-month programmes for students who want to develop a specific skill. The <a href="/courses/pattern-making-basic">Pattern Making Basic course</a> covers foundational block drafting for bodice, skirt, and sleeve. The <a href="/courses/pattern-making-blouses-advanced">Advanced Blouse Pattern Making course</a> develops specialist skills in complex blouse and kameez patterns. The <a href="/courses/pattern-making-western-advanced">Advanced Western Pattern Making course</a> covers trousers, denims, and western silhouettes. The <a href="/courses/art-of-garment-foundation">Art of Garment Foundation course</a> builds garment construction knowledge alongside pattern drafting. The <a href="/courses/pattern-making-kids-clothing">Kids Clothing Pattern Making course</a> teaches children's wear patterns from infant to 12-year sizes.</p>`,
   "/courses/design-pattern-making-portfolio-3months": `
     <h1>Best Fashion Design, Pattern Making &amp; Portfolio 3-Month Course Bangalore 2026 — OGIFT | DPPMP</h1>
     <p>OGIFT's Design, Pattern Making and Portfolio 3-Month Course (DPPMP) is the most comprehensive vocational programme in OGIFT's Express Mastery series — combining three essential professional skill sets in a single three-month diploma: creative design process, technical pattern making, and professional portfolio development. The DPPMP is designed for students who want to emerge from their course not just with skills but with a complete, employer-ready portfolio that they can use immediately in job applications, freelance pitches, and design school applications. It is one of OGIFT's highest-rated vocational programmes among both students and employer partners.</p>
@@ -469,12 +460,10 @@ const routeContent = {
     <h2>Multilingual Learning and Technology</h2>
     <p>All content is available in English, Hindi, and Kannada — making OGIFT's online course genuinely accessible to students across India who are more comfortable learning in their native language. The AI-powered learning platform adapts to each student's pace, tracks progress, and provides personalised recommendations for additional practice in areas where students need reinforcement. Live faculty Q&amp;A sessions are available weekly, so online students always have access to real expert guidance. To enrol in the 2026 online course intake, contact the OGIFT admissions team at +91 90369 28799 or admissions@ogiftbangalore.com. The online course is also available to students outside India.</p>
     <a href="/admissions">Enroll Now — Admissions 2026</a>
-    <a href="/quicktour">Take the Free Online Quick Tour</a>
     <a href="/courses">View All Courses</a>
-    <a href="/videos">Fashion Design Video Lessons</a>
-    <a href="/interactive-training">Interactive Fashion Training</a>
-    <a href="/community">Fashion Design Community</a>
-    <a href="/placements">100% Placement Support</a>`,
+    <a href="/placements">100% Placement Support</a>
+    <h2>Online Fashion Learning Tools at OGIFT</h2>
+    <p>Before committing to the full online course, explore OGIFT's free online resources. The <a href="/quicktour">Online Fashion Course Quick Tour</a> is a 20-minute AI-guided preview of the 3-month curriculum — free, no registration required. The <a href="/videos">Fashion Design Video Lessons library</a> offers on-demand lessons in pattern making, garment construction, and styling, available in English, Hindi, and Kannada. The <a href="/interactive-training">Interactive Fashion Training platform</a> provides AI-powered immersive exercises that supplement live instruction. Online students are also encouraged to join the <a href="/community">OGIFT fashion design community</a>, where students from across India share work, ask questions, and support each other's learning journey.</p>`,
   "/admissions": `
     <h1>Fashion Design Admissions 2026 — OGIFT Bangalore | Enroll Now</h1>
     <p>Admissions to OGIFT's 2026 fashion design programmes are now open. Onati Global Institute of Fashion Technology (OGIFT) is Bangalore's highest-rated fashion institute, with a 4.9-star rating based on 250+ verified Google reviews and a track record of 100% graduate placement. The admissions process is simple and straightforward — there are no entrance exams and no prior experience required. Eligibility is Class 10 (SSC) and above for all programmes.</p>
@@ -493,13 +482,8 @@ const routeContent = {
       <li><a href="/courses/onlinecourse">3-Month Online Course</a></li>
     </ul>
     <a href="/courses">View All Courses</a>
-    <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
-    <a href="/about">About OGIFT</a>
-    <a href="/verify">Verify OGIFT Certificate</a>
-    <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a>
-    <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a>
-    <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster</a>
-    <a href="/courses/fashion-illustration">Fashion Illustration Course</a>`,
+    <h2>About OGIFT Bangalore and Programme Options</h2>
+    <p>Before enrolling, many prospective students begin by learning more about OGIFT as an institution. The <a href="/about">About OGIFT page</a> covers the institute's history, faculty, facilities, and philosophy — and includes employer testimonials from 500+ alumni across Bangalore's fashion industry. Graduates and employers can confirm qualification authenticity through the <a href="/verify">OGIFT Certificate Verification tool</a>. For students at the start of their journey, the free <a href="/courses/fashup-free-taster-sessions">FASHUP 10-day taster course</a> provides hands-on studio experience before any financial commitment. Students ready to go deeper can choose between the <a href="/courses/fashion-illustration">Fashion Illustration 1-month course</a>, the comprehensive <a href="/courses/six-months-diploma-fashion-designing">6-Month Fashion Designing Diploma</a>, or the flagship <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a> — OGIFT's most thorough fashion education programme. Return to the <a href="/">OGIFT homepage</a> for a full overview of every programme and tool available.</p>`,
   "/counsellor": `
     <h1>Free AI Fashion Career Counsellor — OGIFT Bangalore | Admissions 2026</h1>
     <p>OGIFT's Free AI Fashion Career Counsellor is an interactive tool designed to help prospective students understand which fashion course or career path is right for them. The OGIFT AI Counsellor asks about your background, interests, goals, and availability, then recommends the most suitable programme from OGIFT's range of short courses, vocational programmes, and diplomas. It is completely free to use and requires no registration or personal details.</p>
