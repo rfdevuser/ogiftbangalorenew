@@ -118,6 +118,7 @@ const routeContent = {
     <a href="/placements">Placements</a>
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
+    <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a>
     <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster Course</a>
     <a href="/courses/fashion-illustration">Fashion Illustration Course</a>
   `,
@@ -151,10 +152,12 @@ const routeContent = {
     </ul>
     <h2>Explore OGIFT</h2>
     <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
+    <a href="/about">About OGIFT</a>
+    <a href="/admissions">Fashion Design Admissions 2026</a>
+    <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/fabric-sim">Interactive 3D Fabric Simulation Tool</a>
     <a href="/faqavatar">Fashion Design FAQ Avatar</a>
     <a href="/videos">Fashion Design Video Lessons</a>
-    <a href="/verify">Verify OGIFT Certificate</a>
   `,
   "/about": `
     <h1>About OGIFT — Best Fashion Design College in Bangalore Since 2010</h1>
@@ -169,6 +172,7 @@ const routeContent = {
     <a href="/admissions">Admissions 2026</a>
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
+    <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a>
     <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster Course</a>
     <a href="/courses/fashion-illustration">Fashion Illustration Course</a>
   `,
@@ -186,6 +190,8 @@ const routeContent = {
     <a href="/quicktour">Online Fashion Course Quick Tour</a>
     <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>
     <a href="/interactive-training">Interactive Fashion Training</a>
+    <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion Course</a>
+    <a href="/courses/fashion-styling">Fashion Styling Course</a>
   `,
   "/portfolio": `
     <h1>AI Fashion Portfolio Builder Bangalore 2026 — OGIFT Free for Students</h1>
@@ -236,6 +242,7 @@ const routeContent = {
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/about">About OGIFT</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
+    <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a>
     <a href="/courses/fashion-illustration">Fashion Illustration Course</a>`,
   "/courses/fashion-illustration": `
     <h1>Best Fashion Illustration Course Bangalore 2026 — OGIFT | 1-Month Express Mastery</h1>
@@ -251,6 +258,7 @@ const routeContent = {
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/about">About OGIFT</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
+    <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a>
     <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster Course</a>`,
   "/courses/pattern-making-basic": `
     <h1>Best Pattern Making Course Bangalore 2026 — OGIFT | 1-Month Express Mastery</h1>
@@ -433,7 +441,12 @@ const routeContent = {
     <a href="/admissions">Enroll Now — Admissions 2026</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a>
     <a href="/placements">View Placement Record</a>
-    <a href="/courses">View All Courses</a>`,
+    <a href="/courses">View All Courses</a>
+    <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
+    <a href="/about">About OGIFT</a>
+    <a href="/verify">Verify OGIFT Certificate</a>
+    <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster</a>
+    <a href="/courses/fashion-illustration">Fashion Illustration Course</a>`,
   "/courses/one-year-advanced-diploma-fashion-designing": `
     <h1>Best 1-Year Advanced Fashion Designing Diploma Bangalore 2026 — OGIFT | Admissions Open</h1>
     <p>OGIFT's 1-Year Advanced Diploma in Fashion Designing is the institute's flagship programme — the most comprehensive fashion education available at OGIFT, and one of the most thorough fashion diplomas available at any institute in Bangalore. Over twelve months of intensive, hands-on training, students develop mastery in every discipline of professional fashion education: creative design, technical drawing, fashion illustration, fabric and textile science, flat pattern making, draping technology, garment construction, fashion styling, boutique management, graphic design for fashion, digital portfolio development, and career management. The 1-year diploma includes 100% placement support and is taught entirely by faculty with active industry experience in fashion design, garment technology, and fashion business.</p>
@@ -444,6 +457,7 @@ const routeContent = {
     <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma Option</a>
     <a href="/placements">View Placement Record</a>
     <a href="/courses">View All Courses</a>
+    <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
     <a href="/verify">Verify OGIFT Certificate</a>
     <a href="/about">About OGIFT</a>
     <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster Course</a>
@@ -478,7 +492,14 @@ const routeContent = {
       <li><a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a></li>
       <li><a href="/courses/onlinecourse">3-Month Online Course</a></li>
     </ul>
-    <a href="/courses">View All Courses</a>`,
+    <a href="/courses">View All Courses</a>
+    <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
+    <a href="/about">About OGIFT</a>
+    <a href="/verify">Verify OGIFT Certificate</a>
+    <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma</a>
+    <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a>
+    <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster</a>
+    <a href="/courses/fashion-illustration">Fashion Illustration Course</a>`,
   "/counsellor": `
     <h1>Free AI Fashion Career Counsellor — OGIFT Bangalore | Admissions 2026</h1>
     <p>OGIFT's Free AI Fashion Career Counsellor is an interactive tool designed to help prospective students understand which fashion course or career path is right for them. The OGIFT AI Counsellor asks about your background, interests, goals, and availability, then recommends the most suitable programme from OGIFT's range of short courses, vocational programmes, and diplomas. It is completely free to use and requires no registration or personal details.</p>
@@ -509,6 +530,9 @@ const routeContent = {
     <a href="/admissions">Join OGIFT — Admissions 2026</a>
     <a href="/courses">View All Courses</a>
     <a href="/placements">100% Placement Support</a>
+    <a href="/careers/work-from-home">Work From Home Fashion Jobs</a>
+    <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion Course</a>
+    <a href="/courses/fashion-styling">Fashion Styling Course</a>
     <a href="/videos">Fashion Design Video Lessons</a>
     <a href="/quicktour">Online Fashion Course Quick Tour</a>
     <a href="/interactive-training">Interactive Fashion Training</a>
@@ -554,6 +578,7 @@ const routeContent = {
     <a href="/">OGIFT Home — Best Fashion Design Institute Bangalore</a>
     <a href="/about">About OGIFT</a>
     <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
+    <a href="/courses/six-months-diploma-fashion-designing">6-Month Diploma in Fashion Designing</a>
     <a href="/courses/fashup-free-taster-sessions">FASHUP Free 10-Day Taster Course</a>
     <a href="/courses/fashion-illustration">Fashion Illustration Course</a>`,
 };
