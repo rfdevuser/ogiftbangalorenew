@@ -704,6 +704,10 @@ const SixMonthsDiplomaFashionDesigning = () => {
             <Link to="/courses/fabric-knowledge-textile-designing" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fabric &amp; Textile</span></Link>
             <Link to="/courses/graphic-designing-for-fashion" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Graphic Design for Fashion</span></Link>
             <Link to="/courses/fashion-styling" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Fashion Styling</span></Link>
+            <Link to="/about" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">About OGIFT</span></Link>
+            <Link to="/verify" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">Verify Certificate</span></Link>
+            <Link to="/courses/fashup-free-taster-sessions" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">FASHUP Free Course</span></Link>
+            <Link to="/" className="block p-4 bg-background rounded-lg border border-border hover:border-primary hover:shadow-md transition-all text-center"><span className="font-medium text-sm">OGIFT Home</span></Link>
           </div>
         </div>
       </section>
