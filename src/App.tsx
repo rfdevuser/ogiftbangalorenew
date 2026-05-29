@@ -64,6 +64,8 @@ import FabricSimulation from "./pages/FabricSimulation";
 import InteractiveTraining from "./pages/InteractiveTraining";
 import Verify from "./pages/Verify";
 import Reputation from "./pages/Reputation";
+import StyleDNA from "./pages/StyleDNA";
+import TrendForecasting from "./pages/TrendForecasting";
 
 const queryClient = new QueryClient();
 
@@ -152,8 +154,9 @@ const App = () => {
           <Route path="/careers/work-from-home/dashboard" element={<WfhDashboard />} />
           <Route path="/fabric-sim" element={<FabricSimulation />} />
           <Route path="/interactive-training" element={<InteractiveTraining />} />
+          <Route path="/style-dna" element={<StyleDNA />} />
+          <Route path="/trend-forecasting" element={<TrendForecasting />} />
 
-        
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

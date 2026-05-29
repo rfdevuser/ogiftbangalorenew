@@ -22,6 +22,8 @@ const routeTitles = {
   "/community": "Fashion Design Community Bangalore | OGIFT | Share & Learn 2026",
   "/quicktour": "Best Online Fashion Design Course India 2026 | OGIFT | AI-Powered 3 Month Tour",
   "/interactive-training": "Interactive Fashion Training | OGIFT Bangalore | AI-Powered 2026",
+  "/style-dna": "Style DNA Profiling | Discover Your Aesthetic Identity | OGIFT Bangalore Free Tool",
+  "/trend-forecasting": "Bangalore Fashion Frequency Report | Monthly Trend Intelligence | OGIFT 2026",
   "/faqavatar": "Fashion Design FAQ Avatar | OGIFT Bangalore | Get Answers 2026",
   "/fabric-sim": "Interactive 3D Fabric Simulation Tool | OGIFT Bangalore | Fashion Technology",
   "/verify": "Verify Fashion Design Certificate | OGIFT Bangalore | Blockchain Verified",
@@ -60,6 +62,8 @@ const routeDescriptions = {
   "/community": "Join OGIFT's fashion design community in Bangalore — share portfolios, get feedback, connect with peers & industry experts. 4.9★ rated best fashion institute. Admissions 2026 open!",
   "/quicktour": "India's best AI-powered online fashion design course at OGIFT — 3-month certificate, 40+ video modules, multi-lingual (Hindi, Kannada, Telugu, English). 4.9★ rated. Admissions 2026 open. Enroll now!",
   "/interactive-training": "Experience interactive AI-powered fashion design training at OGIFT Bangalore. Learn pattern making, garment construction & styling with immersive 3D training at Bangalore's 4.9★ best fashion institute.",
+  "/style-dna": "Discover your Style DNA with OGIFT's free 5-minute aesthetic profiling tool. 20 visual questions reveal your unique style eigenstate across 4 dimensions — get your personalised Style DNA Report from Bangalore's 4.9★ fashion institute.",
+  "/trend-forecasting": "Read the Bangalore Fashion Frequency Report — OGIFT's free monthly fashion trend intelligence. Multi-scale trend analysis covering macro, seasonal, micro & viral signals across the Indian fashion market.",
   "/faqavatar": "Get instant answers to fashion design questions with OGIFT's FAQ Avatar. Course info, admissions 2026, fees & career guidance at Bangalore's 4.9★ best fashion institute.",
   "/fabric-sim": "Explore fabric physics with OGIFT's interactive 3D simulation — test draping, weight, wind & stiffness with AI analysis. Free tool for fashion design students at Bangalore's 4.9★ best fashion institute.",
   "/verify": "Verify OGIFT Bangalore fashion design certificates & digital assets on blockchain. Authenticate student credentials from Bangalore's 4.9★ best fashion institute.",
@@ -506,6 +510,32 @@ const routeContent = {
     <a href="/courses/onlinecourse">3-Month Online Fashion Course</a>
     <a href="/counsellor">Free AI Fashion Career Counsellor</a>
     <a href="/faqavatar">Fashion Design FAQ Avatar</a>`,
+  "/style-dna": `
+    <h1>Style DNA Profiling — Discover Your Aesthetic Identity | OGIFT Bangalore Free Tool</h1>
+    <p>OGIFT's Style DNA Profiling tool is a free five-minute interactive experience that reveals your unique aesthetic fingerprint across four dimensions of style: Style Direction, Colour and Mood, Fabric and Texture, and Ornament and Craft. Answer 20 visual questions and receive a personalised Style DNA Report identifying your canonical style identity from 16 possible profiles — including your program recommendation, style peers, and a direct path to the OGIFT course most aligned with your creative sensibility.</p>
+    <p>The Style DNA profile is computed using the CANON hierarchical scoring framework, which analyses your responses across four aesthetic scales simultaneously. Unlike personality quizzes, Style DNA scoring has no free parameters — your profile is determined entirely by the structure of your responses, with no subjective interpretation. The result is a four-dimensional aesthetic eigenstate that is unique to you and directly actionable for career planning.</p>
+    <h2>The Four Style Dimensions</h2>
+    <p>Style Direction (S2) captures your fundamental orientation between structural minimalism and expressive maximalism. Colour and Mood (S3) captures your colour psychology — warm versus cool tones, saturated versus muted palettes, seasonal versus perennial thinking. Fabric and Texture (S5) captures your material preferences — natural versus synthetic, matte versus sheen, draping versus structured. Ornament and Craft (S7) captures your relationship to embellishment, craft, and cultural heritage — minimal precision versus rich artisan detail.</p>
+    <h2>16 Canonical Style Identities</h2>
+    <p>The four dimensions combine to produce one of 16 canonical style identities, from Structured Minimalist (high on all four dimensions) to Intuitive Layerist (low on all four). Each identity comes with a program recommendation mapping your aesthetic direction to the OGIFT course most likely to develop your strongest natural instincts into professional skills. Complete your Style DNA profile for free at OGIFT's website. Contact the admissions team at +91 90369 28799 to discuss your results.</p>
+    <a href="/counsellor">Free AI Fashion Career Counsellor</a>
+    <a href="/courses/one-year-advanced-diploma-fashion-designing">1-Year Advanced Diploma in Fashion Designing</a>
+    <a href="/courses/fashion-illustration">Fashion Illustration Course</a>
+    <a href="/courses/fashion-styling">Fashion Styling Course</a>
+    <a href="/courses/fabric-knowledge-textile-designing">Fabric Knowledge &amp; Textile Designing</a>`,
+  "/trend-forecasting": `
+    <h1>Bangalore Fashion Frequency Report — Monthly Trend Intelligence | OGIFT 2026</h1>
+    <p>The Bangalore Fashion Frequency Report (BFFR) is OGIFT's free monthly fashion trend intelligence publication, identifying and ranking fashion trends across macro (12–24 month), seasonal (3–6 month), micro (4–8 week), and viral (1–2 week) time horizons simultaneously. Published on the first Monday of each month, the BFFR is free, ungated, and designed to be used by fashion students, working designers, stylists, and fashion journalists tracking the Indian fashion market.</p>
+    <p>The BFFR is powered by the CANON hierarchical signal decomposition framework, which computes a Trend Frequency Score (TFS) for each tracked trend term by multiplying its signal strength across all four frequency bands. A trend that scores strongly across all four bands simultaneously — macro, seasonal, micro, and viral — has structural momentum and represents a genuine market movement. A trend that scores strongly in only one or two bands is an ephemeral signal. The maximum TFS is 16; scores above 12 indicate multi-scale coherence.</p>
+    <h2>May 2026 Top Trends</h2>
+    <p>This month's top-scoring trends include Digital Sari (TFS 13.4) — traditional saree silhouettes in technical performance fabrics crossing from runway into retail mainstream; Tech-Casual Elevation (TFS 12.1) — Bangalore's IT workforce driving demand for elevated workwear; Heritage Khadi Revival (TFS 11.8) — sustainability-driven khadi completing its transition to fashion premium; and Festive Minimalism (TFS 11.2) — a structural counter-movement to embellishment excess in festive wear. The Bangalore-specific spotlight this month is Tech-Casual Elevation, a trend signal unique to Bangalore's tech sector that no major Indian fashion brand has addressed at scale.</p>
+    <h2>Career Signals</h2>
+    <p>Each monthly BFFR includes a Career Signal — a paragraph connecting the month's leading trend to a specific fashion career direction and OGIFT programme. The May 2026 career signal connects Digital Sari to the Fabric Knowledge and Textile Designing course, identifying the emerging role of digital textile designer as the career created by this trend. Contact the OGIFT admissions team at +91 90369 28799 to discuss how the current trend signals align with your career direction.</p>
+    <a href="/courses/fabric-knowledge-textile-designing">Fabric Knowledge &amp; Textile Designing Course</a>
+    <a href="/courses/fashion-styling">Fashion Styling Course</a>
+    <a href="/courses/graphic-designing-for-fashion">Graphic Design for Fashion Course</a>
+    <a href="/placements">100% Placement Support — OGIFT</a>
+    <a href="/style-dna">Style DNA Profiling — Free Tool</a>`,
   "/faqavatar": `
     <h1>Fashion Design FAQ Avatar — OGIFT Bangalore | Get Answers 2026</h1>
     <p>OGIFT's Fashion Design FAQ Avatar is an AI-powered interactive tool that answers questions about fashion design careers, OGIFT's courses, the admissions process, fees, eligibility, and life as a fashion professional in India. The FAQ Avatar is available 24/7 and can answer hundreds of common questions instantly — so you can get the information you need at any time, without waiting for the admissions office to open.</p>

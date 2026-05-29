@@ -1,7 +1,7 @@
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 import { Link } from 'react-router-dom';
-import { GraduationCap, Users, Award, BookOpen, TrendingUp, Star } from 'lucide-react';
+import { GraduationCap, Users, Award, BookOpen, TrendingUp, Star, Dna, BarChart3 } from 'lucide-react';
 import { Helmet } from 'react-helmet-async';
 import { RazorpayCheckout } from '@/components/RazorpayCheckout';
 import { CoursePromoPopup } from '@/components/CoursePromoPopup';
@@ -191,6 +191,50 @@ const Home = () => {
               </li>
             ))}
           </ul>
+        </div>
+      </section>
+
+      {/* AI Tools Section */}
+      <section className="py-20" aria-labelledby="ai-tools-heading">
+        <div className="container mx-auto px-4">
+          <header className="text-center mb-12">
+            <h2 id="ai-tools-heading" className="text-4xl font-bold mb-4">Discover Your Fashion Identity</h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Two free AI-powered tools exclusive to OGIFT — know yourself, know the market
+            </p>
+          </header>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="p-8 hover:shadow-xl transition-shadow border-2 hover:border-primary group">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <Dna className="h-8 w-8 text-primary" aria-hidden="true" />
+                </div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">Free · 5 minutes</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Style DNA Profiling</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                Answer 20 visual questions and discover your aesthetic eigenstate — your unique position across four dimensions of style. Reveals structure in your preferences you hadn't consciously articulated.
+              </p>
+              <Button size="lg" className="w-full" asChild>
+                <Link to="/style-dna">Discover Your Style DNA →</Link>
+              </Button>
+            </Card>
+            <Card className="p-8 hover:shadow-xl transition-shadow border-2 hover:border-primary group">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="p-3 rounded-xl bg-primary/10 group-hover:bg-primary/20 transition-colors">
+                  <BarChart3 className="h-8 w-8 text-primary" aria-hidden="true" />
+                </div>
+                <span className="text-xs font-semibold uppercase tracking-widest text-primary">Free · Monthly report</span>
+              </div>
+              <h3 className="text-2xl font-bold mb-3">Fashion Trend Forecasting</h3>
+              <p className="text-muted-foreground mb-6 leading-relaxed">
+                The Bangalore Fashion Frequency Report — multi-scale trend intelligence identifying macro, seasonal, micro, and viral signals across the Indian fashion market. Published monthly.
+              </p>
+              <Button size="lg" variant="outline" className="w-full" asChild>
+                <Link to="/trend-forecasting">Read May 2026 Report →</Link>
+              </Button>
+            </Card>
+          </div>
         </div>
       </section>
 
