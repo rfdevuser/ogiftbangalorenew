@@ -230,7 +230,7 @@ const Home = () => {
               <p className="text-muted-foreground mb-6 leading-relaxed">
                 The Bangalore Fashion Frequency Report — multi-scale trend intelligence identifying macro, seasonal, micro, and viral signals across the Indian fashion market. Published monthly.
               </p>
-              <Button size="lg" variant="outline" className="w-full" asChild>
+              <Button size="lg" className="w-full" asChild>
                 <Link to="/trend-forecasting">Read May 2026 Report →</Link>
               </Button>
             </Card>
